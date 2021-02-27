@@ -10,12 +10,14 @@
     <body class="body">
         <div>
             <div id="banner" class="banner">
-                <h1>Kaamelott Gifboard</h1>
+                <h1><a href="{{ path('index') }}" class="no-style">Kaamelott Gifboard</a></h1>
             </div>
             <div id="main" class="main">
                 {% block body %}{% endblock %}
             </div>
         </div>
-        {% block javascripts %}{% endblock %}
+        {% block javascripts %}
+            <script src="{{ asset('js/script.js') }}"></script>
+        {% endblock %}
     </body>
 </html>
