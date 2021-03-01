@@ -1,0 +1,24 @@
+[
+  {
+    "quote": "This is the quote 1",
+    "characters": [
+      "Character 1",
+      "Character 2"
+    ],
+    "filename": "quote-1.gif"
+  },
+  {
+    "quote": "Here is the quote 2",
+    "characters": [
+      "Character 3"
+    ],
+    "filename": "quote-2.gif"
+  },
+  {
+    "quote": "Finally, the quote number 3",
+    "characters": [
+      "Character 2"
+    ],
+    "filename": "quote-3.gif"
+  }
+]
