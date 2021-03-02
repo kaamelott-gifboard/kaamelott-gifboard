@@ -1,10 +1,10 @@
 window.onload = function(){
-    let xhr = new XMLHttpRequest();
+    let characterXhr = new XMLHttpRequest();
     let select = document.getElementById("characters");
 
-    xhr.onload = function () {
-        if (xhr.status >= 200 && xhr.status < 300) {
-            let data = JSON.parse(xhr.responseText);
+    characterXhr.onload = function () {
+        if (characterXhr.status >= 200 && characterXhr.status < 300) {
+            let data = JSON.parse(characterXhr.responseText);
 
             data['characters'].forEach(function (character) {
                 let option = document.createElement("option");
@@ -24,9 +24,28 @@ window.onload = function(){
 
     };
 
-    xhr.open('GET', select.getAttribute('data-url'));
-    xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
-    xhr.send();
+    characterXhr.open('GET', select.getAttribute('data-url'));
+    characterXhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
+    characterXhr.send();
+
+    // ==================================================
+
+    let countXhr = new XMLHttpRequest();
+    let input = document.getElementById("quotes");
+
+    countXhr.onload = function () {
+        if (countXhr.status >= 200 && countXhr.status < 300) {
+            let data = JSON.parse(countXhr.responseText);
+
+            input.placeholder = 'Parmi près de '.concat(data, ' répliques...');
+        } else {
+            // @todo: handle error
+        }
+    };
+
+    countXhr.open('GET', input.getAttribute('data-url'));
+    countXhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
+    countXhr.send();
 };
 
 // ==================================================
