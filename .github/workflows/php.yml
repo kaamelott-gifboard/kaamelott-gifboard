@@ -1,0 +1,24 @@
+name: PHP Tests & Static Analysis
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Build containers
+      run: make install
+
+    - name: Unit tests
+      run: make test
+
+    - name: Cs-fixer
+      run: make cs-fixer-dry
