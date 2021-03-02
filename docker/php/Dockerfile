@@ -6,5 +6,6 @@ RUN apk add --update \
 	unzip \
 	libzip-dev \
 	zlib-dev; \
-	docker-php-ext-install zip
+	docker-php-ext-install zip opcache
 COPY --from=composer /usr/bin/composer /usr/bin/composer
+COPY docker/php/opcache.ini /usr/local/etc/php/conf.d/opcache.ini

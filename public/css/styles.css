@@ -26,7 +26,7 @@ h1 {
 }
 
 .block {
-    width: 350px;
+    width: 375px;
     margin: 0 auto;
 }
 
@@ -37,6 +37,10 @@ input {
     color: #ffffff;
     font-size: 14px;
     line-height: 25px;
+}
+
+.input-quote {
+    width: 200px;
 }
 
 .button-quote {
