@@ -1,6 +1,19 @@
 {
+    "name": "kaamelott-gifboard/kaamelott-gifboard.github.io",
     "type": "project",
-    "license": "proprietary",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vincent Tommasi",
+            "role": "Developer",
+            "email": "tommasi.v@gmail.com"
+        },
+        {
+            "name": "Pablo Godinez",
+            "role": "Developer",
+            "email": "pablo.godinez@zayon.eu"
+        }
+    ],
     "require": {
         "php": ">=7.4",
         "ext-ctype": "*",
@@ -27,6 +40,12 @@
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/twig": "^3.1"
     },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^2.16",
+        "symfony/phpunit-bridge": "^5.1",
+        "symfony/stopwatch": "^5.1",
+        "symfony/web-profiler-bundle": "^5.1"
+    },
     "config": {
         "optimize-autoloader": true,
         "preferred-install": {
@@ -36,12 +55,12 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
+            "KaamelottGifboard\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "App\\Tests\\": "tests/"
+            "KaamelottGifboard\\Tests\\": "tests/"
         }
     },
     "replace": {
@@ -73,11 +92,5 @@
             "allow-contrib": false,
             "require": "^5.1"
         }
-    },
-    "require-dev": {
-        "friendsofphp/php-cs-fixer": "^2.16",
-        "symfony/phpunit-bridge": "^5.1",
-        "symfony/stopwatch": "^5.1",
-        "symfony/web-profiler-bundle": "^5.1"
     }
 }

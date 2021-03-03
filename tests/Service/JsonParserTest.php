@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Tests\Service;
+namespace KaamelottGifboard\Tests\Service;
 
-use App\Service\JsonParser;
+use KaamelottGifboard\Service\JsonParser;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
 class JsonParserTest extends KernelTestCase

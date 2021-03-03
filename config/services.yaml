@@ -9,7 +9,7 @@ services:
         bind:
             string $gifsJsonFile: '%gifs_json_path%'
 
-    App\:
+    KaamelottGifboard\:
         resource: '../src/'
         exclude:
             - '../src/DependencyInjection/'
@@ -17,6 +17,6 @@ services:
             - '../src/Kernel.php'
             - '../src/Tests/'
 
-    App\Action\:
+    KaamelottGifboard\Action\:
         resource: '../src/Action'
         tags: [ 'controller.service_arguments' ]
