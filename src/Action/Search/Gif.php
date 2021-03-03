@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace App\Action\Search;
+namespace KaamelottGifboard\Action\Search;
 
-use App\Service\JsonParser;
+use KaamelottGifboard\Service\JsonParser;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
