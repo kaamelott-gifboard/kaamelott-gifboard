@@ -3,7 +3,7 @@
 {% block body %}
     <div class="block">
         <label for="characters">Personnage :</label>
-        <select id="characters" onchange="getByCharacter();">
+        <select id="characters" onchange="getByCharacter();" data-url="{{ path('get_characters') }}" data-current="{{ app.request.get('name') }}">
             <option value="">---</option>
         </select>
     </div>
@@ -24,66 +24,38 @@
         <ul>
             {% for gif in gifs %}
                 <li class="li-gif">
-                    <div class="button" onclick="showGif(this);" data-id="{{ gif.filename }}">
+                    <div class="button-quote" onclick="showGif(this);" data-id="{{ gif.filename }}">
                         {{ gif.quote }}
-                        <img data-src="../../gifs/{{ gif.filename }}" id="img_{{ gif.filename }}" class="img-gif">
+                        <span
+                            id="{{ gif.filename }}"
+                            data-img="{{ asset('gifs/' ~ gif.filename) }}"
+                            data-quote="{{ gif.quote }}"
+                            data-url="{{ absolute_url(asset('gifs/' ~ gif.filename)) }}"
+                        ></span>
                     </div>
                 </li>
             {% endfor %}
         </ul>
     {% endif %}
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <span id="modal-quote"></span><br /><br />
+            <img id="modal-img" /><br /><br />
+            <textarea id="modal-link" rows="3" onclick="this.focus();this.select()" readonly="readonly"></textarea>
+        </div>
+    </div>
 {% endblock %}
 
 {% block javascripts %}
+    {{ parent() }}
+
     <script>
-        let xhr = new XMLHttpRequest();
-
-        xhr.onload = function () {
-            if (xhr.status >= 200 && xhr.status < 300) {
-                let data = JSON.parse(xhr.responseText);
-
-                let select = document.getElementById("characters");
-
-                data['characters'].forEach(function (character) {
-                    let option = document.createElement("option");
-
-                    option.text = character;
-                    option.value = character;
-
-                    if (character === "{{ app.request.get('name') }}") {
-                        option.selected = true;
-                    }
-
-                    select.appendChild(option);
-                });
-            } else {
-                // @todo: handle error
-            }
-
-        };
-
-        xhr.open('GET', "{{ path('get_characters') }}");
-        xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
-        xhr.send();
-
-        function getLink() {
-
-        }
-
         function getByCharacter() {
             let character = document.getElementById("characters").value;
 
             window.location = "{{ path('search_character', {'name' : 'characterName' }) }}".replace('characterName', character);
-        }
-
-        function showGif(e) {
-            let image = document.getElementById("img_".concat('', e.getAttribute('data-id')));
-
-            if (image.src == '') {
-                image.src = image.getAttribute('data-src');
-            } else {
-                image.removeAttribute('src');
-            }
         }
     </script>
 {% endblock %}
