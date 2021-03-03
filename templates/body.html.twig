@@ -1,0 +1,89 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div class="block">
+        <label for="characters">Personnage :</label>
+        <select id="characters" onchange="getByCharacter();">
+            <option value="">---</option>
+        </select>
+    </div>
+
+    <br />
+
+    <div class="block">
+        <form action="{{ path('search_quote') }}">
+            <label for="quotes">Recherche :</label>
+            <input id="quotes" type="text" name="search" value="{{ app.request.get('search') }}" />
+            <input type="submit" value="Go" />
+        </form>
+    </div>
+
+    <br /><br />
+
+    {% if gifs is defined %}
+        <ul>
+            {% for gif in gifs %}
+                <li class="li-gif">
+                    <div class="button" onclick="showGif(this);" data-id="{{ gif.filename }}">
+                        {{ gif.quote }}
+                        <img data-src="../../gifs/{{ gif.filename }}" id="img_{{ gif.filename }}" class="img-gif">
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        let xhr = new XMLHttpRequest();
+
+        xhr.onload = function () {
+            if (xhr.status >= 200 && xhr.status < 300) {
+                let data = JSON.parse(xhr.responseText);
+
+                let select = document.getElementById("characters");
+
+                data['characters'].forEach(function (character) {
+                    let option = document.createElement("option");
+
+                    option.text = character;
+                    option.value = character;
+
+                    if (character === "{{ app.request.get('name') }}") {
+                        option.selected = true;
+                    }
+
+                    select.appendChild(option);
+                });
+            } else {
+                // @todo: handle error
+            }
+
+        };
+
+        xhr.open('GET', "{{ path('get_characters') }}");
+        xhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
+        xhr.send();
+
+        function getLink() {
+
+        }
+
+        function getByCharacter() {
+            let character = document.getElementById("characters").value;
+
+            window.location = "{{ path('search_character', {'name' : 'characterName' }) }}".replace('characterName', character);
+        }
+
+        function showGif(e) {
+            let image = document.getElementById("img_".concat('', e.getAttribute('data-id')));
+
+            if (image.src == '') {
+                image.src = image.getAttribute('data-src');
+            } else {
+                image.removeAttribute('src');
+            }
+        }
+    </script>
+{% endblock %}

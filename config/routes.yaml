@@ -1,0 +1,18 @@
+index:
+    path: /
+    controller: App\Action\Index
+
+search_quote:
+    path: /search/quote
+    controller: App\Action\Search\Quote
+    defaults: { quote: '' }
+
+search_character:
+    path: /search/character/{name}
+    controller: App\Action\Search\Character::byName
+    defaults: { name: '' }
+
+get_characters:
+    path: /search/characters
+    controller: App\Action\Search\Character::get
+    defaults: { name: '' }
