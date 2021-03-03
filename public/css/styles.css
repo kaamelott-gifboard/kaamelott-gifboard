@@ -1,6 +1,6 @@
 .body {
     background-color: #2e3139;
-    color:white;
+    color: white;
     font-family: Helvetica Neue, Helvetica, sans-serif;
 }
 
@@ -8,9 +8,13 @@ h1 {
     font-size: 45px;
 }
 
+a {
+    color: white;
+}
+
 .no-style {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 .banner {
@@ -20,6 +24,14 @@ h1 {
 .main {
     width: 90%;
     margin: 0 auto;
+    padding: 0;
+    display: block;
+    text-align: center;
+}
+
+.footer {
+    width: 90%;
+    margin: 60px auto 60px auto;
     padding: 0;
     display: block;
     text-align: center;
@@ -47,7 +59,7 @@ input {
     cursor: pointer;
     font-size: 15px;
     background-color: #454851;
-    border:1px solid #5f626a;
+    border: 1px solid #5f626a;
     padding: 12px;
     text-align: center;
     text-decoration: none;

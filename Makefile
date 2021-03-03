@@ -25,7 +25,7 @@ down: ## Stop containers
 cs-fixer: ## Launch cs-fixer tool
 	${COMPOSE} exec -T php vendor/bin/php-cs-fixer fix
 
-cs-fixer-dry:
+cs-fixer-dry: ## Launch cs-fixer tool (dry run)
 	${COMPOSE} exec -T php vendor/bin/php-cs-fixer fix --dry-run -v --ansi
 
 test: ## Launch the PhpUnit suite

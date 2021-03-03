@@ -15,6 +15,12 @@
             <div id="main" class="main">
                 {% block body %}{% endblock %}
             </div>
+            <div id="footer" class="footer">
+                Elle est où la poulette ?™ - {{ "now"|date("Y") }}<br /><br />
+                <a href="https://github.com/kaamelott-gifboard/kaamelott-gifboard.github.io" target="_blank">
+                    Il manque un gif ? Ajoutez-le !
+                </a>
+            </div>
         </div>
         {% block javascripts %}
             <script src="{{ asset('js/script.js') }}"></script>
