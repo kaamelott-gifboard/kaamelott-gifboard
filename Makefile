@@ -8,10 +8,10 @@ install: build up env vendor ## Install the project
 	@printf "\nProject available at: http://localhost:4242/\n"
 
 env: ## Copy the docker/.env file to local
-	${COMPOSE} exec php cp docker/.env.dist .env
+	${COMPOSE} exec -T php cp docker/.env.dist .env
 
 vendor: ## Install vendors
-	${COMPOSE} exec php composer install
+	${COMPOSE} exec -T php composer install
 
 build: ## Build containers
 	${COMPOSE} build
@@ -23,10 +23,13 @@ down: ## Stop containers
 	${COMPOSE} down
 
 cs-fixer: ## Launch cs-fixer tool
-	${COMPOSE} exec php vendor/bin/php-cs-fixer fix
+	${COMPOSE} exec -T php vendor/bin/php-cs-fixer fix
+
+cs-fixer-dry:
+	${COMPOSE} exec -T php vendor/bin/php-cs-fixer fix --dry-run -v --ansi
 
 test: ## Launch the PhpUnit suite
-	$(COMPOSE) exec php vendor/bin/simple-phpunit
+	$(COMPOSE) exec -T php vendor/bin/simple-phpunit
 
 ##
 
