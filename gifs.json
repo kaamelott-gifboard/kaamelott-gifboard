@@ -252,6 +252,13 @@
     "filename": "doigt-dans-le-cul-du-coq.gif"
   },
   {
+    "quote": "J'ai toujours eu du bol avec l'aléatoire, moi.",
+    "characters": [
+      "Léodagan"
+    ],
+    "filename": "du-bol-avec-laleatoire.gif"
+  },
+  {
     "quote": "Elle est où la poulette ?",
     "characters": [
       "Kadoc",
@@ -279,7 +286,7 @@
   {
     "quote": "Et ben mon cochon...",
     "characters": [
-      "Le tavernier"
+      "Le Tavernier"
     ],
     "filename": "et-ben-mon-cochon.gif"
   },
@@ -290,5 +297,272 @@
       "Kay"
     ],
     "filename": "experience-champion.gif"
+  },
+  {
+    "quote": "Pas moyen de lui faire fermer sa gueule",
+    "characters": [
+      "Léodagan"
+    ],
+    "filename": "fermer-sa-gueule.gif"
+  },
+  {
+    "quote": "Bohort est frustré",
+    "characters": [
+      "Bohort",
+      "Léodagan"
+    ],
+    "filename": "bohort-frustre.gif"
+  },
+  {
+    "quote": "Gauvain est triste",
+    "characters": [
+      "Gauvain"
+    ],
+    "filename": "gauvain-est-triste.gif"
+  },
+  {
+    "quote": "Gnian gnian gnian",
+    "characters": [
+      "Buzit le Barde"
+    ],
+    "filename": "gnian.gif"
+  },
+  {
+    "quote": "Magniez vous le fion espèce de grosse dinde !",
+    "characters": [
+      "Le Maître d'Armes"
+    ],
+    "filename": "grosse-dinde.gif"
+  },
+  {
+    "quote": "Yvain et Gauvain font un high five",
+    "characters": [
+      "Yvain",
+      "Gauvain"
+    ],
+    "filename": "high-five.gif"
+  },
+  {
+    "quote": "Vous laissez pas embobiner, il cherche à vous rembobiner",
+    "characters": [
+      "Yvain",
+      "Gauvain"
+    ],
+    "filename": "il-cherche-a-vous-rembobiner.gif"
+  },
+  {
+    "quote": "Il est fort le salaud !",
+    "characters": [
+      "Karadoc",
+      "Perceval"
+    ],
+    "filename": "il-est-fort-le-salaud.gif"
+  },
+  {
+    "quote": "J'ai rien compris",
+    "characters": [
+      "Perceval",
+      "Karadoc",
+      "Arthur"
+    ],
+    "filename": "jai-rien-compris.gif"
+  },
+  {
+    "quote": "Moi cette semaine j'ai rien foutu",
+    "characters": [
+      "Hervé de Rinel",
+      "Léodagan"
+    ],
+    "filename": "jai-rien-foutu.gif"
+  },
+  {
+    "quote": "J'ai jamais dit que c'était logique hein",
+    "characters": [
+      "Guenièvre"
+    ],
+    "filename": "jamais-dit-logique.gif"
+  },
+  {
+    "quote": "Je comprends pas là...",
+    "characters": [
+      "Guenièvre"
+    ],
+    "filename": "je-comprends-pas-la.gif"
+  },
+  {
+    "quote": "Si je me mets derrière, je disparais...",
+    "characters": [
+      "Merlin"
+    ],
+    "filename": "je-disparais.gif"
+  },
+  {
+    "quote": "Moi je vous laisse ma place hein, j'ai pas du tout envie d'y aller",
+    "characters": [
+      "Yvain"
+    ],
+    "filename": "je-laisse-ma-place.gif"
+  },
+  {
+    "quote": "Ca vous ennuie si j'me taille les veines ?",
+    "characters": [
+      "Guenièvre"
+    ],
+    "filename": "je-me-taille-les-veines.gif"
+  },
+  {
+    "quote": "Moi en général je réponds merde, en principe ça colle avec tout",
+    "characters": [
+      "Léodagan",
+      "Séli"
+    ],
+    "filename": "je-reponds-merde.gif"
+  },
+  {
+    "quote": "Je vais peut-être aller me recoucher moi...",
+    "characters": [
+      "Arthur"
+    ],
+    "filename": "je-vais-aller-me-recoucher.gif"
+  },
+  {
+    "quote": "Mais vous verrez bien ! Je vais pas vous faire un croquis !",
+    "characters": [
+      "Le Jurisconsulte",
+      "Arthur"
+    ],
+    "filename": "je-vais-pas-vous-faire-un-croquis.gif"
+  },
+  {
+    "quote": "Je vous mets un pain",
+    "characters": [
+      "Arthur",
+      "Bohort"
+    ],
+    "filename": "je-vous-mets-un-pain.gif"
+  },
+  {
+    "quote": "J'en ai rien à foutre",
+    "characters": [
+      "Arthur",
+      "Perceval"
+    ],
+    "filename": "jen-ai-rien-a-foutre.gif"
+  },
+  {
+    "quote": "La joie de vivre et le jambon !",
+    "characters": [
+      "Karadoc",
+      "Mevanwi"
+    ],
+    "filename": "joie-de-vivre-et-jambon.gif"
+  },
+  {
+    "quote": "Ca va être la fête à votre cul !",
+    "characters": [
+      "Le Maître d'Armes",
+      "Arthur"
+    ],
+    "filename": "la-fete-a-votre-cul.gif"
+  },
+  {
+    "quote": "J'ai envie de dire, c'est la limite du système...",
+    "characters": [
+      "Le Tavernier",
+      "Karadoc"
+    ],
+    "filename": "la-limite-du-systeme.gif"
+  },
+  {
+    "quote": "Ben c'est l'autre con là, avec ces pinceaux...",
+    "characters": [
+      "Léodagan",
+      "Bohort"
+    ],
+    "filename": "lautre-con-avec-ces-pinceaux.gif"
+  },
+  {
+    "quote": "C'est pas pour rien qu'on m'appelle le fourbe",
+    "characters": [
+      "Elias de Kelliwic'h"
+    ],
+    "filename": "le-fourbe.gif"
+  },
+  {
+    "quote": "Le gras, c'est la vie",
+    "characters": [
+      "Karadoc",
+      "Arthur"
+    ],
+    "filename": "le-gras-cest-la-vie.gif"
+  },
+  {
+    "quote": "Vous devriez commencer à organiser le merdier que vous avez là dedans",
+    "characters": [
+      "Arthur",
+      "Perceval"
+    ],
+    "filename": "le-merdier-que-vous-avez.gif"
+  },
+  {
+    "quote": "Sortez vous les doigts du cul !",
+    "characters": [
+      "Arthur",
+      "Lancelot",
+      "Léodagan",
+      "Kay"
+    ],
+    "filename": "les-doigts-du-cul.gif"
+  },
+  {
+    "quote": "J'apprécie les fruits au sirop !",
+    "characters": [
+      "Le Roi Burgonde"
+    ],
+    "filename": "les-fruits-au-sirop.gif"
+  },
+  {
+    "quote": "Non mais c'est à se coincer les parties dans une porte, non ?",
+    "characters": [
+      "Le Maître d'Armes"
+    ],
+    "filename": "les-parties-dans-une-porte.gif"
+  },
+  {
+    "quote": "Mais absolument pas !",
+    "characters": [
+      "Arthur"
+    ],
+    "filename": "mais-absolument-pas.gif"
+  },
+  {
+    "quote": "Mais pourquoi moi ?",
+    "characters": [
+      "Perceval"
+    ],
+    "filename": "mais-pourquoi-moi.gif"
+  },
+  {
+    "quote": "Mais que c'est nul... mais que c'est nul !",
+    "characters": [
+      "Lancelot",
+      "Bohort"
+    ],
+    "filename": "mais-que-cest-nul.gif"
+  },
+  {
+    "quote": "Mais tout à fait !",
+    "characters": [
+      "Roparzh"
+    ],
+    "filename": "mais-tout-a-fait.gif"
+  },
+  {
+    "quote": "Mais trop pas quoi !",
+    "characters": [
+      "Yvain",
+      "Guenièvre"
+    ],
+    "filename": "mais-trop-pas-quoi.gif"
   }
 ]

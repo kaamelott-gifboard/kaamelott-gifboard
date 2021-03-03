@@ -36,6 +36,7 @@ class JsonParserTest extends KernelTestCase
             static::assertIsArray($item->characters);
             static::assertObjectHasAttribute('filename', $item);
             static::assertIsString($item->filename);
+            static::assertRegExp('#^[a-z-]+\.gif$#', $item->filename);
         }
     }
 
