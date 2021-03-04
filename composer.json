@@ -1,6 +1,7 @@
 {
     "name": "kaamelott-gifboard/kaamelott-gifboard.github.io",
     "type": "project",
+    "description": "Des gifs rigolo",
     "license": "MIT",
     "authors": [
         {
@@ -15,7 +16,7 @@
         }
     ],
     "require": {
-        "php": ">=7.4",
+        "php": ">=8.0",
         "ext-ctype": "*",
         "ext-iconv": "*",
         "composer/package-versions-deprecated": "1.11.99.1",
@@ -49,6 +50,9 @@
         "symfony/web-profiler-bundle": "^5.1"
     },
     "config": {
+        "platform": {
+            "php": "8.0"
+        },
         "optimize-autoloader": true,
         "preferred-install": {
             "*": "dist"
