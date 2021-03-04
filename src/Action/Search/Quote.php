@@ -22,7 +22,7 @@ class Quote
 
     public function __invoke(Request $request): Response
     {
-        $search = $request->query->get('search', '');
+        $search = (string) $request->query->get('search', '');
 
         $view = $this->twig->render(
             'body.html.twig',

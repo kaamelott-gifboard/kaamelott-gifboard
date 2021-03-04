@@ -65,7 +65,9 @@ class JsonParser
 
     private function getGifs(): array
     {
-        $json = file_get_contents($this->gifsJsonFile);
+        if (!$json = file_get_contents($this->gifsJsonFile)) {
+            return [];
+        }
 
         return json_decode($json);
     }
