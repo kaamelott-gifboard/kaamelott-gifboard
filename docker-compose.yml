@@ -5,6 +5,7 @@ services:
     build:
       context: .
       dockerfile: docker/php/Dockerfile
+      target: dev
     volumes:
       - .:/var/www/
 
@@ -15,5 +16,3 @@ services:
     volumes:
       - ./public:/var/www/public:ro
       - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-    ports:
-      - 4242:80

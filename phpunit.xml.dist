@@ -12,7 +12,7 @@
         <env name="SYMFONY_DEPRECATIONS_HELPER" value="disabled" />
         <server name="SHELL_VERBOSITY" value="-1" />
         <server name="SYMFONY_PHPUNIT_REMOVE" value="" />
-        <server name="SYMFONY_PHPUNIT_VERSION" value="7.5" />
+        <server name="SYMFONY_PHPUNIT_VERSION" value="9" />
         <server name="KERNEL_CLASS" value="KaamelottGifboard\Kernel" />
         <server name="APP_ENV" value="test" force="true" />
         <server name="APP_SECRET" value="2dff7c569196702a4381c8d83dd56c7e" />

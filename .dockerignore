@@ -1,0 +1,13 @@
+# Ignore everything
+*
+
+# Whitelist stuff
+!docker/
+!bin/console
+!public/
+!config/
+!src/
+!templates/
+!gifs.json
+!composer.json
+!composer.lock
