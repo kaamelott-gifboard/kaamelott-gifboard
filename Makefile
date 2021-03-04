@@ -25,11 +25,11 @@ start: vendor .env ## Start containers
 	${COMPOSE} up -d
 .PHONY: start
 
-stop: ## Start containers
+stop: ## Stop containers
 	${COMPOSE} stop
 .PHONY: stop
 
-down: ## Stop containers
+down: ## Remove containers
 	${COMPOSE} down
 .PHONY: down
 
