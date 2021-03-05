@@ -22,3 +22,6 @@ jobs:
 
     - name: Cs-fixer
       run: make cs-fixer-dry
+
+    - name: PhpStan
+      run: make phpstan

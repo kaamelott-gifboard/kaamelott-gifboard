@@ -31,6 +31,9 @@ cs-fixer-dry: ## Launch cs-fixer tool (dry run)
 test: ## Launch the PhpUnit suite
 	$(COMPOSE) exec -T php vendor/bin/simple-phpunit
 
+phpstan: ## Launch the Phpstan tool
+	$(COMPOSE) exec -T php vendor/bin/phpstan analyse -c phpstan.neon
+
 ##
 
 help:
