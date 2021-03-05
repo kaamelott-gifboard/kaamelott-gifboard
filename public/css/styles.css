@@ -42,6 +42,20 @@ a {
     margin: 0 auto;
 }
 
+.characters {
+    width: 80%;
+    margin: auto;
+}
+
+.character-icon {
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 5px;
+    -webkit-box-shadow: 11px 10px 7px -8px rgba(0,0,0,0.50);
+    -moz-box-shadow: 11px 10px 7px -8px rgba(0,0,0,0.50);
+    box-shadow: 11px 10px 7px -8px rgba(0,0,0,0.50);
+}
+
 input {
     padding-left: 5px;
     border: 1px solid #5f626a;
@@ -69,15 +83,6 @@ input {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-}
-
-.button-link {
-    position: absolute;
-    width: 35px;
-    height: 32px;
-    right: 0;
-    top: 0;
-    border: 0;
 }
 
 .li-gif {

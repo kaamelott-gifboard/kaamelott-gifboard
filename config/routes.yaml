@@ -1,23 +1,22 @@
 search_index:
     path: /
-    controller: KaamelottGifboard\Action\Search\Gif::get
+    controller: KaamelottGifboard\Action\Search\Gif::getAll
 
 search_count:
     path: /search/gif/count
-    controller: KaamelottGifboard\Action\Search\Gif::count
-    condition: "request.isXmlHttpRequest()"
+    controller: KaamelottGifboard\Action\Search\Gif::countAll
+
+search_character:
+    path: /search/character/{name}
+    controller: KaamelottGifboard\Action\Search\Gif::byCharacter
+    defaults: { name: '' }
 
 search_quote:
     path: /search/quote
     controller: KaamelottGifboard\Action\Search\Quote
     defaults: { quote: '' }
 
-search_character:
-    path: /search/character/{name}
-    controller: KaamelottGifboard\Action\Search\Character::byName
-    defaults: { name: '' }
-
 get_characters:
     path: /search/characters
-    controller: KaamelottGifboard\Action\Search\Character::get
+    controller: KaamelottGifboard\Action\Search\Character
     defaults: { name: '' }

@@ -1,30 +1,30 @@
 window.onload = function(){
     let characterXhr = new XMLHttpRequest();
-    let select = document.getElementById("characters");
+    let characterDiv = document.getElementById("characters");
 
     characterXhr.onload = function () {
         if (characterXhr.status >= 200 && characterXhr.status < 300) {
             let data = JSON.parse(characterXhr.responseText);
 
             data['characters'].forEach(function (character) {
-                let option = document.createElement("option");
+                let link = document.createElement("a");
+                let image = document.createElement("img");
 
-                option.text = character;
-                option.value = character;
+                image.src = window.location.origin.concat('/', character.image);
+                image.title = character.name;
+                image.className = 'character-icon';
 
-                if (character === select.getAttribute('data-current')) {
-                    option.selected = true;
-                }
+                link.href = character.url;
+                link.appendChild(image);
 
-                select.appendChild(option);
+                characterDiv.appendChild(link);
             });
         } else {
             // @todo: handle error
         }
-
     };
 
-    characterXhr.open('GET', select.getAttribute('data-url'));
+    characterXhr.open('GET', characterDiv.getAttribute('data-url'));
     characterXhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
     characterXhr.send();
 

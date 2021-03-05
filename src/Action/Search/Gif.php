@@ -21,7 +21,16 @@ class Gif
         $this->jsonParser = $jsonParser;
     }
 
-    public function get(): Response
+    public function byCharacter(string $name): Response
+    {
+        $gifs = $this->jsonParser->findByCharacter($name);
+
+        $view = $this->twig->render('body.html.twig', $gifs);
+
+        return (new Response())->setContent($view);
+    }
+
+    public function getAll(): Response
     {
         $gifs = $this->jsonParser->findAll();
 
@@ -30,7 +39,7 @@ class Gif
         return (new Response())->setContent($view);
     }
 
-    public function count(Request $request): Response
+    public function countAll(Request $request): Response
     {
         if (!$request->isXmlHttpRequest()) {
             return new Response(null, Response::HTTP_NOT_FOUND);
