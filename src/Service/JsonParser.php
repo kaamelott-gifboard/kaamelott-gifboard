@@ -4,13 +4,27 @@ declare(strict_types=1);
 
 namespace KaamelottGifboard\Service;
 
+use KaamelottGifboard\Helper\ImageHelper;
+use Symfony\Component\Routing\RouterInterface;
+use Symfony\Component\String\Slugger\SluggerInterface;
+
 class JsonParser
 {
     private string $gifsJsonFile;
+    private RouterInterface $router;
+    private SluggerInterface $slugger;
+    private ImageHelper $imageHelper;
 
-    public function __construct(string $gifsJsonFile)
-    {
+    public function __construct(
+        string $gifsJsonFile,
+        RouterInterface $router,
+        SluggerInterface $slugger,
+        ImageHelper $imageHelper
+    ) {
         $this->gifsJsonFile = $gifsJsonFile;
+        $this->router = $router;
+        $this->slugger = $slugger;
+        $this->imageHelper = $imageHelper;
     }
 
     public function findAll(): array
@@ -52,8 +66,14 @@ class JsonParser
 
         foreach ($this->getGifs() as $gif) {
             foreach ($gif->characters as $character) {
-                if (!\in_array($character, $results)) {
-                    $results[] = $character;
+                $sluggedCharacter = $this->slugger->slug($character)->lower()->__toString();
+
+                if (!\array_key_exists($sluggedCharacter, $results)) {
+                    $results[$sluggedCharacter] = [
+                        'name' => $character,
+                        'url' => $this->router->generate('search_character', ['name' => $character]),
+                        'image' => $this->imageHelper->getCharacterImage($sluggedCharacter),
+                    ];
                 }
             }
         }

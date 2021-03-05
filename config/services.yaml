@@ -1,5 +1,6 @@
 parameters:
     gifs_json_path: '%kernel.project_dir%/gifs.json'
+    public_path: '%kernel.project_dir%/public'
 
 services:
     _defaults:
@@ -8,6 +9,7 @@ services:
         public: false
         bind:
             string $gifsJsonFile: '%gifs_json_path%'
+            string $publicPath: '%public_path%'
 
     KaamelottGifboard\:
         resource: '../src/'

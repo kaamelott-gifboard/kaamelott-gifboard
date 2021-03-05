@@ -4,31 +4,48 @@ declare(strict_types=1);
 
 namespace KaamelottGifboard\Tests\Service;
 
+use KaamelottGifboard\Helper\ImageHelper;
 use KaamelottGifboard\Service\JsonParser;
+use PHPUnit\Framework\MockObject\MockObject;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
+use Symfony\Component\Routing\RouterInterface;
+use Symfony\Component\String\Slugger\AsciiSlugger;
 
 class JsonParserTest extends KernelTestCase
 {
+    /** @var MockObject|RouterInterface */
+    private RouterInterface $router;
+
+    /** @var ImageHelper|MockObject */
+    private ImageHelper $helper;
+
     private JsonParser $parser;
 
     protected function setUp(): void
     {
-        $this->parser = new JsonParser(__DIR__.'/gifs-test.json');
+        $this->router = $this->createMock(RouterInterface::class);
+        $this->helper = $this->createMock(ImageHelper::class);
+
+        $this->parser = new JsonParser(
+            __DIR__.'/gifs-test.json',
+            $this->router,
+            new AsciiSlugger(),
+            $this->helper
+        );
     }
 
     public function testJsonIsValid(): void
     {
         $kernel = self::bootKernel();
 
-        $gifsJsonPath = $kernel->getContainer()->getParameter('gifs_json_path');
-
-        $parser = new JsonParser($gifsJsonPath);
+        $parser = $kernel->getContainer()->get('test_KaamelottGifboard\Service\JsonParser');
 
         $result = $parser->findAll();
 
         static::assertIsArray($result);
         static::assertArrayHasKey('gifs', $result);
 
+        /** @var \stdClass $item */
         foreach ($result['gifs'] as $item) {
             static::assertObjectHasAttribute('quote', $item);
             static::assertIsString($item->quote);
@@ -68,13 +85,47 @@ class JsonParserTest extends KernelTestCase
 
     public function testFindCharacters(): void
     {
+        $this->router
+            ->expects(static::exactly(3))
+            ->method('generate')
+            ->withConsecutive(
+                ['search_character', ['name' => 'Character 1']],
+                ['search_character', ['name' => 'Character 2']],
+                ['search_character', ['name' => 'Character 3']],
+            )
+            ->willReturnOnConsecutiveCalls('route-1', 'route-2', 'route-3');
+
+        $this->helper
+            ->expects(static::exactly(3))
+            ->method('getCharacterImage')
+            ->withConsecutive(
+                ['character-1'],
+                ['character-2'],
+                ['character-3'],
+            )
+            ->willReturnOnConsecutiveCalls('image-1.png', 'image-2.png', 'image-3.png');
+
+        $expected = [
+            [
+                'name' => 'Character 1',
+                'url' => 'route-1',
+                'image' => 'image-1.png',
+            ],
+            [
+                'name' => 'Character 2',
+                'url' => 'route-2',
+                'image' => 'image-2.png',
+            ],
+            [
+                'name' => 'Character 3',
+                'url' => 'route-3',
+                'image' => 'image-3.png',
+            ],
+        ];
+
         $result = $this->parser->findCharacters();
 
         static::assertArrayHasKey('characters', $result);
-        static::assertSame($result['characters'], [
-            'Character 1',
-            'Character 2',
-            'Character 3',
-        ]);
+        static::assertSame($result['characters'], $expected);
     }
 }

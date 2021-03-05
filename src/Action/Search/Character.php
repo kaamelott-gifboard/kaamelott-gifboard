@@ -21,7 +21,7 @@ class Character
         $this->twig = $twig;
     }
 
-    public function get(Request $request): Response
+    public function __invoke(Request $request): Response
     {
         $characters = $this->finder->findCharacters();
 
@@ -30,15 +30,5 @@ class Character
         }
 
         return new JsonResponse($characters);
-    }
-
-    public function byName(string $name): Response
-    {
-        $view = $this->twig->render(
-            'body.html.twig',
-            $this->finder->findByCharacter($name)
-        );
-
-        return (new Response())->setContent($view);
     }
 }

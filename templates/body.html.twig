@@ -2,21 +2,16 @@
 
 {% block body %}
     <div class="block">
-        <label for="characters">Personnage :</label>
-        <select id="characters" onchange="getByCharacter();" data-url="{{ path('get_characters') }}" data-current="{{ app.request.get('name') }}">
-            <option value="">---</option>
-        </select>
-    </div>
-
-    <br />
-
-    <div class="block">
         <form action="{{ path('search_quote') }}">
             <label for="quotes">Recherche :</label>
             <input id="quotes" type="text" name="search" class="input-quote" value="{{ app.request.get('search') }}" data-url="{{ path('search_count') }}" />
             <input type="submit" value="Go" />
         </form>
     </div>
+
+    <br /><br />
+
+    <div id="characters" data-url="{{ path('get_characters') }}" class="characters"></div>
 
     <br /><br />
 

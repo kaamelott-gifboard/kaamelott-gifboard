@@ -2,4 +2,7 @@ services:
     _defaults:
         autowire: true
         autoconfigure: true
-        public: false
+        public: true
+
+    test_KaamelottGifboard\Service\JsonParser:
+        alias: KaamelottGifboard\Service\JsonParser
