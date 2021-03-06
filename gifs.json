@@ -571,5 +571,95 @@
       "Sélie"
     ],
     "filename": "maximum-ou-de-la-marge.gif"
+  },
+  {
+    "quote": "Mécréant !",
+    "characters": [
+      "Bohort",
+      "Arthur",
+      "Léodagan",
+      "Lancelot"
+    ],
+    "filename": "mecreant.gif"
+  },
+  {
+    "quote": "Mais mêlez-vous d'vos fesses !",
+    "characters": [
+      "Arthur"
+    ],
+    "filename": "melez-vous-de-vos-fesses.gif"
+  },
+  {
+    "quote": "Mais mêlez-vous d'vos fesses !",
+    "characters": [
+      "Arthur",
+    ],
+    "filename": "melez-vous-de-vos-fesses.gif"
+  },
+  {
+    "quote": "C'est tout con, même un débile il comprendrait.",
+    "characters": [
+      "Perceval"
+    ],
+    "filename": "meme-un-debile-comprendrait.gif"
+  },
+  {
+    "quote": "M'en fous j'irai pas",
+    "characters": [
+      "Yvain",
+      "Arthur"
+    ],
+    "filename": "men-fou-jirais-pas.gif"
+  },
+  {
+    "quote": "Merci mon cul",
+    "characters": [
+      "Perceval",
+      "Arthur"
+    ],
+    "filename": "merci-mon-cul.gif"
+  },
+  {
+    "quote": "Merde !",
+    "characters": [
+      "Arthur"
+    ],
+    "filename": "merde.gif"
+  },
+  {
+    "quote": "Météo !",
+    "characters": [
+      "Le Roi Burgonde"
+    ],
+    "filename": "meteo.gif"
+  },
+  {
+    "quote": "Ha mais moi j'ai toujours dit !",
+    "characters": [
+      "Karadoc",
+      "Le Tavernier"
+    ],
+    "filename": "moi-jai-toujours-dit.gif"
+  },
+  {
+    "quote": "Nan.",
+    "characters": [
+      "Arthur"
+    ],
+    "filename": "nan.gif"
+  },
+  {
+    "quote": "Négocier",
+    "characters": [
+      "Le Roi Burgonde"
+    ],
+    "filename": "ne-go-cier.gif"
+  },
+  {
+    "quote": "Là, on est quand même sur un niveau de connerie remarquable.",
+    "characters": [
+      "Loth"
+    ],
+    "filename": "niveau-de-connerie-remarquable.gif"
   }
 ]
