@@ -60,7 +60,7 @@
   {
     "quote": "Ca m'a littéralement cuit les boules !",
     "characters": [
-      "Le Roi Loth"
+      "Loth d'Orcanie"
     ],
     "filename": "ca-ma-cuit-les-boules.gif"
   },
@@ -199,7 +199,7 @@
     "quote": "Courage !",
     "characters": [
       "Bohort",
-      "Lancelot"
+      "Lancelot du Lac"
     ],
     "filename": "courage.gif"
   },
@@ -262,7 +262,7 @@
     "quote": "Elle est où la poulette ?",
     "characters": [
       "Kadoc",
-      "Lancelot"
+      "Lancelot du Lac"
     ],
     "filename": "elle-est-ou-la-poulette.gif"
   },
@@ -508,7 +508,7 @@
     "quote": "Sortez vous les doigts du cul !",
     "characters": [
       "Arthur",
-      "Lancelot",
+      "Lancelot du Lac",
       "Léodagan",
       "Kay"
     ],
@@ -545,7 +545,7 @@
   {
     "quote": "Mais que c'est nul... mais que c'est nul !",
     "characters": [
-      "Lancelot",
+      "Lancelot du Lac",
       "Bohort"
     ],
     "filename": "mais-que-cest-nul.gif"
@@ -578,7 +578,7 @@
       "Bohort",
       "Arthur",
       "Léodagan",
-      "Lancelot"
+      "Lancelot du Lac"
     ],
     "filename": "mecreant.gif"
   },
@@ -592,7 +592,7 @@
   {
     "quote": "Mais mêlez-vous d'vos fesses !",
     "characters": [
-      "Arthur",
+      "Arthur"
     ],
     "filename": "melez-vous-de-vos-fesses.gif"
   },
@@ -658,7 +658,8 @@
   {
     "quote": "Là, on est quand même sur un niveau de connerie remarquable.",
     "characters": [
-      "Loth"
+      "Loth d'Orcanie",
+      "Calogrenant"
     ],
     "filename": "niveau-de-connerie-remarquable.gif"
   }
