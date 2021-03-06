@@ -60,7 +60,7 @@
   {
     "quote": "Ca m'a littéralement cuit les boules !",
     "characters": [
-      "Le Roi Loth"
+      "Loth d'Orcanie"
     ],
     "filename": "ca-ma-cuit-les-boules.gif"
   },
@@ -199,7 +199,7 @@
     "quote": "Courage !",
     "characters": [
       "Bohort",
-      "Lancelot"
+      "Lancelot du Lac"
     ],
     "filename": "courage.gif"
   },
@@ -262,7 +262,7 @@
     "quote": "Elle est où la poulette ?",
     "characters": [
       "Kadoc",
-      "Lancelot"
+      "Lancelot du Lac"
     ],
     "filename": "elle-est-ou-la-poulette.gif"
   },
@@ -508,7 +508,7 @@
     "quote": "Sortez vous les doigts du cul !",
     "characters": [
       "Arthur",
-      "Lancelot",
+      "Lancelot du Lac",
       "Léodagan",
       "Kay"
     ],
@@ -545,7 +545,7 @@
   {
     "quote": "Mais que c'est nul... mais que c'est nul !",
     "characters": [
-      "Lancelot",
+      "Lancelot du Lac",
       "Bohort"
     ],
     "filename": "mais-que-cest-nul.gif"
@@ -571,5 +571,96 @@
       "Sélie"
     ],
     "filename": "maximum-ou-de-la-marge.gif"
+  },
+  {
+    "quote": "Mécréant !",
+    "characters": [
+      "Bohort",
+      "Arthur",
+      "Léodagan",
+      "Lancelot du Lac"
+    ],
+    "filename": "mecreant.gif"
+  },
+  {
+    "quote": "Mais mêlez-vous d'vos fesses !",
+    "characters": [
+      "Arthur"
+    ],
+    "filename": "melez-vous-de-vos-fesses.gif"
+  },
+  {
+    "quote": "Mais mêlez-vous d'vos fesses !",
+    "characters": [
+      "Arthur"
+    ],
+    "filename": "melez-vous-de-vos-fesses.gif"
+  },
+  {
+    "quote": "C'est tout con, même un débile il comprendrait.",
+    "characters": [
+      "Perceval"
+    ],
+    "filename": "meme-un-debile-comprendrait.gif"
+  },
+  {
+    "quote": "M'en fous j'irai pas",
+    "characters": [
+      "Yvain",
+      "Arthur"
+    ],
+    "filename": "men-fou-jirais-pas.gif"
+  },
+  {
+    "quote": "Merci mon cul",
+    "characters": [
+      "Perceval",
+      "Arthur"
+    ],
+    "filename": "merci-mon-cul.gif"
+  },
+  {
+    "quote": "Merde !",
+    "characters": [
+      "Arthur"
+    ],
+    "filename": "merde.gif"
+  },
+  {
+    "quote": "Météo !",
+    "characters": [
+      "Le Roi Burgonde"
+    ],
+    "filename": "meteo.gif"
+  },
+  {
+    "quote": "Ha mais moi j'ai toujours dit !",
+    "characters": [
+      "Karadoc",
+      "Le Tavernier"
+    ],
+    "filename": "moi-jai-toujours-dit.gif"
+  },
+  {
+    "quote": "Nan.",
+    "characters": [
+      "Arthur"
+    ],
+    "filename": "nan.gif"
+  },
+  {
+    "quote": "Négocier",
+    "characters": [
+      "Le Roi Burgonde"
+    ],
+    "filename": "ne-go-cier.gif"
+  },
+  {
+    "quote": "Là, on est quand même sur un niveau de connerie remarquable.",
+    "characters": [
+      "Loth d'Orcanie",
+      "Calogrenant"
+    ],
+    "filename": "niveau-de-connerie-remarquable.gif"
   }
 ]
