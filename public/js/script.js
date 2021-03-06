@@ -12,7 +12,12 @@ window.onload = function(){
 
                 image.src = window.location.origin.concat('/', character.image);
                 image.title = character.name;
-                image.className = 'character-icon';
+
+                if (character.name === characterDiv.getAttribute('data-current')) {
+                    image.classList.add('character-icon', 'icon-light-shadow')
+                } else {
+                    image.classList.add('character-icon', 'icon-dark-shadow')
+                }
 
                 link.href = character.url;
                 link.appendChild(image);

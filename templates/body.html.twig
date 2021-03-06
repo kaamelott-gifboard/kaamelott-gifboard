@@ -11,7 +11,7 @@
 
     <br /><br />
 
-    <div id="characters" data-url="{{ path('get_characters') }}" class="characters"></div>
+    <div id="characters" data-url="{{ path('get_characters') }}" class="characters" data-current="{{ app.request.get('name') }}"></div>
 
     <br /><br />
 
@@ -19,7 +19,7 @@
         <ul>
             {% for gif in gifs %}
                 <li class="li-gif">
-                    <div class="button-quote" onclick="showGif(this);" data-id="{{ gif.filename }}">
+                    <div class="square_btn" onclick="showGif(this);" data-id="{{ gif.filename }}">
                         {{ gif.quote }}
                         <span
                             id="{{ gif.filename }}"
@@ -41,16 +41,4 @@
             <textarea id="modal-link" rows="3" onclick="this.focus();this.select()" readonly="readonly"></textarea>
         </div>
     </div>
-{% endblock %}
-
-{% block javascripts %}
-    {{ parent() }}
-
-    <script>
-        function getByCharacter() {
-            let character = document.getElementById("characters").value;
-
-            window.location = "{{ path('search_character', {'name' : 'characterName' }) }}".replace('characterName', character);
-        }
-    </script>
 {% endblock %}
