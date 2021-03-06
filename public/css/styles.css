@@ -51,9 +51,18 @@ a {
     width: 50px;
     border-radius: 50%;
     margin-right: 5px;
+}
+
+.icon-dark-shadow {
     -webkit-box-shadow: 11px 10px 7px -8px rgba(0,0,0,0.50);
     -moz-box-shadow: 11px 10px 7px -8px rgba(0,0,0,0.50);
     box-shadow: 11px 10px 7px -8px rgba(0,0,0,0.50);
+}
+
+.icon-light-shadow {
+    -webkit-box-shadow: 7px 8px 7px -8px rgba(255, 255, 255, 0.8);
+    -moz-box-shadow: 7px 8px 7px -8px rgba(255, 255, 255, 0.8);
+    box-shadow: 7px 8px 7px -8px rgba(255, 255, 255, 0.8);
 }
 
 input {
@@ -69,20 +78,31 @@ input {
     width: 200px;
 }
 
-.button-quote {
+.square_btn{
     cursor: pointer;
-    font-size: 15px;
-    background-color: #454851;
-    border: 1px solid #5f626a;
-    padding: 12px;
-    text-align: center;
+    width: 310px;
+    display: inline-block;
+    padding: 0.5em 1em;
     text-decoration: none;
-    border-radius: 5px;
-    margin: 0 12px 3px 0;
-    position: relative;
+    background: #45516b;/*ButtonColor*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
+}
+
+.square_btn:hover {
+    background: #57627a;
+}
+
+.square_btn:active {
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
+    border-bottom: none;
 }
 
 .li-gif {
