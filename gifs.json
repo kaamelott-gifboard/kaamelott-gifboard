@@ -568,7 +568,7 @@
   {
     "quote": "Vous êtes à votre maximum là ou y a encore de la marge ?",
     "characters": [
-      "Sélie"
+      "Séli"
     ],
     "filename": "maximum-ou-de-la-marge.gif"
   },
@@ -662,5 +662,111 @@
       "Calogrenant"
     ],
     "filename": "niveau-de-connerie-remarquable.gif"
+  },
+  {
+    "quote": "Non mais pourquoi pas...",
+    "characters": [
+      "Léodagan"
+    ],
+    "filename": "non-mais-pourquoi-pas.gif"
+  },
+  {
+    "quote": "Oh putain oui !",
+    "characters": [
+      "Arthur"
+    ],
+    "filename": "oh-putain-oui.gif"
+  },
+  {
+    "quote": "On discute pas météo !",
+    "characters": [
+      "Arthur",
+      "Séli"
+    ],
+    "filename": "on-discute-pas-meteo.gif"
+  },
+  {
+    "quote": "On en a gros.",
+    "characters": [
+      "Perceval",
+      "Karadoc"
+    ],
+    "filename": "on-en-a-gros.gif"
+  },
+  {
+    "quote": "On s'en fout, on les défonce !",
+    "characters": [
+      "Bohort",
+      "Arthur"
+    ],
+    "filename": "on-les-defonce.gif"
+  },
+  {
+    "quote": "C'est au sujet que je vais vous mettre un pain dans la gueule.",
+    "characters": [
+      "Guethenoc"
+    ],
+    "filename": "pain-dans-la-gueule.gif"
+  },
+  {
+    "quote": "Je ne mange pas de graines !",
+    "characters": [
+      "Le Maître d'Armes"
+    ],
+    "filename": "pas-de-graines.gif"
+  },
+  {
+    "quote": "Mais essayez quand même de pas devenir une tarlouze...",
+    "characters": [
+      "Léodagan",
+      "Goustan de Carmélide"
+    ],
+    "filename": "pas-devenir-une-tarlouze.gif"
+  },
+  {
+    "quote": "Patatrac !",
+    "characters": [
+      "Belt le vigneron du Château",
+      "Roparzh",
+      "Guethenoc"
+    ],
+    "filename": "patatrac.gif"
+  },
+  {
+    "quote": "Pignouf !",
+    "characters": [
+      "Séli"
+    ],
+    "filename": "pignouf.gif"
+  },
+  {
+    "quote": "Je vais pleurer un petit peu. Excusez-moi.",
+    "characters": [
+      "Guenièvre"
+    ],
+    "filename": "pleurer-un-petit-peu.gif"
+  },
+  {
+    "quote": "Ca suffit ! Elle est où la poulette ? Elle est bien cachée ?!",
+    "characters": [
+      "Kadoc",
+      "Merlin"
+    ],
+    "filename": "poulette-bien-cachee.gif"
+  },
+  {
+    "quote": "Pourquoi qu'on gueule",
+    "characters": [
+      "Guethenoc"
+    ],
+    "filename": "pourquoi-quon-gueule.gif"
+  },
+  {
+    "quote": "Commencez déjà par admettre que vous avez un problème de boisson mon vieux...",
+    "characters": [
+      "Le Maître d'Armes",
+      "Père Blaise"
+    ],
+    "filename": "probleme-de-boisson.gif"
   }
 ]
