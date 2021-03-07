@@ -568,7 +568,7 @@
   {
     "quote": "Vous êtes à votre maximum là ou y a encore de la marge ?",
     "characters": [
-      "Sélie"
+      "Séli"
     ],
     "filename": "maximum-ou-de-la-marge.gif"
   },
@@ -680,8 +680,8 @@
   {
     "quote": "On discute pas météo !",
     "characters": [
-      "Sélie",
-      "Arthur"
+      "Arthur",
+      "Séli"
     ],
     "filename": "on-discute-pas-meteo.gif"
   },
@@ -711,7 +711,7 @@
   {
     "quote": "Je ne mange pas de graines !",
     "characters": [
-      "Le maître d'armes"
+      "Le Maître d'Armes"
     ],
     "filename": "pas-de-graines.gif"
   },
@@ -726,9 +726,11 @@
   {
     "quote": "Patatrac !",
     "characters": [
-      "Roparzh"
+      "Belt le vigneron du Château",
+      "Roparzh",
+      "Guethenoc"
     ],
-    "filename": "patratac.gif"
+    "filename": "patatrac.gif"
   },
   {
     "quote": "Pignouf !",
@@ -762,7 +764,8 @@
   {
     "quote": "Commencez déjà par admettre que vous avez un problème de boisson mon vieux...",
     "characters": [
-      "Le maître d'armes"
+      "Le Maître d'Armes",
+      "Père Blaise"
     ],
     "filename": "probleme-de-boisson.gif"
   }
