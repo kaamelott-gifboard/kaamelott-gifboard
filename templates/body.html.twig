@@ -33,12 +33,14 @@
         </ul>
     {% endif %}
 
-    <div id="modal" class="modal">
+    <div id="modal" class="modal-background">
         <div class="modal-content">
             <span class="modal-close">&times;</span>
-            <span id="modal-quote"></span><br /><br />
-            <img id="modal-img" /><br /><br />
-            <textarea id="modal-link" rows="3" onclick="this.focus();this.select()" readonly="readonly"></textarea>
+            <div id="modal-quote"></div>
+            <div class="modal-gif">
+                <img id="modal-img" /><br /><br />
+                <textarea id="modal-link" rows="3" onclick="this.focus();this.select()" readonly="readonly"></textarea>
+            </div>
         </div>
     </div>
 {% endblock %}

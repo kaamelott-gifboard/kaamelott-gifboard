@@ -1,11 +1,15 @@
+@import url("https://fonts.googleapis.com/css?family=Inter");
+
 .body {
     background-color: #2e3139;
     color: white;
-    font-family: Helvetica Neue, Helvetica, sans-serif;
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
 }
 
 h1 {
     font-size: 45px;
+    text-shadow: 4px 4px 4px #070707;
 }
 
 a {
@@ -54,9 +58,9 @@ a {
 }
 
 .icon-dark-shadow {
-    -webkit-box-shadow: 11px 10px 7px -8px rgba(0,0,0,0.50);
-    -moz-box-shadow: 11px 10px 7px -8px rgba(0,0,0,0.50);
-    box-shadow: 11px 10px 7px -8px rgba(0,0,0,0.50);
+    -webkit-box-shadow: 11px 10px 7px -8px rgba(0, 0, 0, 0.50);
+    -moz-box-shadow: 11px 10px 7px -8px rgba(0, 0, 0, 0.50);
+    box-shadow: 11px 10px 7px -8px rgba(0, 0, 0, 0.50);
 }
 
 .icon-light-shadow {
@@ -70,7 +74,6 @@ input {
     border: 1px solid #5f626a;
     background-color: #454851;
     color: #ffffff;
-    font-size: 14px;
     line-height: 25px;
 }
 
@@ -78,13 +81,13 @@ input {
     width: 200px;
 }
 
-.square_btn{
+.square_btn {
     cursor: pointer;
     width: 310px;
     display: inline-block;
     padding: 0.5em 1em;
     text-decoration: none;
-    background: #45516b;/*ButtonColor*/
+    background: #45516b;
     color: #FFF;
     border-bottom: solid 4px #627295;
     border-radius: 3px;
@@ -114,7 +117,7 @@ input {
 
 /* ================================= */
 
-.modal {
+.modal-background {
     display: none;
     position: fixed;
     z-index: 1;
@@ -124,33 +127,67 @@ input {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    background-color: rgb(26, 26, 26);
+    background-color: rgba(26, 26, 26, 0.4);
 }
 
 .modal-content {
-    background-color: #fefefe;
+    border-radius: 15px;
+    background-color: #2e3139;
     margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 550px;
+    width: 90%;
+    max-width: 550px;
     position: relative;
     color: black;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+#modal-quote {
+    padding: 20px;
+    margin: 0 auto;
+    width: 80%;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+.modal-gif {
+    padding: 20px;
+    border-top: 3px solid #202530;
+}
+
+.modal-gif img {
+    max-width: 90%;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .modal-content textarea {
-    width: 500px;
+    background: #45516b;
+    color: white;
+    width: 90%;
     text-align: center;
+    border: 1px solid #2f3647;
+    border-radius: 4px;
+    font-family: "Inter", sans-serif;
+    outline: none;
+    -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 5px;
 }
 
 .modal-close {
     color: #aaaaaa;
     float: right;
-    font-size: 28px;
+    font-size: 25px;
     font-weight: bold;
     position: absolute;
     top: 5px;
-    right: 10px;
+    right: 15px;
 }
 
 .modal-close:hover,
