@@ -823,7 +823,7 @@
   {
     "quote": "Rho le boulet !",
     "characters": [
-      "	Elias de Kelliwic’h"
+      "Elias de Kelliwic'h"
     ],
     "filename": "rho-le-boulet.gif"
   },
@@ -844,7 +844,7 @@
   {
     "quote": "Y a toujours de la compote !",
     "characters": [
-      "Remplissage Bidon"
+      "Cæsar Imperator"
     ],
     "filename": "toujours-de-la-compote.gif"
   },
@@ -875,7 +875,7 @@
   {
     "quote": "Va falloir faire un petit effort hein, c'est pas possible...",
     "characters": [
-      "Remplissage"
+      "Hoël d’Armorique"
     ],
     "filename": "un-petit-effort.gif"
   },
@@ -890,7 +890,7 @@
     "quote": "Oh non... une embûche !",
     "characters": [
       "Gauvain",
-      "Remplissage"
+      "Dagonet"
     ],
     "filename": "une-embuche.gif"
   },
@@ -906,7 +906,7 @@
   {
     "quote": "Voilà ! Là vous me faites plaisir !",
     "characters": [
-      "Remplissage"
+      "Le tricheur"
     ],
     "filename": "voila-la-vous-me-faites-plaisir.gif"
   },
@@ -942,7 +942,7 @@
     "quote": "Mais vous êtes pas mort espèce de connard ?!",
     "characters": [
       "Arthur",
-      "Gauvain
+      "Gauvain"
     ],
     "filename": "vous-etes-pas-mort-connard.gif"
   },
@@ -950,7 +950,8 @@
     "quote": "Oui, alors juste une chose : allez vous faire voir chez le pape",
     "characters": [
       "Arthur",
-      "Le Maître d'Armes"
+      "Le Maître d'Armes",
+      "Le Répurgateur"
     ],
     "filename": "vous-faire-voir-chez-le-pape.gif"
   },
@@ -988,7 +989,7 @@
   {
     "quote": "Je me trompe ou vous n'êtes pas super fut fut ?",
     "characters": [
-      "Remplissage",
+      "Le Jurisconsulte",
       "Yvain"
     ],
     "filename": "vous-netes-pas-super-futfut.gif"
@@ -1021,5 +1022,20 @@
       "Lancelot du Lac"
     ],
     "filename": "ya-quelqu-un.gif"
+  },
+  {
+    "quote": "Le caca des canards c'est caca !",
+    "characters": [
+      "Kadoc"
+    ],
+    "filename": "caca-des-canards-cest-caca.gif"
+  },
+  {
+    "quote": "Il fallait en avoir sérieusement dans le froc",
+    "characters": [
+      "Le Jurisconsulte",
+      "Mevanwi"
+    ],
+    "filename": "en-avoir-dans-le-froc.gif"
   }
 ]
