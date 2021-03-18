@@ -1,0 +1,4 @@
+User-Agent: *
+Sitemap: https://kaamelott-gifboard.fr/sitemap.xml
+Disallow: /gifs/
+Disallow: /search/

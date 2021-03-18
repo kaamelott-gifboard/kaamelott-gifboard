@@ -66,7 +66,7 @@ class JsonParser
 
         foreach ($this->getGifs() as $gif) {
             foreach ($gif->characters as $character) {
-                $sluggedCharacter = $this->slugger->slug($character)->lower()->__toString();
+                $sluggedCharacter = $this->lowerSlug($character);
 
                 if (!\array_key_exists($sluggedCharacter, $results)) {
                     $results[$sluggedCharacter] = [
@@ -81,6 +81,38 @@ class JsonParser
         sort($results);
 
         return ['characters' => $results];
+    }
+
+    public function findBySlug(string $slug): ?array
+    {
+        foreach ($this->getGifs() as $gif) {
+            if ($this->lowerSlug($gif->quote) === $slug) {
+                return (array) $gif;
+            }
+        }
+
+        return null;
+    }
+
+    public function findForSitemap(): array
+    {
+        $items = [];
+        $gifs = $this->findAll()['gifs'];
+
+        foreach ($gifs as $gif) {
+            $slug = $this->lowerSlug($gif->quote);
+
+            $url = $this->router->generate('search_slug', ['slug' => $slug], RouterInterface::ABSOLUTE_URL);
+            $image = $this->router->generate('gif_image', ['filename' => $gif->filename], RouterInterface::ABSOLUTE_URL);
+
+            $items[] = [
+                'url' => $url,
+                'gif' => $image,
+                'quote' => $gif->quote,
+            ];
+        }
+
+        return $items;
     }
 
     private function getGifs(): array
@@ -100,5 +132,10 @@ class JsonParser
     private function formatResult(array $results): array
     {
         return ['gifs' => $results];
+    }
+
+    private function lowerSlug(string $string): string
+    {
+        return $this->slugger->slug($string)->lower()->__toString();
     }
 }

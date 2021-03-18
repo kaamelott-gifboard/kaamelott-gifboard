@@ -8,6 +8,7 @@ use KaamelottGifboard\Service\JsonParser;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Twig\Environment;
 
 class Gif
@@ -26,6 +27,19 @@ class Gif
         $gifs = $this->jsonParser->findByCharacter($name);
 
         $view = $this->twig->render('body.html.twig', $gifs);
+
+        return (new Response())->setContent($view);
+    }
+
+    public function bySlug(string $slug): Response
+    {
+        $gif = $this->jsonParser->findBySlug($slug);
+
+        if (null === $gif) {
+            throw new NotFoundHttpException(sprintf('Elle est où la poulette [slug: %s]', $slug));
+        }
+
+        $view = $this->twig->render('gif.html.twig', $gif);
 
         return (new Response())->setContent($view);
     }
