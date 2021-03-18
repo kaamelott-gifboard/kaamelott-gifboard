@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
+        {%- set description = "Le receuil où l'on peut trouver les meilleures répliques de Kaamelott en GIFs, mais on ne sait toujours pas où se trouve la poulette." %}
+
         <meta charset="UTF-8">
-        <meta name="description" content="">
+        <meta name="description" content="{{ description }}">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
         <title>{% block title %}Kaamelott Gifboard{% endblock %}</title>
 
         <meta itemprop="name" content="Kaamelott Gifboard">
-        <meta itemprop="description" content="">
-        <meta itemprop="image" content="">
+        <meta itemprop="description" content="{{ description }}">
+        <meta itemprop="image" content="{{ absolute_url(asset('images/kg.png')) }}">
 
-        <meta property="og:url" content="">
+        <meta property="og:url" content="https://kaamelott-gifboard.fr">
         <meta property="og:type" content="website">
         <meta property="og:title" content="Kaamelott Gifboard">
-        <meta property="og:image" content="">
-        <meta property="og:description" content="">
+        <meta property="og:image" content="{{ absolute_url(asset('images/kg.png')) }}">
+        <meta property="og:description" content="{{ description }}">
         <meta property="og:site_name" content="Kaamelott Gifboard">
         <meta property="og:locale" content="fr_FR">
 
-        {% block stylesheets %}
-            <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
-        {% endblock %}
+        {% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/styles.css') }}">{% endblock %}
+
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-KK4X4869Y1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-KK4X4869Y1');
+        </script>
     </head>
     <body class="body">
         <div>
