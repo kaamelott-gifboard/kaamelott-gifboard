@@ -1,0 +1,11 @@
+{% extends 'body.html.twig' %}
+
+{%- block title -%}
+    Kaamelott Gifboard - {{ quote }}
+{%- endblock -%}
+
+{% block gif %}
+    {{ quote }}<br /><br />
+    <img src="{{ asset('gifs/' ~ filename) }}" alt="{{ quote }}" /><br /><br />
+    {{ absolute_url(asset('gifs/' ~ filename)) }}
+{% endblock %}

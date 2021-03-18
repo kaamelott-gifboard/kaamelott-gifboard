@@ -11,9 +11,11 @@
 
     <br /><br />
 
-    <div id="characters" data-url="{{ path('get_characters') }}" class="characters" data-current="{{ app.request.get('name') }}"></div>
+    {% if quote is not defined %}
+        <div id="characters" data-url="{{ path('get_characters') }}" class="characters" data-current="{{ app.request.get('name') }}"></div>
 
-    <br /><br />
+        <br /><br />
+    {% endif %}
 
     {% if gifs is defined %}
         <ul>
@@ -32,6 +34,8 @@
             {% endfor %}
         </ul>
     {% endif %}
+
+    {% block gif %}{% endblock %}
 
     <div id="modal" class="modal-background">
         <div class="modal-content">

@@ -11,6 +11,11 @@ search_character:
     controller: KaamelottGifboard\Action\Search\Gif::byCharacter
     defaults: { name: '' }
 
+search_slug:
+    path: /gif/{slug}
+    controller: KaamelottGifboard\Action\Search\Gif::bySlug
+    defaults: { slug: '' }
+
 search_quote:
     path: /search/quote
     controller: KaamelottGifboard\Action\Search\Quote
@@ -20,3 +25,14 @@ get_characters:
     path: /search/characters
     controller: KaamelottGifboard\Action\Search\Character
     defaults: { name: '' }
+
+sitemap:
+    path: /sitemap.xml
+    controller: KaamelottGifboard\Action\Sitemap\Index
+    defaults:
+        _format: xml
+
+gif_image:
+    path: /gifs/{filename}
+    defaults:
+        _format: gif
