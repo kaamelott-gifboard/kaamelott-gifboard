@@ -11,7 +11,7 @@ window.onload = function(){
                     let link = document.createElement("a");
                     let image = document.createElement("img");
 
-                    image.src = window.location.origin.concat('/', character.image);
+                    image.src = character.image;
                     image.title = character.name;
 
                     if (character.name === characterDiv.getAttribute('data-current')) {

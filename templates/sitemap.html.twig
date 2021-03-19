@@ -9,4 +9,13 @@
             </image:image>
         </url>
     {%- endfor -%}
+    {%- for character in characters -%}
+        <url>
+            <loc>{{ character.url }}</loc>
+            <image:image>
+                <image:loc>{{ character.image }}</image:loc>
+                <image:title>{{ character.name }}</image:title>
+            </image:image>
+        </url>
+    {%- endfor -%}
 </urlset>

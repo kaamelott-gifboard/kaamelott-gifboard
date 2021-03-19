@@ -10,19 +10,21 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 
-        <meta itemprop="name" content="Kaamelott Gifboard">
-        <meta itemprop="description" content="{{ description }}">
-        <meta itemprop="image" content="{{ absolute_url(asset('images/kg.png')) }}">
-
-        <meta property="og:url" content="https://kaamelott-gifboard.fr">
         <meta property="og:type" content="website">
-        <meta property="og:title" content="Kaamelott Gifboard">
-        <meta property="og:image" content="{{ absolute_url(asset('images/kg.png')) }}">
-        <meta property="og:description" content="{{ description }}">
         <meta property="og:site_name" content="Kaamelott Gifboard">
         <meta property="og:locale" content="fr_FR">
+        <meta property="og:title" content="Kaamelott Gifboard">
 
-        {% block stylesheets %}<link rel="stylesheet" href="{{ asset('css/styles.css') }}">{% endblock %}
+        {%- block meta -%}
+            <meta property="og:url" content="https://kaamelott-gifboard.fr">
+            <meta property="og:image" content="{{ absolute_url(asset('images/kg.png')) }}">
+            <meta property="og:description" content="{{ description }}">
+        {%- endblock -%}
+
+        {%- block stylesheets -%}
+            <link rel="stylesheet" href="{{ asset('css/styles.css') }}" media="screen">
+            <link rel="stylesheet" href="{{ asset('css/mobile.css') }}" media="screen and (max-width: 900px)" />
+        {%- endblock -%}
 
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-KK4X4869Y1"></script>
         <script>
