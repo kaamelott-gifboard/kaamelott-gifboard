@@ -36,7 +36,8 @@ RUN docker-php-ext-install -j$(grep -c ^processor /proc/cpuinfo 2>/dev/null || 1
 COPY docker/php/opcache.ini /usr/local/etc/php/conf.d/opcache.ini
 COPY --from=vendors /app/vendor /var/www/vendor
 COPY . /var/www
-RUN rm -rf html composer.* docker config/packages/dev config/packages/test config/services_test.yaml config/routes/dev
+RUN rm -rf html composer.* docker config/packages/dev config/packages/test config/services_test.yaml config/routes/dev \
+    && mkdir var && chown -R www-data:www-data var
 
 ########################################
 #           DEV
