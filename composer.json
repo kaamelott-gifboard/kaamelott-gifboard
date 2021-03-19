@@ -1,7 +1,7 @@
 {
-    "name": "kaamelott-gifboard/kaamelott-gifboard.github.io",
+    "name": "kaamelott-gifboard/kaamelott-gifboard",
     "type": "project",
-    "description": "Des gifs rigolo",
+    "description": "Le recueil où l'on peut trouver les meilleures répliques de Kaamelott en GIFs",
     "license": "MIT",
     "authors": [
         {
