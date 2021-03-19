@@ -4,6 +4,13 @@
     Kaamelott Gifboard - {{ quote }}
 {%- endblock -%}
 
+{%- block meta -%}
+    <meta property="og:url" content="{{ absolute_url(asset('gifs/' ~ filename)) }}">
+    <meta property="og:description" content="{{ quote }}">
+    <meta property="og:image" content="{{ absolute_url(asset('gifs/' ~ filename)) }}">
+    <meta property="og:image:type" content="image/gif">
+{%- endblock -%}
+
 {% block gif %}
     {{ quote }}<br /><br />
     <img src="{{ asset('gifs/' ~ filename) }}" alt="{{ quote }}" /><br /><br />

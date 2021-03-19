@@ -26,7 +26,7 @@ class Gif
     {
         $gifs = $this->jsonParser->findByCharacter($name);
 
-        $view = $this->twig->render('body.html.twig', $gifs);
+        $view = $this->twig->render('character.html.twig', $gifs);
 
         return (new Response())->setContent($view);
     }

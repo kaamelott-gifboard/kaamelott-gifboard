@@ -24,9 +24,7 @@ class Index
         $response = new Response();
         $response->headers->set('Content-Type', 'text/xml');
 
-        $view = $this->twig->render('sitemap.html.twig', [
-            'gifs' => $this->jsonParser->findForSitemap(),
-        ]);
+        $view = $this->twig->render('sitemap.html.twig', $this->jsonParser->findForSitemap());
 
         return $response->setContent($view);
     }

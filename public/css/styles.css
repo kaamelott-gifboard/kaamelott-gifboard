@@ -45,12 +45,12 @@ a {
 
 .block {
     width: 375px;
-    margin: 0 auto;
+    margin: 0 auto 30px auto;
 }
 
 .characters {
     width: 80%;
-    margin: auto;
+    margin: auto auto 40px auto;
 }
 
 .character-icon {
@@ -108,6 +108,10 @@ input {
     transform: translateY(4px);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0.2);
     border-bottom: none;
+}
+
+ul {
+    padding: 0;
 }
 
 .li-gif {

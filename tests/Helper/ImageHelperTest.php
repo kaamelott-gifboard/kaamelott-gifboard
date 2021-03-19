@@ -29,8 +29,8 @@ class ImageHelperTest extends KernelTestCase
     public function getCharacters(): array
     {
         return [
-            ['arthur', 'characters/arthur.png'],
-            ['perceval', 'characters/unknown.jpg'],
+            ['arthur', 'arthur.png'],
+            ['perceval', 'unknown.jpg'],
         ];
     }
 }

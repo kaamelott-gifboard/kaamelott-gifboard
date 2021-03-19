@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace KaamelottGifboard\Service;
 
 use KaamelottGifboard\Helper\ImageHelper;
+use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Routing\RouterInterface;
 use Symfony\Component\String\Slugger\SluggerInterface;
 
@@ -69,10 +70,15 @@ class JsonParser
                 $sluggedCharacter = $this->lowerSlug($character);
 
                 if (!\array_key_exists($sluggedCharacter, $results)) {
+                    $characterUrl = $this->router->generate('search_character', ['name' => $character], UrlGeneratorInterface::ABSOLUTE_URL);
+                    $characterImage = $this->router->generate('character_image', [
+                        'filename' => $this->imageHelper->getCharacterImage($sluggedCharacter),
+                    ], RouterInterface::ABSOLUTE_URL);
+
                     $results[$sluggedCharacter] = [
                         'name' => $character,
-                        'url' => $this->router->generate('search_character', ['name' => $character]),
-                        'image' => $this->imageHelper->getCharacterImage($sluggedCharacter),
+                        'url' => $characterUrl,
+                        'image' => $characterImage,
                     ];
                 }
             }
@@ -105,12 +111,14 @@ class JsonParser
             $url = $this->router->generate('search_slug', ['slug' => $slug], RouterInterface::ABSOLUTE_URL);
             $image = $this->router->generate('gif_image', ['filename' => $gif->filename], RouterInterface::ABSOLUTE_URL);
 
-            $items[] = [
+            $items['gifs'][] = [
                 'url' => $url,
                 'gif' => $image,
                 'quote' => $gif->quote,
             ];
         }
+
+        $items = array_merge($items, $this->findCharacters());
 
         return $items;
     }

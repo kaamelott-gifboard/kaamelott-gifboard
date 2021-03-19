@@ -17,8 +17,9 @@ class ImageHelper
 
     public function getCharacterImage(string $character): string
     {
-        $file = sprintf('%s/%s.png', self::CHARACTER_DIR, $character);
+        $filename = sprintf('%s.png', $character);
+        $filePath = sprintf('%s/%s', self::CHARACTER_DIR, $filename);
 
-        return file_exists($this->publicPath.'/'.$file) ? $file : sprintf('%s/unknown.jpg', self::CHARACTER_DIR);
+        return file_exists($this->publicPath.'/'.$filePath) ? $filename : 'unknown.jpg';
     }
 }

@@ -36,3 +36,8 @@ gif_image:
     path: /gifs/{filename}
     defaults:
         _format: gif
+
+character_image:
+    path: /characters/{filename}
+    defaults:
+        _format: png

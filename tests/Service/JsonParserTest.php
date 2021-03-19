@@ -86,14 +86,17 @@ class JsonParserTest extends KernelTestCase
     public function testFindCharacters(): void
     {
         $this->router
-            ->expects(static::exactly(3))
+            ->expects(static::exactly(6))
             ->method('generate')
             ->withConsecutive(
                 ['search_character', ['name' => 'Character 1']],
+                ['character_image', ['filename' => 'image-1.png']],
                 ['search_character', ['name' => 'Character 2']],
+                ['character_image', ['filename' => 'image-2.png']],
                 ['search_character', ['name' => 'Character 3']],
+                ['character_image', ['filename' => 'image-3.png']],
             )
-            ->willReturnOnConsecutiveCalls('route-1', 'route-2', 'route-3');
+            ->willReturnOnConsecutiveCalls('route-1', 'route-img-1', 'route-2', 'route-img-2', 'route-3', 'route-img-3');
 
         $this->helper
             ->expects(static::exactly(3))
@@ -109,17 +112,17 @@ class JsonParserTest extends KernelTestCase
             [
                 'name' => 'Character 1',
                 'url' => 'route-1',
-                'image' => 'image-1.png',
+                'image' => 'route-img-1',
             ],
             [
                 'name' => 'Character 2',
                 'url' => 'route-2',
-                'image' => 'image-2.png',
+                'image' => 'route-img-2',
             ],
             [
                 'name' => 'Character 3',
                 'url' => 'route-3',
-                'image' => 'image-3.png',
+                'image' => 'route-img-3',
             ],
         ];
 
@@ -148,7 +151,8 @@ class JsonParserTest extends KernelTestCase
     public function testFindForSitemap(): void
     {
         $this->router
-            ->expects(static::exactly(6))
+            // Could be called more than 6 times since this method calls findCharacters
+            ->expects(static::atLeast(6))
             ->method('generate')
             ->withConsecutive(
                 ['search_slug', ['slug' => 'this-is-the-quote-1']],
@@ -178,6 +182,10 @@ class JsonParserTest extends KernelTestCase
             ],
         ];
 
-        static::assertSame($expected, $this->parser->findForSitemap());
+        $result = $this->parser->findForSitemap();
+
+        static::assertArrayHasKey('gifs', $result);
+        static::assertArrayHasKey('characters', $result);
+        static::assertSame($expected, $result['gifs']);
     }
 }
