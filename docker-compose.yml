@@ -1,18 +1,15 @@
 version: '3.7'
 
 services:
-  php:
+  app:
+    container_name: app
     build:
-      context: .
-      dockerfile: docker/php/Dockerfile
+      dockerfile: ./docker/Dockerfile
       target: dev
+      context: .
     volumes:
-      - .:/var/www/
-
-  nginx:
-    image: nginx:alpine
-    depends_on:
-      - php
-    volumes:
-      - ./public:/var/www/public:ro
+      - .:/var/www
       - ./docker/nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./docker/php/php-development.ini:/usr/local/etc/php/php.ini
+      - ./docker/php/www.conf:/usr/local/etc/php-fpm.d/www.conf
+      - ./docker/supervisord/supervisord.conf:/etc/supervisor/supervisord.conf
