@@ -15,16 +15,19 @@ class JsonParserTest extends KernelTestCase
 {
     /** @var MockObject|RouterInterface */
     private RouterInterface $router;
-
     /** @var ImageHelper|MockObject */
     private ImageHelper $helper;
-
     private JsonParser $parser;
 
     protected function setUp(): void
     {
         $this->router = $this->createMock(RouterInterface::class);
         $this->helper = $this->createMock(ImageHelper::class);
+
+        $this->helper
+            ->expects(static::any())
+            ->method('getImageDimensions')
+            ->willReturn(['width' => 100, 'height' => 100]);
 
         $this->parser = new JsonParser(
             __DIR__.'/gifs-test.json',
@@ -54,6 +57,14 @@ class JsonParserTest extends KernelTestCase
             static::assertObjectHasAttribute('filename', $item);
             static::assertIsString($item->filename);
             static::assertMatchesRegularExpression('#^[a-z-]+\.gif$#', $item->filename);
+            static::assertObjectHasAttribute('slug', $item);
+            static::assertMatchesRegularExpression('#^[a-z-0-9]+$#', $item->slug);
+            static::assertObjectHasAttribute('url', $item);
+            static::assertObjectHasAttribute('image', $item);
+            static::assertObjectHasAttribute('width', $item);
+            static::assertIsInt($item->width);
+            static::assertObjectHasAttribute('height', $item);
+            static::assertIsInt($item->height);
         }
     }
 
@@ -86,9 +97,15 @@ class JsonParserTest extends KernelTestCase
     public function testFindCharacters(): void
     {
         $this->router
-            ->expects(static::exactly(6))
+            ->expects(static::exactly(12))
             ->method('generate')
             ->withConsecutive(
+                ['search_slug', ['slug' => 'this-is-the-quote-1']],
+                ['gif_image', ['filename' => 'quote-1.gif']],
+                ['search_slug', ['slug' => 'here-is-the-quote-2']],
+                ['gif_image', ['filename' => 'quote-2.gif']],
+                ['search_slug', ['slug' => 'finally-the-quote-number-3']],
+                ['gif_image', ['filename' => 'quote-3.gif']],
                 ['search_character', ['name' => 'Character 1']],
                 ['character_image', ['filename' => 'image-1.png']],
                 ['search_character', ['name' => 'Character 2']],
@@ -96,7 +113,10 @@ class JsonParserTest extends KernelTestCase
                 ['search_character', ['name' => 'Character 3']],
                 ['character_image', ['filename' => 'image-3.png']],
             )
-            ->willReturnOnConsecutiveCalls('route-1', 'route-img-1', 'route-2', 'route-img-2', 'route-3', 'route-img-3');
+            ->willReturnOnConsecutiveCalls(
+                'route-1', 'gif-1', 'route-2', 'gif-2', 'route-3', 'gif-3',
+                'route-1', 'route-img-1', 'route-2', 'route-img-2', 'route-3', 'route-img-3'
+            );
 
         $this->helper
             ->expects(static::exactly(3))
@@ -140,6 +160,11 @@ class JsonParserTest extends KernelTestCase
                 'Character 2',
             ],
             'filename' => 'quote-3.gif',
+            'slug' => 'finally-the-quote-number-3',
+            'url' => null,
+            'image' => null,
+            'width' => 100,
+            'height' => 100,
         ];
 
         $result = $this->parser->findBySlug('finally-the-quote-number-3');
@@ -150,42 +175,9 @@ class JsonParserTest extends KernelTestCase
 
     public function testFindForSitemap(): void
     {
-        $this->router
-            // Could be called more than 6 times since this method calls findCharacters
-            ->expects(static::atLeast(6))
-            ->method('generate')
-            ->withConsecutive(
-                ['search_slug', ['slug' => 'this-is-the-quote-1']],
-                ['gif_image', ['filename' => 'quote-1.gif']],
-                ['search_slug', ['slug' => 'here-is-the-quote-2']],
-                ['gif_image', ['filename' => 'quote-2.gif']],
-                ['search_slug', ['slug' => 'finally-the-quote-number-3']],
-                ['gif_image', ['filename' => 'quote-3.gif']],
-            )
-            ->willReturnOnConsecutiveCalls('route-1', 'gif-1', 'route-2', 'gif-2', 'route-3', 'gif-3');
-
-        $expected = [
-            [
-                'url' => 'route-1',
-                'gif' => 'gif-1',
-                'quote' => 'This is the quote 1',
-            ],
-            [
-                'url' => 'route-2',
-                'gif' => 'gif-2',
-                'quote' => 'Here is the quote 2',
-            ],
-            [
-                'url' => 'route-3',
-                'gif' => 'gif-3',
-                'quote' => 'Finally, the quote number 3',
-            ],
-        ];
-
         $result = $this->parser->findForSitemap();
 
         static::assertArrayHasKey('gifs', $result);
         static::assertArrayHasKey('characters', $result);
-        static::assertSame($expected, $result['gifs']);
     }
 }

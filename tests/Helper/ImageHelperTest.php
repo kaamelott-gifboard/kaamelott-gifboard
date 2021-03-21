@@ -33,4 +33,22 @@ class ImageHelperTest extends KernelTestCase
             ['perceval', 'unknown.jpg'],
         ];
     }
+
+    /**
+     * @dataProvider getImages
+     */
+    public function testGetImageDimensions(string $file, array $expected): void
+    {
+        $dimensions = $this->helper->getImageDimensions($file);
+
+        static::assertSame($expected, $dimensions);
+    }
+
+    public function getImages(): array
+    {
+        return [
+            ['elle-est-ou-la-poulette.gif', ['width' => 220, 'height' => 124]],
+            ['foobar.gif', ['width' => null, 'height' => null]],
+        ];
+    }
 }
