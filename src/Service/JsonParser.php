@@ -102,25 +102,7 @@ class JsonParser
 
     public function findForSitemap(): array
     {
-        $items = [];
-        $gifs = $this->findAll()['gifs'];
-
-        foreach ($gifs as $gif) {
-            $slug = $this->lowerSlug($gif->quote);
-
-            $url = $this->router->generate('search_slug', ['slug' => $slug], RouterInterface::ABSOLUTE_URL);
-            $image = $this->router->generate('gif_image', ['filename' => $gif->filename], RouterInterface::ABSOLUTE_URL);
-
-            $items['gifs'][] = [
-                'url' => $url,
-                'gif' => $image,
-                'quote' => $gif->quote,
-            ];
-        }
-
-        $items = array_merge($items, $this->findCharacters());
-
-        return $items;
+        return array_merge($this->findAll(), $this->findCharacters());
     }
 
     private function getGifs(): array
@@ -129,7 +111,21 @@ class JsonParser
             return [];
         }
 
-        return json_decode($json);
+        $gifs = json_decode($json);
+
+        foreach ($gifs as $gif) {
+            $slug = $this->lowerSlug($gif->quote);
+
+            $dimensions = $this->imageHelper->getImageDimensions($gif->filename);
+
+            $gif->slug = $slug;
+            $gif->url = $this->router->generate('search_slug', ['slug' => $slug], RouterInterface::ABSOLUTE_URL);
+            $gif->image = $this->router->generate('gif_image', ['filename' => $gif->filename], RouterInterface::ABSOLUTE_URL);
+            $gif->width = $dimensions['width'];
+            $gif->height = $dimensions['height'];
+        }
+
+        return $gifs;
     }
 
     private function match(string $search, string $subject): bool

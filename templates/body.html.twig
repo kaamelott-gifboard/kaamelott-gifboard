@@ -21,9 +21,9 @@
                         {{ gif.quote }}
                         <span
                             id="{{ gif.filename }}"
-                            data-img="{{ asset('gifs/' ~ gif.filename) }}"
+                            data-img="{{ gif.image }}"
                             data-quote="{{ gif.quote }}"
-                            data-url="{{ absolute_url(asset('gifs/' ~ gif.filename)) }}"
+                            data-url="{{ gif.url }}"
                         ></span>
                     </div>
                 </li>
