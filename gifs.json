@@ -1030,5 +1030,81 @@
       "Mevanwi"
     ],
     "filename": "en-avoir-dans-le-froc.gif"
+  },
+  {
+    "quote": "Ah... ouai",
+    "characters": [
+      "Léodagan"
+    ],
+    "filename": "ah-ouai.gif"
+  },
+  {
+    "quote": "Encore une chance qu'on se soit pas fait construire un buffet à vaisselle",
+    "characters": [
+      "Léodagan",
+      "Perceval"
+    ],
+    "filename": "buffet-a-vaisselle.gif"
+  },
+  {
+    "quote": "Je sens que ça va encore être épique !",
+    "characters": [
+      "Père Blaise"
+    ],
+    "filename": "ca-va-etre-epique.gif"
+  },
+  {
+    "quote": "C'est pas faux ? Ah !",
+    "characters": [
+      "Perceval",
+      "Karadoc"
+    ],
+    "filename": "cest-pas-faux-question.gif"
+  },
+  {
+    "quote": "C'est un peigne-zizi, voilà !",
+    "characters": [
+      "Loth d'Orcanie",
+      "Galessin"
+    ],
+    "filename": "cest-un-peigne-zizi.gif"
+  },
+  {
+    "quote": "Je vais pas vous citer Aristote... Qui ça ?",
+    "characters": [
+      "Arthur",
+      "Perceval"
+    ],
+    "filename": "je-vais-pas-citer-aristote.gif"
+  },
+  {
+    "quote": "Vous savez bien qu'on est des cons nous",
+    "characters": [
+      "Perceval"
+    ],
+    "filename": "on-est-des-cons-nous.gif"
+  },
+  {
+    "quote": "Qu'est-ce qu'on fait ?",
+    "characters": [
+      "Perceval",
+      "Karadoc"
+    ],
+    "filename": "quest-ce-quon-fait.gif"
+  },
+  {
+    "quote": "Vous dormez ?",
+    "characters": [
+      "Guenièvre"
+    ],
+    "filename": "vous-dormez.gif"
+  },
+  {
+    "quote": "Vous vous foutez de moi !",
+    "characters": [
+      "Léodagan",
+      "Bohort"
+    ],
+    "filename": "vous-vous-foutez-de-moi.gif"
   }
 ]
