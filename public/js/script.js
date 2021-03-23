@@ -95,10 +95,7 @@ document.querySelectorAll('.copy-btn').forEach(function(element) {
     element.addEventListener('click', function() {
         let input = this.parentNode.getElementsByTagName('input')[0];
 
-        input.select();
-        input.setSelectionRange(0, 99999); /* For mobile devices */
-
-        document.execCommand("copy");
+        navigator.clipboard.writeText(input.value);
 
         let notification = document.getElementById("notification");
 
