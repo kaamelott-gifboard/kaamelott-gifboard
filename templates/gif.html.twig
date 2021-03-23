@@ -1,19 +1,26 @@
 {% extends 'body.html.twig' %}
 
+{% import 'macros/input-copy.html.twig' as copy %}
+
 {% block meta -%}
-        <meta property="og:type" content="video.other">
-        <meta property="og:description" content="{{ quote }}">
-        <meta property="og:url" content="{{ image }}">
-        <meta property="og:image" content="{{ image }}">
-        <meta property="og:image:type" content="image/gif">
-        {% if width is not null and height is not null -%}
+    <meta property="og:type" content="video.other">
+    <meta property="og:description" content="{{ quote }}">
+    <meta property="og:url" content="{{ image }}">
+    <meta property="og:image" content="{{ image }}">
+    <meta property="og:image:type" content="image/gif">
+    {% if width is not null and height is not null -%}
         <meta property="og:image:width" content="{{ width }}">
         <meta property="og:image:height" content="{{ height }}">
-        {% endif %}
+    {% endif %}
 {% endblock %}
 
 {% block gif %}
-    {{ quote }}<br /><br />
-    <img src="{{ image }}" alt="{{ quote }}" /><br /><br />
-    {{ image }}<br />
+    {{ quote }}<br/><br/>
+
+    <img src="{{ image }}" alt="{{ quote }}" class="single-gif" /><br/><br/>
+
+    {{ copy.block_mobile(image) }}
+
+    {{ copy.block('Source', url, 'Lien vers cette page') }}
+    {{ copy.block('Gif', image, 'Image originale') }}
 {% endblock %}

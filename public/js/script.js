@@ -88,3 +88,25 @@ window.onclick = function(event) {
         modal.style.display = "none";
     }
 }
+
+// ==================================================
+
+document.querySelectorAll('.copy-btn').forEach(function(element) {
+    element.addEventListener('click', function() {
+        let input = this.parentNode.getElementsByTagName('input')[0];
+
+        input.select();
+        input.setSelectionRange(0, 99999); /* For mobile devices */
+
+        document.execCommand("copy");
+
+        let notification = document.getElementById("notification");
+
+        notification.innerText = 'Lien copié !';
+        notification.style.display = "block";
+
+        setTimeout(function Remove() {
+            notification.style.display = "none";
+        }, 1000);
+    });
+});

@@ -13,3 +13,29 @@ h1 {
 .square_btn {
     width: 90%;
 }
+
+.single-gif {
+    width: 95%;
+}
+
+.copy-input {
+    display: none;
+}
+
+.copy-block {
+    display: none;
+}
+
+.copy-block-mobile {
+    display: block;
+}
+
+.copy-input-mobile {
+    display: none;
+}
+
+.copy-btn {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}

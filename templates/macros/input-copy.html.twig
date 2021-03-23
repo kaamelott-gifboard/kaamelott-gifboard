@@ -1,0 +1,19 @@
+{% macro block(title, value, caption) %}
+    <div class="copy-block">
+        <span class="copy-title">{{ title }}</span>
+        <div>
+            <input type="text" readonly="" value="{{ value }}" onclick="this.focus();this.select()" class="copy-input" />
+            <a class="copy-btn">Copier</a>
+            <div class="copy-caption">
+                <span>{{ caption }}</span>
+            </div>
+        </div>
+    </div>
+{% endmacro %}
+
+{% macro block_mobile(value) %}
+    <div class="copy-block-mobile">
+        <input type="text" readonly="" value="{{ value }}" class="copy-input-mobile" />
+        <a class="copy-btn">Copier le lien du GIF</a>
+    </div>
+{% endmacro %}
