@@ -59,35 +59,25 @@ window.onload = function(){
 
 // ==================================================
 
-function showGif(e) {
-    document.getElementById("modal").style.display = "block";
+document.querySelectorAll('.square_btn').forEach(function(element) {
+    element.addEventListener('click', function() {
+        document.getElementById(element.getAttribute('data-id') + "-modal").style.display = "block";
+    });
+});
 
-    let gif = document.getElementById(e.getAttribute('data-id'));
-
-    document.getElementById("modal-img").src = gif.getAttribute('data-img');
-    document.getElementById("modal-quote").innerText = gif.getAttribute('data-quote');
-    document.getElementById("modal-link").innerText = gif.getAttribute('data-url');
-}
-
-// ==================================================
-
-let modal = document.getElementById("modal");
-
-document.getElementsByClassName("modal-close")[0].onclick = function() {
-    modal.style.display = "none";
-}
+document.querySelectorAll('.modal-close').forEach(function(element) {
+    element.addEventListener('click', function() {
+        element.parentNode.parentNode.style.display = "none";
+    });
+});
 
 window.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
-        modal.style.display = 'none'
+        document.querySelectorAll('.modal-background').forEach(function(element) {
+            element.style.display = "none";
+        });
     }
 })
-
-window.onclick = function(event) {
-    if (event.target == modal) {
-        modal.style.display = "none";
-    }
-}
 
 // ==================================================
 
@@ -104,6 +94,6 @@ document.querySelectorAll('.copy-btn').forEach(function(element) {
 
         setTimeout(function Remove() {
             notification.style.display = "none";
-        }, 1000);
+        }, 1500);
     });
 });

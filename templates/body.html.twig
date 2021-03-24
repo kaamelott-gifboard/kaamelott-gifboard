@@ -1,5 +1,7 @@
 {% extends 'base.html.twig' %}
 
+{% import 'macros/input-copy.html.twig' as copy %}
+
 {% block body %}
     <div class="block">
         <form action="{{ path('search_quote') }}">
@@ -17,14 +19,21 @@
         <ul>
             {% for gif in gifs %}
                 <li class="li-gif">
-                    <div class="square_btn" onclick="showGif(this);" data-id="{{ gif.filename }}">
+                    <div class="square_btn" data-id="{{ gif.slug }}">
                         {{ gif.quote }}
-                        <span
-                            id="{{ gif.filename }}"
-                            data-img="{{ gif.image }}"
-                            data-quote="{{ gif.quote }}"
-                            data-url="{{ gif.url }}"
-                        ></span>
+                    </div>
+                    <div id="{{ gif.slug }}-modal" class="modal-background">
+                        <div class="modal-content">
+                            <span class="modal-close">&times;</span>
+                            <div id="modal-quote">{{ gif.quote }}</div>
+                            <div class="modal-gif">
+                                <img id="modal-img" src="{{ gif.image }}" /><br /><br />
+                                {{ copy.block_mobile(gif.image) }}
+
+                                {{ copy.block('Source', gif.url, 'Lien vers cette page') }}
+                                {{ copy.block('Gif', gif.image, 'Image originale') }}
+                            </div>
+                        </div>
                     </div>
                 </li>
             {% endfor %}
@@ -32,15 +41,4 @@
     {% endif %}
 
     {% block gif %}{% endblock %}
-
-    <div id="modal" class="modal-background">
-        <div class="modal-content">
-            <span class="modal-close">&times;</span>
-            <div id="modal-quote"></div>
-            <div class="modal-gif">
-                <img id="modal-img" /><br /><br />
-                <textarea id="modal-link" rows="3" onclick="this.focus();this.select()" readonly="readonly"></textarea>
-            </div>
-        </div>
-    </div>
 {% endblock %}

@@ -112,7 +112,7 @@ a {
 
 .copy-input {
     height: 33px;
-    width: 348px;
+    width: 298px;
     outline: none;
     border: 0;
     position: absolute;
@@ -126,7 +126,7 @@ a {
 }
 
 .copy-block {
-    width: 550px;
+    width: 500px;
     height: 50px;
     margin: 20px auto;
     position: relative;
@@ -186,6 +186,7 @@ ul {
     text-align: center;
     background: #679867;
     font-weight: bold;
+    z-index: 100;
 }
 
 /* ================================= */
@@ -211,7 +212,6 @@ ul {
     width: 90%;
     max-width: 550px;
     position: relative;
-    color: black;
     -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
     -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
