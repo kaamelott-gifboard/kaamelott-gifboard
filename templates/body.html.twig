@@ -26,8 +26,9 @@
                         <div class="modal-content">
                             <span class="modal-close">&times;</span>
                             <div id="modal-quote">{{ gif.quote }}</div>
+                            <span id="{{ gif.slug }}-img" data-img="{{ gif.image }}"></span>
                             <div class="modal-gif">
-                                <img id="modal-img" src="{{ gif.image }}" /><br /><br />
+                                <img id="{{ gif.slug }}-modal-img" /><br /><br />
                                 {{ copy.block_mobile(gif.image) }}
 
                                 {{ copy.block('Source', gif.url, 'Lien vers cette page') }}

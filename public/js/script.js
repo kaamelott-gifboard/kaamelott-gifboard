@@ -61,6 +61,9 @@ window.onload = function(){
 
 document.querySelectorAll('.square_btn').forEach(function(element) {
     element.addEventListener('click', function() {
+        let image = document.getElementById(element.getAttribute('data-id') + "-img").getAttribute('data-img');
+
+        document.getElementById(element.getAttribute('data-id') + "-modal-img").src = image;
         document.getElementById(element.getAttribute('data-id') + "-modal").style.display = "block";
     });
 });
