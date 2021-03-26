@@ -1226,8 +1226,16 @@
   {
     "quote": "C'est comme ça qu'on accueille sa tatie ?",
     "characters": [
-      "Cryda de Tintagel"
+      "Ygerne de Tintagel"
     ],
     "filename": "accueille-sa-tatie.gif"
+  },
+  {
+    "quote": "Pour faire parler les débiles",
+    "characters": [
+      "Cryda de Tintagel",
+      "Ygerne de Tintagel"
+    ],
+    "filename": "pour-faire-parler-les-debiles.gif"
   }
 ]
