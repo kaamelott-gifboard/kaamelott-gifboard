@@ -1144,5 +1144,90 @@
       "Guenièvre"
     ],
     "filename": "elle-est-pas-mal-celle-la.gif"
+  },
+  {
+    "quote": "Vous vous prenez pour un enseignant ?",
+    "characters": [
+      "Perceval",
+      "Angharad"
+    ],
+    "filename": "prenez-pour-un-enseignant.gif"
+  },
+  {
+    "quote": "Vous vous dire par rapport aux autres semaines ?",
+    "characters": [
+      "Léodagan",
+      "Hervé de Rinel"
+    ],
+    "filename": "par-rapport-aux-autres-semaines.gif"
+  },
+  {
+    "quote": "J'ai pas bité un seul mot",
+    "characters": [
+      "Perceval",
+      "Arthur"
+    ],
+    "filename": "pas-bite-un-seul-mot.gif"
+  },
+  {
+    "quote": "Ca vous inspire là ou y'a rien qui vient ?",
+    "characters": [
+      "La duchesse d'Aquitaine",
+      "Le duc d'Aquitaine"
+    ],
+    "filename": "inspire-ou-rien-qui-vient.gif"
+  },
+  {
+    "quote": "Pas mal ?",
+    "characters": [
+      "Arthur",
+      "Perceval"
+    ],
+    "filename": "pas-mal.gif"
+  },
+  {
+    "quote": "Oui je sais ça veut rien mais je m'en fiche !",
+    "characters": [
+      "Guenièvre"
+    ],
+    "filename": "rien-dire-je-men-fiche.gif"
+  },
+  {
+    "quote": "Dans le doute, je les ai bouffés",
+    "characters": [
+      "Karadoc",
+      "Perceval"
+    ],
+    "filename": "doute-je-les-ai-bouffes.gif"
+  },
+  {
+    "quote": "Putain en plein dans sa mouille",
+    "characters": [
+      "Léodagan",
+      "Perceval"
+    ],
+    "filename": "plein-dans-sa-mouille.gif"
+  },
+  {
+    "quote": "A vue de pied y'en avait une soixantaine",
+    "characters": [
+      "Karadoc",
+      "Perceval"
+    ],
+    "filename": "une-soixantaine.gif"
+  },
+  {
+    "quote": "Ah ! On retrouve une idée commune. Je pense qu'on va vous mettre ensemble en mission",
+    "characters": [
+      "Karadoc"
+    ],
+    "filename": "idee-commune-mission-ensemble.gif"
+  },
+  {
+    "quote": "C'est comme ça qu'on accueille sa tatie ?",
+    "characters": [
+      "Cryda de Tintagel"
+    ],
+    "filename": "accueille-sa-tatie.gif"
   }
 ]
