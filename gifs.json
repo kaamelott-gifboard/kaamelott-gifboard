@@ -1114,5 +1114,35 @@
       "Karadoc"
     ],
     "filename": "saucisson.gif"
+  },
+  {
+    "quote": "Démétra elle s'est fait piétiner par un cheval une fois, mais c'était pas moi... 'fin c'était un cheval quoi",
+    "characters": [
+      "Mevanwi",
+      "Arthur"
+    ],
+    "filename": "demetra-pietiner-par-cheval.gif"
+  },
+  {
+    "quote": "En tapinant",
+    "characters": [
+      "Hervé de Rinel"
+    ],
+    "filename": "en-tapinant.gif"
+  },
+  {
+    "quote": "Attention, parce que moi faut pas m'en promettre",
+    "characters": [
+      "Mevanwi",
+      "Arthur"
+    ],
+    "filename": "faut-pas-men-promettre.gif"
+  },
+  {
+    "quote": "Ah bah elle est pas mal, celle-là, hein !",
+    "characters": [
+      "Guenièvre"
+    ],
+    "filename": "elle-est-pas-mal-celle-la.gif"
   }
 ]
