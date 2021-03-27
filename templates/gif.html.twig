@@ -29,9 +29,24 @@
 {% endblock %}
 
 {% block gif %}
-    {{ quote }}<br/><br/>
+    <div class="quote-block">
+        <h2 class="quote">{{ quote }}</h2>
+    </div>
 
-    <img src="{{ image }}" alt="{{ quote }}" class="single-gif" /><br/><br/>
+    <br />
+
+    <img src="{{ image }}" alt="{{ quote }}" class="single-gif"/><br/><br/>
+
+    <div class="quote-characters">
+        {% for character in characters %}
+            <div class="quote-character-block">
+                <a href="{{ character.url }}">
+                    <img src="{{ character.image }}" class="character-icon-quote icon-dark-shadow"
+                         alt="{{ character.name }}" title="{{ character.name }}"/>
+                </a>
+            </div>
+        {% endfor %}
+    </div>
 
     {{ copy.block_mobile(image) }}
 

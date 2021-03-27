@@ -1,33 +1,33 @@
-window.onload = function(){
+window.onload = function () {
     let characterXhr = new XMLHttpRequest();
     let characterDiv = document.getElementById("characters");
 
     if (characterDiv) {
         characterXhr.onload = function () {
-            if (characterXhr.status >= 200 && characterXhr.status < 300) {
-                let data = JSON.parse(characterXhr.responseText);
+            let data = JSON.parse(characterXhr.responseText);
 
-                data['characters'].forEach(function (character) {
-                    let link = document.createElement("a");
-                    let image = document.createElement("img");
+            data['characters'].forEach(function (character) {
+                let link = document.createElement("a");
+                let image = document.createElement("img");
 
-                    image.src = character.image;
-                    image.title = character.name;
+                image.src = character.image;
+                image.title = character.name;
 
-                    if (character.name === characterDiv.getAttribute('data-current')) {
-                        image.classList.add('character-icon', 'icon-light-shadow')
-                    } else {
-                        image.classList.add('character-icon', 'icon-dark-shadow')
-                    }
+                let current = characterDiv.getAttribute('data-current');
 
-                    link.href = character.url;
-                    link.appendChild(image);
+                if (character.name === current) {
+                    image.classList.add('character-icon', 'icon-light-shadow')
+                } else if (current === '') { // no selected characters
+                    image.classList.add('character-icon', 'icon-dark-shadow')
+                } else { // display unselected characters with filter
+                    image.classList.add('character-icon', 'icon-dark-shadow', 'character-gray-filter')
+                }
 
-                    characterDiv.appendChild(link);
-                });
-            } else {
-                // @todo: handle error
-            }
+                link.href = character.url;
+                link.appendChild(image);
+
+                characterDiv.appendChild(link);
+            });
         };
 
         characterXhr.open('GET', characterDiv.getAttribute('data-url'));
@@ -42,13 +42,9 @@ window.onload = function(){
 
     if (input) {
         countXhr.onload = function () {
-            if (countXhr.status >= 200 && countXhr.status < 300) {
-                let data = JSON.parse(countXhr.responseText);
+            let data = JSON.parse(countXhr.responseText);
 
-                input.placeholder = 'Recherche parmi près de '.concat(data, ' répliques...');
-            } else {
-                // @todo: handle error
-            }
+            input.placeholder = 'Rechercher parmi près de '.concat(data, ' répliques...');
         };
 
         countXhr.open('GET', input.getAttribute('data-url'));
@@ -59,8 +55,8 @@ window.onload = function(){
 
 // ==================================================
 
-document.querySelectorAll('.square_btn').forEach(function(element) {
-    element.addEventListener('click', function() {
+document.querySelectorAll('.square_btn').forEach(function (element) {
+    element.addEventListener('click', function () {
         let image = document.getElementById(element.getAttribute('data-id') + "-img").getAttribute('data-img');
 
         document.getElementById(element.getAttribute('data-id') + "-modal-img").src = image;
@@ -68,15 +64,15 @@ document.querySelectorAll('.square_btn').forEach(function(element) {
     });
 });
 
-document.querySelectorAll('.modal-close').forEach(function(element) {
-    element.addEventListener('click', function() {
+document.querySelectorAll('.modal-close').forEach(function (element) {
+    element.addEventListener('click', function () {
         element.parentNode.parentNode.style.display = "none";
     });
 });
 
 window.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
-        document.querySelectorAll('.modal-background').forEach(function(element) {
+        document.querySelectorAll('.modal-background').forEach(function (element) {
             element.style.display = "none";
         });
     }
@@ -84,8 +80,8 @@ window.addEventListener('keydown', function (event) {
 
 // ==================================================
 
-document.querySelectorAll('.copy-btn').forEach(function(element) {
-    element.addEventListener('click', function() {
+document.querySelectorAll('.copy-btn').forEach(function (element) {
+    element.addEventListener('click', function () {
         let input = this.parentNode.getElementsByTagName('input')[0];
 
         navigator.clipboard.writeText(input.value);

@@ -719,7 +719,7 @@
   {
     "quote": "Patatrac !",
     "characters": [
-      "Belt le vigneron du Château",
+      "Belt le vigneron",
       "Roparzh",
       "Guethenoc"
     ],
@@ -1118,8 +1118,8 @@
   {
     "quote": "Démétra elle s'est fait piétiner par un cheval une fois, mais c'était pas moi... 'fin c'était un cheval quoi",
     "characters": [
-      "Mevanwi",
-      "Arthur"
+      "Arthur",
+      "Mevanwi"
     ],
     "filename": "demetra-pietiner-par-cheval.gif"
   },
@@ -1133,8 +1133,8 @@
   {
     "quote": "Attention, parce que moi faut pas m'en promettre",
     "characters": [
-      "Mevanwi",
-      "Arthur"
+      "Arthur",
+      "Mevanwi"
     ],
     "filename": "faut-pas-men-promettre.gif"
   },
@@ -1203,8 +1203,8 @@
   {
     "quote": "Putain en plein dans sa mouille",
     "characters": [
-      "Léodagan",
-      "Perceval"
+      "Perceval",
+      "Léodagan"
     ],
     "filename": "plein-dans-sa-mouille.gif"
   },
