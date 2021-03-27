@@ -1,5 +1,19 @@
 {% extends 'body.html.twig' %}
 
-{%- block title -%}
-    Kaamelott Gifboard - {{ app.request.get('name') }}
+{% set title = character.name ~ ' de Kaamelott - Ses meilleures répliques en GIFs' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block canonical %}<link rel="canonical" href="{{ character.url }}"/>{% endblock %}
+
+{%- block meta -%}
+    {% set description = character.name ~ ' de Kaamelott : Cherchez, découvrez et partagez toutes ses meilleures répliques en GIFs.' %}
+
+    <meta name="description" content="{{ description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:url" content="{{ character.url }}">
+    <meta property="og:image" content="{{ character.image }}">
+    <meta property="og:image:type" content="image/png">
 {%- endblock -%}

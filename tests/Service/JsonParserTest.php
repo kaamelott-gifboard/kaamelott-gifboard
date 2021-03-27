@@ -37,7 +37,7 @@ class JsonParserTest extends KernelTestCase
         );
     }
 
-    public function testJsonIsValid(): void
+    public function testGifsJsonIsValid(): void
     {
         $kernel = self::bootKernel();
 
@@ -68,6 +68,32 @@ class JsonParserTest extends KernelTestCase
         }
     }
 
+    public function testCharactersJsonIsValid(): void
+    {
+        $kernel = self::bootKernel();
+
+        $parser = $kernel->getContainer()->get('test_KaamelottGifboard\Service\JsonParser');
+
+        $result = $parser->findAll();
+
+        static::assertIsArray($result);
+        static::assertArrayHasKey('gifs', $result);
+
+        /** @var \stdClass $item */
+        foreach ($result['gifs'] as $item) {
+            static::assertIsArray($item->characters);
+
+            foreach ($item->characters as $character) {
+                static::assertArrayHasKey('slug', $character);
+                static::assertMatchesRegularExpression('#^[a-z-0-9]+$#', $character['slug']);
+                static::assertArrayHasKey('name', $character);
+                static::assertArrayHasKey('image', $character);
+                static::assertMatchesRegularExpression('#[a-z-]+\.png$#', $character['image'], $character['name']);
+                static::assertArrayHasKey('url', $character);
+            }
+        }
+    }
+
     public function testFindAll(): void
     {
         $result = $this->parser->findAll();
@@ -81,8 +107,8 @@ class JsonParserTest extends KernelTestCase
         $result = $this->parser->findByQuote('IS');
 
         static::assertCount(2, $result['gifs']);
-        static::assertSame('This is the quote 1', $result['gifs'][0]->quote);
-        static::assertSame('Here is the quote 2', $result['gifs'][1]->quote);
+        static::assertSame('Here is the quote 2', $result['gifs'][0]->quote);
+        static::assertSame('This is the quote 1', $result['gifs'][1]->quote);
     }
 
     public function testFindByCharacter(): void
@@ -97,59 +123,77 @@ class JsonParserTest extends KernelTestCase
     public function testFindCharacters(): void
     {
         $this->router
-            ->expects(static::exactly(12))
+            ->expects(static::exactly(14))
             ->method('generate')
             ->withConsecutive(
                 ['search_slug', ['slug' => 'this-is-the-quote-1']],
                 ['gif_image', ['filename' => 'quote-1.gif']],
+                ['character_image', ['filename' => 'image-1.png']],
+                ['search_character', ['name' => 'Character 1']],
+                ['character_image', ['filename' => 'image-2.png']],
+                ['search_character', ['name' => 'Character 2']],
                 ['search_slug', ['slug' => 'here-is-the-quote-2']],
                 ['gif_image', ['filename' => 'quote-2.gif']],
+                ['character_image', ['filename' => 'image-3.png']],
+                ['search_character', ['name' => 'Character 3']],
                 ['search_slug', ['slug' => 'finally-the-quote-number-3']],
                 ['gif_image', ['filename' => 'quote-3.gif']],
-                ['search_character', ['name' => 'Character 1']],
-                ['character_image', ['filename' => 'image-1.png']],
-                ['search_character', ['name' => 'Character 2']],
                 ['character_image', ['filename' => 'image-2.png']],
-                ['search_character', ['name' => 'Character 3']],
-                ['character_image', ['filename' => 'image-3.png']],
+                ['search_character', ['name' => 'Character 2']],
             )
             ->willReturnOnConsecutiveCalls(
-                'route-1', 'gif-1', 'route-2', 'gif-2', 'route-3', 'gif-3',
-                'route-1', 'route-img-1', 'route-2', 'route-img-2', 'route-3', 'route-img-3'
+                'route-1',
+                'gif-1',
+                'image-1.png',
+                'character-url-1',
+                'image-2.png',
+                'character-url-2',
+                'route-2',
+                'gif-2',
+                'image-3.png',
+                'character-url-3',
+                'route-3',
+                'gif-3',
+                'image-2.png',
+                'character-url-2',
             );
 
         $this->helper
-            ->expects(static::exactly(3))
+            ->expects(static::exactly(4))
             ->method('getCharacterImage')
             ->withConsecutive(
                 ['character-1'],
                 ['character-2'],
                 ['character-3'],
+                ['character-2'],
             )
-            ->willReturnOnConsecutiveCalls('image-1.png', 'image-2.png', 'image-3.png');
+            ->willReturnOnConsecutiveCalls('image-1.png', 'image-2.png', 'image-3.png', 'image-2.png');
 
         $expected = [
             [
+                'slug' => 'character-1',
                 'name' => 'Character 1',
-                'url' => 'route-1',
-                'image' => 'route-img-1',
+                'image' => 'image-1.png',
+                'url' => 'character-url-1',
             ],
             [
+                'slug' => 'character-2',
                 'name' => 'Character 2',
-                'url' => 'route-2',
-                'image' => 'route-img-2',
+                'image' => 'image-2.png',
+                'url' => 'character-url-2',
             ],
             [
+                'slug' => 'character-3',
                 'name' => 'Character 3',
-                'url' => 'route-3',
-                'image' => 'route-img-3',
+                'image' => 'image-3.png',
+                'url' => 'character-url-3',
             ],
         ];
 
         $result = $this->parser->findCharacters();
 
         static::assertArrayHasKey('characters', $result);
-        static::assertSame($result['characters'], $expected);
+        static::assertSame($expected, $result['characters']);
     }
 
     public function testFindBySlug(): void
@@ -157,7 +201,12 @@ class JsonParserTest extends KernelTestCase
         $expected = [
             'quote' => 'Finally, the quote number 3',
             'characters' => [
-                'Character 2',
+                [
+                    'slug' => 'character-2',
+                    'name' => 'Character 2',
+                    'image' => null,
+                    'url' => null,
+                ],
             ],
             'filename' => 'quote-3.gif',
             'slug' => 'finally-the-quote-number-3',

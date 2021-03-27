@@ -2,11 +2,23 @@
 
 {% import 'macros/input-copy.html.twig' as copy %}
 
-{% block meta -%}
-    <link rel="canonical" href="{{ url }}"/>
+{% set title = 'Les meilleures répliques de Kaamelott en GIFs' %}
 
-    <meta property="og:type" content="video.other">
-    <meta property="og:description" content="{{ quote }}">
+{% block title %}{{ title }}{% endblock %}
+
+{% block canonical %}<link rel="canonical" href="{{ url }}"/>{% endblock %}
+
+{% block meta -%}
+    {% if quote|length < 50 %}
+        {% set description = quote ~ ' Les meilleures répliques de Kaamelott en GIFs' %}
+    {% else %}
+        {% set description = quote %}
+    {% endif %}
+
+    <meta name="description" content="{{ description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
     <meta property="og:url" content="{{ image }}">
     <meta property="og:image" content="{{ image }}">
     <meta property="og:image:type" content="image/gif">
