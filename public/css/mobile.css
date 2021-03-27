@@ -43,3 +43,24 @@ h1 {
 .input-quote {
     width: 90%;
 }
+
+.quote-block h2 {
+    font-size: 13px;
+}
+
+.quote-block {
+    max-width: 75%;
+    font-style: italic;
+    padding: 15px 20px 15px 30px;
+    margin: 5px auto 20px auto;
+    border-left: 4px solid #45516b;
+}
+
+.quote-block::before {
+    font-size: 3em;
+    top: 0;
+}
+
+.quote {
+    font-size: 15px;
+}
