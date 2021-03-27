@@ -39,3 +39,7 @@ h1 {
     margin: 0 auto;
     position: relative;
 }
+
+.input-quote {
+    width: 90%;
+}

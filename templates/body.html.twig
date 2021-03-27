@@ -3,11 +3,10 @@
 {% import 'macros/input-copy.html.twig' as copy %}
 
 {% block body %}
-    <div class="block">
+    <div class="input-block">
         <form action="{{ path('search_quote') }}">
-            <label for="quotes">Recherche :</label>
-            <input id="quotes" type="text" name="search" class="search input-quote" value="{{ app.request.get('search') }}" data-url="{{ path('search_count') }}" />
-            <input class="search" type="submit" value="Go" />
+            <input id="quotes" type="text" name="search" class="input-quote" value="{{ app.request.get('search') }}" data-url="{{ path('search_count') }}" />
+            <button type="submit" class="search-quote"><i class="fa fa-search"></i></button>
         </form>
     </div>
 

@@ -45,7 +45,7 @@ window.onload = function(){
             if (countXhr.status >= 200 && countXhr.status < 300) {
                 let data = JSON.parse(countXhr.responseText);
 
-                input.placeholder = 'Parmi près de '.concat(data, ' répliques...');
+                input.placeholder = 'Recherche parmi près de '.concat(data, ' répliques...');
             } else {
                 // @todo: handle error
             }
