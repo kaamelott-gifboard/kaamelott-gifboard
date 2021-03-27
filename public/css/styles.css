@@ -43,11 +43,6 @@ a {
     background-color: #3e4654;
 }
 
-.block {
-    width: 375px;
-    margin: 0 auto 30px auto;
-}
-
 .characters {
     width: 80%;
     margin: auto auto 40px auto;
@@ -66,21 +61,54 @@ a {
 }
 
 .icon-light-shadow {
-    -webkit-box-shadow: 7px 8px 7px -8px rgba(255, 255, 255, 0.8);
-    -moz-box-shadow: 7px 8px 7px -8px rgba(255, 255, 255, 0.8);
-    box-shadow: 7px 8px 7px -8px rgba(255, 255, 255, 0.8);
+    -webkit-box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.8);
+    -moz-box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.8);
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.8);
 }
 
-.search {
-    padding-left: 5px;
-    border: 1px solid #5f626a;
-    background-color: #454851;
-    color: #ffffff;
-    line-height: 25px;
+.input-block {
+    text-align: center;
+    width: 95%;
+    margin: 0 auto 30px auto;
+    position: relative;
+    display: block;
 }
 
 .input-quote {
-    width: 200px;
+    padding-left: 10px;
+    line-height: 30px;
+    border: none;
+    width: 50%;
+    outline: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #3e4654;
+    color: #C6C6C6;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.input-quote::placeholder {
+    color: #c6c6c6;
+}
+
+.search-quote {
+    padding: 0 10px 0 10px;
+    line-height: 32px;
+    outline: none;
+    background: #45516b;
+    color: white;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-left: -35px;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .square_btn {

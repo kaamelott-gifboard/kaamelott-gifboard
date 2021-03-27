@@ -6,15 +6,19 @@
         <title>{% block title %}Les meilleures répliques de Kaamelott en GIFs{% endblock %}</title>
 
         <meta charset="UTF-8">
-        <meta name="description" content="{{ description }}">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+        <meta name="author" content="Kaamelott Gifboard"/>
+        <meta name="keywords" content="Kaamelott GIFs, GIFs animés, GIFs">
 
         <meta property="og:site_name" content="Kaamelott Gifboard">
         <meta property="og:locale" content="fr_FR">
-        <meta property="og:title" content="Les meilleures répliques de Kaamelott en GIFs">
+
+        {% block canonical %}<link rel="canonical" href="https://kaamelott-gifboard.fr"/>{% endblock %}
 
         {% block meta -%}
+        <meta name="description" content="{{ description }}">
+        <meta property="og:title" content="Les meilleures répliques de Kaamelott en GIFs">
         <meta property="og:type" content="website">
         <meta property="og:url" content="https://kaamelott-gifboard.fr">
         <meta property="og:image" content="{{ absolute_url(asset('images/kg.png')) }}">
@@ -26,6 +30,7 @@
         <link rel="stylesheet" href="{{ asset('css/mobile.css') }}" media="screen and (max-width: 900px)" />
         {% endblock %}
 
+        <script src="https://use.fontawesome.com/251fdfe15b.js"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-KK4X4869Y1"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
