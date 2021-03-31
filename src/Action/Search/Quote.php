@@ -5,11 +5,12 @@ declare(strict_types=1);
 namespace KaamelottGifboard\Action\Search;
 
 use KaamelottGifboard\Service\JsonParser;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Twig\Environment;
 
-class Quote
+class Quote extends AbstractController
 {
     private JsonParser $finder;
     private Environment $twig;
@@ -24,11 +25,6 @@ class Quote
     {
         $search = (string) $request->query->get('search', '');
 
-        $view = $this->twig->render(
-            'body.html.twig',
-            $this->finder->findByQuote($search)
-        );
-
-        return (new Response())->setContent($view);
+        return $this->render('body.html.twig', $this->finder->findByQuote($search));
     }
 }

@@ -1,0 +1,5 @@
+search_short_url:
+    path: /g/{code}
+    controller: KaamelottGifboard\Action\Search\Gif::byCode
+    requirements:
+        shortUrl: '[a-z0-9]+'

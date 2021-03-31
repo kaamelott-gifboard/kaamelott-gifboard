@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace KaamelottGifboard\Service;
 
+use KaamelottGifboard\Helper\CodeHelper;
 use KaamelottGifboard\Helper\ImageHelper;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Routing\RouterInterface;
@@ -84,7 +85,18 @@ class JsonParser
     public function findBySlug(string $slug): ?array
     {
         foreach ($this->getGifs() as $gif) {
-            if ($this->lowerSlug($gif->quote) === $slug) {
+            if ($gif->slug === $slug) {
+                return (array) $gif;
+            }
+        }
+
+        return null;
+    }
+
+    public function findByCode(string $code): ?array
+    {
+        foreach ($this->getGifs() as $gif) {
+            if ($gif->code === $code) {
                 return (array) $gif;
             }
         }
@@ -116,7 +128,8 @@ class JsonParser
             $gif->width = $dimensions['width'];
             $gif->height = $dimensions['height'];
 
-            $gif->characters = $this->formatCharacters($gif->characters);
+            $this->formatShortUrl($gif);
+            $this->formatCharacters($gif);
         }
 
         sort($gifs);
@@ -139,11 +152,11 @@ class JsonParser
         return $this->slugger->slug($string)->lower()->__toString();
     }
 
-    private function formatCharacters(array $characters): array
+    private function formatCharacters(\stdClass $gif): void
     {
         $formattedCharacters = [];
 
-        foreach ($characters as $character) {
+        foreach ($gif->characters as $character) {
             $sluggedCharacter = $this->lowerSlug($character);
 
             $characterImage = $this->router->generate('character_image', [
@@ -162,6 +175,14 @@ class JsonParser
             ];
         }
 
-        return $formattedCharacters;
+        $gif->characters = $formattedCharacters;
+    }
+
+    private function formatShortUrl(mixed $gif): void
+    {
+        $code = CodeHelper::getCode($gif);
+
+        $gif->code = $code;
+        $gif->shortUrl = $this->router->generate('search_short_url', ['code' => $code], RouterInterface::ABSOLUTE_URL);
     }
 }
