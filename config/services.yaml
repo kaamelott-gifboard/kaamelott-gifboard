@@ -1,4 +1,6 @@
 parameters:
+    host_name: '%env(HOST_NAME)%'
+    short_host_name: '%env(SHORT_HOST_NAME)%'
     gifs_json_path: '%kernel.project_dir%/gifs.json'
     public_path: '%kernel.project_dir%/public'
 

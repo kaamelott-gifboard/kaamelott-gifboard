@@ -65,6 +65,9 @@ class JsonParserTest extends KernelTestCase
             static::assertIsInt($item->width);
             static::assertObjectHasAttribute('height', $item);
             static::assertIsInt($item->height);
+            static::assertObjectHasAttribute('code', $item);
+            static::assertMatchesRegularExpression('#[a-z0-9]+#', $item->code);
+            static::assertObjectHasAttribute('shortUrl', $item);
         }
     }
 
@@ -123,37 +126,43 @@ class JsonParserTest extends KernelTestCase
     public function testFindCharacters(): void
     {
         $this->router
-            ->expects(static::exactly(14))
+            ->expects(static::exactly(17))
             ->method('generate')
             ->withConsecutive(
                 ['search_slug', ['slug' => 'this-is-the-quote-1']],
                 ['gif_image', ['filename' => 'quote-1.gif']],
+                ['search_short_url', ['code' => 'f53abd91c9']],
                 ['character_image', ['filename' => 'image-1.png']],
                 ['search_character', ['name' => 'Character 1']],
                 ['character_image', ['filename' => 'image-2.png']],
                 ['search_character', ['name' => 'Character 2']],
                 ['search_slug', ['slug' => 'here-is-the-quote-2']],
                 ['gif_image', ['filename' => 'quote-2.gif']],
+                ['search_short_url', ['code' => 'cc58ba3582']],
                 ['character_image', ['filename' => 'image-3.png']],
                 ['search_character', ['name' => 'Character 3']],
                 ['search_slug', ['slug' => 'finally-the-quote-number-3']],
                 ['gif_image', ['filename' => 'quote-3.gif']],
+                ['search_short_url', ['code' => '0c3c899cad']],
                 ['character_image', ['filename' => 'image-2.png']],
                 ['search_character', ['name' => 'Character 2']],
             )
             ->willReturnOnConsecutiveCalls(
                 'route-1',
                 'gif-1',
+                'short-route-1',
                 'image-1.png',
                 'character-url-1',
                 'image-2.png',
                 'character-url-2',
                 'route-2',
                 'gif-2',
+                'short-route-2',
                 'image-3.png',
                 'character-url-3',
                 'route-3',
                 'gif-3',
+                'short-route-3',
                 'image-2.png',
                 'character-url-2',
             );
@@ -214,6 +223,8 @@ class JsonParserTest extends KernelTestCase
             'image' => null,
             'width' => 100,
             'height' => 100,
+            'code' => '0c3c899cad',
+            'shortUrl' => null,
         ];
 
         $result = $this->parser->findBySlug('finally-the-quote-number-3');

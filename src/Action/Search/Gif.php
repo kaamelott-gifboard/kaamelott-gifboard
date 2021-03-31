@@ -4,14 +4,16 @@ declare(strict_types=1);
 
 namespace KaamelottGifboard\Action\Search;
 
+use KaamelottGifboard\Exception\PouletteNotFoundException;
 use KaamelottGifboard\Service\JsonParser;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\HttpKernel\Exception\NotFoundHttpException;
 use Twig\Environment;
 
-class Gif
+class Gif extends AbstractController
 {
     private Environment $twig;
     private JsonParser $jsonParser;
@@ -26,9 +28,18 @@ class Gif
     {
         $gifs = $this->jsonParser->findByCharacter($name);
 
-        $view = $this->twig->render('character.html.twig', $gifs);
+        return $this->render('character.html.twig', $gifs);
+    }
 
-        return (new Response())->setContent($view);
+    public function byCode(string $code): Response
+    {
+        $gif = $this->jsonParser->findByCode($code);
+
+        if (null === $gif || false === \array_key_exists('url', $gif)) {
+            throw new PouletteNotFoundException('code', $code);
+        }
+
+        return new RedirectResponse($gif['url'], Response::HTTP_SEE_OTHER);
     }
 
     public function bySlug(string $slug): Response
@@ -36,21 +47,17 @@ class Gif
         $gif = $this->jsonParser->findBySlug($slug);
 
         if (null === $gif) {
-            throw new NotFoundHttpException(sprintf('Elle est où la poulette [slug: %s]', $slug));
+            throw new PouletteNotFoundException('slug', $slug);
         }
 
-        $view = $this->twig->render('gif.html.twig', $gif);
-
-        return (new Response())->setContent($view);
+        return $this->render('gif.html.twig', $gif);
     }
 
     public function getAll(): Response
     {
         $gifs = $this->jsonParser->findAll();
 
-        $view = $this->twig->render('body.html.twig', $gifs);
-
-        return (new Response())->setContent($view);
+        return $this->render('body.html.twig', $gifs);
     }
 
     public function countAll(Request $request): Response

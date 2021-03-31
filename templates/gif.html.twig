@@ -50,6 +50,7 @@
 
     {{ copy.block_mobile(image) }}
 
-    {{ copy.block('Source', url, 'Lien vers cette page') }}
-    {{ copy.block('Gif', image, 'Image originale') }}
+    {{ copy.block('Lien', url, 'Lien vers cette page') }}
+    {{ copy.block('Lien court', shortUrl, 'Lien court vers cette page') }}
+    {{ copy.block('GIF', image, 'Image originale') }}
 {% endblock %}

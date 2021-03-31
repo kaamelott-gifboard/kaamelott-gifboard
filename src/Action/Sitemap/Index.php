@@ -5,10 +5,11 @@ declare(strict_types=1);
 namespace KaamelottGifboard\Action\Sitemap;
 
 use KaamelottGifboard\Service\JsonParser;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Twig\Environment;
 
-class Index
+class Index extends AbstractController
 {
     private Environment $twig;
     private JsonParser $jsonParser;
@@ -24,8 +25,6 @@ class Index
         $response = new Response();
         $response->headers->set('Content-Type', 'text/xml');
 
-        $view = $this->twig->render('sitemap.html.twig', $this->jsonParser->findForSitemap());
-
-        return $response->setContent($view);
+        return $this->render('sitemap.html.twig', $this->jsonParser->findForSitemap());
     }
 }
