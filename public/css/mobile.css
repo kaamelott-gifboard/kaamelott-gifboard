@@ -64,3 +64,22 @@ h1 {
 .quote {
     font-size: 15px;
 }
+
+.slideshow_button {
+    position: absolute;
+    top: 40%;
+    display: block;
+    vertical-align: middle;
+}
+
+.left_none {
+    left: -5px;
+}
+
+.right_none {
+    right: -5px;
+}
+
+.slideshow_gif {
+    margin: 0 auto;
+}
