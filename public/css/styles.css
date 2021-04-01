@@ -269,6 +269,24 @@ ul {
     top: -5px;
 }
 
+.slideshow {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.slideshow_button {
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.4;
+    outline: none;
+}
+
+.slideshow_gif {
+    margin: 0 40px 0 40px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
 /* ================================= */
 
 .modal-background {

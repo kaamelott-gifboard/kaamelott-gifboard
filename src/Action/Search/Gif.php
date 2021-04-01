@@ -44,13 +44,13 @@ class Gif extends AbstractController
 
     public function bySlug(string $slug): Response
     {
-        $gif = $this->jsonParser->findBySlug($slug);
+        $gifs = $this->jsonParser->findBySlug($slug);
 
-        if (null === $gif) {
+        if (null === $gifs) {
             throw new PouletteNotFoundException('slug', $slug);
         }
 
-        return $this->render('gif.html.twig', $gif);
+        return $this->render('gif.html.twig', $gifs);
     }
 
     public function getAll(): Response

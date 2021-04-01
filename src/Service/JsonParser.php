@@ -9,6 +9,7 @@ use KaamelottGifboard\Helper\ImageHelper;
 use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 use Symfony\Component\Routing\RouterInterface;
 use Symfony\Component\String\Slugger\SluggerInterface;
+use Symfony\Component\String\UnicodeString;
 
 class JsonParser
 {
@@ -39,7 +40,7 @@ class JsonParser
         $results = [];
 
         foreach ($this->getGifs() as $gif) {
-            if ($this->match($search, $gif->quote)) {
+            if ($this->match($search, $gif->quote, true)) {
                 $results[] = $gif;
             }
         }
@@ -84,9 +85,21 @@ class JsonParser
 
     public function findBySlug(string $slug): ?array
     {
-        foreach ($this->getGifs() as $gif) {
-            if ($gif->slug === $slug) {
-                return (array) $gif;
+        $gifs = $this->getGifs();
+        $nbGifs = count($gifs) - 1;
+
+        for ($i = 0; $i <= $nbGifs; ++$i) {
+            if ($gifs[$i]->slug === $slug) {
+                // If the previous index is < 0, take the last GIF
+                $previous = $i - 1 < 0 ? $nbGifs : $i - 1;
+                // If the next index is greater than the number of GIFs, take the first
+                $next = $i + 1 > $nbGifs ? 0 : $i + 1;
+
+                return [
+                    'previous' => $gifs[$previous],
+                    'current' => $gifs[$i],
+                    'next' => $gifs[$next],
+                ];
             }
         }
 
@@ -137,9 +150,14 @@ class JsonParser
         return $gifs;
     }
 
-    private function match(string $search, string $subject): bool
+    private function match(string $search, string $subject, bool $clean = false): bool
     {
-        return (bool) preg_match(sprintf('#%s#i', $search), $subject);
+        if ($clean) {
+            $search = (new UnicodeString($search))->ascii()->toString();
+            $subject = (new UnicodeString($subject))->ascii()->toString();
+        }
+
+        return (bool) preg_match(sprintf('#%s#ui', $search), $subject);
     }
 
     private function formatResult(array $results): array

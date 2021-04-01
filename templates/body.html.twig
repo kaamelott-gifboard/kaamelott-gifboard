@@ -10,7 +10,7 @@
         </form>
     </div>
 
-    {% if quote is not defined %}
+    {% if current.quote is not defined %}
         <div id="characters" data-url="{{ path('get_characters') }}" class="characters" data-current="{{ app.request.get('name') }}"></div>
     {% endif %}
 

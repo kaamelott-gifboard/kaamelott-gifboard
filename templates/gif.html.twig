@@ -6,39 +6,53 @@
 
 {% block title %}{{ title }}{% endblock %}
 
-{% block canonical %}<link rel="canonical" href="{{ url }}"/>{% endblock %}
+{% block canonical %}<link rel="canonical" href="{{ current.url }}"/>{% endblock %}
 
 {% block meta -%}
-    {% if quote|length < 50 %}
-        {% set description = quote ~ ' Les meilleures répliques de Kaamelott en GIFs' %}
+    {% if current.quote|length < 50 %}
+        {% set description = current.quote ~ ' Les meilleures répliques de Kaamelott en GIFs' %}
     {% else %}
-        {% set description = quote %}
+        {% set description = current.quote %}
     {% endif %}
 
     <meta name="description" content="{{ description }}">
     <meta property="og:type" content="website">
     <meta property="og:title" content="{{ title }}">
     <meta property="og:description" content="{{ description }}">
-    <meta property="og:url" content="{{ image }}">
-    <meta property="og:image" content="{{ image }}">
+    <meta property="og:url" content="{{ current.image }}">
+    <meta property="og:image" content="{{ current.image }}">
     <meta property="og:image:type" content="image/gif">
-    {% if width is not null and height is not null -%}
-        <meta property="og:image:width" content="{{ width }}">
-        <meta property="og:image:height" content="{{ height }}">
+    {% if current.width is not null and current.height is not null -%}
+        <meta property="og:image:width" content="{{ current.width }}">
+        <meta property="og:image:height" content="{{ current.height }}">
     {% endif %}
 {% endblock %}
 
 {% block gif %}
     <div class="quote-block">
-        <h2 class="quote">{{ quote }}</h2>
+        <h2 class="quote">{{ current.quote }}</h2>
     </div>
 
     <br />
 
-    <img src="{{ image }}" alt="{{ quote }}" class="single-gif"/><br/><br/>
+    <div class="slideshow">
+        <div class="slideshow_button left_none">
+            <a href="{{ previous.url }}">
+                <i class="fa fa-chevron-circle-left" style="font-size: 40px;"></i>
+            </a>
+        </div>
+        <div class="slideshow_gif">
+            <img src="{{ current.image }}" alt="{{ current.quote }}" class="single-gif"/>
+        </div>
+        <div class="slideshow_button right_none">
+            <a href="{{ next.url }}">
+                <i class="fa fa-chevron-circle-right" style="font-size: 40px;"></i>
+            </a>
+        </div>
+    </div>
 
     <div class="quote-characters">
-        {% for character in characters %}
+        {% for character in current.characters %}
             <div class="quote-character-block">
                 <a href="{{ character.url }}">
                     <img src="{{ character.image }}" class="character-icon-quote icon-dark-shadow"
@@ -48,9 +62,9 @@
         {% endfor %}
     </div>
 
-    {{ copy.block_mobile(image) }}
+    {{ copy.block_mobile(current.image) }}
 
-    {{ copy.block('Lien', url, 'Lien vers cette page') }}
-    {{ copy.block('Lien court', shortUrl, 'Lien court vers cette page') }}
-    {{ copy.block('GIF', image, 'Image originale') }}
+    {{ copy.block('Lien', current.url, 'Lien vers cette page') }}
+    {{ copy.block('Lien court', current.shortUrl, 'Lien court vers cette page') }}
+    {{ copy.block('GIF', current.image, 'Image originale') }}
 {% endblock %}

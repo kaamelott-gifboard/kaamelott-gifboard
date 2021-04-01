@@ -110,8 +110,12 @@ class JsonParserTest extends KernelTestCase
         $result = $this->parser->findByQuote('IS');
 
         static::assertCount(2, $result['gifs']);
-        static::assertSame('Here is the quote 2', $result['gifs'][0]->quote);
+        static::assertSame('Here is the qûote 2', $result['gifs'][0]->quote);
         static::assertSame('This is the quote 1', $result['gifs'][1]->quote);
+
+        $result = $this->parser->findByQuote('quote');
+
+        static::assertCount(3, $result['gifs']);
     }
 
     public function testFindByCharacter(): void
@@ -230,7 +234,11 @@ class JsonParserTest extends KernelTestCase
         $result = $this->parser->findBySlug('finally-the-quote-number-3');
 
         static::assertIsArray($result);
-        static::assertSame($expected, $result);
+        static::assertCount(3, $result);
+        static::assertEquals((object) $expected, $result['current']);
+        // GIFs are sorted alphabetically, which explains the following order
+        static::assertSame('This is the quote 1', $result['previous']->quote);
+        static::assertSame('Here is the qûote 2', $result['next']->quote);
     }
 
     public function testFindForSitemap(): void
