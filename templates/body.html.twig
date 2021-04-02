@@ -5,7 +5,7 @@
 {% block body %}
     <div class="input-block">
         <form action="{{ path('search_quote') }}">
-            <input id="quotes" type="text" name="search" class="input-quote" value="{{ app.request.get('search') }}" data-url="{{ path('search_count') }}" />
+            <input id="quotes" type="text" name="search" class="input-quote" value="{{ app.request.get('search') }}" data-url="{{ path('count_quotes') }}" />
             <button type="submit" class="search-quote"><i class="fa fa-search"></i></button>
         </form>
     </div>

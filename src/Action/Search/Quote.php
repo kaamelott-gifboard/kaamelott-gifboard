@@ -4,23 +4,12 @@ declare(strict_types=1);
 
 namespace KaamelottGifboard\Action\Search;
 
-use KaamelottGifboard\Service\JsonParser;
-use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use KaamelottGifboard\Action\AbstractAction;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Twig\Environment;
 
-class Quote extends AbstractController
+class Quote extends AbstractAction
 {
-    private JsonParser $finder;
-    private Environment $twig;
-
-    public function __construct(JsonParser $finder, Environment $twig)
-    {
-        $this->finder = $finder;
-        $this->twig = $twig;
-    }
-
     public function __invoke(Request $request): Response
     {
         $search = (string) $request->query->get('search', '');

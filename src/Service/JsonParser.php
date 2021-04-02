@@ -136,8 +136,8 @@ class JsonParser
             $dimensions = $this->imageHelper->getImageDimensions($gif->filename);
 
             $gif->slug = $slug;
-            $gif->url = $this->router->generate('search_slug', ['slug' => $slug], RouterInterface::ABSOLUTE_URL);
-            $gif->image = $this->router->generate('gif_image', ['filename' => $gif->filename], RouterInterface::ABSOLUTE_URL);
+            $gif->url = $this->router->generate('get_by_slug', ['slug' => $slug], RouterInterface::ABSOLUTE_URL);
+            $gif->image = $this->router->generate('quote_image', ['filename' => $gif->filename], RouterInterface::ABSOLUTE_URL);
             $gif->width = $dimensions['width'];
             $gif->height = $dimensions['height'];
 
@@ -181,7 +181,7 @@ class JsonParser
                 'filename' => $this->imageHelper->getCharacterImage($sluggedCharacter),
             ], RouterInterface::ABSOLUTE_URL);
 
-            $characterUrl = $this->router->generate('search_character', [
+            $characterUrl = $this->router->generate('get_by_character', [
                 'name' => $character,
             ], UrlGeneratorInterface::ABSOLUTE_URL);
 
@@ -201,6 +201,6 @@ class JsonParser
         $code = CodeHelper::getCode($gif);
 
         $gif->code = $code;
-        $gif->shortUrl = $this->router->generate('search_short_url', ['code' => $code], RouterInterface::ABSOLUTE_URL);
+        $gif->shortUrl = $this->router->generate('get_by_code_short', ['code' => $code], RouterInterface::ABSOLUTE_URL);
     }
 }
