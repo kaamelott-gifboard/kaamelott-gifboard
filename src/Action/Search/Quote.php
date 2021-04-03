@@ -14,6 +14,8 @@ class Quote extends AbstractAction
     {
         $search = (string) $request->query->get('search', '');
 
-        return $this->render('body.html.twig', $this->finder->findByQuote($search));
+        return $this->render('body.html.twig', [
+            'gifs' => $this->finder->findGifsByQuote($search),
+        ]);
     }
 }

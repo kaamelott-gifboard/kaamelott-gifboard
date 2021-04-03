@@ -17,8 +17,6 @@ class CountQuotes extends AbstractAction
             return new Response(null, Response::HTTP_NOT_FOUND);
         }
 
-        $result = $this->finder->findAll();
-
-        return new JsonResponse(count($result['gifs']));
+        return new JsonResponse($this->finder->countGifs());
     }
 }

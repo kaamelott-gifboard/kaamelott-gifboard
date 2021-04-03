@@ -1,3 +1,5 @@
 User-Agent: *
 Sitemap: https://kaamelott-gifboard.fr/sitemap.xml
 Disallow: /search/quote
+Disallow: /xhr
+Disallow: /random

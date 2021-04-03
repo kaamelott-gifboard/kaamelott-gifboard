@@ -4,52 +4,38 @@ declare(strict_types=1);
 
 namespace KaamelottGifboard\Tests\Service;
 
+use KaamelottGifboard\DataObject\Gif;
+use KaamelottGifboard\DataObject\GifIterator;
 use KaamelottGifboard\Helper\ImageHelper;
-use KaamelottGifboard\Service\JsonParser;
+use KaamelottGifboard\Service\GifLister;
 use PHPUnit\Framework\MockObject\MockObject;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 use Symfony\Component\Routing\RouterInterface;
 use Symfony\Component\String\Slugger\AsciiSlugger;
 
-class JsonParserTest extends KernelTestCase
+class GifListerTest extends KernelTestCase
 {
     /** @var MockObject|RouterInterface */
     private RouterInterface $router;
     /** @var ImageHelper|MockObject */
     private ImageHelper $helper;
-    private JsonParser $parser;
 
     protected function setUp(): void
     {
         $this->router = $this->createMock(RouterInterface::class);
         $this->helper = $this->createMock(ImageHelper::class);
-
-        $this->helper
-            ->expects(static::any())
-            ->method('getImageDimensions')
-            ->willReturn(['width' => 100, 'height' => 100]);
-
-        $this->parser = new JsonParser(
-            __DIR__.'/gifs-test.json',
-            $this->router,
-            new AsciiSlugger(),
-            $this->helper
-        );
     }
 
     public function testGifsJsonIsValid(): void
     {
         $kernel = self::bootKernel();
 
-        $parser = $kernel->getContainer()->get('test_KaamelottGifboard\Service\JsonParser');
+        $lister = $kernel->getContainer()->get('test.service_container')->get(GifLister::class);
 
-        $result = $parser->findAll();
+        static::assertInstanceOf(GifIterator::class, $lister->gifs);
 
-        static::assertIsArray($result);
-        static::assertArrayHasKey('gifs', $result);
-
-        /** @var \stdClass $item */
-        foreach ($result['gifs'] as $item) {
+        /** @var Gif $item */
+        foreach ($lister->gifs as $item) {
             static::assertObjectHasAttribute('quote', $item);
             static::assertIsString($item->quote);
             static::assertObjectHasAttribute('characters', $item);
@@ -75,15 +61,12 @@ class JsonParserTest extends KernelTestCase
     {
         $kernel = self::bootKernel();
 
-        $parser = $kernel->getContainer()->get('test_KaamelottGifboard\Service\JsonParser');
+        $lister = $kernel->getContainer()->get('test.service_container')->get(GifLister::class);
 
-        $result = $parser->findAll();
+        static::assertInstanceOf(GifIterator::class, $lister->gifs);
 
-        static::assertIsArray($result);
-        static::assertArrayHasKey('gifs', $result);
-
-        /** @var \stdClass $item */
-        foreach ($result['gifs'] as $item) {
+        /** @var Gif $item */
+        foreach ($lister->gifs as $item) {
             static::assertIsArray($item->characters);
 
             foreach ($item->characters as $character) {
@@ -97,38 +80,13 @@ class JsonParserTest extends KernelTestCase
         }
     }
 
-    public function testFindAll(): void
+    public function testInit(): void
     {
-        $result = $this->parser->findAll();
+        $this->helper
+            ->expects(static::exactly(3))
+            ->method('getImageDimensions')
+            ->willReturn(['width' => 100, 'height' => 100]);
 
-        static::assertArrayHasKey('gifs', $result);
-        static::assertCount(3, $result['gifs']);
-    }
-
-    public function testFindByQuote(): void
-    {
-        $result = $this->parser->findByQuote('IS');
-
-        static::assertCount(2, $result['gifs']);
-        static::assertSame('Here is the qûote 2', $result['gifs'][0]->quote);
-        static::assertSame('This is the quote 1', $result['gifs'][1]->quote);
-
-        $result = $this->parser->findByQuote('quote');
-
-        static::assertCount(3, $result['gifs']);
-    }
-
-    public function testFindByCharacter(): void
-    {
-        $result = $this->parser->findByCharacter('character 2');
-
-        static::assertCount(2, $result['gifs']);
-        static::assertSame('This is the quote 1', $result['gifs']['quote-1.gif']->quote);
-        static::assertSame('Finally, the quote number 3', $result['gifs']['quote-3.gif']->quote);
-    }
-
-    public function testFindCharacters(): void
-    {
         $this->router
             ->expects(static::exactly(17))
             ->method('generate')
@@ -182,70 +140,39 @@ class JsonParserTest extends KernelTestCase
             )
             ->willReturnOnConsecutiveCalls('image-1.png', 'image-2.png', 'image-3.png', 'image-2.png');
 
-        $expected = [
-            [
-                'slug' => 'character-1',
-                'name' => 'Character 1',
-                'image' => 'image-1.png',
-                'url' => 'character-url-1',
-            ],
+        $lister = new GifLister(
+            __DIR__.'/gifs-test.json',
+            $this->router,
+            new AsciiSlugger(),
+            $this->helper
+        );
+
+        $result = $lister->gifs;
+
+        static::assertCount(3, $result);
+        static::assertInstanceOf(Gif::class, $result[0]);
+        static::assertInstanceOf(Gif::class, $result[1]);
+        static::assertInstanceOf(Gif::class, $result[2]);
+
+        $gif = new Gif();
+        $gif->quote = 'Finally, the quote number 3';
+        $gif->characters = [
             [
                 'slug' => 'character-2',
                 'name' => 'Character 2',
                 'image' => 'image-2.png',
                 'url' => 'character-url-2',
             ],
-            [
-                'slug' => 'character-3',
-                'name' => 'Character 3',
-                'image' => 'image-3.png',
-                'url' => 'character-url-3',
-            ],
         ];
+        $gif->filename = 'quote-3.gif';
+        $gif->slug = 'finally-the-quote-number-3';
+        $gif->url = 'route-3';
+        $gif->image = 'gif-3';
+        $gif->width = 100;
+        $gif->height = 100;
+        $gif->code = '0c3c899cad';
+        $gif->shortUrl = 'short-route-3';
 
-        $result = $this->parser->findCharacters();
-
-        static::assertArrayHasKey('characters', $result);
-        static::assertSame($expected, $result['characters']);
-    }
-
-    public function testFindBySlug(): void
-    {
-        $expected = [
-            'quote' => 'Finally, the quote number 3',
-            'characters' => [
-                [
-                    'slug' => 'character-2',
-                    'name' => 'Character 2',
-                    'image' => null,
-                    'url' => null,
-                ],
-            ],
-            'filename' => 'quote-3.gif',
-            'slug' => 'finally-the-quote-number-3',
-            'url' => null,
-            'image' => null,
-            'width' => 100,
-            'height' => 100,
-            'code' => '0c3c899cad',
-            'shortUrl' => null,
-        ];
-
-        $result = $this->parser->findBySlug('finally-the-quote-number-3');
-
-        static::assertIsArray($result);
-        static::assertCount(3, $result);
-        static::assertEquals((object) $expected, $result['current']);
-        // GIFs are sorted alphabetically, which explains the following order
-        static::assertSame('This is the quote 1', $result['previous']->quote);
-        static::assertSame('Here is the qûote 2', $result['next']->quote);
-    }
-
-    public function testFindForSitemap(): void
-    {
-        $result = $this->parser->findForSitemap();
-
-        static::assertArrayHasKey('gifs', $result);
-        static::assertArrayHasKey('characters', $result);
+        static::assertEquals($gif, $result[0]);
     }
 }

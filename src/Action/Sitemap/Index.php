@@ -14,6 +14,9 @@ class Index extends AbstractAction
         $response = new Response();
         $response->headers->set('Content-Type', 'text/xml');
 
-        return $this->render('sitemap.html.twig', $this->finder->findForSitemap(), $response);
+        return $this->render('sitemap.html.twig', [
+            'characters' => $this->finder->findCharacters(),
+            'gifs' => $this->finder->findGifs(),
+        ], $response);
     }
 }

@@ -11,6 +11,8 @@ class Index extends AbstractAction
 {
     public function __invoke(): Response
     {
-        return $this->render('body.html.twig', $this->finder->findAll());
+        return $this->render('body.html.twig', [
+            'gifs' => $this->finder->findGifs(),
+        ]);
     }
 }
