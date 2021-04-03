@@ -19,6 +19,6 @@ class GetCharacters extends AbstractAction
             return new Response(null, Response::HTTP_NOT_FOUND);
         }
 
-        return new JsonResponse($characters);
+        return new JsonResponse(['characters' => $characters]);
     }
 }

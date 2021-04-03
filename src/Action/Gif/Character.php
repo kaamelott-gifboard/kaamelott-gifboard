@@ -12,12 +12,17 @@ class Character extends AbstractAction
 {
     public function __invoke(string $name): Response
     {
-        $gifs = $this->finder->findByCharacter($name);
+        $character = $this->finder->findCharacter($name);
 
-        if (null === $gifs['character']) {
-            throw new PouletteNotFoundException('name', $name);
+        if (null === $character) {
+            throw new PouletteNotFoundException('character', $name);
         }
 
-        return $this->render('character.html.twig', $gifs);
+        $gifs = $this->finder->findGifsByCharacter($name);
+
+        return $this->render('character.html.twig', [
+            'character' => $character,
+            'gifs' => $gifs,
+        ]);
     }
 }

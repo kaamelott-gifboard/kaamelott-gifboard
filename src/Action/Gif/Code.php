@@ -13,12 +13,12 @@ class Code extends AbstractAction
 {
     public function __invoke(string $code): Response
     {
-        $gif = $this->finder->findByCode($code);
+        $gif = $this->finder->findGifsByCode($code);
 
-        if (null === $gif || false === \array_key_exists('url', $gif)) {
+        if (null === $gif) {
             throw new PouletteNotFoundException('code', $code);
         }
 
-        return new RedirectResponse($gif['url'], Response::HTTP_SEE_OTHER);
+        return new RedirectResponse($gif->url, Response::HTTP_SEE_OTHER);
     }
 }

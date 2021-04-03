@@ -12,7 +12,7 @@ class Slug extends AbstractAction
 {
     public function __invoke(string $slug): Response
     {
-        $gifs = $this->finder->findBySlug($slug);
+        $gifs = $this->finder->findGifsBySlug($slug);
 
         if (null === $gifs) {
             throw new PouletteNotFoundException('slug', $slug);
