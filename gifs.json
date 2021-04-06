@@ -1237,5 +1237,44 @@
       "Ygerne de Tintagel"
     ],
     "filename": "pour-faire-parler-les-debiles.gif"
+  },
+  {
+    "quote": "C'est pas si simple...",
+    "characters": [
+      "Léodagan",
+      "Séli"
+    ],
+    "filename": "cest-pas-si-simple.gif"
+  },
+  {
+    "quote": "Il est d'accord !",
+    "characters": [
+      "Le Roi Burgonde",
+      "Sven le Viking"
+    ],
+    "filename": "il-est-daccord.gif"
+  },
+  {
+    "quote": "Classe !",
+    "characters": [
+      "Karadoc",
+      "Le Tavernier"
+    ],
+    "filename": "la-classe.gif"
+  },
+  {
+    "quote": "C'est plus compliqué que ça !",
+    "characters": [
+      "Léodagan"
+    ],
+    "filename": "plus-complique-que-ca.gif"
+  },
+  {
+    "quote": "Moi ce que je peux vous dire c'est qu'on en a plus ou moins rien à péter",
+    "characters": [
+      "Roparzh",
+      "Guethenoc"
+    ],
+    "filename": "rien-a-peter.gif"
   }
 ]
