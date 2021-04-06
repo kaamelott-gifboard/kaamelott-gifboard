@@ -9,11 +9,8 @@ class ImageHelper
     private const CHARACTER_DIR = 'characters';
     private const GIF_DIR = 'gifs';
 
-    private string $publicPath;
-
-    public function __construct(string $publicPath)
+    public function __construct(private string $publicPath)
     {
-        $this->publicPath = $publicPath;
     }
 
     public function getCharacterImage(string $character): string
