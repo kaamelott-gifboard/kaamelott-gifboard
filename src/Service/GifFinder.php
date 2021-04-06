@@ -10,11 +10,8 @@ use Symfony\Component\String\UnicodeString;
 
 class GifFinder
 {
-    private GifLister $lister;
-
-    public function __construct(GifLister $gifListBuilder)
+    public function __construct(private GifLister $lister)
     {
-        $this->lister = $gifListBuilder;
     }
 
     public function countGifs(): int

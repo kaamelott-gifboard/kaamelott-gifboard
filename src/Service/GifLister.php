@@ -14,24 +14,14 @@ use Symfony\Component\String\Slugger\SluggerInterface;
 
 class GifLister
 {
-    private string $gifsJsonFile;
-    private RouterInterface $router;
-    private SluggerInterface $slugger;
-    private ImageHelper $imageHelper;
-
     public GifIterator $gifs;
 
     public function __construct(
-        string $gifsJsonFile,
-        RouterInterface $router,
-        SluggerInterface $slugger,
-        ImageHelper $imageHelper
+        private string $gifsJsonFile,
+        private RouterInterface $router,
+        private SluggerInterface $slugger,
+        private ImageHelper $imageHelper
     ) {
-        $this->gifsJsonFile = $gifsJsonFile;
-        $this->router = $router;
-        $this->slugger = $slugger;
-        $this->imageHelper = $imageHelper;
-
         $this->init();
     }
 

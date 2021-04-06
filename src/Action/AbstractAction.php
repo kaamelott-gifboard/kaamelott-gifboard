@@ -10,12 +10,9 @@ use Twig\Environment;
 
 abstract class AbstractAction extends AbstractController
 {
-    protected Environment $twig;
-    protected GifFinder $finder;
-
-    public function __construct(Environment $twig, GifFinder $jsonParser)
-    {
-        $this->twig = $twig;
-        $this->finder = $jsonParser;
+    public function __construct(
+        protected Environment $twig,
+        protected GifFinder $finder
+    ) {
     }
 }
