@@ -29,7 +29,6 @@ get_by_code:
 get_by_character:
     path: /search/character/{name}
     controller: KaamelottGifboard\Action\Gif\Character
-    defaults: { name: '' }
 
 get_random:
     path: /random
