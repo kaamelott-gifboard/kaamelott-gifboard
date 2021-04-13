@@ -13,6 +13,13 @@ class ImageHelper
     {
     }
 
+    public function gifExists(string $filename): bool
+    {
+        $filePath = sprintf('%s/%s.gif', self::GIF_DIR, $filename);
+
+        return file_exists($this->publicPath.'/'.$filePath);
+    }
+
     public function getCharacterImage(string $character): string
     {
         $filename = sprintf('%s.png', $character);
