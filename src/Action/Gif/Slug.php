@@ -7,6 +7,7 @@ namespace KaamelottGifboard\Action\Gif;
 use KaamelottGifboard\Action\AbstractAction;
 use KaamelottGifboard\Exception\PouletteNotFoundException;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
+use Symfony\Component\HttpFoundation\File\File;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -14,7 +15,7 @@ class Slug extends AbstractAction
 {
     private const SHARING_APP_USER_AGENTS = [
         'api.slack.com/robots',
-        // 'Discordbot',
+//        'Discordbot',
     ];
 
     public function __invoke(Request $request, string $slug): Response
@@ -29,8 +30,11 @@ class Slug extends AbstractAction
             $image = (array) parse_url($gifs['current']->image);
 
             if (\array_key_exists('path', $image)) {
-                $response = new BinaryFileResponse(ltrim($image['path'], '/'));
+                $file = new File(ltrim($image['path'], '/'));
+
+                $response = new BinaryFileResponse($file);
                 $response->headers->set('Content-Type', 'image/gif');
+                $response->headers->set('Content-Length', (string) $file->getSize());
 
                 return $response;
             }
