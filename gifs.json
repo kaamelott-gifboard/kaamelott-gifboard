@@ -967,13 +967,6 @@
         "filename": "vous-voulez-quon-se-batte.gif"
     },
     {
-        "quote": "Je trouve ça d'une vulgarité sans précédent.",
-        "characters": [
-            "Bohort"
-        ],
-        "filename": "vulgarite.gif"
-    },
-    {
         "quote": "Woohoo ! Mon petit oiseau !",
         "characters": [
             "Arthur"
@@ -1788,5 +1781,562 @@
             "Arthur"
         ],
         "filename": "pas-pour-apres-demain.gif"
+    },
+    {
+        "quote": "Ils sont pas 50, ils sont 2000",
+        "characters": [
+            "Léodagan",
+            "Séli"
+        ],
+        "filename": "pas-cinquante-deux-mille.gif"
+    },
+    {
+        "quote": "3 porcs ?",
+        "characters": [
+            "Bohort",
+            "Arthur"
+        ],
+        "filename": "trois-porcs.gif"
+    },
+    {
+        "quote": "Nan nan j'y tiens pas je vous assure",
+        "characters": [
+            "Arthur",
+            "Bohort"
+        ],
+        "filename": "tiens-pas-je-vous-assure.gif"
+    },
+    {
+        "quote": "Je trouve ça d'une vulgarité sans précédent",
+        "characters": [
+            "Bohort",
+            "Arthur"
+        ],
+        "filename": "vulgarite-sans-precedent.gif"
+    },
+    {
+        "quote": "Et bah je prends le risque, j'aime pas l'image que ça donne de nous",
+        "characters": [
+            "Arthur",
+            "Bohort"
+        ],
+        "filename": "prend-risque-image-donne-nous.gif"
+    },
+    {
+        "quote": "Boooouh hiiii",
+        "characters": [
+            "Venec",
+            "Léodagan"
+        ],
+        "filename": "bouh-hi.gif"
+    },
+    {
+        "quote": "Bon j'ai pris ma décision non c'est non point final",
+        "characters": [
+            "Arthur",
+            "Bohort"
+        ],
+        "filename": "non-cest-non-point-final.gif"
+    },
+    {
+        "quote": "C'est un corbeau décédé",
+        "characters": [
+            "Grüdü",
+            "Arthur"
+        ],
+        "filename": "corbeau-decede.gif"
+    },
+    {
+        "quote": "A la limite y'a ça mais ça colle pas tout à fait",
+        "characters": [
+            "Merlin",
+            "Arthur"
+        ],
+        "filename": "ca-colle-pas-tout-a-fait.gif"
+    },
+    {
+        "quote": "Ah bah c'est plutôt mauvais quand même",
+        "characters": [
+            "Arthur",
+            "Merlin"
+        ],
+        "filename": "plutot-mauvais-quand-meme.gif"
+    },
+    {
+        "quote": "Ensuite... Plus rien",
+        "characters": [
+            "Merlin",
+            "Séli"
+        ],
+        "filename": "ensuite-plus-rien.gif"
+    },
+    {
+        "quote": "Qu'est-ce que vous me chantez ?",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "quest-ce-que-vous-me-chantez.gif"
+    },
+    {
+        "quote": "Hé il est pas beau mon Graal",
+        "characters": [
+            "Le Tavernier",
+            "Karadoc",
+            "Perceval"
+        ],
+        "filename": "pas-beau-mon-graal.gif"
+    },
+    {
+        "quote": "Je sens que ça va encore être capital",
+        "characters": [
+            "Léodagan",
+            "Galessin"
+        ],
+        "filename": "va-encore-etre-capital.gif"
+    },
+    {
+        "quote": "Ca fait plaisir de voir que ça avance",
+        "characters": [
+            "Arthur",
+            "Karadoc"
+        ],
+        "filename": "plaisir-voir-avance.gif"
+    },
+    {
+        "quote": "Non moi je m'occupe de mon cas c'est déjà pas mal",
+        "characters": [
+            "Perceval",
+            "Bohort"
+        ],
+        "filename": "occupe-de-mon-cas-pas-mal.gif"
+    },
+    {
+        "quote": "Vous voulez vraiment qu'on parle de ça ?",
+        "characters": [
+            "Arthur",
+            "Guenièvre"
+        ],
+        "filename": "vraiment-on-parle-de-ca.gif"
+    },
+    {
+        "quote": "Si quelqu'un trouve à redire à mon caractère c'est pas à vous qu'il doit s'adresser",
+        "characters": [
+            "Arthur",
+            "Guenièvre"
+        ],
+        "filename": "trouve-redire-mon-caractere.gif"
+    },
+    {
+        "quote": "Il la ferme et s'il est pas content il déménage",
+        "characters": [
+            "Arthur",
+            "Guenièvre"
+        ],
+        "filename": "ferme-pas-content-demenage.gif"
+    },
+    {
+        "quote": "Vous êtes content et puis dans 3 jours vous serez pas content",
+        "characters": [
+            "Arthur",
+            "Guenièvre"
+        ],
+        "filename": "content-trois-jours-pas-content.gif"
+    },
+    {
+        "quote": "Ah vous ne commencez pas à faire chier c'est pas le soir",
+        "characters": [
+            "Arthur",
+            "Demetra"
+        ],
+        "filename": "faire-chier-pas-le-soir.gif"
+    },
+    {
+        "quote": "Excusez-moi",
+        "characters": [
+            "Demetra",
+            "Arthur"
+        ],
+        "filename": "excusez-moi.gif"
+    },
+    {
+        "quote": "Allez une petite en vitesse et on y va parce qu'ils vont nous attendre",
+        "characters": [
+            "Perceval",
+            "Karadoc"
+        ],
+        "filename": "petite-en-vitesse-vont-nous-attendre.gif"
+    },
+    {
+        "quote": "C'est rapport à la magie",
+        "characters": [
+            "Karadoc",
+            "Perceval"
+        ],
+        "filename": "rapport-a-la-magie.gif"
+    },
+    {
+        "quote": "Oui un genre de malédiction",
+        "characters": [
+            "Le Tavernier",
+            "Karadoc",
+            "Perceval"
+        ],
+        "filename": "genre-de-malediction.gif"
+    },
+    {
+        "quote": "Je trouve qu'on nous prend un peu trop souvent pour des cons en moment",
+        "characters": [
+            "Karadoc",
+            "Le Tavernier"
+        ],
+        "filename": "prend-trop-souvent-cons-en-ce-moment.gif"
+    },
+    {
+        "quote": "Ah non mais je touche pas à ça moi",
+        "characters": [
+            "Le Tavernier",
+            "Karadoc"
+        ],
+        "filename": "touche-pas-a-ca-moi.gif"
+    },
+    {
+        "quote": "Alors ça vient ?",
+        "characters": [
+            "Arthur",
+            "Lancelot du Lac",
+            "Léodagan",
+            "Kay",
+            "Merlin"
+        ],
+        "filename": "alors-ca-vient.gif"
+    },
+    {
+        "quote": "Ils se marrent ils sont en train de se payer nos têtes",
+        "characters": [
+            "Lancelot du Lac",
+            "Arthur",
+            "Léodagan",
+            "Kay",
+            "Merlin"
+        ],
+        "filename": "marre-payer-nos-tetes.gif"
+    },
+    {
+        "quote": "S'il faut payer, je paie. Y'a pas de problème",
+        "characters": [
+            "Jacca"
+        ],
+        "filename": "payer-je-paie-pas-de-probleme.gif"
+    },
+    {
+        "quote": "Bah y'a pas de problème alors",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "pas-de-probleme-alors.gif"
+    },
+    {
+        "quote": "Ca me tombe dessus comme une merde sur une planche",
+        "characters": [
+            "Jacca"
+        ],
+        "filename": "dessus-comme-une-merde-planche.gif"
+    },
+    {
+        "quote": "Oui mais enfin là, je vais mieux",
+        "characters": [
+            "Jacca"
+        ],
+        "filename": "la-je-vais-mieux.gif"
+    },
+    {
+        "quote": "Il est tellement bigleux qu'il trouverait même pas sa bite pour pisser",
+        "characters": [
+            "Jacca"
+        ],
+        "filename": "bigleux-bite-pisser.gif"
+    },
+    {
+        "quote": "C'est sur le coup du...",
+        "characters": [
+            "Jacca"
+        ],
+        "filename": "sur-le-coup-du.gif"
+    },
+    {
+        "quote": "Je les ai pendus à un arbre, ça les a fait sécher ces trous-du-cul",
+        "characters": [
+            "Jacca"
+        ],
+        "filename": "pendus-arbre-secher-trous-du-cul.gif"
+    },
+    {
+        "quote": "Non c'est vrai, j'ai été pas mal malade",
+        "characters": [
+            "Jacca"
+        ],
+        "filename": "pas-mal-malade.gif"
+    },
+    {
+        "quote": "Sinon hésitez pas",
+        "characters": [
+            "Arthur",
+            "Karadoc"
+        ],
+        "filename": "sinon-hesitez-pas.gif"
+    },
+    {
+        "quote": "Si si, j'en ai entendu parler moi",
+        "characters": [
+            "Arthur",
+            "Karadoc"
+        ],
+        "filename": "si-si-jen-ai-entendu-parler.gif"
+    },
+    {
+        "quote": "Ca vous agace ça hein",
+        "characters": [
+            "Galessin",
+            "Léodagan"
+        ],
+        "filename": "ca-vous-agace-ca-hein.gif"
+    },
+    {
+        "quote": "Mais on en entend parler dans les tavernes à ivrognes, voilà",
+        "characters": [
+            "Lancelot du Lac",
+            "Hervé de Rinel"
+        ],
+        "filename": "taverne-a-ivrognes.gif"
+    },
+    {
+        "quote": "Je passe pas mal de temps à la taverne, j'ai jamais entendu parler de celui là",
+        "characters": [
+            "Perceval",
+            "Bohort"
+        ],
+        "filename": "entendu-parler-de-celui-la.gif"
+    },
+    {
+        "quote": "C'est rien du tout voilà, il existe pas",
+        "characters": [
+            "Lancelot du Lac",
+            "Hervé de Rinel"
+        ],
+        "filename": "voila-il-existe-pas.gif"
+    },
+    {
+        "quote": "Ouais je vois ce que vous voulez dire",
+        "characters": [
+            "Perceval",
+            "Bohort"
+        ],
+        "filename": "ce-que-vous-voulez-dire.gif"
+    },
+    {
+        "quote": "Ouais ouais je me suis gourré",
+        "characters": [
+            "Perceval",
+            "Bohort"
+        ],
+        "filename": "je-me-suis-gourre.gif"
+    },
+    {
+        "quote": "Jo le rigolo ?",
+        "characters": [
+            "Bohort",
+            "Arthur",
+            "Léodagan"
+        ],
+        "filename": "jo-le-rigolo.gif"
+    },
+    {
+        "quote": "Y'a pas d'herbe dans la salle du trône",
+        "characters": [
+            "Arthur",
+            "Léodagan"
+        ],
+        "filename": "pas-herbe-salle-du-trone.gif"
+    },
+    {
+        "quote": "Attila est pas content",
+        "characters": [
+            "Attila chef des Huns"
+        ],
+        "filename": "attila-aaaarrgh.gif"
+    },
+    {
+        "quote": "Pourquoi pas ?",
+        "characters": [
+            "Attila chef des Huns"
+        ],
+        "filename": "pourquoi-pas.gif"
+    },
+    {
+        "quote": "Oui non mais d'accord mais euh",
+        "characters": [
+            "Arthur",
+            "Léodagan",
+            "Bohort"
+        ],
+        "filename": "oui-non-mais-daccord.gif"
+    },
+    {
+        "quote": "Un grouillot se met derrière Yvain",
+        "characters": [
+            "Yvain",
+            "Gauvain"
+        ],
+        "filename": "se-met-derriere.gif"
+    },
+    {
+        "quote": "En même temps quand quelqu'un essaye vous n'avez pas l'air de super apprécier non plus",
+        "characters": [
+            "Le duc d'Aquitaine",
+            "Bohort"
+        ],
+        "filename": "quelquun-essaie-pas-apprecier.gif"
+    },
+    {
+        "quote": "C'est tout à fait pertinent",
+        "characters": [
+            "Bohort",
+            "Le duc d'Aquitaine"
+        ],
+        "filename": "tout-a-fait-pertinent.gif"
+    },
+    {
+        "quote": "C'est pour ça je pense que c'est bien de prendre 5 min pour se dire les choses",
+        "characters": [
+            "Le duc d'Aquitaine",
+            "Bohort"
+        ],
+        "filename": "prendre-cinq-minutes-dire-choses.gif"
+    },
+    {
+        "quote": "Attention je trouve l'expérience extraordinaire",
+        "characters": [
+            "Le duc d'Aquitaine",
+            "Bohort"
+        ],
+        "filename": "trouve-experience-extraordinaire.gif"
+    },
+    {
+        "quote": "A la notion ambitionnelle",
+        "characters": [
+            "Le duc d'Aquitaine",
+            "Bohort"
+        ],
+        "filename": "notion-ambitionnelle.gif"
+    },
+    {
+        "quote": "La carrière",
+        "characters": [
+            "Le duc d'Aquitaine",
+            "Bohort"
+        ],
+        "filename": "la-carriere.gif"
+    },
+    {
+        "quote": "Là on est sur du terme qui veut rien dire",
+        "characters": [
+            "Le duc d'Aquitaine",
+            "Bohort"
+        ],
+        "filename": "terme-veut-rien-dire.gif"
+    },
+    {
+        "quote": "Bah, nan c'est parce que, vous venez de dire mot pour mot ce que je viens de dire",
+        "characters": [
+            "Le duc d'Aquitaine",
+            "Bohort"
+        ],
+        "filename": "mot-pour-mot-vient-dire.gif"
+    },
+    {
+        "quote": "A moins d'un pépin, y'a peu de chance que ça marche",
+        "characters": [
+            "Arthur",
+            "Père Blaise"
+        ],
+        "filename": "pepin-peu-de-chance-marche.gif"
+    },
+    {
+        "quote": "Une mise en scène de l'échec",
+        "characters": [
+            "Le duc d'Aquitaine"
+        ],
+        "filename": "mise-en-scene-echec.gif"
+    },
+    {
+        "quote": "Je ne parle de l'échec notion, je parle bel et bien de l'échec épreuve",
+        "characters": [
+            "Le duc d'Aquitaine",
+            "Bohort"
+        ],
+        "filename": "echec-notion-echec-epreuve.gif"
+    },
+    {
+        "quote": "Pour paraphraser audacieusement notre ami",
+        "characters": [
+            "Bohort",
+            "Le duc d'Aquitaine"
+        ],
+        "filename": "paraphraser-audacieusement-ami.gif"
+    },
+    {
+        "quote": "Wowowo, mais oui, il a raison",
+        "characters": [
+            "Le duc d'Aquitaine"
+        ],
+        "filename": "oui-il-a-raison.gif"
+    },
+    {
+        "quote": "Ah non moi je suis plutôt pour hein",
+        "characters": [
+            "Bohort",
+            "Le duc d'Aquitaine"
+        ],
+        "filename": "je-suis-plutot-pour.gif"
+    },
+    {
+        "quote": "Vous y allez vous y allez pas ?",
+        "characters": [
+            "Arthur",
+            "Père Blaise"
+        ],
+        "filename": "allez-y-allez-pas.gif"
+    },
+    {
+        "quote": "Vous restez tout de même sur un mode qui interdit les nuances",
+        "characters": [
+            "Bohort",
+            "Le duc d'Aquitaine"
+        ],
+        "filename": "mode-interdit-nuances.gif"
+    },
+    {
+        "quote": "Moi personnellement je ne pense qu'on peut réduire le débat à sa forme concrète mais ok",
+        "characters": [
+            "Le duc d'Aquitaine",
+            "Bohort"
+        ],
+        "filename": "reduire-debat-forme-concrete.gif"
+    },
+    {
+        "quote": "Je vous suis très reconnaissant d'avoir su m'aiguiller au niveau de mon couple",
+        "characters": [
+            "Le duc d'Aquitaine",
+            "Bohort"
+        ],
+        "filename": "aiguiller-niveau-mon-couple.gif"
+    },
+    {
+        "quote": "Ce dont on parlait quand on était couché l'autre soir avec le monsieur",
+        "characters": [
+            "Le duc d'Aquitaine",
+            "Bohort"
+        ],
+        "filename": "coucher-soir-monsieur.gif"
     }
 ]
