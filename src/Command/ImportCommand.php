@@ -43,10 +43,15 @@ class ImportCommand extends Command
         $gifsFromCsv = $this->decoder->decode((string) $file, 'csv');
 
         $gifs = [];
+        $warnings = [];
 
         foreach ($gifsFromCsv as $gif) {
+            if ('Y' === $gif['Added']) {
+                continue;
+            }
+
             if (!$this->imageHelper->gifExists($gif['Filename'])) {
-                $output->writeln(sprintf('Warning: %s.gif does not exist. Skipping...', $gif['Filename']));
+                $warnings[] = sprintf('Warning: %s.gif does not exist. Skipping...', $gif['Filename']);
 
                 continue;
             }
@@ -56,13 +61,21 @@ class ImportCommand extends Command
                 $gif['Character 2'],
                 $gif['Character 3'],
                 $gif['Character 4'],
+                $gif['Character 5'],
             ];
 
+            $quote = \str_replace('"', '', $gif['Quote']);
+
             $gifs[] = [
-                'quote' => \str_replace('"', '', $gif['Quote']),
+                'quote' => !empty($quote) ? $quote : $gif['Caption'],
                 'characters' => array_filter($characters, fn ($value) => !empty($value)),
                 'filename' => sprintf('%s.gif', $gif['Filename']),
             ];
+        }
+
+        if (count($warnings)) {
+            $output->writeln($warnings);
+            $output->writeln('');
         }
 
         $json = json_decode((string) file_get_contents($this->gifsJsonFile), true);
@@ -70,6 +83,8 @@ class ImportCommand extends Command
         $newJson = array_merge($json, $gifs);
 
         file_put_contents($this->gifsJsonFile, json_encode($newJson, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
+
+        $output->writeln(sprintf('%d/%d new GIFs imported', count($gifs) - count($warnings), count($gifs)));
 
         return Command::SUCCESS;
     }
