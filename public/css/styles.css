@@ -324,6 +324,10 @@ ul {
     color: white;
 }
 
+#modal-quote a {
+    text-decoration: none;
+}
+
 .modal-gif {
     padding: 20px;
     border-top: 3px solid #202530;
