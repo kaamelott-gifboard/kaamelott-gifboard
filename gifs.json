@@ -2338,5 +2338,369 @@
             "Bohort"
         ],
         "filename": "coucher-soir-monsieur.gif"
+    },
+    {
+        "quote": "De la viande, de la viande, de la viande. Cuite dans sa graisse",
+        "characters": [
+            "Venec",
+            "Léodagan"
+        ],
+        "filename": "viande-cuite-graisse.gif"
+    },
+    {
+        "quote": "Mais quoi, mais quoi, qu'est-ce qu'il y a encore ?",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "questce-quil-ya-encore.gif"
+    },
+    {
+        "quote": "Mais quand on le formule, ça pose pas de problème en fait",
+        "characters": [
+            "La Duchesse d'Aquitaine",
+            "Le duc d'Aquitaine"
+        ],
+        "filename": "formule-pose-pas-probleme.gif"
+    },
+    {
+        "quote": "Parce qu'en premier lieu il y a de votre part une vraie entreprise de déconsidération",
+        "characters": [
+            "Le duc d'Aquitaine"
+        ],
+        "filename": "vraie-entreprise-deconsideration.gif"
+    },
+    {
+        "quote": "Faut que vous trouviez des mémés pour discuter de vos problèmes",
+        "characters": [
+            "La Duchesse d'Aquitaine"
+        ],
+        "filename": "memes-discuter-vos-problemes.gif"
+    },
+    {
+        "quote": "Le tapis à toutes les sauces",
+        "characters": [
+            "Guenièvre"
+        ],
+        "filename": "tapis-toutes-les-sauces.gif"
+    },
+    {
+        "quote": "Les sauces sur le tapis",
+        "characters": [
+            "Guenièvre"
+        ],
+        "filename": "sauce-sur-le-tapis.gif"
+    },
+    {
+        "quote": "Mais j'ai pas posé de questions",
+        "characters": [
+            "Guenièvre"
+        ],
+        "filename": "pas-pose-de-questions.gif"
+    },
+    {
+        "quote": "On peut savoir ce qui vous fait sourire grand cornichon",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "fait-sourire-grand-cornichon.gif"
+    },
+    {
+        "quote": "Ah non, ah bah non ça, diplomatiquement je ne peux pas me le permettre",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "diplomatiquement-pas-permettre.gif"
+    },
+    {
+        "quote": "Oui non mais non... Non allez non",
+        "characters": [
+            "Arthur",
+            "La Duchesse d'Aquitaine"
+        ],
+        "filename": "mais-non-allez-non.gif"
+    },
+    {
+        "quote": "Et puis zut là. Voilà zuuuuuute",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "zut-voila-zuuuuuute.gif"
+    },
+    {
+        "quote": "Mais qui c'est celui-là",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "qui-cest-celui-la.gif"
+    },
+    {
+        "quote": "Nous sommes avec une personne qui ne va pas hésiter à aller piocher dans un lexique très intuitif",
+        "characters": [
+            "Le duc d'Aquitaine",
+            "Arthur"
+        ],
+        "filename": "personne-piocher-lexique-tres-intuitif.gif"
+    },
+    {
+        "quote": "Est-ce que vous vous sentiriez capable d'apprendre un petit texte par coeur",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "capable-apprendre-texte-par-coeur.gif"
+    },
+    {
+        "quote": "Non mais je rêve faut me pincer là",
+        "characters": [
+            "La Duchesse d'Aquitaine",
+            "Le duc d'Aquitaine"
+        ],
+        "filename": "reve-faut-me-pincer.gif"
+    },
+    {
+        "quote": "Ah, j'avais peur de vous réveiller",
+        "characters": [
+            "Guenièvre"
+        ],
+        "filename": "peur-de-vous-reveiller.gif"
+    },
+    {
+        "quote": "Attendez je comprends pas le projet là",
+        "characters": [
+            "Yvain",
+            "Guenièvre"
+        ],
+        "filename": "comprends-pas-le-projet.gif"
+    },
+    {
+        "quote": "Viré",
+        "characters": [
+            "Le Maître d'Armes",
+            "Arthur"
+        ],
+        "filename": "vire.gif"
+    },
+    {
+        "quote": "Mais trop pas quoi",
+        "characters": [
+            "Yvain"
+        ],
+        "filename": "mais-trop-pas-quoi.gif"
+    },
+    {
+        "quote": "Votre place",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "votre-place.gif"
+    },
+    {
+        "quote": "Euh humour hein",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "euh-humour-hein.gif"
+    },
+    {
+        "quote": "Yasbaltrine, c'est possible",
+        "characters": [
+            "Nessa"
+        ],
+        "filename": "yasbaltrine-cest-possible.gif"
+    },
+    {
+        "quote": "Je m'suis fait piquer des trucs, ça me turlupine",
+        "characters": [
+            "Elias de Kelliwic'h"
+        ],
+        "filename": "fait-piquer-des-trucs.gif"
+    },
+    {
+        "quote": "Bonne nuit",
+        "characters": [
+            "Mevanwi"
+        ],
+        "filename": "bonne-nuit.gif"
+    },
+    {
+        "quote": "Maintenant vous faites comme vous voulez",
+        "characters": [
+            "Arthur",
+            "Guenièvre"
+        ],
+        "filename": "maintenant-faites-comme-vous-voulez.gif"
+    },
+    {
+        "quote": "Je peux vous poser une question même si ça fait 30 fois",
+        "characters": [
+            "Dagonet",
+            "Galessin"
+        ],
+        "filename": "question-meme-si-trente-fois.gif"
+    },
+    {
+        "quote": "Si on envisage tout autant la possibilité que vous soyez un parfait glandu",
+        "characters": [
+            "Loth d'Orcanie"
+        ],
+        "filename": "possibilite-soyez-parfait-glandu.gif"
+    },
+    {
+        "quote": "Si, mais je l'assume difficilement",
+        "characters": [
+            "Loth d'Orcanie"
+        ],
+        "filename": "je-lassume-difficilement.gif"
+    },
+    {
+        "quote": "Vous me faites penser à ces types qui se servent jamais en premier pour faire poli",
+        "characters": [
+            "Galessin",
+            "Dagonet"
+        ],
+        "filename": "serve-jamais-premier-poli.gif"
+    },
+    {
+        "quote": "Et le rapport dans le contexte",
+        "characters": [
+            "Dagonet",
+            "Galessin"
+        ],
+        "filename": "rapport-dans-le-contexte.gif"
+    },
+    {
+        "quote": "Ca vous ennuie si je m'assoupis un peu, j'ai mal à la tête",
+        "characters": [
+            "Dagonet",
+            "Galessin"
+        ],
+        "filename": "assoupis-un-peu-mal-tete.gif"
+    },
+    {
+        "quote": "Oh non mais qu'est-ce que vous allez me faire",
+        "characters": [
+            "La Dame du Lac"
+        ],
+        "filename": "questce-que-vous-allez-me-faire.gif"
+    },
+    {
+        "quote": "On va passer une bonne soirée, magnifique",
+        "characters": [
+            "Méléagant"
+        ],
+        "filename": "passer-une-bonne-soiree.gif"
+    },
+    {
+        "quote": "Mais c'est que je vous demande nom d'un chien, faites pas exprès",
+        "characters": [
+            "Léodagan",
+            "Séli"
+        ],
+        "filename": "demande-nom-dun-chien.gif"
+    },
+    {
+        "quote": "Oh l'Irlande",
+        "characters": [
+            "Yvain",
+            "Guenièvre",
+            "Léodagan",
+            "Séli",
+            "Arthur"
+        ],
+        "filename": "oh-lirlande.gif"
+    },
+    {
+        "quote": "J'en conclus que vous avez tous chié dans la colle bien comme il faut",
+        "characters": [
+            "Loth d'Orcanie",
+            "Galessin"
+        ],
+        "filename": "chie-dans-la-colle-comme-il-faut.gif"
+    },
+    {
+        "quote": "C'est pas à se bouffer les rognons ça",
+        "characters": [
+            "Loth d'Orcanie",
+            "Galessin"
+        ],
+        "filename": "bouffer-les-rognons.gif"
+    },
+    {
+        "quote": "Imaginez que ça marche",
+        "characters": [
+            "Le Tavernier"
+        ],
+        "filename": "imaginez-que-ca-marche.gif"
+    },
+    {
+        "quote": "Mais ça peut pas marcher",
+        "characters": [
+            "Merlin",
+            "Perceval"
+        ],
+        "filename": "ca-peut-pas-marcher.gif"
+    },
+    {
+        "quote": "Si on avait bu un coup dans des trucs qui se cassent, j'en aurais pété un par terre",
+        "characters": [
+            "Perceval",
+            "Merlin"
+        ],
+        "filename": "trucs-qui-se-cassent-pete-un.gif"
+    },
+    {
+        "quote": "Dites, vous étiez pas consigné chez vous très gros tas de fumier",
+        "characters": [
+            "Léodagan"
+        ],
+        "filename": "consigne-chez-vous-tas-fumier.gif"
+    },
+    {
+        "quote": "C'est assez flou, chez moi, pas chez moi",
+        "characters": [
+            "Loth d'Orcanie",
+            "Galessin",
+            "Léodagan"
+        ],
+        "filename": "assez-flou-chez-moi-pas-chez-moi.gif"
+    },
+    {
+        "quote": "Du coup je prends l'air, c'est mieux pour tout le monde",
+        "characters": [
+            "Loth d'Orcanie",
+            "Galessin",
+            "Léodagan"
+        ],
+        "filename": "prends-lair-mieux-tout-le-monde.gif"
+    },
+    {
+        "quote": "Par acquis de conscience",
+        "characters": [
+            "Léodagan"
+        ],
+        "filename": "par-acquis-de-conscience.gif"
+    },
+    {
+        "quote": "Ouais mais si y en a un qui fait du chprum, ça va partir en marave générale, et je suis claqué",
+        "characters": [
+            "Karadoc",
+            "Merlin"
+        ],
+        "filename": "chprum-partir-en-marave-generale.gif"
+    },
+    {
+        "quote": "Alors là je m'sens vraiment pas le courage",
+        "characters": [
+            "Karadoc",
+            "Merlin"
+        ],
+        "filename": "sens-vraiment-pas-le-courage.gif"
+    },
+    {
+        "quote": "Non c'est bon, ta gueule, on domine",
+        "characters": [
+            "L'interprète Burgonde",
+            "Le Roi Burgonde"
+        ],
+        "filename": "ta-gueule-on-domine.gif"
     }
 ]
