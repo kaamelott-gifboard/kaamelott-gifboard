@@ -29,6 +29,8 @@
 {% endblock %}
 
 {% block gif %}
+    <br />
+
     <div class="quote-block">
         <h2 class="quote">{{ current.quote }}</h2>
     </div>
@@ -67,4 +69,7 @@
     {{ copy.block('Lien', current.url, 'Lien vers cette page') }}
     {{ copy.block('Lien court', current.shortUrl, 'Lien court vers cette page') }}
     {{ copy.block('GIF', current.image, 'Image originale') }}
+
+    <br />
+    <br />
 {% endblock %}

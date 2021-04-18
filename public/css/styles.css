@@ -328,6 +328,10 @@ ul {
     text-decoration: none;
 }
 
+#modal-quote a:hover {
+    text-decoration: underline;
+}
+
 .modal-gif {
     padding: 20px;
     border-top: 3px solid #202530;
