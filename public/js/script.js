@@ -57,10 +57,10 @@ window.onload = function () {
 
 document.querySelectorAll('.square_btn').forEach(function (element) {
     element.addEventListener('click', function () {
-        let image = document.getElementById(element.getAttribute('data-id') + "-img").getAttribute('data-img');
+        let dataId = element.getAttribute('data-id');
 
-        document.getElementById(element.getAttribute('data-id') + "-modal-img").src = image;
-        document.getElementById(element.getAttribute('data-id') + "-modal").style.display = "block";
+        document.getElementById(dataId + "-modal-img").src = document.getElementById(dataId + "-img").getAttribute('data-img');
+        document.getElementById(dataId + "-modal").style.display = "block";
     });
 });
 
@@ -80,15 +80,21 @@ window.addEventListener('keydown', function (event) {
 
 // ==================================================
 
-document.querySelectorAll('.copy-btn').forEach(function (element) {
+document.querySelectorAll('.sharing-btn').forEach(function (element) {
     element.addEventListener('click', function () {
-        let input = this.parentNode.getElementsByTagName('input')[0];
+        let button = this.parentNode.getElementsByTagName('button')[0];
 
-        navigator.clipboard.writeText(input.value);
+        navigator.clipboard.writeText(button.value);
 
+        let title = button.getAttribute('data-title');
         let notification = document.getElementById("notification");
+        let text = title + ' copié !';
 
-        notification.innerText = 'Lien copié !';
+        if (button.getAttribute('data-type') === 'social') {
+            text = 'Lien optimisé pour ' + title + ' copié !';
+        }
+
+        notification.innerText = text;
         notification.style.display = "block";
 
         setTimeout(function Remove() {

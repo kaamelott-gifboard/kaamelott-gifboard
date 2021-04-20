@@ -22,22 +22,16 @@ h1 {
     display: none;
 }
 
-.copy-block {
+.copy-block-divider {
+    display: none !important;
+}
+
+.copy-block-other {
+    margin-top: 10px;
+}
+
+.tooltip-text {
     display: none;
-}
-
-.copy-block-mobile {
-    display: block;
-}
-
-.copy-input-mobile {
-    display: none;
-}
-
-.copy-btn {
-    width: 90%;
-    margin: 0 auto;
-    position: relative;
 }
 
 .input-quote {

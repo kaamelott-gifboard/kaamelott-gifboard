@@ -73,11 +73,25 @@
         {% endfor %}
     </div>
 
-    {{ copy.block_mobile(current.image) }}
+    <div class="copy-block">
+        Partager sur :<br /><br />
 
-    {{ copy.block('Lien', current.url, 'Lien vers cette page') }}
-    {{ copy.block('Lien court', current.shortUrl, 'Lien court vers cette page') }}
-    {{ copy.block('GIF', current.image, 'Image originale') }}
+        <div class="copy-block-social">
+            {{ copy.block_icon('Slack', 'social', current.url, 'fab fa-slack') }}
+            {{ copy.block_icon('Discord', 'social', current.image, 'fab fa-discord') }}
+            {{ copy.block_icon('Twitter', 'social', current.image, 'fab fa-twitter') }}
+            {{ copy.block_icon('Facebook', 'social', current.url, 'fab fa-facebook') }}
+            {{ copy.block_icon('Reddit', 'social', current.url, 'fab fa-reddit') }}
+        </div>
+
+        <div class="copy-block-divider">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</div>
+
+        <div class="copy-block-other">
+            {{ copy.block_icon('Lien du GIF', 'media', current.image, 'fa fa-image', true) }}
+            {{ copy.block_icon('Lien avec la citation', 'media', current.url, 'fa fa-quote-right', true) }}
+            {{ copy.block_icon('Lien court', 'media', current.shortUrl, 'fa fa-link', true) }}
+        </div>
+    </div>
 
     <br />
     <br />

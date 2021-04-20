@@ -159,17 +159,6 @@ a {
     padding-left: 10px;
 }
 
-.copy-block-mobile {
-    display: none;
-}
-
-.copy-block {
-    width: 500px;
-    height: 50px;
-    margin: 20px auto;
-    position: relative;
-}
-
 .copy-caption {
     position: absolute;
     top: 40px;
@@ -185,23 +174,6 @@ a {
     left: 0;
     display: block;
     width: 90px;
-}
-
-.copy-btn {
-    background-color: #45516b;
-    padding: 9px;
-    width: 80px;
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    cursor: pointer;
-    font-weight: bold;
-}
-
-.copy-btn:active {
-    user-select: none;
-    background-color: #3e4b64;
 }
 
 ul {
@@ -285,6 +257,73 @@ ul {
     margin: 0 40px 0 40px;
     display: inline-block;
     vertical-align: middle;
+}
+
+/* ================================= */
+
+.sharing-btn:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+.sharing-btn .tooltip-text {
+    visibility: hidden;
+    width: 130px;
+    background-color: #45516b;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -65px;
+    opacity: 0;
+    transition: opacity 0.5s;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.sharing-btn .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #45516b transparent transparent transparent;
+}
+
+.sharing-btn {
+    position: relative;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    padding: 10px;
+    width: 50px;
+    line-height: 1.42857143;
+    border-radius: 50%;
+    color: white;
+    background-color: #45516b;
+    border: none;
+    outline: none;
+}
+
+.sharing-btn:active {
+    user-select: none;
+    background-color: #3e4b64;
+}
+
+.btn-light {
+    background-color: #626b7e;
+}
+
+.copy-block div {
+    display: inline-block;
 }
 
 /* ================================= */

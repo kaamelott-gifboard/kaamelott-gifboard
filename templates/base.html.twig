@@ -35,11 +35,11 @@
         {% endblock %}
 
         {% block stylesheets -%}
-        <link rel="stylesheet" href="{{ asset('css/styles.css') }}" media="screen">
-        <link rel="stylesheet" href="{{ asset('css/mobile.css') }}" media="screen and (max-width: 900px)" />
+        <link rel="stylesheet" href="{{ asset('css/styles.css') }}?v=1.1" media="screen">
+        <link rel="stylesheet" href="{{ asset('css/mobile.css') }}?v=1.1" media="screen and (max-width: 900px)" />
         {% endblock %}
 
-        <script src="https://use.fontawesome.com/251fdfe15b.js"></script>
+        <script src="https://kit.fontawesome.com/ca7418fbe7.js" crossorigin="anonymous"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-KK4X4869Y1"></script>
         <script>
             (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -67,7 +67,7 @@
             </div>
         </div>
         {% block javascripts %}
-            <script src="{{ asset('js/script.js') }}"></script>
+            <script src="{{ asset('js/script.js') }}?v=1.1"></script>
         {% endblock %}
     </body>
 </html>
