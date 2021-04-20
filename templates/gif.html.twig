@@ -26,6 +26,15 @@
         <meta property="og:image:width" content="{{ current.width }}">
         <meta property="og:image:height" content="{{ current.height }}">
     {% endif %}
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:creator" content="@KGifboard">
+    <meta name="twitter:site" content="@KGifboard">
+    <meta name="twitter:description" content="{{ description }}">
+    <meta name="twitter:image:src" content="{{ current.image }}">
+    <meta name="twitter:image" content="{{ current.image }}">
+    <meta name="twitter:domain" content="kaamelott-gifboard.fr">
 {% endblock %}
 
 {% block gif %}
