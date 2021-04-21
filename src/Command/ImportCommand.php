@@ -9,6 +9,7 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Serializer\Encoder\DecoderInterface;
+use Symfony\Component\String\Slugger\SluggerInterface;
 
 class ImportCommand extends Command
 {
@@ -17,7 +18,8 @@ class ImportCommand extends Command
     public function __construct(
         private DecoderInterface $decoder,
         private string $gifsJsonFile,
-        private ImageHelper $imageHelper
+        private ImageHelper $imageHelper,
+        private SluggerInterface $slugger,
     ) {
         parent::__construct();
     }
@@ -70,6 +72,7 @@ class ImportCommand extends Command
                 'quote' => !empty($quote) ? $quote : $gif['Caption'],
                 'characters' => array_filter($characters, fn ($value) => !empty($value)),
                 'filename' => sprintf('%s.gif', $gif['Filename']),
+                'slug' => '',
             ];
         }
 
@@ -82,10 +85,49 @@ class ImportCommand extends Command
 
         $newJson = array_merge($json, $gifs);
 
+        $this->slugifyGifs($newJson);
+
         file_put_contents($this->gifsJsonFile, json_encode($newJson, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES));
 
         $output->writeln(sprintf('%d/%d new GIFs imported', count($gifs) - count($warnings), count($gifs)));
 
         return Command::SUCCESS;
+    }
+
+    private function slugifyGifs(array &$newJson): void
+    {
+        foreach ($newJson as &$gif) {
+            if ('' !== $gif['slug']) {
+                continue;
+            }
+
+            $slug = $this->slugger->slug($gif['quote'])->lower()->__toString();
+
+            $this->deduplicateSlug($newJson, $slug);
+
+            $gif['slug'] = $slug;
+        }
+    }
+
+    private function deduplicateSlug(array $gifs, string &$slug): void
+    {
+        $i = 0;
+
+        do {
+            $exist = array_filter($gifs, function (array $gif) use ($slug, $i) {
+                if ($i > 0) {
+                    return $gif['slug'] === sprintf('%s-%d', $slug, $i);
+                }
+
+                return $gif['slug'] === $slug;
+            });
+
+            if (!$exist && $i > 0) {
+                $slug = sprintf('%s-%d', $slug, $i);
+                break;
+            }
+
+            ++$i;
+        } while ($exist);
     }
 }
