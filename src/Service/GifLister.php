@@ -32,13 +32,11 @@ class GifLister
         $gifs = [];
 
         foreach (json_decode($json) as $gifItem) {
-            $slug = $this->lowerSlug($gifItem->quote);
-
             $gif = new Gif();
-            $gif->slug = $slug;
+            $gif->slug = $gifItem->slug;
             $gif->quote = $gifItem->quote;
             $gif->filename = $gifItem->filename;
-            $gif->url = $this->router->generate('get_by_slug', ['slug' => $slug], RouterInterface::ABSOLUTE_URL);
+            $gif->url = $this->router->generate('get_by_slug', ['slug' => $gifItem->slug], RouterInterface::ABSOLUTE_URL);
             $gif->image = $this->router->generate('quote_image', ['filename' => $gif->filename], RouterInterface::ABSOLUTE_URL);
 
             $dimensions = $this->imageHelper->getImageDimensions($gif->filename);
@@ -57,17 +55,12 @@ class GifLister
         $this->gifs = new GifIterator($gifs);
     }
 
-    private function lowerSlug(string $string): string
-    {
-        return $this->slugger->slug($string)->lower()->__toString();
-    }
-
     private function formatCharacters(Gif $gif, \stdClass $gifItem): void
     {
         $formattedCharacters = [];
 
         foreach ($gifItem->characters as $character) {
-            $sluggedCharacter = $this->lowerSlug($character);
+            $sluggedCharacter = $this->slugger->slug($character)->lower()->__toString();
 
             $characterImage = $this->router->generate('character_image', [
                 'filename' => $this->imageHelper->getCharacterImage($sluggedCharacter),
