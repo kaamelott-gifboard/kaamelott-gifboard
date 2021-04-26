@@ -15,10 +15,8 @@ use Symfony\Component\String\Slugger\AsciiSlugger;
 
 class GifListerTest extends KernelTestCase
 {
-    /** @var MockObject|RouterInterface */
-    private RouterInterface $router;
-    /** @var ImageHelper|MockObject */
-    private ImageHelper $helper;
+    private RouterInterface | MockObject $router;
+    private ImageHelper | MockObject $helper;
 
     protected function setUp(): void
     {

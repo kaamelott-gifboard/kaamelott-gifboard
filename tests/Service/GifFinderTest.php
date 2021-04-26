@@ -16,7 +16,6 @@ use Symfony\Component\String\Slugger\AsciiSlugger;
 
 class GifFinderTest extends KernelTestCase
 {
-    /** @var GifLister|MockObject */
     private MockObject | GifLister $lister;
     private GifFinder $finder;
 

@@ -6,49 +6,40 @@ namespace KaamelottGifboard\Action\Gif;
 
 use KaamelottGifboard\Action\AbstractAction;
 use KaamelottGifboard\Exception\PouletteNotFoundException;
-use Symfony\Component\HttpFoundation\BinaryFileResponse;
-use Symfony\Component\HttpFoundation\File\File;
+use KaamelottGifboard\Handler\RedirectionHandler;
+use KaamelottGifboard\Handler\SharingAppHandler;
+use KaamelottGifboard\Service\GifFinder;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Twig\Environment;
 
 class Slug extends AbstractAction
 {
-    private const SHARING_APP_USER_AGENTS = [
-        'api.slack.com/robots',
-//        'Discordbot',
-    ];
+    public function __construct(
+        protected Environment $twig,
+        protected GifFinder $finder,
+        private RedirectionHandler $redirectionHandler,
+        private SharingAppHandler $sharingAppHandler
+    ) {
+        parent::__construct($this->twig, $this->finder);
+    }
 
     public function __invoke(Request $request, string $slug): Response
     {
+        if ($redirection = $this->redirectionHandler->getRedirection($slug)) {
+            return $redirection;
+        }
+
         $gifs = $this->finder->findGifsBySlug($slug);
 
         if (null === $gifs) {
             throw new PouletteNotFoundException('slug', $slug);
         }
 
-        if ($this->isASharingApp($request)) {
-            $image = (array) parse_url($gifs['current']->image);
-
-            if (\array_key_exists('path', $image)) {
-                $file = new File(ltrim($image['path'], '/'));
-
-                $response = new BinaryFileResponse($file);
-                $response->headers->set('Content-Type', 'image/gif');
-                $response->headers->set('Content-Length', (string) $file->getSize());
-
-                return $response;
-            }
+        if ($response = $this->sharingAppHandler->getResponse($gifs)) {
+            return $response;
         }
 
         return $this->render('gif.html.twig', $gifs);
-    }
-
-    private function isASharingApp(Request $request): bool
-    {
-        $userAgent = (string) $request->headers->get('User-Agent');
-
-        $userAgents = (string) implode('|', self::SHARING_APP_USER_AGENTS);
-
-        return (bool) preg_match(sprintf('#%s#', $userAgents), $userAgent);
     }
 }
