@@ -2,6 +2,7 @@ parameters:
     host_name: '%env(HOST_NAME)%'
     short_host_name: '%env(SHORT_HOST_NAME)%'
     gifs_json_path: '%kernel.project_dir%/gifs.json'
+    redirection_json_path: '%kernel.project_dir%/redirection.json'
     public_path: '%kernel.project_dir%/public'
 
 services:
@@ -11,6 +12,7 @@ services:
         public: false
         bind:
             string $gifsJsonFile: '%gifs_json_path%'
+            string $redirectionJsonFile: '%redirection_json_path%'
             string $publicPath: '%public_path%'
 
     KaamelottGifboard\:
