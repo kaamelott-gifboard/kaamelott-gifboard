@@ -22,7 +22,7 @@ class ImageHelper
 
     public function getCharacterImage(string $character): string
     {
-        $filename = sprintf('%s.png', $character);
+        $filename = sprintf('%s.jpg', $character);
         $filePath = sprintf('%s/%s', self::CHARACTER_DIR, $filename);
 
         return file_exists($this->publicPath.'/'.$filePath) ? $filename : 'unknown.jpg';

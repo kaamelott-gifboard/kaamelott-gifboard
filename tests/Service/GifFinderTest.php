@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace KaamelottGifboard\Tests\Service;
 
+use KaamelottGifboard\DataObject\Character;
 use KaamelottGifboard\DataObject\Gif;
 use KaamelottGifboard\DataObject\GifIterator;
 use KaamelottGifboard\Helper\ImageHelper;
@@ -70,14 +71,7 @@ class GifFinderTest extends KernelTestCase
     {
         $expected = (new Gif());
         $expected->quote = 'Finally, the quote number 3';
-        $expected->characters = [
-            [
-                'slug' => 'character-2',
-                'name' => 'Character 2',
-                'image' => 'route',
-                'url' => 'route',
-            ],
-        ];
+        $expected->characters = [(new Character('character-2', 'Character 2', 'route', 'route'))];
         $expected->filename = 'quote-3.gif';
         $expected->slug = 'finally-the-quote-number-3';
         $expected->url = 'route';
@@ -106,14 +100,7 @@ class GifFinderTest extends KernelTestCase
     {
         $expected = (new Gif());
         $expected->quote = 'Finally, the quote number 3';
-        $expected->characters = [
-            [
-                'slug' => 'character-2',
-                'name' => 'Character 2',
-                'image' => 'route',
-                'url' => 'route',
-            ],
-        ];
+        $expected->characters = [(new Character('character-2', 'Character 2', 'route', 'route'))];
         $expected->filename = 'quote-3.gif';
         $expected->slug = 'finally-the-quote-number-3';
         $expected->url = 'route';
@@ -138,14 +125,9 @@ class GifFinderTest extends KernelTestCase
     {
         $character = $this->finder->findCharacter('Character 3');
 
-        $expected = [
-            'slug' => 'character-3',
-            'name' => 'Character 3',
-            'image' => 'route',
-            'url' => 'route',
-        ];
+        $expected = (new Character('character-3', 'Character 3', 'route', 'route'));
 
-        static::assertSame($expected, $character);
+        static::assertEquals($expected, $character);
     }
 
     public function testFindCharacterNull(): void
