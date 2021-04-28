@@ -28,7 +28,9 @@ if ($input->hasParameterOption('--no-debug', true)) {
     putenv('APP_DEBUG='.$_SERVER['APP_DEBUG'] = $_ENV['APP_DEBUG'] = '0');
 }
 
-(new Dotenv())->bootEnv(dirname(__DIR__).'/.env');
+if (!isset($_SERVER['APP_ENV'])) {
+    (new Dotenv())->bootEnv(dirname(__DIR__).'/.env');
+}
 
 if ($_SERVER['APP_DEBUG']) {
     umask(0000);
