@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace KaamelottGifboard\Service;
 
+use KaamelottGifboard\DataObject\Character;
 use KaamelottGifboard\DataObject\Gif;
 use KaamelottGifboard\DataObject\GifIterator;
 use Symfony\Component\String\UnicodeString;
@@ -43,7 +44,7 @@ class GifFinder
 
         foreach ($this->lister->gifs as $gif) {
             foreach ($gif->characters as $character) {
-                if ($this->match($search, $character['name'])) {
+                if ($this->match($search, $character->name)) {
                     $results[] = $gif;
                 }
             }
@@ -74,11 +75,11 @@ class GifFinder
         return null;
     }
 
-    public function findCharacter(string $search): ?array
+    public function findCharacter(string $search): ?Character
     {
         foreach ($this->lister->gifs as $gif) {
             foreach ($gif->characters as $character) {
-                if ($this->match($search, $character['name'])) {
+                if ($this->match($search, $character->name)) {
                     return $character;
                 }
             }
@@ -93,8 +94,8 @@ class GifFinder
 
         foreach ($this->lister->gifs as $gif) {
             foreach ($gif->characters as $character) {
-                if (!\array_key_exists($character['slug'], $results)) {
-                    $results[$character['slug']] = $character;
+                if (!\array_key_exists($character->slug, $results)) {
+                    $results[$character->slug] = $character;
                 }
             }
         }

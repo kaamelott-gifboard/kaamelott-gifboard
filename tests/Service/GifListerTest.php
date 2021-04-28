@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace KaamelottGifboard\Tests\Service;
 
+use KaamelottGifboard\DataObject\Character;
 use KaamelottGifboard\DataObject\Gif;
 use KaamelottGifboard\DataObject\GifIterator;
 use KaamelottGifboard\Helper\ImageHelper;
@@ -68,12 +69,12 @@ class GifListerTest extends KernelTestCase
             static::assertIsArray($item->characters);
 
             foreach ($item->characters as $character) {
-                static::assertArrayHasKey('slug', $character);
-                static::assertMatchesRegularExpression('#^[a-z-0-9]+$#', $character['slug']);
-                static::assertArrayHasKey('name', $character);
-                static::assertArrayHasKey('image', $character);
-                static::assertMatchesRegularExpression('#[a-z-]+\.png$#', $character['image'], $character['name']);
-                static::assertArrayHasKey('url', $character);
+                static::assertObjectHasAttribute('slug', $character);
+                static::assertMatchesRegularExpression('#^[a-z-0-9]+$#', $character->slug);
+                static::assertObjectHasAttribute('name', $character);
+                static::assertObjectHasAttribute('image', $character);
+                static::assertMatchesRegularExpression('#[a-z-]+\.jpg$#', $character->image, $character->name);
+                static::assertObjectHasAttribute('url', $character);
             }
         }
     }
@@ -92,38 +93,38 @@ class GifListerTest extends KernelTestCase
                 ['get_by_slug', ['slug' => 'this-is-the-quote-1']],
                 ['quote_image', ['filename' => 'quote-1.gif']],
                 ['get_by_code_short', ['code' => 'f53abd91c9']],
-                ['character_image', ['filename' => 'image-1.png']],
+                ['character_image', ['filename' => 'image-1.jpg']],
                 ['get_by_character', ['name' => 'Character 1']],
-                ['character_image', ['filename' => 'image-2.png']],
+                ['character_image', ['filename' => 'image-2.jpg']],
                 ['get_by_character', ['name' => 'Character 2']],
                 ['get_by_slug', ['slug' => 'here-is-the-quote-2']],
                 ['quote_image', ['filename' => 'quote-2.gif']],
                 ['get_by_code_short', ['code' => 'cc58ba3582']],
-                ['character_image', ['filename' => 'image-3.png']],
+                ['character_image', ['filename' => 'image-3.jpg']],
                 ['get_by_character', ['name' => 'Character 3']],
                 ['get_by_slug', ['slug' => 'finally-the-quote-number-3']],
                 ['quote_image', ['filename' => 'quote-3.gif']],
                 ['get_by_code_short', ['code' => '0c3c899cad']],
-                ['character_image', ['filename' => 'image-2.png']],
+                ['character_image', ['filename' => 'image-2.jpg']],
                 ['get_by_character', ['name' => 'Character 2']],
             )
             ->willReturnOnConsecutiveCalls(
                 'route-1',
                 'gif-1',
                 'short-route-1',
-                'image-1.png',
+                'image-1.jpg',
                 'character-url-1',
-                'image-2.png',
+                'image-2.jpg',
                 'character-url-2',
                 'route-2',
                 'gif-2',
                 'short-route-2',
-                'image-3.png',
+                'image-3.jpg',
                 'character-url-3',
                 'route-3',
                 'gif-3',
                 'short-route-3',
-                'image-2.png',
+                'image-2.jpg',
                 'character-url-2',
             );
 
@@ -136,7 +137,7 @@ class GifListerTest extends KernelTestCase
                 ['character-3'],
                 ['character-2'],
             )
-            ->willReturnOnConsecutiveCalls('image-1.png', 'image-2.png', 'image-3.png', 'image-2.png');
+            ->willReturnOnConsecutiveCalls('image-1.jpg', 'image-2.jpg', 'image-3.jpg', 'image-2.jpg');
 
         $lister = new GifLister(
             __DIR__.'/gifs-test.json',
@@ -154,14 +155,7 @@ class GifListerTest extends KernelTestCase
 
         $gif = new Gif();
         $gif->quote = 'Finally, the quote number 3';
-        $gif->characters = [
-            [
-                'slug' => 'character-2',
-                'name' => 'Character 2',
-                'image' => 'image-2.png',
-                'url' => 'character-url-2',
-            ],
-        ];
+        $gif->characters = [(new Character('character-2', 'Character 2', 'image-2.jpg', 'character-url-2'))];
         $gif->filename = 'quote-3.gif';
         $gif->slug = 'finally-the-quote-number-3';
         $gif->url = 'route-3';

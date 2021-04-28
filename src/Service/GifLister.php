@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace KaamelottGifboard\Service;
 
+use KaamelottGifboard\DataObject\Character;
 use KaamelottGifboard\DataObject\Gif;
 use KaamelottGifboard\DataObject\GifIterator;
 use KaamelottGifboard\Helper\CodeHelper;
@@ -14,6 +15,7 @@ use Symfony\Component\String\Slugger\SluggerInterface;
 
 class GifLister
 {
+    /** @var GifIterator|Gif[] */
     public GifIterator $gifs;
 
     public function __construct(
@@ -57,28 +59,24 @@ class GifLister
 
     private function formatCharacters(Gif $gif, \stdClass $gifItem): void
     {
-        $formattedCharacters = [];
+        foreach ($gifItem->characters as $characterName) {
+            $slug = $this->slugger->slug($characterName)->lower()->__toString();
 
-        foreach ($gifItem->characters as $character) {
-            $sluggedCharacter = $this->slugger->slug($character)->lower()->__toString();
-
-            $characterImage = $this->router->generate('character_image', [
-                'filename' => $this->imageHelper->getCharacterImage($sluggedCharacter),
+            $image = $this->router->generate('character_image', [
+                'filename' => $this->imageHelper->getCharacterImage($slug),
             ], RouterInterface::ABSOLUTE_URL);
 
-            $characterUrl = $this->router->generate('get_by_character', [
-                'name' => $character,
+            $url = $this->router->generate('get_by_character', [
+                'name' => $characterName,
             ], UrlGeneratorInterface::ABSOLUTE_URL);
 
-            $formattedCharacters[] = [
-                'slug' => $sluggedCharacter,
-                'name' => $character,
-                'image' => $characterImage,
-                'url' => $characterUrl,
-            ];
+            $gif->characters[] = (new Character(
+                $slug,
+                $characterName,
+                $image,
+                $url
+            ));
         }
-
-        $gif->characters = $formattedCharacters;
     }
 
     private function formatShortUrl(Gif $gif): void

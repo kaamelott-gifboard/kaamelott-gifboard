@@ -59,4 +59,4 @@ quote_image:
 character_image:
     path: /characters/{filename}
     defaults:
-        _format: png
+        _format: jpg
