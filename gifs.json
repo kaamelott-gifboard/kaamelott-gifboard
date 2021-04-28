@@ -150,11 +150,12 @@
         "slug": "c-est-pas-drole"
     },
     {
-        "quote": "C'est pas faux",
+        "quote": "Ouais c'est pas faux",
         "characters": [
-            "Perceval"
+            "Perceval",
+            "Angharad"
         ],
-        "filename": "cest-pas-faux.gif",
+        "filename": "ouais-pas-faux.gif",
         "slug": "c-est-pas-faux"
     },
     {
@@ -4536,5 +4537,23 @@
         ],
         "filename": "pense-faut-quon-rentre.gif",
         "slug": "bah-non-moi-je-pense-qu-il-faut-mieux-qu-on-rentre-hein"
+    },
+    {
+        "quote": "Pas toutes les émotions d'un coup",
+        "characters": [
+            "Arthur",
+            "Guenièvre"
+        ],
+        "filename": "pas-toutes-les-emotions.gif",
+        "slug": "pas-toutes-les-emotions-d-un-coup"
+    },
+    {
+        "quote": "Dites euh vous auriez pas essayé de me la faire à la pute par hasard ?",
+        "characters": [
+            "Léodagan",
+            "Loth d'Orcanie"
+        ],
+        "filename": "faire-a-la-pute.gif",
+        "slug": "dites-euh-vous-auriez-pas-essaye-de-me-la-faire-a-la-pute-par-hasard"
     }
 ]
