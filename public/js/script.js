@@ -1,8 +1,14 @@
+let loader = '<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>';
+
+let characterDiv = document.getElementById("characters");
+let currentCharacter = characterDiv ? characterDiv.getAttribute('data-current') : '';
+
 window.onload = function () {
     let characterXhr = new XMLHttpRequest();
-    let characterDiv = document.getElementById("characters");
 
     if (characterDiv) {
+        characterDiv.innerHTML = ''; // Remove loader
+
         characterXhr.onload = function () {
             let data = JSON.parse(characterXhr.responseText);
 
@@ -13,11 +19,9 @@ window.onload = function () {
                 image.src = character.image;
                 image.title = character.name;
 
-                let current = characterDiv.getAttribute('data-current');
-
-                if (character.name === current) {
-                    image.classList.add('character-icon', 'icon-light-shadow')
-                } else if (current === '') { // no selected characters
+                if (character.name === currentCharacter) {
+                    image.classList.add('character-icon', 'icon-light-shadow', 'character-selected')
+                } else if (currentCharacter === '') { // no selected characters
                     image.classList.add('character-icon', 'icon-dark-shadow')
                 } else { // display unselected characters with filter
                     image.classList.add('character-icon', 'icon-dark-shadow', 'character-gray-filter')
@@ -44,7 +48,7 @@ window.onload = function () {
         countXhr.onload = function () {
             let data = JSON.parse(countXhr.responseText);
 
-            input.placeholder = 'Rechercher parmi près de '.concat(data, ' répliques...');
+            input.placeholder = 'Rechercher parmi près de ' + data + ' répliques...';
         };
 
         countXhr.open('GET', input.getAttribute('data-url'));
@@ -55,20 +59,24 @@ window.onload = function () {
 
 // ==================================================
 
-document.querySelectorAll('.square_btn').forEach(function (element) {
-    element.addEventListener('click', function () {
-        let dataId = element.getAttribute('data-id');
+function addOpenModalEvent(squareButtons) {
+    squareButtons.forEach(function (element) {
+        element.addEventListener('click', function () {
+            let dataId = element.getAttribute('data-id');
 
-        document.getElementById(dataId + "-modal-img").src = document.getElementById(dataId + "-img").getAttribute('data-img');
-        document.getElementById(dataId + "-modal").style.display = "block";
+            document.getElementById(dataId + "-modal-img").src = document.getElementById(dataId + "-img").getAttribute('data-img');
+            document.getElementById(dataId + "-modal").style.display = "block";
+        });
     });
-});
+}
 
-document.querySelectorAll('.modal-close').forEach(function (element) {
-    element.addEventListener('click', function () {
-        element.parentNode.parentNode.style.display = "none";
+function addCloseModalEvent(modalCloseButtons) {
+    modalCloseButtons.forEach(function (element) {
+        element.addEventListener('click', function () {
+            element.parentNode.parentNode.style.display = "none";
+        });
     });
-});
+}
 
 window.addEventListener('keydown', function (event) {
     if (event.key === 'Escape') {
@@ -78,27 +86,65 @@ window.addEventListener('keydown', function (event) {
     }
 })
 
+function addSharingEvent(sharingButtons) {
+    sharingButtons.forEach(function (element) {
+        element.addEventListener('click', function () {
+            let button = this.parentNode.getElementsByTagName('button')[0];
+
+            navigator.clipboard.writeText(button.value);
+
+            let title = button.getAttribute('data-title');
+            let notification = document.getElementById("notification");
+            let text = title + ' copié !';
+
+            if (button.getAttribute('data-type') === 'social') {
+                text = 'Lien optimisé pour ' + title + ' copié !';
+            }
+
+            notification.innerText = text;
+            notification.style.display = "block";
+
+            setTimeout(function Remove() {
+                notification.style.display = "none";
+            }, 1500);
+        });
+    });
+}
+
+addOpenModalEvent(document.querySelectorAll('.square_btn'));
+addCloseModalEvent(document.querySelectorAll('.modal-close'));
+addSharingEvent(document.querySelectorAll('.sharing-btn'));
+
 // ==================================================
 
-document.querySelectorAll('.sharing-btn').forEach(function (element) {
-    element.addEventListener('click', function () {
-        let button = this.parentNode.getElementsByTagName('button')[0];
+let timer;
 
-        navigator.clipboard.writeText(button.value);
+// No autocomplete for GIF page (without characters) and Character (selected) page
+if (characterDiv && !currentCharacter) {
+    document.getElementById('quotes').addEventListener("keyup", function (e) {
+        e.preventDefault();
 
-        let title = button.getAttribute('data-title');
-        let notification = document.getElementById("notification");
-        let text = title + ' copié !';
+        let url = this.getAttribute('data-search-url')
+        let value = this.value;
 
-        if (button.getAttribute('data-type') === 'social') {
-            text = 'Lien optimisé pour ' + title + ' copié !';
-        }
+        clearInterval(timer);
 
-        notification.innerText = text;
-        notification.style.display = "block";
+        document.getElementById('gif-list').innerHTML = loader;
 
-        setTimeout(function Remove() {
-            notification.style.display = "none";
-        }, 1500);
+        timer = setTimeout(function () {
+            let searchXhr = new XMLHttpRequest();
+
+            searchXhr.onload = function () {
+                document.getElementById('gif-list').innerHTML = searchXhr.responseText;
+
+                addOpenModalEvent(document.querySelectorAll('.square_btn'));
+                addCloseModalEvent(document.querySelectorAll('.modal-close'));
+                addSharingEvent(document.querySelectorAll('.sharing-btn'));
+            };
+
+            searchXhr.open('GET', url + '?search=' + value);
+            searchXhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
+            searchXhr.send();
+        }, 650);
     });
-});
+}
