@@ -13,6 +13,11 @@ get_characters:
     controller: KaamelottGifboard\Action\Xhr\GetCharacters
     defaults: { name: '' }
 
+search_quotes:
+    path: /xhr/search_quotes
+    controller: KaamelottGifboard\Action\Xhr\SearchQuotes
+    defaults: { quote: '' }
+
 # Gifs
 
 get_by_slug:

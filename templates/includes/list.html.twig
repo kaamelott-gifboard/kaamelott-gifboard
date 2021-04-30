@@ -1,0 +1,47 @@
+{% import 'macros/input-copy.html.twig' as copy %}
+
+{% if gifs is defined %}
+    {% if gifs is not empty %}
+        <ul>
+            {% for gif in gifs %}
+                <li class="li-gif">
+                    <div class="square_btn" data-id="{{ gif.slug }}" title="{{ gif.quote }}">
+                        {{ gif.quote }}
+                    </div>
+                    <div id="{{ gif.slug }}-modal" class="modal-background">
+                        <div class="modal-content">
+                            <span class="modal-close">&times;</span>
+                            <div id="modal-quote"><a href="{{ gif.url }}">{{ gif.quote }}</a></div>
+                            <span id="{{ gif.slug }}-img" data-img="{{ gif.image }}"></span>
+                            <div class="modal-gif">
+                                <img id="{{ gif.slug }}-modal-img" /><br /><br />
+
+                                <div class="copy-block">
+                                    Partager sur :<br /><br />
+
+                                    <div class="copy-block-social">
+                                        {{ copy.block_icon('Slack', 'social', gif.url, 'fab fa-slack') }}
+                                        {{ copy.block_icon('Discord', 'social', gif.image, 'fab fa-discord') }}
+                                        {{ copy.block_icon('Twitter', 'social', gif.image, 'fab fa-twitter') }}
+                                        {{ copy.block_icon('Facebook', 'social', gif.url, 'fab fa-facebook') }}
+                                        {{ copy.block_icon('Reddit', 'social', gif.url, 'fab fa-reddit') }}
+                                    </div>
+
+                                    <div class="copy-block-divider">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</div>
+
+                                    <div class="copy-block-other">
+                                        {{ copy.block_icon('Lien du GIF', 'media', gif.image, 'fa fa-image', true) }}
+                                        {{ copy.block_icon('Lien avec la citation', 'media', gif.url, 'fa fa-quote-right', true) }}
+                                        {{ copy.block_icon('Lien court', 'media', gif.shortUrl, 'fa fa-link', true) }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        Aucun GIF trouvé !<br /><br />
+    {% endif %}
+{% endif %}

@@ -35,8 +35,8 @@
         {% endblock %}
 
         {% block stylesheets -%}
-        <link rel="stylesheet" href="{{ asset('css/styles.css') }}?v=1.1" media="screen">
-        <link rel="stylesheet" href="{{ asset('css/mobile.css') }}?v=1.1" media="screen and (max-width: 900px)" />
+        <link rel="stylesheet" href="{{ asset('css/styles.css') }}?v=1.2" media="screen">
+        <link rel="stylesheet" href="{{ asset('css/mobile.css') }}?v=1.2" media="screen and (max-width: 900px)" />
         {% endblock %}
 
         <script src="https://kit.fontawesome.com/ca7418fbe7.js" crossorigin="anonymous"></script>
@@ -62,12 +62,12 @@
             <div id="footer" class="footer">
                 Elle est où la poulette ?™ - {{ "now"|date("Y") }}<br /><br />
                 <a href="https://github.com/kaamelott-gifboard/kaamelott-gifboard" target="_blank">
-                    Il manque un gif ? Ajoutez-le !
+                    Il manque un GIF ? Ajoutez-le !
                 </a>
             </div>
         </div>
         {% block javascripts %}
-            <script src="{{ asset('js/script.js') }}?v=1.1"></script>
+            <script src="{{ asset('js/script.js') }}?v=1.2"></script>
         {% endblock %}
     </body>
 </html>
