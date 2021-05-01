@@ -9,5 +9,6 @@
 !src/
 !templates/
 !gifs.json
+!redirection.json
 !composer.json
 !composer.lock
