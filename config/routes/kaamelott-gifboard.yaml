@@ -36,7 +36,7 @@ get_by_character:
     controller: KaamelottGifboard\Action\Gif\Character
 
 get_random:
-    path: /random
+    path: /random # Also XHR
     controller: KaamelottGifboard\Action\Gif\Random
 
 # Search
