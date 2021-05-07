@@ -81,3 +81,11 @@ h1 {
 .footer-boxes {
     padding: 0 0 20px 0;
 }
+
+.footer-box-quote {
+    padding: 10px 20px 20px 30px;
+}
+
+.footer-box-donate {
+    padding: 30px 20px 40px 20px;
+}
