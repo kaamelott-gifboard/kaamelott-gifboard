@@ -144,6 +144,10 @@ if (characterDiv && !currentCharacter) {
         let url = this.getAttribute('data-search-url')
         let value = this.value;
 
+        if (value.length < 3 && value.length !== 0) {
+            return;
+        }
+
         clearInterval(timer);
 
         document.getElementById('gif-list').innerHTML = loader;

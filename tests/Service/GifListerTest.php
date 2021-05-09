@@ -41,7 +41,7 @@ class GifListerTest extends KernelTestCase
             static::assertIsArray($item->characters);
             static::assertObjectHasAttribute('filename', $item);
             static::assertIsString($item->filename);
-            static::assertMatchesRegularExpression('#^[a-z-]+\.gif$#', $item->filename);
+            static::assertMatchesRegularExpression('#^[a-z-0-9]+\.gif$#', $item->filename);
             static::assertObjectHasAttribute('slug', $item);
             static::assertMatchesRegularExpression('#^[a-z-0-9]+$#', $item->slug);
             static::assertObjectHasAttribute('url', $item);
