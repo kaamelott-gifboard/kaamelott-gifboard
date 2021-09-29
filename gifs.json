@@ -6643,5 +6643,1928 @@
         ],
         "filename": "oui-bah-non.gif",
         "slug": "oui-bah-non"
+    },
+    {
+        "quote": "Je sais que vous aimez pas ça mais c'est qu'un mauvais moment à passer",
+        "characters": [
+            "Guenièvre",
+            "Arthur"
+        ],
+        "filename": "aimez-pas-ca-mauvais-moment-passer.gif",
+        "slug": "je-sais-que-vous-aimez-pas-ca-mais-c-est-qu-un-mauvais-moment-a-passer"
+    },
+    {
+        "quote": "Oh bah non j'avais choisi ma toilette, tout, je me faisais une joie de sortir",
+        "characters": [
+            "Guenièvre",
+            "Arthur"
+        ],
+        "filename": "choisi-toilette-joie-sortir.gif",
+        "slug": "oh-bah-non-j-avais-choisi-ma-toilette-tout-je-me-faisais-une-joie-de-sortir"
+    },
+    {
+        "quote": "Ca fait 500 ans qu'on fait comme ça, et lui toujours plus malin que tout le monde il change",
+        "characters": [
+            "Séli",
+            "Guenièvre"
+        ],
+        "filename": "500-ans-comme-ca-malin-change.gif",
+        "slug": "ca-fait-500-ans-qu-on-fait-comme-ca-et-lui-toujours-plus-malin-que-tout-le-monde-il-change"
+    },
+    {
+        "quote": "Qu'il empêche pas les autres de s'amuser",
+        "characters": [
+            "Séli",
+            "Guenièvre"
+        ],
+        "filename": "empeche-pas-autres-amuser.gif",
+        "slug": "qu-il-empeche-pas-les-autres-de-s-amuser"
+    },
+    {
+        "quote": "Le truc...",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "le-truc.gif",
+        "slug": "le-truc"
+    },
+    {
+        "quote": "Et puis j'ai pas trop le temps de raconter des conneries non plus",
+        "characters": [
+            "Léodagan",
+            "Lancelot du Lac"
+        ],
+        "filename": "temps-raconter-conneries.gif",
+        "slug": "et-puis-j-ai-pas-trop-le-temps-de-raconter-des-conneries-non-plus"
+    },
+    {
+        "quote": "Moi j'ai l'impression que ce qui vous échappe, c'est la notion de spectacle",
+        "characters": [
+            "Léodagan",
+            "Lancelot du Lac",
+            "Arthur"
+        ],
+        "filename": "echappe-notion-spectacle.gif",
+        "slug": "moi-j-ai-l-impression-que-ce-qui-vous-echappe-c-est-la-notion-de-spectacle"
+    },
+    {
+        "quote": "Ah mais vous êtes comme ça hein",
+        "characters": [
+            "Arthur",
+            "Léodagan"
+        ],
+        "filename": "vous-etes-comme-ca.gif",
+        "slug": "ah-mais-vous-etes-comme-ca-hein"
+    },
+    {
+        "quote": "Nan je sais je sais...",
+        "characters": [
+            "Arthur",
+            "Léodagan"
+        ],
+        "filename": "je-sais-je-sais.gif",
+        "slug": "nan-je-sais-je-sais"
+    },
+    {
+        "quote": "C'est propre, c'est sain, c'est rien que du naturel",
+        "characters": [
+            "Léodagan",
+            "Arthur"
+        ],
+        "filename": "propre-sain-rien-que-naturel.gif",
+        "slug": "c-est-propre-c-est-sain-c-est-rien-que-du-naturel"
+    },
+    {
+        "quote": "Soi-disant que les gens sont pas prêts",
+        "characters": [
+            "Arthur",
+            "Guenièvre"
+        ],
+        "filename": "soi-disant-gens-pas-prets.gif",
+        "slug": "soi-disant-que-les-gens-sont-pas-prets"
+    },
+    {
+        "quote": "Non merci",
+        "characters": [
+            "Azénor"
+        ],
+        "filename": "non-merci.gif",
+        "slug": "non-merci"
+    },
+    {
+        "quote": "Physiquement bon, sans être totalement repoussant y'a pas non plus de quoi bousculer une charrette",
+        "characters": [
+            "Azénor"
+        ],
+        "filename": "totalement-repoussant-bousculer-charrette.gif",
+        "slug": "physiquement-bon-sans-etre-totalement-repoussant-y-a-pas-non-plus-de-quoi-bousculer-une-charrette"
+    },
+    {
+        "quote": "Mais c'est à moi qu'on demande là",
+        "characters": [
+            "Azénor"
+        ],
+        "filename": "moi-demande-la.gif",
+        "slug": "mais-c-est-a-moi-qu-on-demande-la"
+    },
+    {
+        "quote": "On vous demande pas, c'est un ordre",
+        "characters": [
+            "Lancelot du Lac",
+            "Arthur",
+            "Bohort"
+        ],
+        "filename": "vous-demande-pas-ordre.gif",
+        "slug": "on-vous-demande-pas-c-est-un-ordre"
+    },
+    {
+        "quote": "C'est sûr que si vous y tenez pas plus que ça",
+        "characters": [
+            "Bohort",
+            "Arthur",
+            "Lancelot du Lac"
+        ],
+        "filename": "tenez-pas-plus-que-ca.gif",
+        "slug": "c-est-sur-que-si-vous-y-tenez-pas-plus-que-ca"
+    },
+    {
+        "quote": "Ma pauvre fille",
+        "characters": [
+            "Bohort",
+            "Arthur",
+            "Lancelot du Lac"
+        ],
+        "filename": "ma-pauvre-fille.gif",
+        "slug": "ma-pauvre-fille"
+    },
+    {
+        "quote": "Ah mais vous m'avez vraiment choisi",
+        "characters": [
+            "Azénor"
+        ],
+        "filename": "vous-mavez-vraiment-choisi.gif",
+        "slug": "ah-mais-vous-m-avez-vraiment-choisi"
+    },
+    {
+        "quote": "Non mais là sorti de son contexte ça va être nul",
+        "characters": [
+            "Arthur",
+            "Bohort",
+            "Lancelot du Lac"
+        ],
+        "filename": "sorti-contexte-va-etre-nul.gif",
+        "slug": "non-mais-la-sorti-de-son-contexte-ca-va-etre-nul"
+    },
+    {
+        "quote": "Vous avez un commentaire à faire",
+        "characters": [
+            "Guenièvre",
+            "Arthur"
+        ],
+        "filename": "avez-commentaire-a-faire.gif",
+        "slug": "vous-avez-un-commentaire-a-faire-1"
+    },
+    {
+        "quote": "Et si un soir j'ai pas envie qu'est-ce qu'on fait",
+        "characters": [
+            "Azénor",
+            "Arthur"
+        ],
+        "filename": "soir-pas-envie-quest-ce-quon-fait.gif",
+        "slug": "et-si-un-soir-j-ai-pas-envie-qu-est-ce-qu-on-fait"
+    },
+    {
+        "quote": "Vous avez un commentaire à faire",
+        "characters": [
+            "Arthur",
+            "Bohort"
+        ],
+        "filename": "vous-avez-commentaire-a-faire.gif",
+        "slug": "vous-avez-un-commentaire-a-faire-2"
+    },
+    {
+        "quote": "On m'a dit de venir mais on m'a pas dit pourquoi",
+        "characters": [
+            "Azénor"
+        ],
+        "filename": "dit-venir-pas-dit-pourquoi.gif",
+        "slug": "on-m-a-dit-de-venir-mais-on-m-a-pas-dit-pourquoi"
+    },
+    {
+        "quote": "Le raisin ça mène à tout",
+        "characters": [
+            "Bohort",
+            "Arthur",
+            "Lancelot du Lac"
+        ],
+        "filename": "raisin-mene-tout.gif",
+        "slug": "le-raisin-ca-mene-a-tout"
+    },
+    {
+        "quote": "Félicitations",
+        "characters": [
+            "Bohort",
+            "Arthur",
+            "Lancelot du Lac"
+        ],
+        "filename": "felicitations.gif",
+        "slug": "felicitations"
+    },
+    {
+        "quote": "Est-ce qu'on peut vous demander ce qu'il y a qui ne tourne pas rond chez vous",
+        "characters": [
+            "Bohort",
+            "Arthur",
+            "Lancelot du Lac"
+        ],
+        "filename": "demander-ce-tourne-pas-rond-chez-vous.gif",
+        "slug": "est-ce-qu-on-peut-vous-demander-ce-qu-il-y-a-qui-ne-tourne-pas-rond-chez-vous"
+    },
+    {
+        "quote": "Je me suis toujours débrouillée pour pas faire le tapin, c'est pas pour commencer maintenant",
+        "characters": [
+            "Azénor"
+        ],
+        "filename": "toujours-debrouillee-pas-faire-tapin.gif",
+        "slug": "je-me-suis-toujours-debrouillee-pour-pas-faire-le-tapin-c-est-pas-pour-commencer-maintenant"
+    },
+    {
+        "quote": "Vous vous prenez peut-être pour un modèle de gravure",
+        "characters": [
+            "Azénor"
+        ],
+        "filename": "prenez-pour-modele-gravure.gif",
+        "slug": "vous-vous-prenez-peut-etre-pour-un-modele-de-gravure"
+    },
+    {
+        "quote": "C'est l'expérience qui a parlé, on a bien à faire à un champion",
+        "characters": [
+            "Yvain",
+            "Kay"
+        ],
+        "filename": "experience-parle-bien-a-faire-champion.gif",
+        "slug": "c-est-l-experience-qui-a-parle-on-a-bien-a-faire-a-un-champion-1"
+    },
+    {
+        "quote": "Bouh",
+        "characters": [
+            "Yvain",
+            "Kay",
+            "Arthur",
+            "Guenièvre"
+        ],
+        "filename": "bouh.gif",
+        "slug": "bouh"
+    },
+    {
+        "quote": "Laissez, c'est une tradition",
+        "characters": [
+            "Arthur",
+            "Guenièvre"
+        ],
+        "filename": "laissez-cest-une-tradition.gif",
+        "slug": "laissez-c-est-une-tradition"
+    },
+    {
+        "quote": "Encore plus chiant que le reste",
+        "characters": [
+            "Guenièvre",
+            "Arthur"
+        ],
+        "filename": "encore-plus-chiant-reste.gif",
+        "slug": "encore-plus-chiant-que-le-reste"
+    },
+    {
+        "quote": "Vous avez peut-être un peu les miquettes aussi",
+        "characters": [
+            "Calogrenant",
+            "Lancelot du Lac"
+        ],
+        "filename": "avez-un-peu-miquettes-aussi.gif",
+        "slug": "vous-avez-peut-etre-un-peu-les-miquettes-aussi"
+    },
+    {
+        "quote": "Je sais pas si ça va être distrayant mais ça va être court, ça c'est sûr",
+        "characters": [
+            "Lancelot du Lac",
+            "Calogrenant"
+        ],
+        "filename": "sais-pas-distrayant-va-etre-court.gif",
+        "slug": "je-sais-pas-si-ca-va-etre-distrayant-mais-ca-va-etre-court-ca-c-est-sur"
+    },
+    {
+        "quote": "Beaucoup de provocations des deux côtés de la ligne",
+        "characters": [
+            "Yvain",
+            "Kay"
+        ],
+        "filename": "provocations-deux-cotes-ligne.gif",
+        "slug": "beaucoup-de-provocations-des-deux-cotes-de-la-ligne"
+    },
+    {
+        "quote": "Je sais pas quoi vous dire moi, faites ce que vous voulez voilà",
+        "characters": [
+            "Arthur",
+            "Lancelot du Lac"
+        ],
+        "filename": "sais-pas-quoi-vous-dire-faites-vous-voulez.gif",
+        "slug": "je-sais-pas-quoi-vous-dire-moi-faites-ce-que-vous-voulez-voila"
+    },
+    {
+        "quote": "Faut aimer l'endive quoi",
+        "characters": [
+            "Guethenoc"
+        ],
+        "filename": "faut-aimer-endive.gif",
+        "slug": "faut-aimer-l-endive-quoi"
+    },
+    {
+        "quote": "J'espère que vos hommes seront bien vaillants",
+        "characters": [
+            "Guethenoc"
+        ],
+        "filename": "espere-hommes-bien-vaillants.gif",
+        "slug": "j-espere-que-vos-hommes-seront-bien-vaillants"
+    },
+    {
+        "quote": "Qu'est-ce qu'ils sont mous aujourd'hui c'est pas vrai, qu'est-ce qu'ils ont bouffé",
+        "characters": [
+            "Arthur",
+            "Lancelot du Lac",
+            "Kay",
+            "Léodagan"
+        ],
+        "filename": "mous-aujourdhui-pas-vrai.gif",
+        "slug": "qu-est-ce-qu-ils-sont-mous-aujourd-hui-c-est-pas-vrai-qu-est-ce-qu-ils-ont-bouffe"
+    },
+    {
+        "quote": "Mais là il faut faire quelque chose regardez-moi ça c'est pas possible",
+        "characters": [
+            "Arthur",
+            "Lancelot du Lac",
+            "Kay",
+            "Léodagan"
+        ],
+        "filename": "faire-quelque-chose-regardez-pas-possible.gif",
+        "slug": "mais-la-il-faut-faire-quelque-chose-regardez-moi-ca-c-est-pas-possible"
+    },
+    {
+        "quote": "Moi je vois pas de quoi se faire du souci",
+        "characters": [
+            "Léodagan",
+            "Lancelot du Lac",
+            "Kay",
+            "Arthur"
+        ],
+        "filename": "vois-pas-quoi-faire-souci.gif",
+        "slug": "moi-je-vois-pas-de-quoi-se-faire-du-souci"
+    },
+    {
+        "quote": "Ah bah non tout de suite non",
+        "characters": [
+            "Léodagan",
+            "Lancelot du Lac",
+            "Kay",
+            "Arthur"
+        ],
+        "filename": "bah-non-tout-de-suite-non.gif",
+        "slug": "ah-bah-non-tout-de-suite-non"
+    },
+    {
+        "quote": "C'est pas la peine de s'en prendre aux fraises",
+        "characters": [
+            "Léodagan",
+            "Lancelot du Lac",
+            "Kay",
+            "Arthur"
+        ],
+        "filename": "pas-peine-sen-prendre-fraises.gif",
+        "slug": "c-est-pas-la-peine-de-s-en-prendre-aux-fraises"
+    },
+    {
+        "quote": "Moi j'ai peur qu'on fasse une connerie",
+        "characters": [
+            "Léodagan",
+            "Lancelot du Lac",
+            "Kay",
+            "Arthur",
+            "Merlin"
+        ],
+        "filename": "peur-quon-fasse-connerie.gif",
+        "slug": "moi-j-ai-peur-qu-on-fasse-une-connerie"
+    },
+    {
+        "quote": "Je vous demande pas des commentaires",
+        "characters": [
+            "Arthur",
+            "Lancelot du Lac",
+            "Kay"
+        ],
+        "filename": "vous-demande-pas-commentaires.gif",
+        "slug": "je-vous-demande-pas-des-commentaires"
+    },
+    {
+        "quote": "Vous vous entrainez à mettre le merdier",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "entrainez-mettre-merdier.gif",
+        "slug": "vous-vous-entrainez-a-mettre-le-merdier"
+    },
+    {
+        "quote": "Apprendre à reconnaître les objets redondants",
+        "characters": [
+            "Karadoc",
+            "Perceval",
+            "Arthur"
+        ],
+        "filename": "apprendre-reconnaitre-objets-redondants.gif",
+        "slug": "apprendre-a-reconnaitre-les-objets-redondants"
+    },
+    {
+        "quote": "La réponse c'est oui et non",
+        "characters": [
+            "Perceval",
+            "Karadoc"
+        ],
+        "filename": "reponse-oui-et-non.gif",
+        "slug": "la-reponse-c-est-oui-et-non"
+    },
+    {
+        "quote": "Le débutant, qu'est-ce qu'il fait",
+        "characters": [
+            "Karadoc",
+            "Perceval"
+        ],
+        "filename": "debutant-quest-ce-quil-fait.gif",
+        "slug": "le-debutant-qu-est-ce-qu-il-fait"
+    },
+    {
+        "quote": "Toujours dans l'éventualité où je me retrouve à me battre avec un fenouil",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "eventualite-battre-fenouil.gif",
+        "slug": "toujours-dans-l-eventualite-ou-je-me-retrouve-a-me-battre-avec-un-fenouil"
+    },
+    {
+        "quote": "Arthur acquiesce",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "arthur-acquiesce.gif",
+        "slug": "arthur-acquiesce"
+    },
+    {
+        "quote": "Vous l'auriez attrapé par la tige, on est d'accord",
+        "characters": [
+            "Karadoc",
+            "Perceval"
+        ],
+        "filename": "attrape-par-tige-daccord.gif",
+        "slug": "vous-l-auriez-attrape-par-la-tige-on-est-d-accord"
+    },
+    {
+        "quote": "On a pu lui trouver une utilisation périmétrique",
+        "characters": [
+            "Karadoc",
+            "Perceval"
+        ],
+        "filename": "trouver-utilisation-perimetrique.gif",
+        "slug": "on-a-pu-lui-trouver-une-utilisation-perimetrique"
+    },
+    {
+        "quote": "Ah, je suis agacé",
+        "characters": [
+            "Karadoc",
+            "Perceval"
+        ],
+        "filename": "je-suis-agace.gif",
+        "slug": "ah-je-suis-agace"
+    },
+    {
+        "quote": "Aaaaahhhhh",
+        "characters": [
+            "Karadoc",
+            "Perceval",
+            "Arthur"
+        ],
+        "filename": "aaaaahhhhh.gif",
+        "slug": "aaaaahhhhh"
+    },
+    {
+        "quote": "Vous pouvez répéter",
+        "characters": [
+            "Yvain",
+            "Gauvain"
+        ],
+        "filename": "vous-pouvez-repeter.gif",
+        "slug": "vous-pouvez-repeter"
+    },
+    {
+        "quote": "Ah bah c'est pas des flèches hein",
+        "characters": [
+            "Séli",
+            "Léodagan"
+        ],
+        "filename": "pas-des-fleches-hein.gif",
+        "slug": "ah-bah-c-est-pas-des-fleches-hein"
+    },
+    {
+        "quote": "Partir à l'aventure avec votre copain Gauvain ça vous plairait",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "partir-aventure-copain-gauvain.gif",
+        "slug": "partir-a-l-aventure-avec-votre-copain-gauvain-ca-vous-plairait"
+    },
+    {
+        "quote": "Ah ouais ça serait hyper",
+        "characters": [
+            "Yvain",
+            "Gauvain"
+        ],
+        "filename": "ouais-serait-hyper.gif",
+        "slug": "ah-ouais-ca-serait-hyper"
+    },
+    {
+        "quote": "Non",
+        "characters": [
+            "Séli",
+            "Léodagan"
+        ],
+        "filename": "non.gif",
+        "slug": "non"
+    },
+    {
+        "quote": "J'en étais sûr",
+        "characters": [
+            "Yvain",
+            "Gauvain"
+        ],
+        "filename": "jen-etais-sur.gif",
+        "slug": "j-en-etais-sur"
+    },
+    {
+        "quote": "Ah ouais... Mais quand même est-ce que je peux vous demander pourquoi",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "est-ce-peux-demander-pourquoi.gif",
+        "slug": "ah-ouais-mais-quand-meme-est-ce-que-je-peux-vous-demander-pourquoi"
+    },
+    {
+        "quote": "Parce que je ne pense pas que deux trous-du-cul soient plus efficaces qu'un seul",
+        "characters": [
+            "Léodagan",
+            "Séli"
+        ],
+        "filename": "deux-trous-du-cul-plus-efficaces-un-seul.gif",
+        "slug": "parce-que-je-ne-pense-pas-que-deux-trous-du-cul-soient-plus-efficaces-qu-un-seul"
+    },
+    {
+        "quote": "Faut lui trouver un meneur, un dur à cuire, quelqu'un qui se laisse pas impressionner par les jérémiades",
+        "characters": [
+            "Léodagan",
+            "Séli"
+        ],
+        "filename": "meneur-dur-a-cuire-impressionner-jeremiades.gif",
+        "slug": "faut-lui-trouver-un-meneur-un-dur-a-cuire-quelqu-un-qui-se-laisse-pas-impressionner-par-les-jeremiades"
+    },
+    {
+        "quote": "Et bien moi je m'en souviens",
+        "characters": [
+            "Gauvain",
+            "Yvain"
+        ],
+        "filename": "je-men-souviens.gif",
+        "slug": "et-bien-moi-je-m-en-souviens"
+    },
+    {
+        "quote": "Deux cons",
+        "characters": [
+            "Léodagan",
+            "Séli"
+        ],
+        "filename": "deux-cons.gif",
+        "slug": "deux-cons"
+    },
+    {
+        "quote": "Peut-être après... Non mais c'est vrai je sais pas je ne vous connais pas assez",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "je-sais-pas-connais-pas-assez.gif",
+        "slug": "peut-etre-apres-non-mais-c-est-vrai-je-sais-pas-je-ne-vous-connais-pas-assez"
+    },
+    {
+        "quote": "Et oh oh oh",
+        "characters": [
+            "Arthur",
+            "Gauvain",
+            "Yvain"
+        ],
+        "filename": "oh-oh-oh.gif",
+        "slug": "et-oh-oh-oh"
+    },
+    {
+        "quote": "Nous on n'a plus qu'à se taire",
+        "characters": [
+            "Séli",
+            "Léodagan"
+        ],
+        "filename": "a-plus-qua-se-taire.gif",
+        "slug": "nous-on-n-a-plus-qu-a-se-taire"
+    },
+    {
+        "quote": "Et ben eh, moi non plus",
+        "characters": [
+            "Gauvain",
+            "Yvain"
+        ],
+        "filename": "ben-moi-non-plus.gif",
+        "slug": "et-ben-eh-moi-non-plus"
+    },
+    {
+        "quote": "Est-ce qu'on a le droit de boire du cidre",
+        "characters": [
+            "Yvain",
+            "Gauvain"
+        ],
+        "filename": "droit-boire-cidre.gif",
+        "slug": "est-ce-qu-on-a-le-droit-de-boire-du-cidre"
+    },
+    {
+        "quote": "Mais il était seul ou ils étaient plusieurs",
+        "characters": [
+            "Père Blaise"
+        ],
+        "filename": "seul-ou-plusieurs.gif",
+        "slug": "mais-il-etait-seul-ou-ils-etaient-plusieurs"
+    },
+    {
+        "quote": "On apporte des modifications au fur et à mesure",
+        "characters": [
+            "Bohort",
+            "Perceval"
+        ],
+        "filename": "apporte-modifications-fur-a-mesure.gif",
+        "slug": "on-apporte-des-modifications-au-fur-et-a-mesure"
+    },
+    {
+        "quote": "Moi j'en ai marre, j'arrête",
+        "characters": [
+            "Père Blaise"
+        ],
+        "filename": "jen-ai-marre-jarrete.gif",
+        "slug": "moi-j-en-ai-marre-j-arrete"
+    },
+    {
+        "quote": "Ils étaient tous les deux malades de toute façon",
+        "characters": [
+            "Perceval",
+            "Karadoc"
+        ],
+        "filename": "tous-les-deux-malades.gif",
+        "slug": "ils-etaient-tous-les-deux-malades-de-toute-facon"
+    },
+    {
+        "quote": "Ah bah si tout le monde s'en fout, ah bah je vais pas insister pour me faire mal aux doigts",
+        "characters": [
+            "Père Blaise"
+        ],
+        "filename": "tout-monde-fout-pas-insister-mal-doigts.gif",
+        "slug": "ah-bah-si-tout-le-monde-s-en-fout-ah-bah-je-vais-pas-insister-pour-me-faire-mal-aux-doigts"
+    },
+    {
+        "quote": "C'est pas une option, vous notez tout",
+        "characters": [
+            "Arthur",
+            "Lancelot du Lac"
+        ],
+        "filename": "pas-une-option-notez-tout.gif",
+        "slug": "c-est-pas-une-option-vous-notez-tout"
+    },
+    {
+        "quote": "Enlevez pas les dessins c'est le seul truc que je comprends",
+        "characters": [
+            "Karadoc",
+            "Perceval"
+        ],
+        "filename": "enlevez-pas-dessin-seul-truc-comprends.gif",
+        "slug": "enlevez-pas-les-dessins-c-est-le-seul-truc-que-je-comprends"
+    },
+    {
+        "quote": "Oui parce que ça serait dommage de perdre ça",
+        "characters": [
+            "Calogrenant",
+            "Léodagan"
+        ],
+        "filename": "serait-dommage-perdre-ca.gif",
+        "slug": "oui-parce-que-ca-serait-dommage-de-perdre-ca"
+    },
+    {
+        "quote": "Vous pouvez rechanger ou c'est chiant",
+        "characters": [
+            "Perceval",
+            "Bohort"
+        ],
+        "filename": "rechanger-ou-chiant.gif",
+        "slug": "vous-pouvez-rechanger-ou-c-est-chiant"
+    },
+    {
+        "quote": "C'est immonde, on dirait que j'ai lavé par terre avec mais c'est fait",
+        "characters": [
+            "Père Blaise"
+        ],
+        "filename": "immonde-dirait-lave-par-terre.gif",
+        "slug": "c-est-immonde-on-dirait-que-j-ai-lave-par-terre-avec-mais-c-est-fait"
+    },
+    {
+        "quote": "Mais je suis pourtant pas fou",
+        "characters": [
+            "Bohort",
+            "Arthur"
+        ],
+        "filename": "suis-pourtant-pas-fou.gif",
+        "slug": "mais-je-suis-pourtant-pas-fou"
+    },
+    {
+        "quote": "Vous trouvez pas que comme souverain je fais quand même partie des souples",
+        "characters": [
+            "Arthur",
+            "Bohort"
+        ],
+        "filename": "comme-souverain-partie-des-souples.gif",
+        "slug": "vous-trouvez-pas-que-comme-souverain-je-fais-quand-meme-partie-des-souples"
+    },
+    {
+        "quote": "Je vous remercie de votre sollicitude mais je vais me débrouiller",
+        "characters": [
+            "Arthur",
+            "Bohort"
+        ],
+        "filename": "remercie-sollicitude-vais-me-debrouiller.gif",
+        "slug": "je-vous-remercie-de-votre-sollicitude-mais-je-vais-me-debrouiller"
+    },
+    {
+        "quote": "Bon, libre à vous de ne pas tenir compte de mes mises en garde",
+        "characters": [
+            "Bohort"
+        ],
+        "filename": "libre-pas-tenir-compte-mises-en-garde.gif",
+        "slug": "bon-libre-a-vous-de-ne-pas-tenir-compte-de-mes-mises-en-garde"
+    },
+    {
+        "quote": "Oh bah vous faites ce que vous voulez hein",
+        "characters": [
+            "Guenièvre",
+            "Arthur"
+        ],
+        "filename": "faites-ce-que-vous-voulez.gif",
+        "slug": "oh-bah-vous-faites-ce-que-vous-voulez-hein"
+    },
+    {
+        "quote": "Ah oui au fait, oui, j'avais besoin de quelqu'un pour une mission de confiance",
+        "characters": [
+            "Arthur",
+            "Lancelot du Lac"
+        ],
+        "filename": "besoin-quelquun-mission-confiance.gif",
+        "slug": "ah-oui-au-fait-oui-j-avais-besoin-de-quelqu-un-pour-une-mission-de-confiance"
+    },
+    {
+        "quote": "Oh pfff, je vais le faire moi",
+        "characters": [
+            "Lancelot du Lac",
+            "Arthur"
+        ],
+        "filename": "je-vais-le-faire-moi.gif",
+        "slug": "oh-pfff-je-vais-le-faire-moi"
+    },
+    {
+        "quote": "J'en ai quand même pas grand-chose à foutre, bref",
+        "characters": [
+            "Arthur",
+            "Lancelot du Lac"
+        ],
+        "filename": "ai-pas-grand-chose-foutre.gif",
+        "slug": "j-en-ai-quand-meme-pas-grand-chose-a-foutre-bref"
+    },
+    {
+        "quote": "C'est pour pas que je m'empiffre c'est ça",
+        "characters": [
+            "Guenièvre"
+        ],
+        "filename": "pas-que-je-mempriffre.gif",
+        "slug": "c-est-pour-pas-que-je-m-empiffre-c-est-ca"
+    },
+    {
+        "quote": "Figurez-vous que je suis assez grande pour savoir ce que je dois manger ou pas",
+        "characters": [
+            "Guenièvre"
+        ],
+        "filename": "assez-grande-savoir-dois-manger.gif",
+        "slug": "figurez-vous-que-je-suis-assez-grande-pour-savoir-ce-que-je-dois-manger-ou-pas"
+    },
+    {
+        "quote": "Si vous la fermiez deux minutes je vais peut-être arriver à vous le dire",
+        "characters": [
+            "Arthur",
+            "Lancelot du Lac"
+        ],
+        "filename": "fermiez-deux-minutes-arriver-vous-le-dire.gif",
+        "slug": "si-vous-la-fermiez-deux-minutes-je-vais-peut-etre-arriver-a-vous-le-dire"
+    },
+    {
+        "quote": "Vous allez pas m'enfermer dans la chambre quand même",
+        "characters": [
+            "Guenièvre"
+        ],
+        "filename": "pas-menfermer-dans-chambre-quand-meme.gif",
+        "slug": "vous-allez-pas-m-enfermer-dans-la-chambre-quand-meme"
+    },
+    {
+        "quote": "Mais non. C'est un exemple",
+        "characters": [
+            "Arthur",
+            "Lancelot du Lac"
+        ],
+        "filename": "mais-non-cest-un-exemple.gif",
+        "slug": "mais-non-c-est-un-exemple"
+    },
+    {
+        "quote": "Allez-y qu'est-ce que j'ai pas le droit de faire",
+        "characters": [
+            "Guenièvre"
+        ],
+        "filename": "allez-y-questce-que-pas-droit-faire.gif",
+        "slug": "allez-y-qu-est-ce-que-j-ai-pas-le-droit-de-faire"
+    },
+    {
+        "quote": "Oui voilà pas plus. Non, mais pas moins non plus",
+        "characters": [
+            "Arthur",
+            "Lancelot du Lac"
+        ],
+        "filename": "pas-plus-mais-pas-moins-non-plus.gif",
+        "slug": "oui-voila-pas-plus-non-mais-pas-moins-non-plus"
+    },
+    {
+        "quote": "En sommes j'ai rien le droit de dire",
+        "characters": [
+            "Guenièvre"
+        ],
+        "filename": "sommes-rien-droit-dire.gif",
+        "slug": "en-sommes-j-ai-rien-le-droit-de-dire"
+    },
+    {
+        "quote": "Comment ça s'appelle déjà le machin qu'il utilise avec une clé",
+        "characters": [
+            "Arthur",
+            "Lancelot du Lac",
+            "Guenièvre"
+        ],
+        "filename": "comment-sappelle-machin-utilise-avec-cle.gif",
+        "slug": "comment-ca-s-appelle-deja-le-machin-qu-il-utilise-avec-une-cle"
+    },
+    {
+        "quote": "Ca c'était sûr que ça allait pas passer tout seul",
+        "characters": [
+            "Lancelot du Lac",
+            "Arthur",
+            "Guenièvre"
+        ],
+        "filename": "sur-allait-pas-passer-tout-seul.gif",
+        "slug": "ca-c-etait-sur-que-ca-allait-pas-passer-tout-seul"
+    },
+    {
+        "quote": "Je m'excuse, mais je trouve ce procédé révoltant",
+        "characters": [
+            "Guenièvre"
+        ],
+        "filename": "trouve-procede-revoltant.gif",
+        "slug": "je-m-excuse-mais-je-trouve-ce-procede-revoltant"
+    },
+    {
+        "quote": "Nan faut plutôt prendre ça du côté traditionnel",
+        "characters": [
+            "Lancelot du Lac",
+            "Arthur"
+        ],
+        "filename": "prendre-ca-cote-traditionnel.gif",
+        "slug": "nan-faut-plutot-prendre-ca-du-cote-traditionnel"
+    },
+    {
+        "quote": "De toute façon vous me trouvez pas engageante, alors y'a pas besoin de ceinture",
+        "characters": [
+            "Guenièvre"
+        ],
+        "filename": "trouvez-pas-engageante-pas-besoin-ceinture.gif",
+        "slug": "de-toute-facon-vous-me-trouvez-pas-engageante-alors-y-a-pas-besoin-de-ceinture"
+    },
+    {
+        "quote": "Non mais c'est pas moi le problème, c'est les autres",
+        "characters": [
+            "Arthur",
+            "Lancelot du Lac"
+        ],
+        "filename": "pas-moi-probleme-cest-les-autres.gif",
+        "slug": "non-mais-c-est-pas-moi-le-probleme-c-est-les-autres"
+    },
+    {
+        "quote": "Quoi mais qu'est-ce que vous me chantez je vois pas le rapport",
+        "characters": [
+            "Arthur",
+            "Lancelot du Lac",
+            "Guenièvre"
+        ],
+        "filename": "vous-chantez-vois-pas-rapport.gif",
+        "slug": "quoi-mais-qu-est-ce-que-vous-me-chantez-je-vois-pas-le-rapport"
+    },
+    {
+        "quote": "Ca se fait",
+        "characters": [
+            "Lancelot du Lac",
+            "Arthur",
+            "Guenièvre"
+        ],
+        "filename": "ca-se-fait.gif",
+        "slug": "ca-se-fait"
+    },
+    {
+        "quote": "Mais je sais bien j'ai pas dit que j'allais faire pareil",
+        "characters": [
+            "Arthur",
+            "Lancelot du Lac",
+            "Guenièvre"
+        ],
+        "filename": "pas-dit-allais-faire-pareil.gif",
+        "slug": "mais-je-sais-bien-j-ai-pas-dit-que-j-allais-faire-pareil"
+    },
+    {
+        "quote": "Vous faites ce que vous voulez. Voilà",
+        "characters": [
+            "Lancelot du Lac",
+            "Arthur",
+            "Guenièvre"
+        ],
+        "filename": "faites-ce-que-vous-voulez-voila.gif",
+        "slug": "vous-faites-ce-que-vous-voulez-voila"
+    },
+    {
+        "quote": "C'est sûr que c'est pas très engageant",
+        "characters": [
+            "Lancelot du Lac",
+            "Arthur"
+        ],
+        "filename": "sur-pas-tres-engageant.gif",
+        "slug": "c-est-sur-que-c-est-pas-tres-engageant"
+    },
+    {
+        "quote": "Qu'est-ce qu'il se passe",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "quest-ce-qui-se-passe.gif",
+        "slug": "qu-est-ce-qu-il-se-passe"
+    },
+    {
+        "quote": "Mais j'en sais rien, merde",
+        "characters": [
+            "Lancelot du Lac",
+            "Léodagan"
+        ],
+        "filename": "jen-sais-rien-merde.gif",
+        "slug": "mais-j-en-sais-rien-merde"
+    },
+    {
+        "quote": "Bon deux secondes, j'arrive",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "deux-secondes-jarrive.gif",
+        "slug": "bon-deux-secondes-j-arrive"
+    },
+    {
+        "quote": "Si c'est pour entendre ça je préfère pas rester",
+        "characters": [
+            "Caius Camillus",
+            "Lancelot du Lac"
+        ],
+        "filename": "entendre-ca-prefere-pas-rester.gif",
+        "slug": "si-c-est-pour-entendre-ca-je-prefere-pas-rester"
+    },
+    {
+        "quote": "Le poisson qui étouffe sur la berge, remue plus que celui qui est dans l'eau",
+        "characters": [
+            "Caius Camillus",
+            "Lancelot du Lac"
+        ],
+        "filename": "poisson-etouffe-berge.gif",
+        "slug": "le-poisson-qui-etouffe-sur-la-berge-remue-plus-que-celui-qui-est-dans-l-eau"
+    },
+    {
+        "quote": "Je bosse le jour moi, je suis dans l'armée, je tiens pas un stand de crêpes",
+        "characters": [
+            "Caius Camillus",
+            "Lancelot du Lac"
+        ],
+        "filename": "bosse-jour-armee-pas-stand-crepes.gif",
+        "slug": "je-bosse-le-jour-moi-je-suis-dans-l-armee-je-tiens-pas-un-stand-de-crepes"
+    },
+    {
+        "quote": "OK",
+        "characters": [
+            "Arthur",
+            "Léodagan"
+        ],
+        "filename": "ok.gif",
+        "slug": "ok"
+    },
+    {
+        "quote": "Là les vieux gars c'est la fin",
+        "characters": [
+            "Caius Camillus",
+            "Lancelot du Lac",
+            "Arthur",
+            "Léodagan"
+        ],
+        "filename": "vieux-gars-cest-fin.gif",
+        "slug": "la-les-vieux-gars-c-est-la-fin"
+    },
+    {
+        "quote": "Attendez si je vous fais lever du page à 3h du matin c'est qu'il y a matière",
+        "characters": [
+            "Caius Camillus",
+            "Lancelot du Lac"
+        ],
+        "filename": "lever-page-ya-matiere.gif",
+        "slug": "attendez-si-je-vous-fais-lever-du-page-a-3h-du-matin-c-est-qu-il-y-a-matiere"
+    },
+    {
+        "quote": "Putain j'aurais pas dû venir",
+        "characters": [
+            "Caius Camillus",
+            "Lancelot du Lac"
+        ],
+        "filename": "pas-du-venir.gif",
+        "slug": "putain-j-aurais-pas-du-venir"
+    },
+    {
+        "quote": "La scène du départ ça fait 10 ans que vous nous la jouez",
+        "characters": [
+            "Léodagan",
+            "Arthur"
+        ],
+        "filename": "scene-depart-dix-ans-jouez.gif",
+        "slug": "la-scene-du-depart-ca-fait-10-ans-que-vous-nous-la-jouez"
+    },
+    {
+        "quote": "Finalement vous êtes toujours là",
+        "characters": [
+            "Lancelot du Lac",
+            "Caius Camillus"
+        ],
+        "filename": "finalement-toujours-la.gif",
+        "slug": "finalement-vous-etes-toujours-la"
+    },
+    {
+        "quote": "Non non, vous m'avez pas compris",
+        "characters": [
+            "Séli"
+        ],
+        "filename": "vous-mavez-pas-compris.gif",
+        "slug": "non-non-vous-m-avez-pas-compris"
+    },
+    {
+        "quote": "J'ai dit oui pour vous faire plaisir",
+        "characters": [
+            "Séli"
+        ],
+        "filename": "dit-oui-faire-plaisir.gif",
+        "slug": "j-ai-dit-oui-pour-vous-faire-plaisir"
+    },
+    {
+        "quote": "Au bout d'un moment c'est pas tellement votre problème ça",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "pas-tellement-votre-probleme.gif",
+        "slug": "au-bout-d-un-moment-c-est-pas-tellement-votre-probleme-ca"
+    },
+    {
+        "quote": "Euh, j'ai même pas été invité",
+        "characters": [
+            "Léodagan"
+        ],
+        "filename": "pas-ete-invite.gif",
+        "slug": "euh-j-ai-meme-pas-ete-invite"
+    },
+    {
+        "quote": "Qu'est-ce que c'est que cette nouveauté",
+        "characters": [
+            "Bohort"
+        ],
+        "filename": "quest-ce-que-cest-nouveaute.gif",
+        "slug": "qu-est-ce-que-c-est-que-cette-nouveaute"
+    },
+    {
+        "quote": "J'avoue que je suis perdue",
+        "characters": [
+            "Séli"
+        ],
+        "filename": "javoue-suis-perdue.gif",
+        "slug": "j-avoue-que-je-suis-perdue"
+    },
+    {
+        "quote": "Arthur souffle",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "arthur-souffle.gif",
+        "slug": "arthur-souffle"
+    },
+    {
+        "quote": "Ah",
+        "characters": [
+            "Séli"
+        ],
+        "filename": "ah.gif",
+        "slug": "ah"
+    },
+    {
+        "quote": "Trois possessifs par phrase le ton est donné",
+        "characters": [
+            "Léodagan"
+        ],
+        "filename": "trois-possessifs-par-phrase.gif",
+        "slug": "trois-possessifs-par-phrase-le-ton-est-donne"
+    },
+    {
+        "quote": "Rien de très constructif c'est sûr",
+        "characters": [
+            "Léodagan"
+        ],
+        "filename": "rien-tres-constructif.gif",
+        "slug": "rien-de-tres-constructif-c-est-sur"
+    },
+    {
+        "quote": "C'est à ce demander à quoi vous pensez quand vous pensez à rien",
+        "characters": [
+            "Léodagan"
+        ],
+        "filename": "quoi-vous-pensez-pensez-rien.gif",
+        "slug": "c-est-a-ce-demander-a-quoi-vous-pensez-quand-vous-pensez-a-rien"
+    },
+    {
+        "quote": "Ah mais d'accord j'ai compris, vous avez décidé de m'emmerder, c'est ça",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "decide-de-memmerder.gif",
+        "slug": "ah-mais-d-accord-j-ai-compris-vous-avez-decide-de-m-emmerder-c-est-ca"
+    },
+    {
+        "quote": "Vous m'obligez à utiliser mon autorité suprême",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "utiliser-mon-autorite-supreme.gif",
+        "slug": "vous-m-obligez-a-utiliser-mon-autorite-supreme"
+    },
+    {
+        "quote": "Bravo, bravo, non là vous pouvez flamber",
+        "characters": [
+            "Léodagan"
+        ],
+        "filename": "bravo-pouvez-flamber.gif",
+        "slug": "bravo-bravo-non-la-vous-pouvez-flamber"
+    },
+    {
+        "quote": "Ca me fait pas plaisir d'en arriver là, vous pouvez me croire",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "pas-plaisir-arriver-la.gif",
+        "slug": "ca-me-fait-pas-plaisir-d-en-arriver-la-vous-pouvez-me-croire"
+    },
+    {
+        "quote": "Eh ho, une seconde non, laissez moi parler",
+        "characters": [
+            "Léodagan"
+        ],
+        "filename": "laissez-moi-parler.gif",
+        "slug": "eh-ho-une-seconde-non-laissez-moi-parler"
+    },
+    {
+        "quote": "Ah bah là y'a le beau geste, pardon",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "beau-geste-pardon.gif",
+        "slug": "ah-bah-la-y-a-le-beau-geste-pardon"
+    },
+    {
+        "quote": "Quand même, je vous ai connu moins fairplay",
+        "characters": [
+            "Arthur"
+        ],
+        "filename": "ai-connu-moins-fairplay.gif",
+        "slug": "quand-meme-je-vous-ai-connu-moins-fairplay"
+    },
+    {
+        "quote": "Moi j'aime bien mais si ça vous les brise",
+        "characters": [
+            "Arthur",
+            "Léodagan"
+        ],
+        "filename": "aime-bien-vous-les-brise.gif",
+        "slug": "moi-j-aime-bien-mais-si-ca-vous-les-brise"
+    },
+    {
+        "quote": "Non mais bon euh, c'est comme ça hein",
+        "characters": [
+            "Léodagan"
+        ],
+        "filename": "bon-comme-ca-hein.gif",
+        "slug": "non-mais-bon-euh-c-est-comme-ca-hein"
+    },
+    {
+        "quote": "Bon bah vous prenez ou vous prenez pas",
+        "characters": [
+            "Léodagan"
+        ],
+        "filename": "prenez-prenez-pas.gif",
+        "slug": "bon-bah-vous-prenez-ou-vous-prenez-pas"
+    },
+    {
+        "quote": "Oh à vue de nez il était long comme ça",
+        "characters": [
+            "Perceval",
+            "Karadoc"
+        ],
+        "filename": "vue-nez-long-comme-ca.gif",
+        "slug": "oh-a-vue-de-nez-il-etait-long-comme-ca"
+    },
+    {
+        "quote": "Je m'excuse mais c'est justement les petits qui sont le plus difficiles à attraper",
+        "characters": [
+            "Perceval",
+            "Karadoc"
+        ],
+        "filename": "petits-plus-difficiles-attraper.gif",
+        "slug": "je-m-excuse-mais-c-est-justement-les-petits-qui-sont-le-plus-difficiles-a-attraper"
+    },
+    {
+        "quote": "Et vous allez me raconter que les villageois vous ont accueillis comme des héros",
+        "characters": [
+            "Arthur",
+            "Père Blaise"
+        ],
+        "filename": "raconter-villageois-accueillis-heros.gif",
+        "slug": "et-vous-allez-me-raconter-que-les-villageois-vous-ont-accueillis-comme-des-heros"
+    },
+    {
+        "quote": "On a été un peu surpris",
+        "characters": [
+            "Perceval",
+            "Karadoc"
+        ],
+        "filename": "ete-un-peu-surpris.gif",
+        "slug": "on-a-ete-un-peu-surpris"
+    },
+    {
+        "quote": "Je vois vraiment pas comment je vais tourner ça moi",
+        "characters": [
+            "Père Blaise",
+            "Arthur"
+        ],
+        "filename": "vois-pas-comment-tourner-ca.gif",
+        "slug": "je-vois-vraiment-pas-comment-je-vais-tourner-ca-moi"
+    },
+    {
+        "quote": "On a pris ce qu'il y avait",
+        "characters": [
+            "Perceval",
+            "Karadoc"
+        ],
+        "filename": "pris-ce-quil-yavait.gif",
+        "slug": "on-a-pris-ce-qu-il-y-avait"
+    },
+    {
+        "quote": "Ils se barrent en mission pendant 3 mois et ils reviennent avec une anguille",
+        "characters": [
+            "Arthur",
+            "Père Blaise"
+        ],
+        "filename": "barrent-mission-trois-mois.gif",
+        "slug": "ils-se-barrent-en-mission-pendant-3-mois-et-ils-reviennent-avec-une-anguille"
+    },
+    {
+        "quote": "On l'a laissé en trophée aux villageois",
+        "characters": [
+            "Karadoc",
+            "Perceval"
+        ],
+        "filename": "laisse-trophee-villageois.gif",
+        "slug": "on-l-a-laisse-en-trophee-aux-villageois"
+    },
+    {
+        "quote": "C'est vrai qu'on a un peu tendance à se reposer sur nos lauriers",
+        "characters": [
+            "Karadoc",
+            "Perceval"
+        ],
+        "filename": "tendance-reposer-nos-lauriers.gif",
+        "slug": "c-est-vrai-qu-on-a-un-peu-tendance-a-se-reposer-sur-nos-lauriers"
+    },
+    {
+        "quote": "Mefiez-vous hein, ils sont vraiment pas dans un bon jour",
+        "characters": [
+            "Perceval",
+            "Karadoc"
+        ],
+        "filename": "sont-vraiment-pas-bon-jour.gif",
+        "slug": "mefiez-vous-hein-ils-sont-vraiment-pas-dans-un-bon-jour"
+    },
+    {
+        "quote": "Un oiseau",
+        "characters": [
+            "Guenièvre",
+            "Arthur"
+        ],
+        "filename": "un-oiseau.gif",
+        "slug": "un-oiseau"
+    },
+    {
+        "quote": "Parce qu'ils ont pas de bras",
+        "characters": [
+            "Guenièvre",
+            "Arthur"
+        ],
+        "filename": "ont-pas-de-bras.gif",
+        "slug": "parce-qu-ils-ont-pas-de-bras"
+    },
+    {
+        "quote": "Ah bah je sais pas ce qu'il vous faut",
+        "characters": [
+            "Léodagan",
+            "Séli"
+        ],
+        "filename": "sais-pas-ce-quil-faut.gif",
+        "slug": "ah-bah-je-sais-pas-ce-qu-il-vous-faut"
+    },
+    {
+        "quote": "Ah mais c'était ça",
+        "characters": [
+            "Séli",
+            "Léodagan"
+        ],
+        "filename": "mais-cetait-ca.gif",
+        "slug": "ah-mais-c-etait-ca"
+    },
+    {
+        "quote": "Qu'est-ce que j'ai dit",
+        "characters": [
+            "Séli",
+            "Léodagan"
+        ],
+        "filename": "quest-ce-que-jai-dit.gif",
+        "slug": "qu-est-ce-que-j-ai-dit"
+    },
+    {
+        "quote": "Une horde d'hindous est sortie de derrière les habitations et s'est mis en travers du chemin",
+        "characters": [
+            "Gauvain",
+            "Yvain"
+        ],
+        "filename": "horde-hindous-mis-travers-chemin.gif",
+        "slug": "une-horde-d-hindous-est-sortie-de-derriere-les-habitations-et-s-est-mis-en-travers-du-chemin"
+    },
+    {
+        "quote": "Un vieux moisi tout guez à poil dans la neige",
+        "characters": [
+            "Yvain",
+            "Gauvain"
+        ],
+        "filename": "vieux-moisi-tout-guez.gif",
+        "slug": "un-vieux-moisi-tout-guez-a-poil-dans-la-neige"
+    },
+    {
+        "quote": "Il a enroulé sa quik autour du bâton",
+        "characters": [
+            "Yvain",
+            "Gauvain"
+        ],
+        "filename": "enroule-quik-autour-baton.gif",
+        "slug": "il-a-enroule-sa-quik-autour-du-baton"
+    },
+    {
+        "quote": "Il enroulait il déroulait Il enroulait il déroulait",
+        "characters": [
+            "Yvain",
+            "Gauvain"
+        ],
+        "filename": "enroulait-deroulait.gif",
+        "slug": "il-enroulait-il-deroulait-il-enroulait-il-deroulait"
+    },
+    {
+        "quote": "Avec sa couille",
+        "characters": [
+            "Yvain",
+            "Gauvain"
+        ],
+        "filename": "avec-sa-couille.gif",
+        "slug": "avec-sa-couille"
+    },
+    {
+        "quote": "Ca c'est ce qu'on n'a pas bien compris",
+        "characters": [
+            "Yvain",
+            "Gauvain"
+        ],
+        "filename": "on-na-pas-bien-compris.gif",
+        "slug": "ca-c-est-ce-qu-on-n-a-pas-bien-compris"
+    },
+    {
+        "quote": "Là ça saignait, ça pissait le sang même",
+        "characters": [
+            "Yvain",
+            "Gauvain"
+        ],
+        "filename": "saignait-pissait-sang-meme.gif",
+        "slug": "la-ca-saignait-ca-pissait-le-sang-meme"
+    },
+    {
+        "quote": "En y repensant je me demande s'ils ne sollicitaient de notre part une contribution pécunière",
+        "characters": [
+            "Gauvain",
+            "Yvain"
+        ],
+        "filename": "demande-sollicitaient-contribution-pecuniere.gif",
+        "slug": "en-y-repensant-je-me-demande-s-ils-ne-sollicitaient-de-notre-part-une-contribution-pecuniere"
+    },
+    {
+        "quote": "Si j'avais su j'aurais donné",
+        "characters": [
+            "Gauvain",
+            "Yvain"
+        ],
+        "filename": "javais-su-aurais-donne.gif",
+        "slug": "si-j-avais-su-j-aurais-donne"
+    },
+    {
+        "quote": "De toute façon je ne sais même pas comment ça se dit en latin",
+        "characters": [
+            "Père Blaise",
+            "Arthur"
+        ],
+        "filename": "pas-comment-dit-latin.gif",
+        "slug": "de-toute-facon-je-ne-sais-meme-pas-comment-ca-se-dit-en-latin"
+    },
+    {
+        "quote": "Non mais les chevaux étaient tous chelous, des trucs énormes tout gris",
+        "characters": [
+            "Yvain",
+            "Gauvain"
+        ],
+        "filename": "chevaux-chelous-trucs-enormes.gif",
+        "slug": "non-mais-les-chevaux-etaient-tous-chelous-des-trucs-enormes-tout-gris"
+    },
+    {
+        "quote": "Avec ses parties génitales",
+        "characters": [
+            "Gauvain",
+            "Yvain"
+        ],
+        "filename": "parties-genitales.gif",
+        "slug": "avec-ses-parties-genitales"
+    },
+    {
+        "quote": "C'est un fakir ça",
+        "characters": [
+            "Père Blaise",
+            "Arthur"
+        ],
+        "filename": "un-fakir-ca.gif",
+        "slug": "c-est-un-fakir-ca"
+    },
+    {
+        "quote": "Il avait l'air très en colère",
+        "characters": [
+            "Gauvain",
+            "Yvain"
+        ],
+        "filename": "avait-lair-tres-colere.gif",
+        "slug": "il-avait-l-air-tres-en-colere"
+    },
+    {
+        "quote": "Et puis ça a duré 5 bonnes minutes au moins",
+        "characters": [
+            "Gauvain",
+            "Yvain"
+        ],
+        "filename": "dure-cinq-bonnes-minutes.gif",
+        "slug": "et-puis-ca-a-dure-5-bonnes-minutes-au-moins"
+    },
+    {
+        "quote": "Ouais bah partez devant, on vous suit",
+        "characters": [
+            "Léodagan",
+            "Arthur",
+            "Caius Camillus"
+        ],
+        "filename": "partez-devant-vous-suit.gif",
+        "slug": "ouais-bah-partez-devant-on-vous-suit"
+    },
+    {
+        "quote": "Vous énervez pas on parle là",
+        "characters": [
+            "Caius Camillus",
+            "Léodagan"
+        ],
+        "filename": "enervez-pas-on-parle.gif",
+        "slug": "vous-enervez-pas-on-parle-la"
+    },
+    {
+        "quote": "Bah je dis ça je dis tout",
+        "characters": [
+            "Caius Camillus",
+            "Léodagan"
+        ],
+        "filename": "dis-ca-dis-tout.gif",
+        "slug": "bah-je-dis-ca-je-dis-tout"
+    },
+    {
+        "quote": "C'est tout carré y'a pas une colonne",
+        "characters": [
+            "Caius Camillus",
+            "Léodagan"
+        ],
+        "filename": "tout-carre-pas-une-colonne.gif",
+        "slug": "c-est-tout-carre-y-a-pas-une-colonne"
+    },
+    {
+        "quote": "Ca mitonne",
+        "characters": [
+            "Caius Camillus"
+        ],
+        "filename": "ca-mitonne.gif",
+        "slug": "ca-mitonne"
+    },
+    {
+        "quote": "Attention me lancez pas là-dessus parce qu'après vous savez que ça finit mal",
+        "characters": [
+            "Caius Camillus"
+        ],
+        "filename": "lancez-pas-la-dessus-apres-finit-mal.gif",
+        "slug": "attention-me-lancez-pas-la-dessus-parce-qu-apres-vous-savez-que-ca-finit-mal"
+    },
+    {
+        "quote": "Arthur et Léodagan se moquent de Caïus",
+        "characters": [
+            "Arthur",
+            "Léodagan"
+        ],
+        "filename": "arthur-leodagan-moquent.gif",
+        "slug": "arthur-et-leodagan-se-moquent-de-caius"
+    },
+    {
+        "quote": "C'est pas bien ce que vous faîtes",
+        "characters": [
+            "Caius Camillus"
+        ],
+        "filename": "pas-bien-ce-que-vous-faites.gif",
+        "slug": "c-est-pas-bien-ce-que-vous-faites"
+    },
+    {
+        "quote": "Vous êtes un peuple fédéré normalement vous me devez le respect",
+        "characters": [
+            "Caius Camillus"
+        ],
+        "filename": "peuple-federe-devez-respect.gif",
+        "slug": "vous-etes-un-peuple-federe-normalement-vous-me-devez-le-respect"
+    },
+    {
+        "quote": "Vous allez vous faire chier sans nous",
+        "characters": [
+            "Arthur",
+            "Léodagan"
+        ],
+        "filename": "faire-chier-sans-nous.gif",
+        "slug": "vous-allez-vous-faire-chier-sans-nous"
+    },
+    {
+        "quote": "Les consignes, avant de partir faut foutre le feu partout",
+        "characters": [
+            "Caius Camillus"
+        ],
+        "filename": "consignes-foutre-feu-partout.gif",
+        "slug": "les-consignes-avant-de-partir-faut-foutre-le-feu-partout"
+    },
+    {
+        "quote": "Il y avait essayé parce que je lui avais demandé et puis non, il peut plus",
+        "characters": [
+            "Arthur",
+            "Guenièvre"
+        ],
+        "filename": "avait-essaye-puis-non-peut-plus.gif",
+        "slug": "il-y-avait-essaye-parce-que-je-lui-avais-demande-et-puis-non-il-peut-plus"
+    },
+    {
+        "quote": "Tiens j'ai un petit pancréas de biche aux pruneaux dans mon char ça vous tente",
+        "characters": [
+            "Caius Camillus"
+        ],
+        "filename": "pancreas-biche-pruneaux.gif",
+        "slug": "tiens-j-ai-un-petit-pancreas-de-biche-aux-pruneaux-dans-mon-char-ca-vous-tente"
+    },
+    {
+        "quote": "Toutes les bonnes choses ont une fin",
+        "characters": [
+            "Caius Camillus"
+        ],
+        "filename": "bonnes-choses-ont-une-fin.gif",
+        "slug": "toutes-les-bonnes-choses-ont-une-fin"
+    },
+    {
+        "quote": "Cadeau de la maison",
+        "characters": [
+            "Le Tavernier",
+            "Perceval"
+        ],
+        "filename": "cadeau-de-la-maison.gif",
+        "slug": "cadeau-de-la-maison"
+    },
+    {
+        "quote": "J'aime bien quand vous êtes là",
+        "characters": [
+            "Le Tavernier",
+            "Perceval"
+        ],
+        "filename": "aime-bien-vous-etes-la.gif",
+        "slug": "j-aime-bien-quand-vous-etes-la"
+    },
+    {
+        "quote": "Karadoc et Perceval cherchent autour d'eux",
+        "characters": [
+            "Karadoc",
+            "Perceval"
+        ],
+        "filename": "cherchent-autour-deux.gif",
+        "slug": "karadoc-et-perceval-cherchent-autour-d-eux"
+    },
+    {
+        "quote": "Est-ce que vous voulez qu'on se fasse un petit cul de chouette",
+        "characters": [
+            "Le Tavernier"
+        ],
+        "filename": "fasse-petit-cul-chouette.gif",
+        "slug": "est-ce-que-vous-voulez-qu-on-se-fasse-un-petit-cul-de-chouette"
+    },
+    {
+        "quote": "Ah c'est pas une mauvaise idée ça",
+        "characters": [
+            "Karadoc",
+            "Perceval"
+        ],
+        "filename": "pas-une-mauvaise-idee-ca.gif",
+        "slug": "ah-c-est-pas-une-mauvaise-idee-ca"
+    },
+    {
+        "quote": "Allez, ça nous détendra",
+        "characters": [
+            "Le Tavernier"
+        ],
+        "filename": "ca-nous-detendra.gif",
+        "slug": "allez-ca-nous-detendra"
+    },
+    {
+        "quote": "Ah mais je suis bête, vous devez jouer avec les règles à l'Aquitaine vous",
+        "characters": [
+            "Le Tavernier",
+            "Karadoc",
+            "Perceval"
+        ],
+        "filename": "devez-jouer-avec-regles-aquitaine.gif",
+        "slug": "ah-mais-je-suis-bete-vous-devez-jouer-avec-les-regles-a-l-aquitaine-vous"
+    },
+    {
+        "quote": "Qu'est-ce qu'il fait il relance de quinze",
+        "characters": [
+            "Le Tavernier",
+            "Karadoc",
+            "Perceval"
+        ],
+        "filename": "il-relance-de-quinze.gif",
+        "slug": "qu-est-ce-qu-il-fait-il-relance-de-quinze"
+    },
+    {
+        "quote": "Allez y si vous le sentez, c'est risqué",
+        "characters": [
+            "Karadoc",
+            "Le Tavernier",
+            "Perceval"
+        ],
+        "filename": "si-vous-le-sentez.gif",
+        "slug": "allez-y-si-vous-le-sentez-c-est-risque"
+    },
+    {
+        "quote": "Ouais c'est dommage c'était drôlement bien",
+        "characters": [
+            "Perceval",
+            "Le Tavernier"
+        ],
+        "filename": "dommage-drolement-bien.gif",
+        "slug": "ouais-c-est-dommage-c-etait-drolement-bien"
+    },
+    {
+        "quote": "Et si on se faisait une grelottine",
+        "characters": [
+            "Perceval",
+            "Le Tavernier"
+        ],
+        "filename": "faisait-une-grelottine.gif",
+        "slug": "et-si-on-se-faisait-une-grelottine"
+    },
+    {
+        "quote": "A votre avis il était sérieux ou il se foutait de nous",
+        "characters": [
+            "Karadoc",
+            "Perceval"
+        ],
+        "filename": "serieux-ou-foutait-de-nous.gif",
+        "slug": "a-votre-avis-il-etait-serieux-ou-il-se-foutait-de-nous"
+    },
+    {
+        "quote": "J'connais pas",
+        "characters": [
+            "Karadoc",
+            "Le Tavernier"
+        ],
+        "filename": "jconnais-pas.gif",
+        "slug": "j-connais-pas"
+    },
+    {
+        "quote": "Enfin le problème c'est que j'ai ni lentilles ni haricots",
+        "characters": [
+            "Le Tavernier",
+            "Karadoc"
+        ],
+        "filename": "jai-ni-lentilles-ni-haricots.gif",
+        "slug": "enfin-le-probleme-c-est-que-j-ai-ni-lentilles-ni-haricots"
+    },
+    {
+        "quote": "Ah... Merde",
+        "characters": [
+            "Perceval"
+        ],
+        "filename": "ah-merde.gif",
+        "slug": "ah-merde"
+    },
+    {
+        "quote": "C'est pas bien joli",
+        "characters": [
+            "Merlin",
+            "Arthur"
+        ],
+        "filename": "pas-bien-joli.gif",
+        "slug": "c-est-pas-bien-joli"
+    },
+    {
+        "quote": "Mais qu'est-ce que vous me chantez vous faites comme d'habitude",
+        "characters": [
+            "Arthur",
+            "Merlin"
+        ],
+        "filename": "vous-me-chantez-faites-comme-dhabitude.gif",
+        "slug": "mais-qu-est-ce-que-vous-me-chantez-vous-faites-comme-d-habitude"
+    },
+    {
+        "quote": "Toutes ces vieilleries celtiques ça vaut plus un radis",
+        "characters": [
+            "Merlin",
+            "Arthur"
+        ],
+        "filename": "vieilleries-celtiques-vaut-plus-radis.gif",
+        "slug": "toutes-ces-vieilleries-celtiques-ca-vaut-plus-un-radis"
+    },
+    {
+        "quote": "Ah oui bah ça faut se méfier avec les mecs à cran ça",
+        "characters": [
+            "Arthur",
+            "Merlin"
+        ],
+        "filename": "faut-se-mefier-mecs-a-cran.gif",
+        "slug": "ah-oui-bah-ca-faut-se-mefier-avec-les-mecs-a-cran-ca"
+    },
+    {
+        "quote": "J'ai pas le temps de faire de la broderie",
+        "characters": [
+            "Arthur",
+            "Merlin"
+        ],
+        "filename": "pas-le-temps-faire-broderie.gif",
+        "slug": "j-ai-pas-le-temps-de-faire-de-la-broderie"
+    },
+    {
+        "quote": "Le plus rapide c'est de désinfecter au gros sel",
+        "characters": [
+            "Merlin",
+            "Arthur"
+        ],
+        "filename": "plus-rapide-desinfecter-gros-sel.gif",
+        "slug": "le-plus-rapide-c-est-de-desinfecter-au-gros-sel"
+    },
+    {
+        "quote": "Par contre vous vous inquiéterez pas ça pique un peu",
+        "characters": [
+            "Merlin",
+            "Arthur"
+        ],
+        "filename": "inquieterez-pas-pique-un-peu.gif",
+        "slug": "par-contre-vous-vous-inquieterez-pas-ca-pique-un-peu"
+    },
+    {
+        "quote": "Ah oui c'est désagréable hein",
+        "characters": [
+            "Merlin",
+            "Arthur"
+        ],
+        "filename": "cest-desagreable-hein.gif",
+        "slug": "ah-oui-c-est-desagreable-hein"
+    },
+    {
+        "quote": "Franchement moi je serais vous, je me méfierez de la mode",
+        "characters": [
+            "Arthur",
+            "Merlin"
+        ],
+        "filename": "je-me-mefierez-de-la-mode.gif",
+        "slug": "franchement-moi-je-serais-vous-je-me-mefierez-de-la-mode"
+    },
+    {
+        "quote": "Ah non mais qu'est-ce qu'ils vont pas chercher",
+        "characters": [
+            "Arthur",
+            "Merlin"
+        ],
+        "filename": "quest-ce-quils-vont-pas-chercher.gif",
+        "slug": "ah-non-mais-qu-est-ce-qu-ils-vont-pas-chercher"
+    },
+    {
+        "quote": "Je suppose que c'est le genre d'endroit où il faut parler fort et se taper dans le dos",
+        "characters": [
+            "Guenièvre",
+            "Arthur"
+        ],
+        "filename": "endroit-parler-fort-taper-dos.gif",
+        "slug": "je-suppose-que-c-est-le-genre-d-endroit-ou-il-faut-parler-fort-et-se-taper-dans-le-dos"
+    },
+    {
+        "quote": "Je suis désolé j'ai jamais subit une humiliation pareil",
+        "characters": [
+            "Calogrenant",
+            "Lancelot du Lac"
+        ],
+        "filename": "jamais-subit-humiliation-pareil.gif",
+        "slug": "je-suis-desole-j-ai-jamais-subit-une-humiliation-pareil"
+    },
+    {
+        "quote": "J'ai une hygiène irréprochable",
+        "characters": [
+            "Calogrenant",
+            "Lancelot du Lac"
+        ],
+        "filename": "hygiene-irreprochable.gif",
+        "slug": "j-ai-une-hygiene-irreprochable"
+    },
+    {
+        "quote": "Moi il me semble que j'en ai déjà fait beaucoup",
+        "characters": [
+            "Calogrenant",
+            "Lancelot du Lac"
+        ],
+        "filename": "ai-deja-fait-beaucoup.gif",
+        "slug": "moi-il-me-semble-que-j-en-ai-deja-fait-beaucoup"
+    },
+    {
+        "quote": "Bah c'est un ordre",
+        "characters": [
+            "Arthur",
+            "Karadoc"
+        ],
+        "filename": "cest-un-ordre.gif",
+        "slug": "bah-c-est-un-ordre"
+    },
+    {
+        "quote": "C'est gentil d'avoir tenu compte de mes remarques, je suis très touchée",
+        "characters": [
+            "Guenièvre",
+            "Arthur"
+        ],
+        "filename": "gentil-tenu-compte-mes-remarques.gif",
+        "slug": "c-est-gentil-d-avoir-tenu-compte-de-mes-remarques-je-suis-tres-touchee"
     }
 ]
