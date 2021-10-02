@@ -63,11 +63,11 @@
     </div>
 
     <div class="quote-characters">
-        {% for character in current.characters %}
+        {% for characterinscene in current.characters %}
             <div class="quote-character-block">
-                <a href="{{ character.url }}">
-                    <img src="{{ character.image }}" class="character-icon-quote icon-dark-shadow"
-                         alt="{{ character.name }}" title="{{ character.name }}"/>
+                <a href="{{ characterinscene.url }}">
+                    <img src="{{ characterinscene.image }}" class="character-icon-quote icon-dark-shadow"
+                         alt="{{ characterinscene.name }}" title="{{ characterinscene.name }}"/>
                 </a>
             </div>
         {% endfor %}

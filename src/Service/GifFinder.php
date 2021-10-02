@@ -53,6 +53,21 @@ class GifFinder
         return $results;
     }
 
+        public function findGifsByCharacterInScene(string $search): ?array
+    {
+        $results = [];
+
+        foreach ($this->lister->gifs as $gif) {
+            foreach ($gif->charactersinscene as $character) {
+                if ($this->match($search, $character->name)) {
+                    $results[] = $gif;
+                }
+            }
+        }
+
+        return $results;
+    }
+
     public function findGifsBySlug(string $slug): ?array
     {
         foreach ($this->lister->gifs as $key => $gif) {
@@ -88,12 +103,42 @@ class GifFinder
         return null;
     }
 
+    public function findCharacterInScene(string $search): ?Character
+    {
+        foreach ($this->lister->gifs as $gif) {
+            foreach ($gif->charactersinscene as $character) {
+                if ($this->match($search, $character->name)) {
+                    return $character;
+                }
+            }
+        }
+
+        return null;
+    }
+
     public function findCharacters(): array
     {
         $results = [];
 
         foreach ($this->lister->gifs as $gif) {
             foreach ($gif->characters as $character) {
+                if (!\array_key_exists($character->slug, $results)) {
+                    $results[$character->slug] = $character;
+                }
+            }
+        }
+
+        sort($results);
+
+        return $results;
+    }
+
+        public function findCharactersInScene(): array
+    {
+        $results = [];
+
+        foreach ($this->lister->gifs as $gif) {
+            foreach ($gif->charactersinscene as $character) {
                 if (!\array_key_exists($character->slug, $results)) {
                     $results[$character->slug] = $character;
                 }

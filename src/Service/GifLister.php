@@ -48,6 +48,7 @@ class GifLister
 
             $this->formatShortUrl($gif);
             $this->formatCharacters($gif, $gifItem);
+            $this->formatCharactersInScene($gif, $gifItem);
 
             $gifs[] = $gif;
         }
@@ -60,6 +61,28 @@ class GifLister
     private function formatCharacters(Gif $gif, \stdClass $gifItem): void
     {
         foreach ($gifItem->characters as $characterName) {
+            $slug = $this->slugger->slug($characterName)->lower()->__toString();
+
+            $image = $this->router->generate('character_image', [
+                'filename' => $this->imageHelper->getCharacterImage($slug),
+            ], RouterInterface::ABSOLUTE_URL);
+
+            $url = $this->router->generate('get_by_character', [
+                'name' => $characterName,
+            ], UrlGeneratorInterface::ABSOLUTE_URL);
+
+            $gif->characters[] = (new Character(
+                $slug,
+                $characterName,
+                $image,
+                $url
+            ));
+        }
+    }
+
+    private function formatCharactersInScene(Gif $gif, \stdClass $gifItem): void
+    {
+        foreach ($gifItem->charactersinscene as $characterName) {
             $slug = $this->slugger->slug($characterName)->lower()->__toString();
 
             $image = $this->router->generate('character_image', [
