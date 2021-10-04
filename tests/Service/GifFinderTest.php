@@ -62,9 +62,8 @@ class GifFinderTest extends KernelTestCase
     {
         $result = $this->finder->findGifsByCharacter('character 2');
 
-        static::assertCount(2, $result);
+        static::assertCount(1, $result);
         static::assertSame('Finally, the quote number 3', $result[0]->quote);
-        static::assertSame('This is the quote 1', $result[1]->quote);
     }
 
     public function testFindGifsBySlug(): void
@@ -72,6 +71,7 @@ class GifFinderTest extends KernelTestCase
         $expected = (new Gif());
         $expected->quote = 'Finally, the quote number 3';
         $expected->characters = [(new Character('character-2', 'Character 2', 'route', 'route'))];
+        $expected->charactersSpeaking = [(new Character('character-2', 'Character 2', 'route', 'route'))];
         $expected->filename = 'quote-3.gif';
         $expected->slug = 'finally-the-quote-number-3';
         $expected->url = 'route';
@@ -101,6 +101,7 @@ class GifFinderTest extends KernelTestCase
         $expected = (new Gif());
         $expected->quote = 'Finally, the quote number 3';
         $expected->characters = [(new Character('character-2', 'Character 2', 'route', 'route'))];
+        $expected->charactersSpeaking = [(new Character('character-2', 'Character 2', 'route', 'route'))];
         $expected->filename = 'quote-3.gif';
         $expected->slug = 'finally-the-quote-number-3';
         $expected->url = 'route';
