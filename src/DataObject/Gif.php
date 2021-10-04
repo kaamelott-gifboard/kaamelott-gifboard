@@ -8,6 +8,7 @@ final class Gif
 {
     public string $quote;
     public array $characters;
+    public array $charactersSpeaking;
     public string $filename;
     public string $slug;
     public string $url;

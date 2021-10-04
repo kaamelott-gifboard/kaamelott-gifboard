@@ -43,7 +43,7 @@ class GifFinder
         $results = [];
 
         foreach ($this->lister->gifs as $gif) {
-            foreach ($gif->characters as $character) {
+            foreach ($gif->charactersSpeaking as $character) {
                 if ($this->match($search, $character->name)) {
                     $results[] = $gif;
                 }
