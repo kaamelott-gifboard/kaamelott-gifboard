@@ -2004,7 +2004,8 @@
             "Léodagan"
         ],
         "characters_speaking": [
-            "Séli"
+            "Séli",
+            "Léodagan"
         ],
         "filename": "dites-rien-faudrait-pouvoir.gif",
         "slug": "vous-dites-rien-faudrait-pouvoir"
@@ -2670,7 +2671,8 @@
             "Perceval"
         ],
         "characters_speaking": [
-            "Karadoc"
+            "Karadoc",
+            "Perceval"
         ],
         "filename": "cest-moi-non-rien-compris.gif",
         "slug": "non-ou-alors-c-est-moi-non-moi-non-plus-j-ai-rien-compris"
@@ -3303,7 +3305,8 @@
             "Gauvain"
         ],
         "characters_speaking": [
-            "Yvain"
+            "Yvain",
+            "Gauvain"
         ],
         "filename": "se-met-derriere.gif",
         "slug": "un-grouillot-se-met-derriere-yvain"
@@ -3978,7 +3981,8 @@
             "Perceval"
         ],
         "characters_speaking": [
-            "Merlin"
+            "Merlin",
+            "Perceval"
         ],
         "filename": "ca-peut-pas-marcher.gif",
         "slug": "mais-ca-peut-pas-marcher"
@@ -4383,7 +4387,8 @@
             "Elias de Kelliwic'h"
         ],
         "characters_speaking": [
-            "Arthur"
+            "Arthur",
+            "Elias de Kelliwic'h"
         ],
         "filename": "sans-voix.gif",
         "slug": "arthur-et-elias-sont-sans-voix"
@@ -4853,11 +4858,13 @@
         "characters": [
             "Léodagan",
             "Lancelot du Lac",
-            "Arthur",
-            "Bohort"
+            "Bohort",
+            "Arthur"
         ],
         "characters_speaking": [
-            "Léodagan"
+            "Léodagan",
+            "Lancelot du Lac",
+            "Bohort"
         ],
         "filename": "prise-conscience.gif",
         "slug": "prise-de-conscience"
@@ -5443,7 +5450,8 @@
             "Arthur"
         ],
         "characters_speaking": [
-            "Lancelot du Lac"
+            "Lancelot du Lac",
+            "Arthur"
         ],
         "filename": "pas-ca-si-cest-ca.gif",
         "slug": "non-c-est-pas-ca-seulement-si-si-c-est-ca-je-suis-desole"
@@ -6865,7 +6873,8 @@
             "Léodagan"
         ],
         "characters_speaking": [
-            "Karadoc"
+            "Karadoc",
+            "Arthur",
         ],
         "filename": "quoi-non-ah-si.gif",
         "slug": "quoi-non-ah-si"
@@ -7537,7 +7546,8 @@
             "Léodagan"
         ],
         "characters_speaking": [
-            "Séli"
+            "Séli",
+            "Léodagan"
         ],
         "filename": "chance-bien-moins-pouviez-faire.gif",
         "slug": "bah-encore-une-chance-c-est-quand-meme-bien-le-moins-que-vous-pouviez-faire"
@@ -8679,7 +8689,8 @@
             "Père Blaise"
         ],
         "characters_speaking": [
-            "Léodagan"
+            "Léodagan",
+            "Père Blaise"
         ],
         "filename": "article-seize-alinea-quatre.gif",
         "slug": "article-16-alinea-4-oui-c-est-ca-c-est-ca"
@@ -9204,10 +9215,12 @@
     {
         "quote": "Vous vous prenez peut-être pour un modèle de gravure",
         "characters": [
-            "Azénor"
+            "Bohort",
+            "Arthur",
+            "Lancelot du Lac"
         ],
         "characters_speaking": [
-            "Azénor"
+            "Bohort"
         ],
         "filename": "prenez-pour-modele-gravure.gif",
         "slug": "vous-vous-prenez-peut-etre-pour-un-modele-de-gravure"
@@ -10013,7 +10026,8 @@
             "Lancelot du Lac"
         ],
         "characters_speaking": [
-            "Arthur"
+            "Arthur",
+            "Lancelot du Lac"
         ],
         "filename": "pas-plus-mais-pas-moins-non-plus.gif",
         "slug": "oui-voila-pas-plus-non-mais-pas-moins-non-plus"
@@ -10148,7 +10162,8 @@
             "Guenièvre"
         ],
         "characters_speaking": [
-            "Lancelot du Lac"
+            "Lancelot du Lac",
+            "Arthur"
         ],
         "filename": "faites-ce-que-vous-voulez-voila.gif",
         "slug": "vous-faites-ce-que-vous-voulez-voila"
@@ -10979,7 +10994,8 @@
             "Léodagan"
         ],
         "characters_speaking": [
-            "Arthur"
+            "Arthur",
+            "Léodagan"
         ],
         "filename": "arthur-leodagan-moquent.gif",
         "slug": "arthur-et-leodagan-se-moquent-de-caius"
@@ -11094,7 +11110,8 @@
             "Perceval"
         ],
         "characters_speaking": [
-            "Karadoc"
+            "Karadoc",
+            "Perceval"
         ],
         "filename": "cherchent-autour-deux.gif",
         "slug": "karadoc-et-perceval-cherchent-autour-d-eux"
