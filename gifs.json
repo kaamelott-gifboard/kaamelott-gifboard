@@ -1250,18 +1250,6 @@
         "slug": "bah-ce-qu-on-veut-m-enfin-c-est-plutot-pour-tout-ce-qui-est-genital"
     },
     {
-        "quote": "Vous avez un commentaire à faire ?",
-        "characters": [
-            "Arthur",
-            "Bohort"
-        ],
-        "characters_speaking": [
-            "Arthur"
-        ],
-        "filename": "un-commentaire-a-faire.gif",
-        "slug": "vous-avez-un-commentaire-a-faire"
-    },
-    {
         "quote": "Ouais non, ça c'est un lapin adulte ça",
         "characters": [
             "Arthur",
@@ -4945,7 +4933,7 @@
         "slug": "alors-comme-ca-vous-aussi-vous-etes-triste"
     },
     {
-        "quote": "Sois disant qu'on commence à se marrer à partir de six",
+        "quote": "Soi-disant qu'on commence à se marrer à partir de six",
         "characters": [
             "Demetra",
             "Arthur",
@@ -4955,7 +4943,7 @@
             "Demetra"
         ],
         "filename": "marrer-partir-six.gif",
-        "slug": "sois-disant-qu-on-commence-a-se-marrer-a-partir-de-six"
+        "slug": "soi-disant-qu-on-commence-a-se-marrer-a-partir-de-six"
     },
     {
         "quote": "Après vous me dites moi je veux pas vous forcer la main",
@@ -9149,7 +9137,7 @@
             "Arthur"
         ],
         "filename": "vous-avez-commentaire-a-faire.gif",
-        "slug": "vous-avez-un-commentaire-a-faire-2"
+        "slug": "vous-avez-un-commentaire-a-faire"
     },
     {
         "quote": "On m'a dit de venir mais on m'a pas dit pourquoi",
@@ -11451,5 +11439,17 @@
         ],
         "filename": "gentil-tenu-compte-mes-remarques.gif",
         "slug": "c-est-gentil-d-avoir-tenu-compte-de-mes-remarques-je-suis-tres-touchee"
+    },
+    {
+        "quote": "L'oeil de taupe",
+        "characters": [
+            "Le tricheur",
+            "Le Tavernier"
+        ],
+        "characters_speaking": [
+            "Le tricheur"
+        ],
+        "filename": "oeil-de-taupe.gif",
+        "slug": "l-oeil-de-taupe"
     }
 ]
