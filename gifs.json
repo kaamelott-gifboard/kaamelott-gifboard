@@ -1250,18 +1250,6 @@
         "slug": "bah-ce-qu-on-veut-m-enfin-c-est-plutot-pour-tout-ce-qui-est-genital"
     },
     {
-        "quote": "Vous avez un commentaire à faire ?",
-        "characters": [
-            "Arthur",
-            "Bohort"
-        ],
-        "characters_speaking": [
-            "Arthur"
-        ],
-        "filename": "un-commentaire-a-faire.gif",
-        "slug": "vous-avez-un-commentaire-a-faire"
-    },
-    {
         "quote": "Ouais non, ça c'est un lapin adulte ça",
         "characters": [
             "Arthur",
@@ -9149,7 +9137,7 @@
             "Arthur"
         ],
         "filename": "vous-avez-commentaire-a-faire.gif",
-        "slug": "vous-avez-un-commentaire-a-faire-2"
+        "slug": "vous-avez-un-commentaire-a-faire"
     },
     {
         "quote": "On m'a dit de venir mais on m'a pas dit pourquoi",
