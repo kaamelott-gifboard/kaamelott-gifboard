@@ -4945,7 +4945,7 @@
         "slug": "alors-comme-ca-vous-aussi-vous-etes-triste"
     },
     {
-        "quote": "Sois disant qu'on commence à se marrer à partir de six",
+        "quote": "Soi-disant qu'on commence à se marrer à partir de six",
         "characters": [
             "Demetra",
             "Arthur",
@@ -4955,7 +4955,7 @@
             "Demetra"
         ],
         "filename": "marrer-partir-six.gif",
-        "slug": "sois-disant-qu-on-commence-a-se-marrer-a-partir-de-six"
+        "slug": "soi-disant-qu-on-commence-a-se-marrer-a-partir-de-six"
     },
     {
         "quote": "Après vous me dites moi je veux pas vous forcer la main",
@@ -11451,5 +11451,17 @@
         ],
         "filename": "gentil-tenu-compte-mes-remarques.gif",
         "slug": "c-est-gentil-d-avoir-tenu-compte-de-mes-remarques-je-suis-tres-touchee"
+    },
+    {
+        "quote": "L'oeil de taupe",
+        "characters": [
+            "Le tricheur",
+            "Le Tavernier"
+        ],
+        "characters_speaking": [
+            "Le tricheur"
+        ],
+        "filename": "oeil-de-taupe.gif",
+        "slug": "l-oeil-de-taupe"
     }
 ]
