@@ -13,6 +13,10 @@ get_characters:
     controller: KaamelottGifboard\Action\Xhr\GetCharacters
     defaults: { name: '' }
 
+get_gifs:
+    path: /xhr/get_gifs
+    controller: KaamelottGifboard\Action\Xhr\GetGifs
+
 search_quotes:
     path: /xhr/search_quotes
     controller: KaamelottGifboard\Action\Xhr\SearchQuotes

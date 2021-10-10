@@ -20,6 +20,6 @@ class SearchQuotes extends AbstractAction
             (string) $request->query->get('search', '')
         );
 
-        return $this->render('includes/list.html.twig', ['gifs' => $gifs]);
+        return $this->render('includes/list-items.html.twig', ['gifs' => $gifs]);
     }
 }

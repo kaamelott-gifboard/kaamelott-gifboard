@@ -45,6 +45,14 @@ class GifFinderTest extends KernelTestCase
         static::assertCount(3, $result);
     }
 
+    public function testFindGifsByOffset(): void
+    {
+        $result = $this->finder->findGifs(0, 1);
+
+        static::assertInstanceOf(\LimitIterator::class, $result);
+        static::assertCount(1, $result);
+    }
+
     public function testFindGifsByQuote(): void
     {
         $result = $this->finder->findGifsByQuote('IS');
