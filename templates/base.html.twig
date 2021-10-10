@@ -34,6 +34,16 @@
         <meta name="twitter:domain" content="kaamelott-gifboard.fr">
         {% endblock %}
 
+        {% set page = app.request.query.get('page', 1) %}
+        {% if pagination is defined and pagination == true %}
+            {% if page == 1 %}
+                <link rel="next" href="{{ path('index') }}?page={{ page + 1 }}">
+            {% elseif page > 1 %}
+                <link rel="prev" href="{{ path('index') }}?page={{ page - 1 }}">
+                <link rel="next" href="{{ path('index') }}?page={{ page + 1 }}">
+            {% endif %}
+        {% endif %}
+
         {% block stylesheets -%}
         <link rel="stylesheet" href="{{ asset('css/styles.css') }}?v=1.4" media="screen">
         <link rel="stylesheet" href="{{ asset('css/mobile.css') }}?v=1.4" media="screen and (max-width: 900px)" />
@@ -98,7 +108,7 @@
             </div>
         </div>
         {% block javascripts %}
-            <script src="{{ asset('js/script.js') }}?v=1.3"></script>
+            <script src="{{ asset('js/script.js') }}?v=1.4"></script>
         {% endblock %}
     </body>
 </html>
