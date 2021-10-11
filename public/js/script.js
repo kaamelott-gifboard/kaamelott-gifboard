@@ -170,6 +170,7 @@ if (characterDiv && !currentCharacter) {
 
 let isFetching = false;
 let currentPage = 2;
+let canScroll = true;
 
 const fetchGifs = async () => {
     isFetching = true;
@@ -177,6 +178,10 @@ const fetchGifs = async () => {
     let searchXhr = new XMLHttpRequest();
 
     searchXhr.onload = function () {
+        if (searchXhr.status === 404) {
+            canScroll = false;
+        }
+
         updateDom(searchXhr.responseText);
 
         currentPage++;
@@ -203,6 +208,8 @@ window.addEventListener("scroll", async () => {
     if (window.location.pathname !== '/') return;
 
     if (isFetching) return;
+
+    if (!canScroll) return;
 
     if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) {
         document.getElementById('gif-ul-loader').innerHTML = loader;

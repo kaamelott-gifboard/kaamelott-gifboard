@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace KaamelottGifboard\Action\Gif;
 
 use KaamelottGifboard\Action\AbstractAction;
+use KaamelottGifboard\Exception\PouletteNotFoundException;
 use KaamelottGifboard\Helper\GifPageHelper;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -17,7 +18,7 @@ class Index extends AbstractAction
         $offset = GifPageHelper::getOffset($page);
 
         if ($page > GifPageHelper::getNumberOfPages($this->finder->countGifs())) {
-            return new Response(null, Response::HTTP_NOT_FOUND);
+            throw new PouletteNotFoundException('page', (string) $page);
         }
 
         return $this->render('body.html.twig', [
