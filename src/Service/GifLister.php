@@ -48,6 +48,7 @@ class GifLister
 
             $this->formatShortUrl($gif);
             $this->formatCharacters($gif, $gifItem);
+            $this->formatCharacters($gif, $gifItem, true);
 
             $gifs[] = $gif;
         }
@@ -57,9 +58,11 @@ class GifLister
         $this->gifs = new GifIterator($gifs);
     }
 
-    private function formatCharacters(Gif $gif, \stdClass $gifItem): void
+    private function formatCharacters(Gif $gif, \stdClass $gifItem, bool $speaking = false): void
     {
-        foreach ($gifItem->characters as $characterName) {
+        $characters = !$speaking ? $gifItem->characters : $gifItem->characters_speaking;
+
+        foreach ($characters as $characterName) {
             $slug = $this->slugger->slug($characterName)->lower()->__toString();
 
             $image = $this->router->generate('character_image', [
@@ -70,12 +73,18 @@ class GifLister
                 'name' => $characterName,
             ], UrlGeneratorInterface::ABSOLUTE_URL);
 
-            $gif->characters[] = (new Character(
+            $character = (new Character(
                 $slug,
                 $characterName,
                 $image,
                 $url
             ));
+
+            if (!$speaking) {
+                $gif->characters[] = $character;
+            } else {
+                $gif->charactersSpeaking[] = $character;
+            }
         }
     }
 

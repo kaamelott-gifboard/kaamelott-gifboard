@@ -10,5 +10,9 @@
     {
         "old": "c-est-bon-y-a-pas-de-quoi-en-chier-une-galette",
         "new": "y-a-pas-de-quoi-en-chier-une-galette"
+    },
+    {
+        "old": "sois-disant-qu-on-commence-a-se-marrer-a-partir-de-six",
+        "new": "soi-disant-qu-on-commence-a-se-marrer-a-partir-de-six"
     }
 ]

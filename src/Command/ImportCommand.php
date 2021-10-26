@@ -66,11 +66,18 @@ class ImportCommand extends Command
                 $gif['Character 5'],
             ];
 
+            $charactersSpeaking = [
+                $gif['Speaker 1'],
+                $gif['Speaker 2'],
+                $gif['Speaker 3'],
+            ];
+
             $quote = \str_replace('"', '', $gif['Quote']);
 
             $gifs[] = [
                 'quote' => !empty($quote) ? $quote : $gif['Caption'],
                 'characters' => array_filter($characters, fn ($value) => !empty($value)),
+                'characters_speaking' => array_filter($charactersSpeaking, fn ($value) => !empty($value)),
                 'filename' => sprintf('%s.gif', $gif['Filename']),
                 'slug' => '',
             ];

@@ -6,11 +6,12 @@ namespace KaamelottGifboard\Service;
 
 use KaamelottGifboard\DataObject\Character;
 use KaamelottGifboard\DataObject\Gif;
-use KaamelottGifboard\DataObject\GifIterator;
 use Symfony\Component\String\UnicodeString;
 
 class GifFinder
 {
+    public const GIFS_PER_PAGE = 100;
+
     public function __construct(private GifLister $lister)
     {
     }
@@ -20,8 +21,12 @@ class GifFinder
         return $this->lister->gifs->count();
     }
 
-    public function findGifs(): GifIterator
+    public function findGifs(int $offset = null, int $limit = self::GIFS_PER_PAGE): \Iterator
     {
+        if (null !== $offset && null !== $limit) {
+            return new \LimitIterator($this->lister->gifs, $offset, $limit);
+        }
+
         return $this->lister->gifs;
     }
 
@@ -43,7 +48,7 @@ class GifFinder
         $results = [];
 
         foreach ($this->lister->gifs as $gif) {
-            foreach ($gif->characters as $character) {
+            foreach ($gif->charactersSpeaking as $character) {
                 if ($this->match($search, $character->name)) {
                     $results[] = $gif;
                 }

@@ -128,10 +128,6 @@ function addSharingEvent(sharingButtons) {
     });
 }
 
-addOpenModalEvent(document.querySelectorAll('.square_btn'));
-addCloseModalEvent(document.querySelectorAll('.modal-close'));
-addSharingEvent(document.querySelectorAll('.sharing-btn'));
-
 // ==================================================
 
 let timer;
@@ -169,3 +165,58 @@ if (characterDiv && !currentCharacter) {
         }, 650);
     });
 }
+
+// ==================================================
+
+let isFetching = false;
+let currentPage = 2;
+let canScroll = true;
+
+const fetchGifs = async () => {
+    isFetching = true;
+
+    let searchXhr = new XMLHttpRequest();
+
+    searchXhr.onload = function () {
+        if (searchXhr.status === 404) {
+            canScroll = false;
+        }
+
+        updateDom(searchXhr.responseText);
+
+        currentPage++;
+        document.getElementById('gif-ul-loader').innerHTML = '';
+        isFetching = false;
+    };
+
+    let url = document.getElementById("gif-ul").getAttribute('data-url') + '?page=' + currentPage;
+
+    searchXhr.open('GET', url);
+    searchXhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
+    searchXhr.send();
+};
+
+const updateDom = (gifs) => {
+    document.getElementById("gif-ul").innerHTML += gifs;
+
+    addOpenModalEvent(document.querySelectorAll('.square_btn'));
+    addCloseModalEvent(document.querySelectorAll('.modal-close'));
+    addSharingEvent(document.querySelectorAll('.sharing-btn'));
+};
+
+window.addEventListener("scroll", async () => {
+    if (window.location.pathname !== '/') return;
+
+    if (isFetching) return;
+
+    if (!canScroll) return;
+
+    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 200) {
+        document.getElementById('gif-ul-loader').innerHTML = loader;
+        await fetchGifs();
+    }
+});
+
+addOpenModalEvent(document.querySelectorAll('.square_btn'));
+addCloseModalEvent(document.querySelectorAll('.modal-close'));
+addSharingEvent(document.querySelectorAll('.sharing-btn'));

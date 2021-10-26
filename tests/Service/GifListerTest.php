@@ -39,6 +39,8 @@ class GifListerTest extends KernelTestCase
             static::assertIsString($item->quote);
             static::assertObjectHasAttribute('characters', $item);
             static::assertIsArray($item->characters);
+            static::assertObjectHasAttribute('charactersSpeaking', $item);
+            static::assertIsArray($item->charactersSpeaking);
             static::assertObjectHasAttribute('filename', $item);
             static::assertIsString($item->filename);
             static::assertMatchesRegularExpression('#^[a-z-0-9]+\.gif$#', $item->filename);
@@ -79,6 +81,29 @@ class GifListerTest extends KernelTestCase
         }
     }
 
+    public function testCharactersSpeakingJsonIsValid(): void
+    {
+        $kernel = self::bootKernel();
+
+        $lister = $kernel->getContainer()->get('test.service_container')->get(GifLister::class);
+
+        static::assertInstanceOf(GifIterator::class, $lister->gifs);
+
+        /** @var Gif $item */
+        foreach ($lister->gifs as $item) {
+            static::assertIsArray($item->charactersSpeaking);
+
+            foreach ($item->charactersSpeaking as $character) {
+                static::assertObjectHasAttribute('slug', $character);
+                static::assertMatchesRegularExpression('#^[a-z-0-9]+$#', $character->slug);
+                static::assertObjectHasAttribute('name', $character);
+                static::assertObjectHasAttribute('image', $character);
+                static::assertMatchesRegularExpression('#[a-z-]+\.jpg$#', $character->image, $character->name);
+                static::assertObjectHasAttribute('url', $character);
+            }
+        }
+    }
+
     public function testInit(): void
     {
         $this->helper
@@ -87,57 +112,14 @@ class GifListerTest extends KernelTestCase
             ->willReturn(['width' => 100, 'height' => 100]);
 
         $this->router
-            ->expects(static::exactly(17))
+            ->expects(static::exactly(23))
             ->method('generate')
-            ->withConsecutive(
-                ['get_by_slug', ['slug' => 'this-is-the-quote-1']],
-                ['quote_image', ['filename' => 'quote-1.gif']],
-                ['get_by_code_short', ['code' => 'f53abd91c9']],
-                ['character_image', ['filename' => 'image-1.jpg']],
-                ['get_by_character', ['name' => 'Character 1']],
-                ['character_image', ['filename' => 'image-2.jpg']],
-                ['get_by_character', ['name' => 'Character 2']],
-                ['get_by_slug', ['slug' => 'here-is-the-quote-2']],
-                ['quote_image', ['filename' => 'quote-2.gif']],
-                ['get_by_code_short', ['code' => 'cc58ba3582']],
-                ['character_image', ['filename' => 'image-3.jpg']],
-                ['get_by_character', ['name' => 'Character 3']],
-                ['get_by_slug', ['slug' => 'finally-the-quote-number-3']],
-                ['quote_image', ['filename' => 'quote-3.gif']],
-                ['get_by_code_short', ['code' => '0c3c899cad']],
-                ['character_image', ['filename' => 'image-2.jpg']],
-                ['get_by_character', ['name' => 'Character 2']],
-            )
-            ->willReturnOnConsecutiveCalls(
-                'route-1',
-                'gif-1',
-                'short-route-1',
-                'image-1.jpg',
-                'character-url-1',
-                'image-2.jpg',
-                'character-url-2',
-                'route-2',
-                'gif-2',
-                'short-route-2',
-                'image-3.jpg',
-                'character-url-3',
-                'route-3',
-                'gif-3',
-                'short-route-3',
-                'image-2.jpg',
-                'character-url-2',
-            );
+            ->willReturn('route');
 
         $this->helper
-            ->expects(static::exactly(4))
+            ->expects(static::exactly(7))
             ->method('getCharacterImage')
-            ->withConsecutive(
-                ['character-1'],
-                ['character-2'],
-                ['character-3'],
-                ['character-2'],
-            )
-            ->willReturnOnConsecutiveCalls('image-1.jpg', 'image-2.jpg', 'image-3.jpg', 'image-2.jpg');
+            ->willReturn('image');
 
         $lister = new GifLister(
             __DIR__.'/gifs-test.json',
@@ -155,15 +137,16 @@ class GifListerTest extends KernelTestCase
 
         $gif = new Gif();
         $gif->quote = 'Finally, the quote number 3';
-        $gif->characters = [(new Character('character-2', 'Character 2', 'image-2.jpg', 'character-url-2'))];
+        $gif->characters = [(new Character('character-2', 'Character 2', 'route', 'route'))];
+        $gif->charactersSpeaking = [(new Character('character-2', 'Character 2', 'route', 'route'))];
         $gif->filename = 'quote-3.gif';
         $gif->slug = 'finally-the-quote-number-3';
-        $gif->url = 'route-3';
-        $gif->image = 'gif-3';
+        $gif->url = 'route';
+        $gif->image = 'route';
         $gif->width = 100;
         $gif->height = 100;
         $gif->code = '0c3c899cad';
-        $gif->shortUrl = 'short-route-3';
+        $gif->shortUrl = 'route';
 
         static::assertEquals($gif, $result[0]);
     }

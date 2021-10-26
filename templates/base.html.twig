@@ -34,9 +34,19 @@
         <meta name="twitter:domain" content="kaamelott-gifboard.fr">
         {% endblock %}
 
+        {% set page = app.request.query.get('page', 1) %}
+        {% if pagination is defined and pagination == true %}
+            {% if page == 1 %}
+                <link rel="next" href="{{ path('index') }}?page={{ page + 1 }}">
+            {% elseif page > 1 %}
+                <link rel="prev" href="{{ path('index') }}?page={{ page - 1 }}">
+                <link rel="next" href="{{ path('index') }}?page={{ page + 1 }}">
+            {% endif %}
+        {% endif %}
+
         {% block stylesheets -%}
-        <link rel="stylesheet" href="{{ asset('css/styles.css') }}?v=1.3" media="screen">
-        <link rel="stylesheet" href="{{ asset('css/mobile.css') }}?v=1.3" media="screen and (max-width: 900px)" />
+        <link rel="stylesheet" href="{{ asset('css/styles.css') }}?v=1.4" media="screen">
+        <link rel="stylesheet" href="{{ asset('css/mobile.css') }}?v=1.4" media="screen and (max-width: 900px)" />
         {% endblock %}
 
         <script src="https://kit.fontawesome.com/ca7418fbe7.js" crossorigin="anonymous"></script>
@@ -61,14 +71,6 @@
             </div>
             <div id="footer" class="footer">
                 <div class="footer-boxes">
-                    <div class="footer-box-quote">
-                        <div>
-                            <i class="fa fa-quote-left fa-lg"></i>
-                            <span id="footer-quote" data-url="{{ path('get_random') }}"></span>
-                            <br /><br />
-                            <span id="footer-character"></span>
-                        </div>
-                    </div>
                     <div class="footer-box-donate">
                         <div class="margin10">
                             <span class="fa fa-beer fa-2x" title="Buy me a coffee"></span>
@@ -77,6 +79,14 @@
                         <a href="https://www.buymeacoffee.com/kaamelottgifs" target="_blank" class="footer-btn">
                             Offrez nous un godet à la taverne
                         </a>
+                    </div>
+                    <div class="footer-box-quote">
+                        <div>
+                            <i class="fa fa-quote-left fa-lg"></i>
+                            <span id="footer-quote" data-url="{{ path('get_random') }}"></span>
+                            <br /><br />
+                            <span id="footer-character"></span>
+                        </div>
                     </div>
                     <div class="footer-box-contribute">
                         <div class="margin10">
@@ -93,12 +103,12 @@
                         <a href="https://twitter.com/KGifboard"><i class="fa fa-twitter fa-lg"></i></a>
                     </div>
                     Elle est où la poulette ?™ - {{ "now"|date("Y") }}<br />
-                    <span class="footer-tm-small">Certains droits réservés. On est pas des bêtes.</span>
+                    <span class="footer-tm-small">Certains droits réservés. On n'est pas des bêtes.</span>
                 </div>
             </div>
         </div>
         {% block javascripts %}
-            <script src="{{ asset('js/script.js') }}?v=1.3"></script>
+            <script src="{{ asset('js/script.js') }}?v=1.5"></script>
         {% endblock %}
     </body>
 </html>
