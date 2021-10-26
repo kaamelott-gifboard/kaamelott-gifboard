@@ -11463,5 +11463,77 @@
         ],
         "filename": "vous-me-repondez-meme-plus-maintenant.gif",
         "slug": "vous-me-repondez-meme-plus-maintenant"
+    },
+    {
+        "quote": "Aaaaah m'adresse pas la parole hérétique, démon!",
+        "characters": [
+            "Le Répurgateur",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Le Répurgateur"
+        ],
+        "filename": "ah-m-adresse-pas-la-parole-heretique-demon.gif",
+        "slug": "ah-m-adresse-pas-la-parole-heretique-demon"
+    },
+    {
+        "quote": "C'est pas une insulte ça Sire, c'est vrai!",
+        "characters": [
+            "Arthur",
+            "Le Maître d'Armes"
+        ],
+        "characters_speaking": [
+            "Le Maître d'Armes"
+        ],
+        "filename": "c-est-pas-une-insulte-ca-sire-c-est-vrai.gif",
+        "slug": "c-est-pas-une-insulte-ca-sire-c-est-vrai"
+    },
+    {
+        "quote": "Catapultes! Catapultes!",
+        "characters": [
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "catapultes-catapultes.gif",
+        "slug": "catapultes-catapultes"
+    },
+    {
+        "quote": "Du passe faisons table en marbre!",
+        "characters": [
+            "Karadoc",
+            "Perceval",
+            "Le Tavernier"
+        ],
+        "characters_speaking": [
+            "Karadoc"
+        ],
+        "filename": "du-passe-faissons-table-en-marbre.gif",
+        "slug": "du-passe-faissons-table-en-marbre"
+    },
+    {
+        "quote": "Je sens bien que vous essayer de me dire quelque chose",
+        "characters": [
+            "Arthur",
+            "Perceval"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "je-sens-bien-que-vous-essayer-de-me-dire-quelque-chose.gif",
+        "slug": "je-sens-bien-que-vous-essayer-de-me-dire-quelque-chose"
+    },
+    {
+        "quote": "Y'a outrage!",
+        "characters": [
+            "Karadoc",
+            "Père Blaise"
+        ],
+        "characters_speaking": [
+            "Karadoc"
+        ],
+        "filename": "y-a-outrage.gif",
+        "slug": "y-a-outrage"
     }
 ]
