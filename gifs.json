@@ -11465,7 +11465,7 @@
         "slug": "vous-me-repondez-meme-plus-maintenant"
     },
     {
-        "quote": "Aaaaah m'adresse pas la parole hérétique, démon!",
+        "quote": "Aaaaah m'adresse pas la parole hérétique, démon !",
         "characters": [
             "Le Répurgateur",
             "Arthur"
@@ -11477,7 +11477,7 @@
         "slug": "ah-m-adresse-pas-la-parole-heretique-demon"
     },
     {
-        "quote": "C'est pas une insulte ça Sire, c'est vrai!",
+        "quote": "C'est pas une insulte ça Sire, c'est vrai !",
         "characters": [
             "Arthur",
             "Le Maître d'Armes"
@@ -11489,7 +11489,7 @@
         "slug": "c-est-pas-une-insulte-ca-sire-c-est-vrai"
     },
     {
-        "quote": "Catapultes! Catapultes!",
+        "quote": "Catapultes ! Catapultes !",
         "characters": [
             "Arthur"
         ],
@@ -11500,7 +11500,7 @@
         "slug": "catapultes-catapultes"
     },
     {
-        "quote": "Du passe faisons table en marbre!",
+        "quote": "Du passé faisons table en marbre !",
         "characters": [
             "Karadoc",
             "Perceval",
@@ -11509,11 +11509,11 @@
         "characters_speaking": [
             "Karadoc"
         ],
-        "filename": "du-passe-faissons-table-en-marbre.gif",
-        "slug": "du-passe-faissons-table-en-marbre"
+        "filename": "du-passe-faisons-table-en-marbre.gif",
+        "slug": "du-passe-faisons-table-en-marbre"
     },
     {
-        "quote": "Je sens bien que vous essayer de me dire quelque chose",
+        "quote": "Je sens bien que vous essayez de me dire quelque chose",
         "characters": [
             "Arthur",
             "Perceval"
@@ -11521,11 +11521,11 @@
         "characters_speaking": [
             "Arthur"
         ],
-        "filename": "je-sens-bien-que-vous-essayer-de-me-dire-quelque-chose.gif",
-        "slug": "je-sens-bien-que-vous-essayer-de-me-dire-quelque-chose"
+        "filename": "je-sens-bien-que-vous-essayez-de-me-dire-quelque-chose.gif",
+        "slug": "je-sens-bien-que-vous-essayez-de-me-dire-quelque-chose"
     },
     {
-        "quote": "Y'a outrage!",
+        "quote": "Y'a outrage !",
         "characters": [
             "Karadoc",
             "Père Blaise"
