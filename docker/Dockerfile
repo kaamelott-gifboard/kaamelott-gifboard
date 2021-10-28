@@ -27,7 +27,7 @@ RUN composer dump-autoload \
 ########################################
 #           PRODUCTION
 ########################################
-FROM php:8.0-fpm-alpine as prod
+FROM php:8.0-fpm-alpine3.13 as prod
 
 WORKDIR /var/www
 
