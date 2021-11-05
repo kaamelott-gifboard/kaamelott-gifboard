@@ -80,7 +80,7 @@ test: start ## Launch the PhpUnit suite
 .PHONY: test
 
 phpstan: start ## Launch the Phpstan tool
-	${EXEC_APP} vendor/bin/phpstan analyse -c phpstan.neon
+	${EXEC_APP} vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=-1
 .PHONY: phpstan
 
 ##  ----
