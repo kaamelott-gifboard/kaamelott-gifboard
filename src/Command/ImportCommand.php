@@ -36,12 +36,13 @@ class ImportCommand extends Command
     {
         try {
             $file = \file_get_contents(__DIR__.'/gifs.csv');
-        } catch (\Throwable $exception) {
+        } catch (\Throwable) {
             $output->writeln('Error: Could not find the "gifs.csv". Aborting');
 
             return Command::FAILURE;
         }
 
+        /** @var array $gifsFromCsv */
         $gifsFromCsv = $this->decoder->decode((string) $file, 'csv');
 
         $gifs = [];
@@ -88,6 +89,7 @@ class ImportCommand extends Command
             $output->writeln('');
         }
 
+        /** @var array $json */
         $json = json_decode((string) file_get_contents($this->gifsJsonFile), true);
 
         $newJson = array_merge($json, $gifs);
