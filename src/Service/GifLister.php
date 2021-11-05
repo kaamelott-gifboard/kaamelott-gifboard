@@ -33,7 +33,10 @@ class GifLister
 
         $gifs = [];
 
-        foreach (json_decode($json) as $gifItem) {
+        /** @var array $data */
+        $data = json_decode($json);
+
+        foreach ($data as $gifItem) {
             $gif = new Gif();
             $gif->slug = $gifItem->slug;
             $gif->quote = $gifItem->quote;

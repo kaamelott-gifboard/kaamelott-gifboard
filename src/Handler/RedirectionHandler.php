@@ -18,6 +18,7 @@ class RedirectionHandler
 
     public function getRedirection(string $slug): ?RedirectResponse
     {
+        /** @var array $redirections */
         $redirections = json_decode((string) file_get_contents($this->redirectionJsonFile), true);
 
         foreach ($redirections as $redirection) {
