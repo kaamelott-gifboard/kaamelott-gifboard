@@ -98,7 +98,7 @@ class GifFinder
         $results = [];
 
         foreach ($this->lister->gifs as $gif) {
-            foreach ($gif->characters as $character) {
+            foreach ($gif->charactersSpeaking as $character) {
                 if (!\array_key_exists($character->slug, $results)) {
                     $results[$character->slug] = $character;
                 }

@@ -11535,5 +11535,348 @@
         ],
         "filename": "y-a-outrage.gif",
         "slug": "y-a-outrage"
+    },
+    {
+        "quote": "Bon allez, moi je vais me coucher, je tiens plus en l'air",
+        "characters": [
+            "Léodagan",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Léodagan"
+        ],
+        "filename": "vais-me-coucher-tiens-plus-en-lair.gif",
+        "slug": "bon-allez-moi-je-vais-me-coucher-je-tiens-plus-en-l-air"
+    },
+    {
+        "quote": "Je vais rester un peu pour finir",
+        "characters": [
+            "Arthur",
+            "Léodagan"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "rester-un-peu-pour-finir.gif",
+        "slug": "je-vais-rester-un-peu-pour-finir"
+    },
+    {
+        "quote": "Sous-entendu y'a que moi qui bosse c'est ça",
+        "characters": [
+            "Léodagan",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Léodagan"
+        ],
+        "filename": "ya-que-moi-qui-bosse.gif",
+        "slug": "sous-entendu-y-a-que-moi-qui-bosse-c-est-ca"
+    },
+    {
+        "quote": "Bon bah bonne nuit alors",
+        "characters": [
+            "Léodagan",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Léodagan"
+        ],
+        "filename": "bonne-nuit-alors.gif",
+        "slug": "bon-bah-bonne-nuit-alors"
+    },
+    {
+        "quote": "Voilà voilà c'est ça 'à demain', qu'est-ce que ça veut dire ça 'à demain'",
+        "characters": [
+            "Léodagan",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Léodagan"
+        ],
+        "filename": "veut-dire-a-demain.gif",
+        "slug": "voila-voila-c-est-ca-a-demain-qu-est-ce-que-ca-veut-dire-ca-a-demain"
+    },
+    {
+        "quote": "Mais de quoi vous voulez qu'on parle",
+        "characters": [
+            "Arthur",
+            "Bohort"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "quoi-vous-voulez-quon-parle.gif",
+        "slug": "mais-de-quoi-vous-voulez-qu-on-parle"
+    },
+    {
+        "quote": "C'est rien ça c'est des bestioles",
+        "characters": [
+            "Arthur",
+            "Bohort"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "cest-des-bestioles.gif",
+        "slug": "c-est-rien-ca-c-est-des-bestioles"
+    },
+    {
+        "quote": "Des lapins",
+        "characters": [
+            "Bohort",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Bohort"
+        ],
+        "filename": "des-lapins.gif",
+        "slug": "des-lapins"
+    },
+    {
+        "quote": "De minuscules lapereaux, mignons et inoffensifs",
+        "characters": [
+            "Bohort",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Bohort"
+        ],
+        "filename": "minuscules-lapereaux-inoffensifs.gif",
+        "slug": "de-minuscules-lapereaux-mignons-et-inoffensifs"
+    },
+    {
+        "quote": "A moi",
+        "characters": [
+            "Bohort",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Bohort"
+        ],
+        "filename": "a-moi.gif",
+        "slug": "a-moi"
+    },
+    {
+        "quote": "Ce serait vous mentir de dire qu'il n'y a que des lapins dans cette forêt",
+        "characters": [
+            "Arthur",
+            "Bohort"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "mentir-que-des-lapins.gif",
+        "slug": "ce-serait-vous-mentir-de-dire-qu-il-n-y-a-que-des-lapins-dans-cette-foret"
+    },
+    {
+        "quote": "Des faisans",
+        "characters": [
+            "Bohort",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Bohort"
+        ],
+        "filename": "des-faisans.gif",
+        "slug": "des-faisans"
+    },
+    {
+        "quote": "Qu'est-ce que j'en sais moi je ne suis pas garde-chasse",
+        "characters": [
+            "Arthur",
+            "Bohort"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "suis-pas-garde-chasse.gif",
+        "slug": "qu-est-ce-que-j-en-sais-moi-je-ne-suis-pas-garde-chasse"
+    },
+    {
+        "quote": "Vous dites ça pour me rassurer",
+        "characters": [
+            "Bohort",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Bohort"
+        ],
+        "filename": "dites-ca-pour-me-rassurer.gif",
+        "slug": "vous-dites-ca-pour-me-rassurer"
+    },
+    {
+        "quote": "Des lapins adultes",
+        "characters": [
+            "Bohort",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Bohort"
+        ],
+        "filename": "des-lapins-adultes.gif",
+        "slug": "des-lapins-adultes"
+    },
+    {
+        "quote": "C'est pour frimer c'était dans le noir",
+        "characters": [
+            "Léodagan",
+            "Arthur",
+            "Bohort"
+        ],
+        "characters_speaking": [
+            "Léodagan"
+        ],
+        "filename": "pour-frimer-cetait-dans-le-noir.gif",
+        "slug": "c-est-pour-frimer-c-etait-dans-le-noir"
+    },
+    {
+        "quote": "C'était sûrement un lapin",
+        "characters": [
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "surement-un-lapin.gif",
+        "slug": "c-etait-surement-un-lapin"
+    },
+    {
+        "quote": "Les gens s'ennuient à votre contact",
+        "characters": [
+            "Léodagan"
+        ],
+        "characters_speaking": [
+            "Léodagan"
+        ],
+        "filename": "gens-ennuient-votre-contact.gif",
+        "slug": "les-gens-s-ennuient-a-votre-contact"
+    },
+    {
+        "quote": "Vos visites sont rares, notez qu'on s'en plait pas",
+        "characters": [
+            "Séli",
+            "Elias de Kelliwic'h",
+            "La soeur de Léodagan"
+        ],
+        "characters_speaking": [
+            "Séli"
+        ],
+        "filename": "visites-rares-plait-pas.gif",
+        "slug": "vos-visites-sont-rares-notez-qu-on-s-en-plait-pas"
+    },
+    {
+        "quote": "Coucou coucou",
+        "characters": [
+            "Le duc d'Aquitaine",
+            "La Duchesse d'Aquitaine"
+        ],
+        "characters_speaking": [
+            "Le duc d'Aquitaine"
+        ],
+        "filename": "coucou-coucou.gif",
+        "slug": "coucou-coucou"
+    },
+    {
+        "quote": "J'ajoute que je me suis fait traiter ma femme de gredine",
+        "characters": [
+            "Le duc d'Aquitaine",
+            "La Duchesse d'Aquitaine"
+        ],
+        "characters_speaking": [
+            "Le duc d'Aquitaine"
+        ],
+        "filename": "traiter-femme-gredine.gif",
+        "slug": "j-ajoute-que-je-me-suis-fait-traiter-ma-femme-de-gredine"
+    },
+    {
+        "quote": "Poursuivi par des méchants ?",
+        "characters": [
+            "Bohort"
+        ],
+        "characters_speaking": [
+            "Bohort"
+        ],
+        "filename": "poursuivi-par-des-mechants.gif",
+        "slug": "poursuivi-par-des-mechants"
+    },
+    {
+        "quote": "A mes fesses",
+        "characters": [
+            "Merlin"
+        ],
+        "characters_speaking": [
+            "Merlin"
+        ],
+        "filename": "a-mes-fesses.gif",
+        "slug": "a-mes-fesses"
+    },
+    {
+        "quote": "Parce que sitôt que c'est bibi qui se fiche aux commandes du projet, ça pétarade un petit mieux",
+        "characters": [
+            "Merlin"
+        ],
+        "characters_speaking": [
+            "Merlin"
+        ],
+        "filename": "bibi-commandes-projet-petarade-mieux.gif",
+        "slug": "parce-que-sitot-que-c-est-bibi-qui-se-fiche-aux-commandes-du-projet-ca-petarade-un-petit-mieux"
+    },
+    {
+        "quote": "Robobrole",
+        "characters": [
+            "Perceval",
+            "Lamorak de Galles"
+        ],
+        "characters_speaking": [
+            "Perceval"
+        ],
+        "filename": "robobrole.gif",
+        "slug": "robobrole"
+    },
+    {
+        "quote": "C'est pas la première fois que vous jouez",
+        "characters": [
+            "Lamorak de Galles",
+            "Perceval"
+        ],
+        "characters_speaking": [
+            "Lamorak de Galles"
+        ],
+        "filename": "pas-premiere-fois-vous-jouez.gif",
+        "slug": "c-est-pas-la-premiere-fois-que-vous-jouez"
+    },
+    {
+        "quote": "Kadoc, il peut mettre 35 mirabelles dans ses fesses",
+        "characters": [
+            "Kadoc"
+        ],
+        "characters_speaking": [
+            "Kadoc"
+        ],
+        "filename": "35-mirabelles-fesses.gif",
+        "slug": "kadoc-il-peut-mettre-35-mirabelles-dans-ses-fesses"
+    },
+    {
+        "quote": "En utilisant seulement du fil à retordre",
+        "characters": [
+            "Perceval"
+        ],
+        "characters_speaking": [
+            "Perceval"
+        ],
+        "filename": "seulement-fil-retordre.gif",
+        "slug": "en-utilisant-seulement-du-fil-a-retordre"
+    },
+    {
+        "quote": "Je pense que vous pourriez vous montrer un petit peu courtois quand je vous convie à un goûter",
+        "characters": [
+            "Le duc d'Aquitaine",
+            "La Duchesse d'Aquitaine"
+        ],
+        "characters_speaking": [
+            "Le duc d'Aquitaine"
+        ],
+        "filename": "courtois-convie-gouter.gif",
+        "slug": "je-pense-que-vous-pourriez-vous-montrer-un-petit-peu-courtois-quand-je-vous-convie-a-un-gouter"
     }
 ]
