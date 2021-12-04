@@ -4,7 +4,7 @@ docker-compose.override.yaml
 /var/
 /vendor/
 /.php_cs
-/.php_cs.cache
+/.php-cs-fixer.cache
 .phpunit
 .phpunit.result.cache
 /phpunit.xml
