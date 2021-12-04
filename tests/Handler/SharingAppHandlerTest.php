@@ -14,7 +14,7 @@ use Symfony\Component\HttpFoundation\RequestStack;
 
 class SharingAppHandlerTest extends KernelTestCase
 {
-    private MockObject | RequestStack $requestStack;
+    private MockObject|RequestStack $requestStack;
     private SharingAppHandler $handler;
 
     protected function setUp(): void

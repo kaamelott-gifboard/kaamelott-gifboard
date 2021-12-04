@@ -12,7 +12,7 @@ use Symfony\Component\Routing\RouterInterface;
 
 class RedirectionHandlerTest extends KernelTestCase
 {
-    private MockObject | RouterInterface $router;
+    private MockObject|RouterInterface $router;
     private RedirectionHandler $handler;
 
     protected function setUp(): void
