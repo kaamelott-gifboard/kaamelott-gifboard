@@ -13,6 +13,8 @@ use Symfony\Component\HttpFoundation\Response;
 
 class TweetBotCommand extends Command
 {
+    private const QUOTE_MAX_LENGTH = 200;
+
     protected static $defaultName = 'tweet:random';
 
     public function __construct(
@@ -36,6 +38,11 @@ class TweetBotCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output)
     {
         $random = $this->gifFinder->findRandom()['current'];
+        $quote = $random->quote;
+
+        if (strlen($quote) > self::QUOTE_MAX_LENGTH) {
+            $quote = substr($quote, 0, self::QUOTE_MAX_LENGTH).'...';
+        }
 
         $connection = $this->getTwitterOAuth();
         $connection->setApiVersion('1.1');
@@ -59,8 +66,8 @@ class TweetBotCommand extends Command
 
         $tweet = sprintf(
             '%s #%s #kaamelott #citationDuJour %s',
-            $random->quote,
-            $random->charactersSpeaking[0]->name,
+            $quote,
+            preg_replace('/[\s\']/', '', $random->charactersSpeaking[0]->name),
             $random->shortUrl
         );
 
