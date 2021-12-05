@@ -19,6 +19,7 @@
         "php": ">=8.0",
         "ext-ctype": "*",
         "ext-iconv": "*",
+        "abraham/twitteroauth": "^3.2",
         "composer/package-versions-deprecated": "1.11.99.1",
         "nelmio/cors-bundle": "^2.1",
         "phpdocumentor/reflection-docblock": "^5.2",
