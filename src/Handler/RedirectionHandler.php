@@ -21,6 +21,7 @@ class RedirectionHandler
         /** @var array $redirections */
         $redirections = json_decode((string) file_get_contents($this->redirectionJsonFile), true);
 
+        /** @var array $redirection */
         foreach ($redirections as $redirection) {
             if ($redirection['old'] === $slug) {
                 $path = $this->router->generate(

@@ -83,6 +83,10 @@ phpstan: start ## Launch the Phpstan tool
 	${EXEC_APP} vendor/bin/phpstan analyse -c phpstan.neon --memory-limit=-1
 .PHONY: phpstan
 
+psalm: start ## Launch the Psalm tool
+	${EXEC_APP} vendor/bin/psalm
+.PHONY: psalm
+
 ##  ----
 ##@ Misc
 ##  ----

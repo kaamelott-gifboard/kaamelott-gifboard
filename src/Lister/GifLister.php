@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace KaamelottGifboard\Service;
+namespace KaamelottGifboard\Lister;
 
 use KaamelottGifboard\DataObject\Character;
 use KaamelottGifboard\DataObject\Gif;
@@ -15,7 +15,6 @@ use Symfony\Component\String\Slugger\SluggerInterface;
 
 class GifLister
 {
-    /** @var GifIterator|Gif[] */
     public GifIterator $gifs;
 
     public function __construct(
@@ -36,11 +35,12 @@ class GifLister
         /** @var array $data */
         $data = json_decode($json);
 
+        /** @var \stdClass $gifItem */
         foreach ($data as $gifItem) {
             $gif = new Gif();
-            $gif->slug = $gifItem->slug;
-            $gif->quote = $gifItem->quote;
-            $gif->filename = $gifItem->filename;
+            $gif->slug = (string) $gifItem->slug;
+            $gif->quote = (string) $gifItem->quote;
+            $gif->filename = (string) $gifItem->filename;
             $gif->url = $this->router->generate('get_by_slug', ['slug' => $gifItem->slug], RouterInterface::ABSOLUTE_URL);
             $gif->image = $this->router->generate('quote_image', ['filename' => $gif->filename], RouterInterface::ABSOLUTE_URL);
 
@@ -63,8 +63,10 @@ class GifLister
 
     private function formatCharacters(Gif $gif, \stdClass $gifItem, bool $speaking = false): void
     {
+        /** @var array $characters */
         $characters = !$speaking ? $gifItem->characters : $gifItem->characters_speaking;
 
+        /** @var string $characterName */
         foreach ($characters as $characterName) {
             $slug = $this->slugger->slug($characterName)->lower()->__toString();
 

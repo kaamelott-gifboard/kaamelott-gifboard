@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace KaamelottGifboard\Action;
 
-use KaamelottGifboard\Service\GifFinder;
+use KaamelottGifboard\Finder\GifFinder;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Twig\Environment;
 

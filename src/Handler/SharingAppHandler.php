@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace KaamelottGifboard\Handler;
 
+use KaamelottGifboard\DataObject\Gif;
 use Symfony\Component\HttpFoundation\BinaryFileResponse;
 use Symfony\Component\HttpFoundation\File\File;
 use Symfony\Component\HttpFoundation\Request;
@@ -22,9 +23,9 @@ class SharingAppHandler
 //        'Discordbot',
     ];
 
-    public function getResponse(array $gifs): ?BinaryFileResponse
+    public function getResponse(Gif $gif): ?BinaryFileResponse
     {
-        if (!$request = $this->requestStack->getMasterRequest()) {
+        if (!$request = $this->requestStack->getMainRequest()) {
             return null;
         }
 
@@ -32,7 +33,7 @@ class SharingAppHandler
             return null;
         }
 
-        $image = (array) parse_url($gifs['current']->image);
+        $image = (array) parse_url($gif->image);
 
         if (\array_key_exists('path', $image)) {
             $file = new File($this->publicPath.$image['path']);
@@ -51,7 +52,7 @@ class SharingAppHandler
     {
         $userAgent = (string) $request->headers->get('User-Agent');
 
-        $userAgents = (string) implode('|', self::SHARING_APP_USER_AGENTS);
+        $userAgents = implode('|', self::SHARING_APP_USER_AGENTS);
 
         return (bool) preg_match(sprintf('#%s#', $userAgents), $userAgent);
     }

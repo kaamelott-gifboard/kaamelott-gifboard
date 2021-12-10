@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace KaamelottGifboard\Helper;
 
-use KaamelottGifboard\Service\GifFinder;
+use KaamelottGifboard\Finder\GifFinder;
 
 class GifPageHelper
 {

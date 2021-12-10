@@ -8,7 +8,7 @@ use KaamelottGifboard\DataObject\Character;
 use KaamelottGifboard\DataObject\Gif;
 use KaamelottGifboard\DataObject\GifIterator;
 use KaamelottGifboard\Helper\ImageHelper;
-use KaamelottGifboard\Service\GifLister;
+use KaamelottGifboard\Lister\GifLister;
 use PHPUnit\Framework\MockObject\MockObject;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 use Symfony\Component\Routing\RouterInterface;

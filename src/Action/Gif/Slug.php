@@ -5,10 +5,11 @@ declare(strict_types=1);
 namespace KaamelottGifboard\Action\Gif;
 
 use KaamelottGifboard\Action\AbstractAction;
+use KaamelottGifboard\DataObject\Gif;
 use KaamelottGifboard\Exception\PouletteNotFoundException;
+use KaamelottGifboard\Finder\GifFinder;
 use KaamelottGifboard\Handler\RedirectionHandler;
 use KaamelottGifboard\Handler\SharingAppHandler;
-use KaamelottGifboard\Service\GifFinder;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Twig\Environment;
@@ -36,7 +37,10 @@ class Slug extends AbstractAction
             throw new PouletteNotFoundException('slug', $slug);
         }
 
-        if ($response = $this->sharingAppHandler->getResponse($gifs)) {
+        /** @var Gif $gif */
+        $gif = $gifs['current'];
+
+        if ($response = $this->sharingAppHandler->getResponse($gif)) {
             return $response;
         }
 

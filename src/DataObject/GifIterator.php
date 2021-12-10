@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 namespace KaamelottGifboard\DataObject;
 
+/**
+ * @psalm-suppress MissingConstructor
+ * @psalm-suppress MixedInferredReturnType
+ * @psalm-suppress MixedReturnStatement
+ */
 final class GifIterator extends \ArrayIterator
 {
     public \ArrayIterator $gifs;
@@ -28,7 +33,9 @@ final class GifIterator extends \ArrayIterator
             return $this->current();
         }
 
-        $this->seek(--$key);
+        --$key;
+
+        $this->seek($key);
 
         return $this->current();
     }

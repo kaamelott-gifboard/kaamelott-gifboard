@@ -6,7 +6,7 @@ namespace KaamelottGifboard\Command;
 
 use Abraham\TwitterOAuth\TwitterOAuth;
 use KaamelottGifboard\DataObject\Gif;
-use KaamelottGifboard\Service\GifFinder;
+use KaamelottGifboard\Finder\GifFinder;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -44,6 +44,7 @@ class TweetBotCommand extends Command
 
         do {
             ++$nbTry;
+            /** @var Gif $random */
             $random = $this->gifFinder->findRandom()['current'];
         } while ($this->isRecentlyPosted($random, $output) && $nbTry < self::MAX_TRIES);
 
@@ -74,7 +75,7 @@ class TweetBotCommand extends Command
         }
 
         if (!property_exists($media, 'media_id_string')) {
-            $output->writeln('Media for GIF %s not uploaded on Twitter.', $random->filename);
+            $output->writeln(sprintf('Media for GIF %s not uploaded on Twitter.', $random->filename));
 
             return Command::FAILURE;
         }
@@ -95,10 +96,17 @@ class TweetBotCommand extends Command
         ], true);
 
         if (Response::HTTP_CREATED !== $connection->getLastHttpCode()) {
+            /**
+             * @psalm-suppress MixedAssignment
+             * @psalm-suppress MixedPropertyFetch
+             * @psalm-suppress MixedArrayAccess
+             */
+            $error = $response->errors[0]->message ?? ''; /* @phpstan-ignore-line */
+
             $output->writeln(sprintf(
                 'Tweet for GIF %s not published on Twitter. [%s]',
                 $random->filename,
-                $response->errors[0]->message /* @phpstan-ignore-line */
+                (string) $error
             ));
 
             return Command::FAILURE;

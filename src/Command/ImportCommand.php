@@ -48,6 +48,7 @@ class ImportCommand extends Command
         $gifs = [];
         $warnings = [];
 
+        /** @var array<string> $gif */
         foreach ($gifsFromCsv as $gif) {
             if ('Y' === $gif['Added']) {
                 continue;
@@ -105,6 +106,7 @@ class ImportCommand extends Command
 
     private function slugifyGifs(array &$newJson): void
     {
+        /** @var array<string> $gif */
         foreach ($newJson as &$gif) {
             if ('' !== $gif['slug']) {
                 continue;
