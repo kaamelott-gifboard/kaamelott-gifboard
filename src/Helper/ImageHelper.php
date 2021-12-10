@@ -28,14 +28,17 @@ class ImageHelper
         return file_exists($this->publicPath.'/'.$filePath) ? $filename : 'unknown.jpg';
     }
 
+    /**
+     * @return array{width: ?int, height: ?int}
+     */
     public function getImageDimensions(string $filename): array
     {
         $filePath = sprintf('%s/%s', self::GIF_DIR, $filename);
 
         $details = @getimagesize($this->publicPath.'/'.$filePath);
 
-        $width = $details ? $details[0] : null;
-        $height = $details ? $details[1] : null;
+        $width = $details ? (int) $details[0] : null;
+        $height = $details ? (int) $details[1] : null;
 
         return [
             'width' => $width,

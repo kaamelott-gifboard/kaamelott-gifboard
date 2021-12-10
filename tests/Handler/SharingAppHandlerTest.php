@@ -31,10 +31,10 @@ class SharingAppHandlerTest extends KernelTestCase
     {
         $this->requestStack
             ->expects(static::once())
-            ->method('getMasterRequest')
+            ->method('getMainRequest')
             ->willReturn(null);
 
-        static::assertNull($this->handler->getResponse([]));
+        static::assertNull($this->handler->getResponse(new Gif()));
     }
 
     public function testIsNotASharingApp(): void
@@ -44,10 +44,10 @@ class SharingAppHandlerTest extends KernelTestCase
 
         $this->requestStack
             ->expects(static::once())
-            ->method('getMasterRequest')
+            ->method('getMainRequest')
             ->willReturn($request);
 
-        static::assertNull($this->handler->getResponse([]));
+        static::assertNull($this->handler->getResponse(new Gif()));
     }
 
     public function testIsASharingApp(): void
@@ -57,13 +57,13 @@ class SharingAppHandlerTest extends KernelTestCase
 
         $this->requestStack
             ->expects(static::once())
-            ->method('getMasterRequest')
+            ->method('getMainRequest')
             ->willReturn($request);
 
         $gif = new Gif();
         $gif->image = 'https://kaamelott-gifboard.fr/gifs/elle-est-ou-la-poulette.gif';
 
-        $response = $this->handler->getResponse(['current' => $gif]);
+        $response = $this->handler->getResponse($gif);
 
         static::assertInstanceOf(BinaryFileResponse::class, $response);
         static::assertSame('image/gif', $response->headers->get('Content-Type'));

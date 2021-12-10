@@ -27,3 +27,6 @@ jobs:
 
     - name: PhpStan
       run: make phpstan
+
+    - name: Psalm
+      run: make psalm

@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace KaamelottGifboard\Action\Search;
 
 use KaamelottGifboard\Action\AbstractAction;
-use KaamelottGifboard\Service\GifFinder;
+use KaamelottGifboard\Finder\GifFinder;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
