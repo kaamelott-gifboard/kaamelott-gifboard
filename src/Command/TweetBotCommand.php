@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace KaamelottGifboard\Command;
 
 use Abraham\TwitterOAuth\TwitterOAuth;
+use KaamelottGifboard\DataObject\Gif;
 use KaamelottGifboard\Service\GifFinder;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
@@ -14,6 +15,8 @@ use Symfony\Component\HttpFoundation\Response;
 class TweetBotCommand extends Command
 {
     private const QUOTE_MAX_LENGTH = 200;
+    private const MAX_TRIES = 10;
+    private const POSTED_PATH = '%s/twitter/%s.txt';
 
     protected static $defaultName = 'tweet:random';
 
@@ -35,9 +38,23 @@ class TweetBotCommand extends Command
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $random = $this->gifFinder->findRandom()['current'];
+        $nbTry = 0;
+
+        do {
+            ++$nbTry;
+            $random = $this->gifFinder->findRandom()['current'];
+        } while ($this->isRecentlyPosted($random, $output) && $nbTry < self::MAX_TRIES);
+
+        if ($nbTry >= self::MAX_TRIES) {
+            $output->writeln(sprintf('Cannot find a GIF not recently posted in %s tries, aborting.', $nbTry));
+
+            return Command::FAILURE;
+        }
+
+        file_put_contents($this->getPostedGifPath($random), ''); // Mark this as GIF
+
         $quote = $random->quote;
 
         if (strlen($quote) > self::QUOTE_MAX_LENGTH) {
@@ -100,5 +117,21 @@ class TweetBotCommand extends Command
             $this->twitterAccessToken,
             $this->twitterAccessTokenSecret,
         );
+    }
+
+    private function isRecentlyPosted(Gif $gif, OutputInterface $output): bool
+    {
+        if (file_exists($this->getPostedGifPath($gif))) {
+            $output->writeln(sprintf('GIF %s has been recently posted.', $gif->image));
+
+            return true;
+        }
+
+        return false;
+    }
+
+    private function getPostedGifPath(Gif $gif): string
+    {
+        return sprintf(self::POSTED_PATH, $this->publicPath, $gif->filename);
     }
 }
