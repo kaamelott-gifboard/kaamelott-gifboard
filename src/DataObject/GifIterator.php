@@ -22,6 +22,9 @@ final class GifIterator extends \ArrayIterator
     {
         $this->seek($key);
 
+        /**
+         * @phpstan-var Gif
+         */
         return $this->current();
     }
 
@@ -30,6 +33,9 @@ final class GifIterator extends \ArrayIterator
         if (0 === $key) {
             $this->seek($this->lastIndex());
 
+            /**
+             * @phpstan-var Gif
+             */
             return $this->current();
         }
 
@@ -37,6 +43,9 @@ final class GifIterator extends \ArrayIterator
 
         $this->seek($key);
 
+        /**
+         * @phpstan-var Gif
+         */
         return $this->current();
     }
 
@@ -45,12 +54,18 @@ final class GifIterator extends \ArrayIterator
         if ($key === $this->lastIndex()) {
             $this->rewind();
 
+            /**
+             * @phpstan-var Gif
+             */
             return $this->current();
         }
 
         $this->seek($key);
         $this->next();
 
+        /**
+         * @phpstan-var Gif
+         */
         return $this->current();
     }
 

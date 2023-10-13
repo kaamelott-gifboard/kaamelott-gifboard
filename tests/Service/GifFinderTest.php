@@ -78,8 +78,8 @@ class GifFinderTest extends KernelTestCase
     {
         $expected = (new Gif());
         $expected->quote = 'Finally, the quote number 3';
-        $expected->characters = [(new Character('character-2', 'Character 2', 'route', 'route'))];
-        $expected->charactersSpeaking = [(new Character('character-2', 'Character 2', 'route', 'route'))];
+        $expected->characters = [new Character('character-2', 'Character 2', 'route', 'route')];
+        $expected->charactersSpeaking = [new Character('character-2', 'Character 2', 'route', 'route')];
         $expected->filename = 'quote-3.gif';
         $expected->slug = 'finally-the-quote-number-3';
         $expected->url = 'route';
@@ -108,8 +108,8 @@ class GifFinderTest extends KernelTestCase
     {
         $expected = (new Gif());
         $expected->quote = 'Finally, the quote number 3';
-        $expected->characters = [(new Character('character-2', 'Character 2', 'route', 'route'))];
-        $expected->charactersSpeaking = [(new Character('character-2', 'Character 2', 'route', 'route'))];
+        $expected->characters = [new Character('character-2', 'Character 2', 'route', 'route')];
+        $expected->charactersSpeaking = [new Character('character-2', 'Character 2', 'route', 'route')];
         $expected->filename = 'quote-3.gif';
         $expected->slug = 'finally-the-quote-number-3';
         $expected->url = 'route';

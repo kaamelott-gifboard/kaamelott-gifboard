@@ -1,4 +1,4 @@
-COMPOSE=docker-compose
+COMPOSE=docker compose
 DOCKER_FLAGS ?= --rm
 COMPOSER_HOME ?= ${HOME}/.config/composer
 COMPOSER_CACHE_DIR ?= ${HOME}/.cache/composer

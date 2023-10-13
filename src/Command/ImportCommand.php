@@ -32,7 +32,7 @@ class ImportCommand extends Command
         ;
     }
 
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output): int
     {
         try {
             $file = \file_get_contents(__DIR__.'/gifs.csv');

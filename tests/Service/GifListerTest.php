@@ -35,26 +35,26 @@ class GifListerTest extends KernelTestCase
 
         /** @var Gif $item */
         foreach ($lister->gifs as $item) {
-            static::assertObjectHasAttribute('quote', $item);
+            static::assertObjectHasProperty('quote', $item);
             static::assertIsString($item->quote);
-            static::assertObjectHasAttribute('characters', $item);
+            static::assertObjectHasProperty('characters', $item);
             static::assertIsArray($item->characters);
-            static::assertObjectHasAttribute('charactersSpeaking', $item);
+            static::assertObjectHasProperty('charactersSpeaking', $item);
             static::assertIsArray($item->charactersSpeaking);
-            static::assertObjectHasAttribute('filename', $item);
+            static::assertObjectHasProperty('filename', $item);
             static::assertIsString($item->filename);
             static::assertMatchesRegularExpression('#^[a-z-0-9]+\.gif$#', $item->filename);
-            static::assertObjectHasAttribute('slug', $item);
+            static::assertObjectHasProperty('slug', $item);
             static::assertMatchesRegularExpression('#^[a-z-0-9]+$#', $item->slug);
-            static::assertObjectHasAttribute('url', $item);
-            static::assertObjectHasAttribute('image', $item);
-            static::assertObjectHasAttribute('width', $item);
+            static::assertObjectHasProperty('url', $item);
+            static::assertObjectHasProperty('image', $item);
+            static::assertObjectHasProperty('width', $item);
             static::assertIsInt($item->width);
-            static::assertObjectHasAttribute('height', $item);
+            static::assertObjectHasProperty('height', $item);
             static::assertIsInt($item->height);
-            static::assertObjectHasAttribute('code', $item);
+            static::assertObjectHasProperty('code', $item);
             static::assertMatchesRegularExpression('#[a-z0-9]+#', $item->code);
-            static::assertObjectHasAttribute('shortUrl', $item);
+            static::assertObjectHasProperty('shortUrl', $item);
         }
     }
 
@@ -71,12 +71,12 @@ class GifListerTest extends KernelTestCase
             static::assertIsArray($item->characters);
 
             foreach ($item->characters as $character) {
-                static::assertObjectHasAttribute('slug', $character);
+                static::assertObjectHasProperty('slug', $character);
                 static::assertMatchesRegularExpression('#^[a-z-0-9]+$#', $character->slug);
-                static::assertObjectHasAttribute('name', $character);
-                static::assertObjectHasAttribute('image', $character);
+                static::assertObjectHasProperty('name', $character);
+                static::assertObjectHasProperty('image', $character);
                 static::assertMatchesRegularExpression('#[a-z-]+\.jpg$#', $character->image, $character->name);
-                static::assertObjectHasAttribute('url', $character);
+                static::assertObjectHasProperty('url', $character);
             }
         }
     }
@@ -94,12 +94,12 @@ class GifListerTest extends KernelTestCase
             static::assertIsArray($item->charactersSpeaking);
 
             foreach ($item->charactersSpeaking as $character) {
-                static::assertObjectHasAttribute('slug', $character);
+                static::assertObjectHasProperty('slug', $character);
                 static::assertMatchesRegularExpression('#^[a-z-0-9]+$#', $character->slug);
-                static::assertObjectHasAttribute('name', $character);
-                static::assertObjectHasAttribute('image', $character);
+                static::assertObjectHasProperty('name', $character);
+                static::assertObjectHasProperty('image', $character);
                 static::assertMatchesRegularExpression('#[a-z-]+\.jpg$#', $character->image, $character->name);
-                static::assertObjectHasAttribute('url', $character);
+                static::assertObjectHasProperty('url', $character);
             }
         }
     }
@@ -137,8 +137,8 @@ class GifListerTest extends KernelTestCase
 
         $gif = new Gif();
         $gif->quote = 'Finally, the quote number 3';
-        $gif->characters = [(new Character('character-2', 'Character 2', 'route', 'route'))];
-        $gif->charactersSpeaking = [(new Character('character-2', 'Character 2', 'route', 'route'))];
+        $gif->characters = [new Character('character-2', 'Character 2', 'route', 'route')];
+        $gif->charactersSpeaking = [new Character('character-2', 'Character 2', 'route', 'route')];
         $gif->filename = 'quote-3.gif';
         $gif->slug = 'finally-the-quote-number-3';
         $gif->url = 'route';
