@@ -101,7 +101,7 @@ class TweetBotCommand extends Command
              * @psalm-suppress MixedPropertyFetch
              * @psalm-suppress MixedArrayAccess
              */
-            $error = $response->errors[0]->message ?? ''; /* @phpstan-ignore-line */
+            $error = $response->errors[0]->message ?? '';
 
             $output->writeln(sprintf(
                 'Tweet for GIF %s not published on Twitter. [%s]',
