@@ -11878,5 +11878,17 @@
         ],
         "filename": "courtois-convie-gouter.gif",
         "slug": "je-pense-que-vous-pourriez-vous-montrer-un-petit-peu-courtois-quand-je-vous-convie-a-un-gouter"
+    },
+    {
+        "quote": "C'est l'anniversaire dans tous les recoins",
+        "characters": [
+            "Perceval",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Perceval"
+        ],
+        "filename": "anniversaire-recoins.gif",
+        "slug": "c-est-l-anniversaire-dans-tous-les-recoins"
     }
 ]
