@@ -5,7 +5,7 @@
     color: white;
     font-family: "Inter", sans-serif;
     font-size: 14px;
-    margin: 0;
+    margin: 0 0 225px 0;
 }
 
 h1 {
@@ -45,17 +45,24 @@ a {
     display: block;
     text-align: center;
     margin-top: 20px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    -webkit-box-shadow: 0 0 5px 4px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0 0 5px 4px rgba(0,0,0,0.23);
+    box-shadow: 0 0 5px 4px rgba(0,0,0,0.23);
 }
 
 .footer-boxes {
-    padding: 40px 0 40px 0;
+    padding-top: 5px;
     margin: 0 auto;
-    background-color: #3e4654;
+    background-color: #373f4b;
+    font-size: 13px;
 }
 
 .footer-tm {
-    padding: 10px 0 20px 0;
-    font-size: 16px;
+    padding: 10px 0 10px 0;
+    font-size: 15px;
     font-weight: bold;
     background-color: #23262d;
 }
@@ -67,7 +74,7 @@ a {
 
 .footer-box-quote {
     display: inline-block;
-    padding: 40px 20px 20px 30px;
+    padding: 20px 20px 20px 30px;
     vertical-align: middle;
     width: 320px;
 }

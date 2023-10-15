@@ -1,3 +1,7 @@
+.body {
+    margin: 0 0 225px 0;
+}
+
 h1 {
     font-size: 25px;
 }
@@ -78,12 +82,18 @@ h1 {
     margin: 0 auto;
 }
 
+.footer {
+    position: relative;
+    bottom:0;
+    left:0;
+}
+
 .footer-boxes {
     padding: 0 0 20px 0;
 }
 
 .footer-box-quote {
-    padding: 10px 20px 20px 30px;
+    padding: 0 10px 30px 10px;
 }
 
 .footer-box-donate {
