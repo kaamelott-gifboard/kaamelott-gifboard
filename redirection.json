@@ -14,5 +14,25 @@
     {
         "old": "sois-disant-qu-on-commence-a-se-marrer-a-partir-de-six",
         "new": "soi-disant-qu-on-commence-a-se-marrer-a-partir-de-six"
+    },
+    {
+        "old": "revolte-revolte",
+        "new": "revolte"
+    },
+    {
+        "old": "pour-savoir-si-va-y-avoir-du-vent-faut-mettre-son-doigt-dans-le-cul-du-coq",
+        "new": "pour-savoir-s-il-va-y-avoir-du-vent-il-faut-mettre-son-doigt-dans-le-cul-du-coq"
+    },
+    {
+        "old": "c-est-systematiquement-debile-mais-c-est-toujours-innatendu",
+        "new": "c-est-systematiquement-debile-mais-c-est-toujours-inattendu"
+    },
+    {
+        "old": "moi-en-general-je-reponds-merde-en-principe-ca-colle-avec-tout",
+        "new": "moi-en-general-je-lui-reponds-merde-en-principe-ca-colle-avec-tout"
+    },
+    {
+        "old": "je-sens-bien-que-vous-essayez-de-me-dire-quelque-chose",
+        "new": "nan-mais-je-sens-bien-que-vous-essayez-de-me-dire-quelque-chose"
     }
 ]
