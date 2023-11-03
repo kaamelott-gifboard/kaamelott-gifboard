@@ -317,17 +317,6 @@
         "slug": "courage"
     },
     {
-        "quote": "C'est de la merde",
-        "characters": [
-            "Père Blaise"
-        ],
-        "characters_speaking": [
-            "Père Blaise"
-        ],
-        "filename": "de-la-merde.gif",
-        "slug": "c-est-de-la-merde"
-    },
-    {
         "quote": "Laissez, c'est de la provocation",
         "characters": [
             "Guenièvre",
@@ -338,19 +327,6 @@
         ],
         "filename": "de-la-provocation.gif",
         "slug": "laissez-c-est-de-la-provocation"
-    },
-    {
-        "quote": "C'est systématiquement débile, mais c'est toujours innatendu",
-        "characters": [
-            "Arthur",
-            "Perceval",
-            "Karadoc"
-        ],
-        "characters_speaking": [
-            "Arthur"
-        ],
-        "filename": "debile-et-innatendu.gif",
-        "slug": "c-est-systematiquement-debile-mais-c-est-toujours-innatendu"
     },
     {
         "quote": "Bon allez ça devient débile, je m'en vais",
@@ -375,18 +351,6 @@
         ],
         "filename": "des-gouts-de-bourgeois.gif",
         "slug": "vous-avez-des-gouts-de-bourgeois"
-    },
-    {
-        "quote": "Pour savoir si va y avoir du vent, faut mettre son doigt dans le cul du coq",
-        "characters": [
-            "Kadoc",
-            "Karadoc"
-        ],
-        "characters_speaking": [
-            "Kadoc"
-        ],
-        "filename": "doigt-dans-le-cul-du-coq.gif",
-        "slug": "pour-savoir-si-va-y-avoir-du-vent-faut-mettre-son-doigt-dans-le-cul-du-coq"
     },
     {
         "quote": "J'ai toujours eu du bol avec l'aléatoire, moi.",
@@ -615,18 +579,6 @@
         ],
         "filename": "je-me-taille-les-veines.gif",
         "slug": "ca-vous-ennuie-si-j-me-taille-les-veines"
-    },
-    {
-        "quote": "Moi en général je réponds merde, en principe ça colle avec tout",
-        "characters": [
-            "Léodagan",
-            "Séli"
-        ],
-        "characters_speaking": [
-            "Léodagan"
-        ],
-        "filename": "je-reponds-merde.gif",
-        "slug": "moi-en-general-je-reponds-merde-en-principe-ca-colle-avec-tout"
     },
     {
         "quote": "Je vais peut-être aller me recoucher moi...",
@@ -987,18 +939,6 @@
         "slug": "on-discute-pas-meteo"
     },
     {
-        "quote": "On en a gros.",
-        "characters": [
-            "Perceval",
-            "Karadoc"
-        ],
-        "characters_speaking": [
-            "Perceval"
-        ],
-        "filename": "on-en-a-gros.gif",
-        "slug": "on-en-a-gros"
-    },
-    {
         "quote": "On s'en fout, on les défonce !",
         "characters": [
             "Bohort",
@@ -1183,17 +1123,6 @@
         "slug": "la-faut-me-regler-le-truc-en-une-demi-heure-hein"
     },
     {
-        "quote": "Révolte ! Révolte !",
-        "characters": [
-            "Guethenoc"
-        ],
-        "characters_speaking": [
-            "Guethenoc"
-        ],
-        "filename": "revolte.gif",
-        "slug": "revolte-revolte"
-    },
-    {
         "quote": "Rho le boulet !",
         "characters": [
             "Elias de Kelliwic'h"
@@ -1329,17 +1258,6 @@
         ],
         "filename": "voila.gif",
         "slug": "voila"
-    },
-    {
-        "quote": "Voilà, joyeux anniversaire !",
-        "characters": [
-            "Arthur"
-        ],
-        "characters_speaking": [
-            "Arthur"
-        ],
-        "filename": "voila-joyeux-anniversaire.gif",
-        "slug": "voila-joyeux-anniversaire"
     },
     {
         "quote": "Ah non mais moi je crois que vous avez un problème là quand même",
@@ -11513,18 +11431,6 @@
         "slug": "du-passe-faisons-table-en-marbre"
     },
     {
-        "quote": "Je sens bien que vous essayez de me dire quelque chose",
-        "characters": [
-            "Arthur",
-            "Perceval"
-        ],
-        "characters_speaking": [
-            "Arthur"
-        ],
-        "filename": "je-sens-bien-que-vous-essayez-de-me-dire-quelque-chose.gif",
-        "slug": "je-sens-bien-que-vous-essayez-de-me-dire-quelque-chose"
-    },
-    {
         "quote": "Y'a outrage !",
         "characters": [
             "Karadoc",
@@ -11890,5 +11796,560 @@
         ],
         "filename": "anniversaire-recoins.gif",
         "slug": "c-est-l-anniversaire-dans-tous-les-recoins"
+    },
+    {
+        "quote": "Ah bah nous on nous a même dit que vous étiez mort",
+        "characters": [
+            "Léodagan",
+            "Arthur",
+            "Lancelot du Lac"
+        ],
+        "characters_speaking": [
+            "Léodagan"
+        ],
+        "filename": "dit-etiez-mort.gif",
+        "slug": "ah-bah-nous-on-nous-a-meme-dit-que-vous-etiez-mort"
+    },
+    {
+        "quote": "Bah c'est pas maintenant que je reçois les félicitations de tout le monde pour mon anniversaire ?",
+        "characters": [
+            "Arthur",
+            "Lancelot du Lac"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "felicitations-anniversaire.gif",
+        "slug": "bah-c-est-pas-maintenant-que-je-recois-les-felicitations-de-tout-le-monde-pour-mon-anniversaire"
+    },
+    {
+        "quote": "Mais j'ai pas fini",
+        "characters": [
+            "Gauvain",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Gauvain"
+        ],
+        "filename": "jai-pas-fini.gif",
+        "slug": "mais-j-ai-pas-fini"
+    },
+    {
+        "quote": "La colombe blanche et sèche retombe souvent sur sa poitrine",
+        "characters": [
+            "Yvain",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Yvain"
+        ],
+        "filename": "colombe-blanche-seche.gif",
+        "slug": "la-colombe-blanche-et-seche-retombe-souvent-sur-sa-poitrine"
+    },
+    {
+        "quote": "Bah oui c'est une rime triple",
+        "characters": [
+            "Yvain",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Yvain"
+        ],
+        "filename": "rime-triple.gif",
+        "slug": "bah-oui-c-est-une-rime-triple"
+    },
+    {
+        "quote": "Parce que j'ai un ptit peu picolé",
+        "characters": [
+            "Lancelot du Lac",
+            "Léodagan"
+        ],
+        "characters_speaking": [
+            "Lancelot du Lac"
+        ],
+        "filename": "ptit-peu-picole.gif",
+        "slug": "parce-que-j-ai-un-ptit-peu-picole"
+    },
+    {
+        "quote": "Bah ça va je picole pas souvent",
+        "characters": [
+            "Lancelot du Lac",
+            "Léodagan"
+        ],
+        "characters_speaking": [
+            "Lancelot du Lac"
+        ],
+        "filename": "picole-pas-souvent.gif",
+        "slug": "bah-ca-va-je-picole-pas-souvent"
+    },
+    {
+        "quote": "Excusez-le il est rond comme une boule",
+        "characters": [
+            "Séli",
+            "Léodagan"
+        ],
+        "characters_speaking": [
+            "Séli"
+        ],
+        "filename": "rond-comme-boule.gif",
+        "slug": "excusez-le-il-est-rond-comme-une-boule"
+    },
+    {
+        "quote": "Et ben on doit bien se marrer dans votre branche",
+        "characters": [
+            "Léodagan",
+            "Séli"
+        ],
+        "characters_speaking": [
+            "Léodagan"
+        ],
+        "filename": "bien-marrer-branche.gif",
+        "slug": "et-ben-on-doit-bien-se-marrer-dans-votre-branche"
+    },
+    {
+        "quote": "Ah bah je pense bien, vous m'avez l'air d'un sacré festif",
+        "characters": [
+            "Léodagan",
+            "Séli"
+        ],
+        "characters_speaking": [
+            "Léodagan"
+        ],
+        "filename": "sacre-festif.gif",
+        "slug": "ah-bah-je-pense-bien-vous-m-avez-l-air-d-un-sacre-festif"
+    },
+    {
+        "quote": "Moi une fois j'ai pissé par la fenêtre",
+        "characters": [
+            "Guenièvre",
+            "Le Maître d'Armes"
+        ],
+        "characters_speaking": [
+            "Guenièvre"
+        ],
+        "filename": "pisse-par-fenetre.gif",
+        "slug": "moi-une-fois-j-ai-pisse-par-la-fenetre"
+    },
+    {
+        "quote": "On y voit comme à travers une pelle là-dedans",
+        "characters": [
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "voit-travers-pelle.gif",
+        "slug": "on-y-voit-comme-a-travers-une-pelle-la-dedans"
+    },
+    {
+        "quote": "Et ça c'est du nougat",
+        "characters": [
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "du-nougat.gif",
+        "slug": "et-ca-c-est-du-nougat"
+    },
+    {
+        "quote": "Sur ce coup-là je crois qu'on a un peu chargé la mule",
+        "characters": [
+            "Karadoc",
+            "Perceval"
+        ],
+        "characters_speaking": [
+            "Karadoc"
+        ],
+        "filename": "charge-la-mule.gif",
+        "slug": "sur-ce-coup-la-je-crois-qu-on-a-un-peu-charge-la-mule"
+    },
+    {
+        "quote": "Si c'est moi qui fais c'est moi qui fais",
+        "characters": [
+            "Léodagan"
+        ],
+        "characters_speaking": [
+            "Léodagan"
+        ],
+        "filename": "moi-qui-fais.gif",
+        "slug": "si-c-est-moi-qui-fais-c-est-moi-qui-fais"
+    },
+    {
+        "quote": "Oh bah c'était des péquenots quoi, ils étaient sales",
+        "characters": [
+            "Séli",
+            "Léodagan"
+        ],
+        "characters_speaking": [
+            "Séli"
+        ],
+        "filename": "pequenots-quoi-etaient-sales.gif",
+        "slug": "oh-bah-c-etait-des-pequenots-quoi-ils-etaient-sales"
+    },
+    {
+        "quote": "Oh mais c'est bizarre, parce qu'ils sont pas censés s'en rendre compte de ça",
+        "characters": [
+            "Léodagan",
+            "Séli"
+        ],
+        "characters_speaking": [
+            "Léodagan"
+        ],
+        "filename": "censes-sen-rendre-compte.gif",
+        "slug": "oh-mais-c-est-bizarre-parce-qu-ils-sont-pas-censes-s-en-rendre-compte-de-ca"
+    },
+    {
+        "quote": "Je gueule, je gueule, je pourrais gueuler dans le cul d'un poney ça serait pareil",
+        "characters": [
+            "Guethenoc"
+        ],
+        "characters_speaking": [
+            "Guethenoc"
+        ],
+        "filename": "gueuler-cul-poney.gif",
+        "slug": "je-gueule-je-gueule-je-pourrais-gueuler-dans-le-cul-d-un-poney-ca-serait-pareil"
+    },
+    {
+        "quote": "Parce qu'on n'a pas que ça à foutre",
+        "characters": [
+            "Léodagan",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Léodagan"
+        ],
+        "filename": "pas-que-ca-a-foutre.gif",
+        "slug": "parce-qu-on-n-a-pas-que-ca-a-foutre"
+    },
+    {
+        "quote": "Révolte",
+        "characters": [
+            "Guethenoc"
+        ],
+        "characters_speaking": [
+            "Guethenoc"
+        ],
+        "filename": "revolte.gif",
+        "slug": "revolte"
+    },
+    {
+        "quote": "Je m'approcherais pas autant",
+        "characters": [
+            "Léodagan",
+            "Bohort"
+        ],
+        "characters_speaking": [
+            "Léodagan"
+        ],
+        "filename": "approcherais-pas-autant.gif",
+        "slug": "je-m-approcherais-pas-autant"
+    },
+    {
+        "quote": "Question de point de vue",
+        "characters": [
+            "Calogrenant"
+        ],
+        "characters_speaking": [
+            "Calogrenant"
+        ],
+        "filename": "question-point-vue.gif",
+        "slug": "question-de-point-de-vue-1"
+    },
+    {
+        "quote": "Et ouvrez les échauguettes hein, j'ai pas envie de répéter",
+        "characters": [
+            "Arthur",
+            "Lancelot du Lac"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "ouvrez-echauguettes.gif",
+        "slug": "et-ouvrez-les-echauguettes-hein-j-ai-pas-envie-de-repeter"
+    },
+    {
+        "quote": "Vous êtes marié comme moi, vous savez que la monstruosité peut prendre des formes très diverses",
+        "characters": [
+            "Léodagan",
+            "Bohort"
+        ],
+        "characters_speaking": [
+            "Léodagan"
+        ],
+        "filename": "monstruosite-formes-tres-diverses.gif",
+        "slug": "vous-etes-marie-comme-moi-vous-savez-que-la-monstruosite-peut-prendre-des-formes-tres-diverses"
+    },
+    {
+        "quote": "Bah y'a les hommes de terrain puis y'a ceux qui gambergent",
+        "characters": [
+            "Léodagan",
+            "Bohort"
+        ],
+        "characters_speaking": [
+            "Léodagan"
+        ],
+        "filename": "hommes-terrain.gif",
+        "slug": "bah-y-a-les-hommes-de-terrain-puis-y-a-ceux-qui-gambergent"
+    },
+    {
+        "quote": "A deux trois poils de cul",
+        "characters": [
+            "Léodagan",
+            "Bohort"
+        ],
+        "characters_speaking": [
+            "Léodagan"
+        ],
+        "filename": "deux-trois-poils-cul.gif",
+        "slug": "a-deux-trois-poils-de-cul"
+    },
+    {
+        "quote": "Ca me fait pas peur",
+        "characters": [
+            "Léodagan",
+            "Bohort"
+        ],
+        "characters_speaking": [
+            "Léodagan"
+        ],
+        "filename": "fait-pas-peur.gif",
+        "slug": "ca-me-fait-pas-peur"
+    },
+    {
+        "quote": "Il préfère encore nommer une vieille galeuse paralytique",
+        "characters": [
+            "Perceval",
+            "Karadoc"
+        ],
+        "characters_speaking": [
+            "Perceval"
+        ],
+        "filename": "vieille-galeuse-paralytique.gif",
+        "slug": "il-prefere-encore-nommer-une-vieille-galeuse-paralytique"
+    },
+    {
+        "quote": "Ah du coup vous l'avez mal pris",
+        "characters": [
+            "Karadoc",
+            "Perceval"
+        ],
+        "characters_speaking": [
+            "Karadoc"
+        ],
+        "filename": "vous-lavez-mal-pris.gif",
+        "slug": "ah-du-coup-vous-l-avez-mal-pris"
+    },
+    {
+        "quote": "C'était pas dit méchamment mais vous savez ce que c'est, on a son petit orgueil",
+        "characters": [
+            "Perceval",
+            "Karadoc"
+        ],
+        "characters_speaking": [
+            "Perceval"
+        ],
+        "filename": "on-a-son-petit-orgueil.gif",
+        "slug": "c-etait-pas-dit-mechamment-mais-vous-savez-ce-que-c-est-on-a-son-petit-orgueil"
+    },
+    {
+        "quote": "J'aimerais bien qu'on commence à me considérer en tant que tel",
+        "characters": [
+            "Perceval",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Perceval"
+        ],
+        "filename": "considerer-tant-que-tel.gif",
+        "slug": "j-aimerais-bien-qu-on-commence-a-me-considerer-en-tant-que-tel"
+    },
+    {
+        "quote": "Parce que je trouve que je suis souvent victime des colifichets quand même, c'est pas normal",
+        "characters": [
+            "Perceval",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Perceval"
+        ],
+        "filename": "victime-des-colifichets.gif",
+        "slug": "parce-que-je-trouve-que-je-suis-souvent-victime-des-colifichets-quand-meme-c-est-pas-normal"
+    },
+    {
+        "quote": "Nan mais je sens bien que vous essayez de me dire quelque chose",
+        "characters": [
+            "Arthur",
+            "Perceval"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "essayez-dire-quelque-chose.gif",
+        "slug": "nan-mais-je-sens-bien-que-vous-essayez-de-me-dire-quelque-chose"
+    },
+    {
+        "quote": "Non moi je crois qu'il faut que vous arrêtiez d'essayer de dire des trucs",
+        "characters": [
+            "Arthur",
+            "Perceval"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "arretiez-essayer-dire-trucs.gif",
+        "slug": "non-moi-je-crois-qu-il-faut-que-vous-arretiez-d-essayer-de-dire-des-trucs"
+    },
+    {
+        "quote": "Il faut plus que vous parliez avec des gens",
+        "characters": [
+            "Arthur",
+            "Perceval"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "plus-parliez-des-gens.gif",
+        "slug": "il-faut-plus-que-vous-parliez-avec-des-gens"
+    },
+    {
+        "quote": "Mais personne dit ça",
+        "characters": [
+            "Arthur",
+            "Perceval"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "personne-dit-ca.gif",
+        "slug": "mais-personne-dit-ca"
+    },
+    {
+        "quote": "Je vous assure c'est pas le moment de faire la fine bouche",
+        "characters": [
+            "Karadoc",
+            "Perceval"
+        ],
+        "characters_speaking": [
+            "Karadoc"
+        ],
+        "filename": "faire-la-fine-bouche.gif",
+        "slug": "je-vous-assure-c-est-pas-le-moment-de-faire-la-fine-bouche"
+    },
+    {
+        "quote": "Vous nous utilisez bon gré mal gré pour arriver sur la fin",
+        "characters": [
+            "Karadoc",
+            "Perceval"
+        ],
+        "characters_speaking": [
+            "Karadoc"
+        ],
+        "filename": "bon-gre-mal-gre.gif",
+        "slug": "vous-nous-utilisez-bon-gre-mal-gre-pour-arriver-sur-la-fin"
+    },
+    {
+        "quote": "La tournure est plus graduelle",
+        "characters": [
+            "Perceval",
+            "Karadoc"
+        ],
+        "characters_speaking": [
+            "Perceval"
+        ],
+        "filename": "tournure-plus-graduelle.gif",
+        "slug": "la-tournure-est-plus-graduelle"
+    },
+    {
+        "quote": "C'est plus filiforme",
+        "characters": [
+            "Perceval",
+            "Karadoc"
+        ],
+        "characters_speaking": [
+            "Perceval"
+        ],
+        "filename": "plus-filiforme.gif",
+        "slug": "c-est-plus-filiforme"
+    },
+    {
+        "quote": "Arthur ferme la porte",
+        "characters": [
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "ferme-la-porte.gif",
+        "slug": "arthur-ferme-la-porte"
+    },
+    {
+        "quote": "On en a gros",
+        "characters": [
+            "Perceval",
+            "Karadoc"
+        ],
+        "characters_speaking": [
+            "Perceval"
+        ],
+        "filename": "on-en-a-gros.gif",
+        "slug": "on-en-a-gros"
+    },
+    {
+        "quote": "Moi en général je lui réponds merde, en principe ça colle avec tout",
+        "characters": [
+            "Léodagan",
+            "Séli"
+        ],
+        "characters_speaking": [
+            "Léodagan"
+        ],
+        "filename": "reponds-merde-colle-avec-tout.gif",
+        "slug": "moi-en-general-je-lui-reponds-merde-en-principe-ca-colle-avec-tout"
+    },
+    {
+        "quote": "C'est systématiquement débile, mais c'est toujours inattendu",
+        "characters": [
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "debile-toujours-inattendu.gif",
+        "slug": "c-est-systematiquement-debile-mais-c-est-toujours-inattendu"
+    },
+    {
+        "quote": "Pour savoir s'il va y avoir du vent, il faut mettre son doigt dans le cul du coq",
+        "characters": [
+            "Kadoc",
+            "Karadoc"
+        ],
+        "characters_speaking": [
+            "Kadoc"
+        ],
+        "filename": "vent-cul-du-coq.gif",
+        "slug": "pour-savoir-s-il-va-y-avoir-du-vent-il-faut-mettre-son-doigt-dans-le-cul-du-coq"
+    },
+    {
+        "quote": "Voilà, joyeux anniversaire",
+        "characters": [
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "joyeux-anniversaire.gif",
+        "slug": "voila-joyeux-anniversaire"
+    },
+    {
+        "quote": "C'est de la merde",
+        "characters": [
+            "Père Blaise"
+        ],
+        "characters_speaking": [
+            "Père Blaise"
+        ],
+        "filename": "cest-de-la-merde.gif",
+        "slug": "c-est-de-la-merde"
     }
 ]
