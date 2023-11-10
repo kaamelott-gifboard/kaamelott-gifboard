@@ -125,6 +125,33 @@ class GifFinder
         return $this->getGifByKey($this->lister->gifs->random());
     }
 
+    public function findGifsByEpisode(string $episode): array
+    {
+        /** @var Gif[] $gifs */
+        $gifs = iterator_to_array($this->lister->gifs);
+
+        return array_filter(
+            $gifs,
+            static fn (Gif $gif): bool => $episode === $gif->episode,
+        );
+    }
+
+    public function findGifsByEpisodes(): array
+    {
+        $gifByEpisodes = [];
+
+        /** @var Gif $gif */
+        foreach ($this->lister->gifs as $gif) {
+            if (null === $gif->episode) {
+                continue;
+            }
+
+            $gifByEpisodes[$gif->episode][] = $gif;
+        }
+
+        return $gifByEpisodes;
+    }
+
     private function match(string $search, string $subject, bool $clean = false): bool
     {
         if ($clean) {

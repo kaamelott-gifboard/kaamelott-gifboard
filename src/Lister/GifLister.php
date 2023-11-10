@@ -37,10 +37,14 @@ class GifLister
 
         /** @var \stdClass $gifItem */
         foreach ($data as $gifItem) {
+            /** @var ?string $episode */
+            $episode = $gifItem->episode;
+
             $gif = new Gif();
             $gif->slug = (string) $gifItem->slug;
             $gif->quote = (string) $gifItem->quote;
             $gif->filename = (string) $gifItem->filename;
+            $gif->episode = $episode;
             $gif->url = $this->router->generate('get_by_slug', ['slug' => $gifItem->slug], RouterInterface::ABSOLUTE_URL);
             $gif->image = $this->router->generate('quote_image', ['filename' => $gif->filename], RouterInterface::ABSOLUTE_URL);
 

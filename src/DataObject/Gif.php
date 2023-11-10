@@ -22,4 +22,5 @@ final class Gif
     public ?int $height;
     public string $code;
     public string $shortUrl;
+    public ?string $episode;
 }

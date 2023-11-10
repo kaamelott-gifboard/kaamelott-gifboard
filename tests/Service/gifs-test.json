@@ -9,7 +9,8 @@
       "Character 1"
     ],
     "filename": "quote-1.gif",
-    "slug": "this-is-the-quote-1"
+    "slug": "this-is-the-quote-1",
+    "episode": null
   },
   {
     "quote": "Here is the qûote 2",
@@ -20,7 +21,8 @@
       "Character 3"
     ],
     "filename": "quote-2.gif",
-    "slug": "here-is-the-quote-2"
+    "slug": "here-is-the-quote-2",
+    "episode": "S01E02"
   },
   {
     "quote": "Finally, the quote number 3",
@@ -31,6 +33,7 @@
       "Character 2"
     ],
     "filename": "quote-3.gif",
-    "slug": "finally-the-quote-number-3"
+    "slug": "finally-the-quote-number-3",
+    "episode": "S01E03"
   }
 ]

@@ -62,6 +62,12 @@
         </div>
     </div>
 
+    {% if current.episode %}
+        <div>
+            <a href="{{ path('get_by_episode', {'code': current.episode}) }}">({{ current.episode|format_episode_long_name }})</a><br /><br />
+        </div>
+    {% endif %}
+
     <div class="quote-characters">
         {% for character in current.characters %}
             <div class="quote-character-block">

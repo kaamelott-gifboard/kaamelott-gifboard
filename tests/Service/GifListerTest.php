@@ -55,6 +55,7 @@ class GifListerTest extends KernelTestCase
             static::assertObjectHasProperty('code', $item);
             static::assertMatchesRegularExpression('#[a-z0-9]+#', $item->code);
             static::assertObjectHasProperty('shortUrl', $item);
+            static::assertObjectHasProperty('episode', $item);
         }
     }
 
@@ -147,6 +148,7 @@ class GifListerTest extends KernelTestCase
         $gif->height = 100;
         $gif->code = '0c3c899cad';
         $gif->shortUrl = 'route';
+        $gif->episode = 'S01E03';
 
         static::assertEquals($gif, $result[0]);
     }

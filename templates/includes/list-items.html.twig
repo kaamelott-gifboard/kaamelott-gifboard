@@ -8,7 +8,13 @@
         <div id="{{ gif.slug }}-modal" class="modal-background">
             <div class="modal-content">
                 <span class="modal-close">&times;</span>
-                <div id="modal-quote"><a href="{{ gif.url }}">{{ gif.quote }}</a></div>
+                <div id="modal-quote">
+                    <a href="{{ gif.url }}">{{ gif.quote }}</a>
+                    {% if gif.episode %}
+                        <br />
+                        <a href="{{ path('get_by_episode', {'code': gif.episode}) }}">({{ gif.episode|format_episode_long_name }})</a>
+                    {% endif %}
+                </div>
                 <span id="{{ gif.slug }}-img" data-img="{{ gif.image }}"></span>
                 <div class="modal-gif">
                     <img id="{{ gif.slug }}-modal-img" /><br /><br />
