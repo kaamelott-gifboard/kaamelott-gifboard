@@ -14,6 +14,10 @@
         </div>
     {% endif %}
 
+    {% if episode is defined and gifs is defined and gifs is not empty %}
+        <h2>{{ episode|format_episode_long_name }}</h2><br />
+    {% endif %}
+
     <div id="gif-list">
         {% if gifs is defined %}
             {% if gifs is not empty %}
@@ -28,4 +32,5 @@
     </div>
 
     {% block gif %}{% endblock %}
+    {% block episodes %}{% endblock %}
 {% endblock %}

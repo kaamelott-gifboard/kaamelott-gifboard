@@ -10,16 +10,14 @@ use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
-use Twig\Environment;
 
 class Quote extends AbstractAction
 {
     public function __construct(
-        protected Environment $twig,
         protected GifFinder $finder,
         private NormalizerInterface $normalizer,
     ) {
-        parent::__construct($this->twig, $this->finder);
+        parent::__construct($this->finder);
     }
 
     public function __invoke(Request $request): Response|JsonResponse

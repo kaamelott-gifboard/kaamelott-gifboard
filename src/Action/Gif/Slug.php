@@ -12,17 +12,15 @@ use KaamelottGifboard\Handler\RedirectionHandler;
 use KaamelottGifboard\Handler\SharingAppHandler;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
-use Twig\Environment;
 
 class Slug extends AbstractAction
 {
     public function __construct(
-        protected Environment $twig,
         protected GifFinder $finder,
         private RedirectionHandler $redirectionHandler,
         private SharingAppHandler $sharingAppHandler
     ) {
-        parent::__construct($this->twig, $this->finder);
+        parent::__construct($this->finder);
     }
 
     public function __invoke(Request $request, string $slug): Response

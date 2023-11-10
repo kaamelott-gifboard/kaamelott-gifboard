@@ -1,69 +1,197 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<files psalm-version="v4.15.0@a1b5e489e6fcebe40cb804793d964e99fc347820">
+<files psalm-version="4.30.0@d0bc6e25d89f649e4f36a534f330f8bb4643dd69">
   <file src="src/Action/AbstractAction.php">
     <PropertyNotSetInConstructor occurrences="1">
       <code>AbstractAction</code>
     </PropertyNotSetInConstructor>
   </file>
+  <file src="src/Action/Episode/Index.php">
+    <PropertyNotSetInConstructor occurrences="1">
+      <code>Index</code>
+    </PropertyNotSetInConstructor>
+    <UnusedClass occurrences="1">
+      <code>Index</code>
+    </UnusedClass>
+  </file>
   <file src="src/Action/Gif/Character.php">
     <PropertyNotSetInConstructor occurrences="1">
       <code>Character</code>
     </PropertyNotSetInConstructor>
+    <UnusedClass occurrences="1">
+      <code>Character</code>
+    </UnusedClass>
   </file>
   <file src="src/Action/Gif/Code.php">
     <PropertyNotSetInConstructor occurrences="1">
       <code>Code</code>
     </PropertyNotSetInConstructor>
+    <UnusedClass occurrences="1">
+      <code>Code</code>
+    </UnusedClass>
+  </file>
+  <file src="src/Action/Gif/Episode.php">
+    <PropertyNotSetInConstructor occurrences="1">
+      <code>Episode</code>
+    </PropertyNotSetInConstructor>
+    <UnusedClass occurrences="1">
+      <code>Episode</code>
+    </UnusedClass>
   </file>
   <file src="src/Action/Gif/Index.php">
     <PropertyNotSetInConstructor occurrences="1">
       <code>Index</code>
     </PropertyNotSetInConstructor>
+    <UnusedClass occurrences="1">
+      <code>Index</code>
+    </UnusedClass>
   </file>
   <file src="src/Action/Gif/Random.php">
     <PropertyNotSetInConstructor occurrences="1">
       <code>Random</code>
     </PropertyNotSetInConstructor>
+    <UnusedClass occurrences="1">
+      <code>Random</code>
+    </UnusedClass>
   </file>
   <file src="src/Action/Gif/Slug.php">
     <PropertyNotSetInConstructor occurrences="1">
       <code>Slug</code>
     </PropertyNotSetInConstructor>
+    <UnusedClass occurrences="1">
+      <code>Slug</code>
+    </UnusedClass>
   </file>
   <file src="src/Action/Search/Quote.php">
     <PropertyNotSetInConstructor occurrences="1">
       <code>Quote</code>
     </PropertyNotSetInConstructor>
+    <UnusedClass occurrences="1">
+      <code>Quote</code>
+    </UnusedClass>
   </file>
   <file src="src/Action/Sitemap/Index.php">
     <PropertyNotSetInConstructor occurrences="1">
       <code>Index</code>
     </PropertyNotSetInConstructor>
+    <UnusedClass occurrences="1">
+      <code>Index</code>
+    </UnusedClass>
   </file>
   <file src="src/Action/Xhr/CountQuotes.php">
     <PropertyNotSetInConstructor occurrences="1">
       <code>CountQuotes</code>
     </PropertyNotSetInConstructor>
+    <UnusedClass occurrences="1">
+      <code>CountQuotes</code>
+    </UnusedClass>
   </file>
   <file src="src/Action/Xhr/GetCharacters.php">
     <PropertyNotSetInConstructor occurrences="1">
       <code>GetCharacters</code>
     </PropertyNotSetInConstructor>
+    <UnusedClass occurrences="1">
+      <code>GetCharacters</code>
+    </UnusedClass>
   </file>
   <file src="src/Action/Xhr/GetGifs.php">
     <PropertyNotSetInConstructor occurrences="1">
       <code>GetGifs</code>
     </PropertyNotSetInConstructor>
+    <UnusedClass occurrences="1">
+      <code>GetGifs</code>
+    </UnusedClass>
   </file>
   <file src="src/Action/Xhr/SearchQuotes.php">
     <PropertyNotSetInConstructor occurrences="1">
       <code>SearchQuotes</code>
     </PropertyNotSetInConstructor>
+    <UnusedClass occurrences="1">
+      <code>SearchQuotes</code>
+    </UnusedClass>
+  </file>
+  <file src="src/Command/CleanTweetedGifCommand.php">
+    <UnusedClass occurrences="1">
+      <code>CleanTweetedGifCommand</code>
+    </UnusedClass>
   </file>
   <file src="src/Command/ImportCommand.php">
     <MixedArgument occurrences="2">
       <code>$i</code>
       <code>$i</code>
     </MixedArgument>
+    <UnusedClass occurrences="1">
+      <code>ImportCommand</code>
+    </UnusedClass>
+  </file>
+  <file src="src/Command/TweetBotCommand.php">
+    <UnusedClass occurrences="1">
+      <code>TweetBotCommand</code>
+    </UnusedClass>
+  </file>
+  <file src="src/DataObject/Character.php">
+    <PossiblyUnusedProperty occurrences="2">
+      <code>$image</code>
+      <code>$url</code>
+    </PossiblyUnusedProperty>
+  </file>
+  <file src="src/DataObject/Episode.php">
+    <PossiblyUnusedProperty occurrences="3">
+      <code>$episode</code>
+      <code>$title</code>
+      <code>$url</code>
+    </PossiblyUnusedProperty>
+  </file>
+  <file src="src/DataObject/GifIterator.php">
+    <PossiblyUnusedProperty occurrences="1">
+      <code>$gifs</code>
+    </PossiblyUnusedProperty>
+  </file>
+  <file src="src/Finder/EpisodeFinder.php">
+    <PossiblyUnusedMethod occurrences="1">
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Finder/GifFinder.php">
+    <PossiblyUnusedMethod occurrences="1">
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Handler/RedirectionHandler.php">
+    <PossiblyUnusedMethod occurrences="1">
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Handler/SharingAppHandler.php">
+    <PossiblyUnusedMethod occurrences="1">
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Helper/ImageHelper.php">
+    <PossiblyUnusedMethod occurrences="1">
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Kernel.php">
+    <PossiblyUnusedMethod occurrences="1">
+      <code>configureContainer</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Lister/EpisodeLister.php">
+    <MixedArgument occurrences="1">
+      <code>$gifByEpisodes[$episode-&gt;code] ?? []</code>
+    </MixedArgument>
+    <PossiblyUnusedMethod occurrences="1">
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Lister/GifLister.php">
+    <PossiblyUnusedMethod occurrences="1">
+      <code>__construct</code>
+    </PossiblyUnusedMethod>
+  </file>
+  <file src="src/Normalizer/GifNormalizer.php">
+    <UnusedClass occurrences="1">
+      <code>GifNormalizer</code>
+    </UnusedClass>
   </file>
 </files>

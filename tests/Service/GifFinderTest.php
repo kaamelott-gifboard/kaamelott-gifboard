@@ -88,6 +88,7 @@ class GifFinderTest extends KernelTestCase
         $expected->height = 100;
         $expected->code = '0c3c899cad';
         $expected->shortUrl = 'route';
+        $expected->episode = 'S01E03';
 
         $result = $this->finder->findGifsBySlug('finally-the-quote-number-3');
 
@@ -118,6 +119,7 @@ class GifFinderTest extends KernelTestCase
         $expected->height = 100;
         $expected->code = '0c3c899cad';
         $expected->shortUrl = 'route';
+        $expected->episode = 'S01E03';
 
         $gif = $this->finder->findGifsByCode('0c3c899cad');
 

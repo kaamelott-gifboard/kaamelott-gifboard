@@ -39,9 +39,19 @@ get_by_character:
     path: /search/character/{name}
     controller: KaamelottGifboard\Action\Gif\Character
 
+get_by_episode:
+    path: /search/episode/{code}
+    controller: KaamelottGifboard\Action\Gif\Episode
+
 get_random:
     path: /random # Also XHR
     controller: KaamelottGifboard\Action\Gif\Random
+
+# Episodes
+
+get_episodes:
+    path: /episodes
+    controller: KaamelottGifboard\Action\Episode\Index
 
 # Search
 

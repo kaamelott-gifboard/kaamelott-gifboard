@@ -1,0 +1,17 @@
+{% extends 'body.html.twig' %}
+
+{% set title = 'Kaamelott - ' ~ episode|format_episode_long_name ~ ' - Les meilleures répliques en GIFs' %}
+
+{% block title %}{{ title }}{% endblock %}
+
+{% block canonical %}<link rel="canonical" href="{{ url('get_by_episode', {'code': episode}) }}"/>{% endblock %}
+
+{%- block meta -%}
+    {% set description = 'Kaamelott ' ~ episode|format_episode_long_name ~ ' : Cherchez, découvrez et partagez toutes les meilleures répliques en GIFs.' %}
+
+    <meta name="description" content="{{ description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:url" content="{{ url('get_by_episode', {'code': episode}) }}">
+{%- endblock -%}
