@@ -135,8 +135,10 @@
     </PossiblyUnusedProperty>
   </file>
   <file src="src/DataObject/Episode.php">
-    <PossiblyUnusedProperty occurrences="3">
+    <PossiblyUnusedProperty occurrences="5">
+      <code>$code</code>
       <code>$episode</code>
+      <code>$nbGif</code>
       <code>$title</code>
       <code>$url</code>
     </PossiblyUnusedProperty>
@@ -178,7 +180,7 @@
   </file>
   <file src="src/Lister/EpisodeLister.php">
     <MixedArgument occurrences="1">
-      <code>$gifByEpisodes[$episode-&gt;code] ?? []</code>
+      <code>$gifByEpisodes[$episodeCode] ?? []</code>
     </MixedArgument>
     <PossiblyUnusedMethod occurrences="1">
       <code>__construct</code>
@@ -192,6 +194,11 @@
   <file src="src/Normalizer/GifNormalizer.php">
     <UnusedClass occurrences="1">
       <code>GifNormalizer</code>
+    </UnusedClass>
+  </file>
+  <file src="src/Twig/GifExtension.php">
+    <UnusedClass occurrences="1">
+      <code>GifExtension</code>
     </UnusedClass>
   </file>
 </files>
