@@ -36,15 +36,17 @@ class EpisodeLister
         foreach ($data as $episodeItem) {
             [$season, $episodeNumber] = EpisodeHelper::getSeasonAndNumber((string) $episodeItem->code);
 
-            $episode = new Episode();
-            $episode->code = (string) $episodeItem->code;
-            $episode->season = $season;
-            $episode->episode = $episodeNumber;
-            $episode->title = (string) $episodeItem->title;
-            $episode->nbGif = \count($gifByEpisodes[$episode->code] ?? []);
-            $episode->url = $episode->nbGif ? $this->router->generate('get_by_episode', ['code' => $episode->code], RouterInterface::ABSOLUTE_URL) : null;
+            $episodeCode = (string) $episodeItem->code;
+            $nbGif = \count($gifByEpisodes[$episodeCode] ?? []);
 
-            $episodes[] = $episode;
+            $episodes[] = new Episode(
+                code: $episodeCode,
+                season: $season,
+                episode: $episodeNumber,
+                title: (string) $episodeItem->title,
+                url: $nbGif ? $this->router->generate('get_by_episode', ['code' => $episodeCode], RouterInterface::ABSOLUTE_URL) : null,
+                nbGif: $nbGif,
+            );
         }
 
         $this->episodes = new \ArrayIterator($episodes);
