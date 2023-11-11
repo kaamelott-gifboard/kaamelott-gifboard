@@ -38,6 +38,15 @@ a {
     margin: 10px;
 }
 
+.small-link {
+    font-style: italic;
+    text-decoration: none;
+}
+
+.small-link:hover {
+    text-decoration: underline;
+}
+
 /* ================================= */
 
 .footer {

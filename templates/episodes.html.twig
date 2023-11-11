@@ -22,7 +22,7 @@
             <div><b>{{ season }}</b></div><br />
             {% for episode in episodes %}
                 <div>
-                    {% set episodeName = 'Episode' ~ episode.episode ~ ' : ' ~ episode.title %}
+                    {% set episodeName = 'Episode ' ~ episode.episode ~ ' : ' ~ episode.title %}
 
                     {% if episode.nbGif %}
                         <a href="{{ episode.url }}">{{ episodeName }}</a> ({{ episode.nbGif }})

@@ -12,7 +12,7 @@
                     <a href="{{ gif.url }}">{{ gif.quote }}</a>
                     {% if gif.episode %}
                         <br />
-                        <a href="{{ path('get_by_episode', {'code': gif.episode}) }}">({{ gif.episode|format_episode_long_name }})</a>
+                        <a href="{{ path('get_by_episode', {'code': gif.episode}) }}" class="small-link footer-tm-small">{{ gif.episode|format_episode_long_name }}</a>
                     {% endif %}
                 </div>
                 <span id="{{ gif.slug }}-img" data-img="{{ gif.image }}"></span>
