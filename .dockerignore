@@ -9,6 +9,7 @@
 !src/
 !templates/
 !gifs.json
+!episodes.json
 !redirection.json
 !composer.json
 !composer.lock

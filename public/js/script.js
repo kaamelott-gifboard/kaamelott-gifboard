@@ -55,23 +55,6 @@ window.onload = function () {
         countXhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
         countXhr.send();
     }
-
-    // ==================================================
-
-    let footerQuoteXhr = new XMLHttpRequest();
-    let footerQuoteSpan = document.getElementById('footer-quote');
-    let footerCharacterSpan = document.getElementById('footer-character');
-
-    footerQuoteXhr.onload = function () {
-        let data = JSON.parse(footerQuoteXhr.responseText);
-
-        footerQuoteSpan.innerHTML = data['quote'];
-        footerCharacterSpan.innerHTML = data['characters'][0].name;
-    };
-
-    footerQuoteXhr.open('GET', footerQuoteSpan.getAttribute('data-url'));
-    footerQuoteXhr.setRequestHeader('X-Requested-With', 'XMLHttpRequest')
-    footerQuoteXhr.send();
 };
 
 // ==================================================
