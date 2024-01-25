@@ -47,7 +47,7 @@
     },
     "require-dev": {
         "friendsofphp/php-cs-fixer": "^3",
-        "symfony/phpunit-bridge": "^5.1",
+        "symfony/phpunit-bridge": "^7.0",
         "symfony/stopwatch": "^5.1",
         "symfony/web-profiler-bundle": "^5.1",
         "vimeo/psalm": "^4.15"
