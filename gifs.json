@@ -1297,10 +1297,10 @@
     {
         "quote": "Va falloir faire un petit effort hein, c'est pas possible...",
         "characters": [
-            "Hoël d’Armorique"
+            "Hoël d'Armorique"
         ],
         "characters_speaking": [
-            "Hoël d’Armorique"
+            "Hoël d'Armorique"
         ],
         "filename": "un-petit-effort.gif",
         "slug": "va-falloir-faire-un-petit-effort-hein-c-est-pas-possible",
@@ -13386,5 +13386,41 @@
         "filename": "cest-de-la-merde.gif",
         "slug": "c-est-de-la-merde",
         "episode": "S02E48"
+    },
+    {
+        "quote": "Comme par hasard",
+        "characters": [
+            "Hoël d'Armorique"
+        ],
+        "characters_speaking": [
+            "Hoël d'Armorique"
+        ],
+        "filename": "comme-par-hasard.gif",
+        "slug": "comme-par-hasard",
+        "episode": "S06E02"
+    },
+    {
+        "quote": "Ah me prenez pas pour une truite",
+        "characters": [
+            "Hoël d'Armorique"
+        ],
+        "characters_speaking": [
+            "Hoël d'Armorique"
+        ],
+        "filename": "pour-une-truite.gif",
+        "slug": "ah-me-prenez-pas-pour-une-truite",
+        "episode": "S06E02"
+    },
+    {
+        "quote": "J'ai pas tout compris, mais j'aime pas bien ça",
+        "characters": [
+            "Hoël d'Armorique"
+        ],
+        "characters_speaking": [
+            "Hoël d'Armorique"
+        ],
+        "filename": "aime-pas-bien-ca.gif",
+        "slug": "j-ai-pas-tout-compris-mais-j-aime-pas-bien-ca",
+        "episode": "S06E02"
     }
 ]
