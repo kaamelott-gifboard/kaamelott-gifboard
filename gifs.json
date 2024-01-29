@@ -34,7 +34,7 @@
         ],
         "filename": "assiette-pour-fromage.gif",
         "slug": "arthour-pas-changer-assiette-pour-fromage",
-        "episode": null
+        "episode": "S02E40"
     },
     {
         "quote": "Au bûcher ! Au bûcher !",
@@ -46,7 +46,7 @@
         ],
         "filename": "au-bucher.gif",
         "slug": "au-bucher-au-bucher",
-        "episode": null
+        "episode": "S01E79"
     },
     {
         "quote": "A prendre avec des circonflexes",
@@ -71,7 +71,7 @@
         ],
         "filename": "baffe.gif",
         "slug": "arthur-met-une-baffe-a-gauvain",
-        "episode": null
+        "episode": "S03E52"
     },
     {
         "quote": "Arthur est blasé",
@@ -86,7 +86,7 @@
         "episode": null
     },
     {
-        "quote": "Ca fait rien, cassez-vous !",
+        "quote": "Rien ça fait rien, cassez-vous",
         "characters": [
             "Arthur"
         ],
@@ -94,8 +94,8 @@
             "Arthur"
         ],
         "filename": "ca-fait-rien-cassez-vous.gif",
-        "slug": "ca-fait-rien-cassez-vous",
-        "episode": null
+        "slug": "rien-ca-fait-rien-cassez-vous",
+        "episode": "S02E56"
     },
     {
         "quote": "Ca m'a littéralement cuit les boules !",
@@ -110,7 +110,7 @@
         "episode": null
     },
     {
-        "quote": "Mais parce que ça me gonfle !",
+        "quote": "Mais parce que ça me gonfle",
         "characters": [
             "Arthur",
             "Léodagan"
@@ -120,7 +120,7 @@
         ],
         "filename": "ca-me-gonfle.gif",
         "slug": "mais-parce-que-ca-me-gonfle",
-        "episode": null
+        "episode": "S01E83"
     },
     {
         "quote": "Ca me semble assez évident",
@@ -156,19 +156,20 @@
         ],
         "filename": "cest-de-la-merde-merci-messieurs.gif",
         "slug": "c-est-d-la-merde-merci-messieurs",
-        "episode": null
+        "episode": "S02E68"
     },
     {
         "quote": "C'est d'la merde",
         "characters": [
-            "Karadoc"
+            "Karadoc",
+            "Guethenoc"
         ],
         "characters_speaking": [
             "Karadoc"
         ],
         "filename": "cest-dla-merde.gif",
         "slug": "c-est-d-la-merde",
-        "episode": null
+        "episode": "S01E68"
     },
     {
         "quote": "C'est magnifique !",
@@ -180,7 +181,7 @@
         ],
         "filename": "cest-magnifique.gif",
         "slug": "c-est-magnifique",
-        "episode": null
+        "episode": "S03E34"
     },
     {
         "quote": "C'est mortel !",
@@ -210,7 +211,7 @@
         "episode": null
     },
     {
-        "quote": "C'est pas drôle !",
+        "quote": "La blague est pas drôle",
         "characters": [
             "Arthur"
         ],
@@ -218,8 +219,8 @@
             "Arthur"
         ],
         "filename": "cest-pas-drole.gif",
-        "slug": "c-est-pas-drole",
-        "episode": null
+        "slug": "la-blague-est-pas-drole",
+        "episode": "S02E04"
     },
     {
         "quote": "Ouais c'est pas faux",
@@ -244,7 +245,7 @@
         ],
         "filename": "cest-sans-alcool.gif",
         "slug": "mais-evidemment-c-est-sans-alcool",
-        "episode": null
+        "episode": "S02E04"
     },
     {
         "quote": "C'est super mortel !",
@@ -274,14 +275,15 @@
     {
         "quote": "C'est un complot !",
         "characters": [
-            "Guethenoc"
+            "Guethenoc",
+            "Karadoc"
         ],
         "characters_speaking": [
             "Guethenoc"
         ],
         "filename": "cest-un-complot.gif",
         "slug": "c-est-un-complot",
-        "episode": null
+        "episode": "S01E68"
     },
     {
         "quote": "C'est un style voyez...",
@@ -317,7 +319,7 @@
         ],
         "filename": "choque.gif",
         "slug": "arthur-est-choque",
-        "episode": null
+        "episode": "S00E01"
     },
     {
         "quote": "Et comment se fait-il ?",
@@ -332,7 +334,7 @@
         "episode": null
     },
     {
-        "quote": "Courage !",
+        "quote": "Allez, courage !",
         "characters": [
             "Bohort",
             "Lancelot du Lac"
@@ -341,11 +343,11 @@
             "Bohort"
         ],
         "filename": "courage.gif",
-        "slug": "courage",
-        "episode": null
+        "slug": "allez-courage",
+        "episode": "S01E66"
     },
     {
-        "quote": "Laissez, c'est de la provocation",
+        "quote": "C'est de la provocation",
         "characters": [
             "Guenièvre",
             "Angharad"
@@ -354,8 +356,8 @@
             "Guenièvre"
         ],
         "filename": "de-la-provocation.gif",
-        "slug": "laissez-c-est-de-la-provocation",
-        "episode": null
+        "slug": "c-est-de-la-provocation",
+        "episode": "S02E37"
     },
     {
         "quote": "Bon allez ça devient débile, je m'en vais",
@@ -368,7 +370,7 @@
         ],
         "filename": "debile-je-men-vais.gif",
         "slug": "bon-allez-ca-devient-debile-je-m-en-vais",
-        "episode": null
+        "episode": "S03E08"
     },
     {
         "quote": "Vous avez des goûts de bourgeois",
@@ -381,22 +383,23 @@
         ],
         "filename": "des-gouts-de-bourgeois.gif",
         "slug": "vous-avez-des-gouts-de-bourgeois",
-        "episode": null
+        "episode": "S02E84"
     },
     {
-        "quote": "J'ai toujours eu du bol avec l'aléatoire, moi.",
+        "quote": "J'ai toujours eu du bol avec l'aléatoire, moi",
         "characters": [
-            "Léodagan"
+            "Léodagan",
+            "Arthur"
         ],
         "characters_speaking": [
             "Léodagan"
         ],
         "filename": "du-bol-avec-laleatoire.gif",
         "slug": "j-ai-toujours-eu-du-bol-avec-l-aleatoire-moi",
-        "episode": null
+        "episode": "S02E64"
     },
     {
-        "quote": "Elle est où la poulette ?",
+        "quote": "Où elle est la poulette ?",
         "characters": [
             "Kadoc",
             "Lancelot du Lac"
@@ -405,8 +408,8 @@
             "Kadoc"
         ],
         "filename": "elle-est-ou-la-poulette.gif",
-        "slug": "elle-est-ou-la-poulette",
-        "episode": null
+        "slug": "ou-elle-est-la-poulette",
+        "episode": "S02E81"
     },
     {
         "quote": "Bon écoutez : vous m'emmerdez, mais quelque chose de concret.",
@@ -434,7 +437,7 @@
         "episode": "S01E36"
     },
     {
-        "quote": "Et ben mon cochon...",
+        "quote": "Et ben mes cochons hein",
         "characters": [
             "Le Tavernier"
         ],
@@ -442,8 +445,8 @@
             "Le Tavernier"
         ],
         "filename": "et-ben-mon-cochon.gif",
-        "slug": "et-ben-mon-cochon",
-        "episode": null
+        "slug": "et-ben-mes-cochons-hein",
+        "episode": "S02E08"
     },
     {
         "quote": "C'est l'expérience qui a parlé, on a bien à faire à un champion",
@@ -468,7 +471,7 @@
         ],
         "filename": "fermer-sa-gueule.gif",
         "slug": "pas-moyen-de-lui-faire-fermer-sa-gueule",
-        "episode": null
+        "episode": "S02E05"
     },
     {
         "quote": "Bohort est frustré",
@@ -498,14 +501,15 @@
     {
         "quote": "Gnian gnian gnian",
         "characters": [
-            "Buzit le Barde"
+            "Buzit le Barde",
+            "Séli"
         ],
         "characters_speaking": [
             "Buzit le Barde"
         ],
         "filename": "gnian.gif",
         "slug": "gnian-gnian-gnian",
-        "episode": null
+        "episode": "S01E07"
     },
     {
         "quote": "Magniez vous le fion espèce de grosse dinde !",
@@ -517,7 +521,7 @@
         ],
         "filename": "grosse-dinde.gif",
         "slug": "magniez-vous-le-fion-espece-de-grosse-dinde",
-        "episode": null
+        "episode": "S02E35"
     },
     {
         "quote": "Yvain et Gauvain font un high five",
@@ -526,11 +530,12 @@
             "Gauvain"
         ],
         "characters_speaking": [
-            "Yvain"
+            "Yvain",
+            "Gauvain"
         ],
         "filename": "high-five.gif",
         "slug": "yvain-et-gauvain-font-un-high-five",
-        "episode": null
+        "episode": "S01E50"
     },
     {
         "quote": "Vous laissez pas embobiner, il cherche à vous rembobiner",
@@ -546,7 +551,7 @@
         "episode": null
     },
     {
-        "quote": "Il est fort le salaud !",
+        "quote": "Il est fort le salaud",
         "characters": [
             "Karadoc",
             "Perceval"
@@ -556,7 +561,7 @@
         ],
         "filename": "il-est-fort-le-salaud.gif",
         "slug": "il-est-fort-le-salaud",
-        "episode": null
+        "episode": "S02E22"
     },
     {
         "quote": "Moi cette semaine j'ai rien foutu",
@@ -593,7 +598,7 @@
         ],
         "filename": "je-comprends-pas-la.gif",
         "slug": "je-comprends-pas-la",
-        "episode": null
+        "episode": "S03E25"
     },
     {
         "quote": "Si je me mets derrière, je disparais...",
@@ -641,7 +646,7 @@
         ],
         "filename": "je-vais-aller-me-recoucher.gif",
         "slug": "je-vais-peut-etre-aller-me-recoucher-moi",
-        "episode": null
+        "episode": "S01E85"
     },
     {
         "quote": "Mais vous verrez bien ! Je vais pas vous faire un croquis !",
@@ -667,20 +672,19 @@
         ],
         "filename": "je-vous-mets-un-pain.gif",
         "slug": "je-vous-mets-un-pain",
-        "episode": null
+        "episode": "S01E90"
     },
     {
         "quote": "J'en ai rien à foutre",
         "characters": [
-            "Arthur",
-            "Perceval"
+            "Arthur"
         ],
         "characters_speaking": [
             "Arthur"
         ],
         "filename": "jen-ai-rien-a-foutre.gif",
         "slug": "j-en-ai-rien-a-foutre",
-        "episode": null
+        "episode": "S01E98"
     },
     {
         "quote": "La joie de vivre et le jambon !",
@@ -731,7 +735,7 @@
         ],
         "filename": "lautre-con-avec-ces-pinceaux.gif",
         "slug": "ben-c-est-l-autre-con-la-avec-ces-pinceaux",
-        "episode": null
+        "episode": "S02E06"
     },
     {
         "quote": "C'est pas pour rien qu'on m'appelle le fourbe",
@@ -756,10 +760,10 @@
         ],
         "filename": "le-gras-cest-la-vie.gif",
         "slug": "le-gras-c-est-la-vie",
-        "episode": null
+        "episode": "S02E23"
     },
     {
-        "quote": "Vous devriez commencer à organiser le merdier que vous avez là dedans",
+        "quote": "Vous devriez déjà commencer par organiser le merdier que vous avez là dedans",
         "characters": [
             "Arthur",
             "Perceval"
@@ -768,20 +772,20 @@
             "Arthur"
         ],
         "filename": "le-merdier-que-vous-avez.gif",
-        "slug": "vous-devriez-commencer-a-organiser-le-merdier-que-vous-avez-la-dedans",
-        "episode": null
+        "slug": "vous-devriez-deja-commencer-par-organiser-le-merdier-que-vous-avez-la-dedans",
+        "episode": "S01E99"
     },
     {
-        "quote": "J'apprécie les fruits au sirop !",
+        "quote": "J'apprécie les fruits au sirop",
         "characters": [
-            "Le Roi Burgonde"
+            "Perceval"
         ],
         "characters_speaking": [
-            "Le Roi Burgonde"
+            "Perceval"
         ],
         "filename": "les-fruits-au-sirop.gif",
         "slug": "j-apprecie-les-fruits-au-sirop",
-        "episode": null
+        "episode": "S04E62"
     },
     {
         "quote": "Non mais c'est à se coincer les parties dans une porte, non ?",
@@ -808,29 +812,31 @@
         "episode": null
     },
     {
-        "quote": "Mais que c'est nul... mais que c'est nul !",
+        "quote": "Que c'est nul... mais que c'est nul",
         "characters": [
             "Lancelot du Lac",
-            "Bohort"
+            "Bohort",
+            "Perceval"
         ],
         "characters_speaking": [
             "Lancelot du Lac"
         ],
         "filename": "mais-que-cest-nul.gif",
-        "slug": "mais-que-c-est-nul-mais-que-c-est-nul",
-        "episode": null
+        "slug": "que-c-est-nul-mais-que-c-est-nul",
+        "episode": "S02E46"
     },
     {
-        "quote": "Mais tout à fait !",
+        "quote": "Mais tout à fait",
         "characters": [
-            "Roparzh"
+            "Roparzh",
+            "Guethenoc"
         ],
         "characters_speaking": [
             "Roparzh"
         ],
         "filename": "mais-tout-a-fait.gif",
         "slug": "mais-tout-a-fait",
-        "episode": null
+        "episode": "S03E53"
     },
     {
         "quote": "Mais trop pas quoi !",
@@ -858,31 +864,31 @@
         "episode": null
     },
     {
-        "quote": "Mécréant !",
+        "quote": "Mécréaaaaaaaaaants !",
         "characters": [
             "Bohort",
             "Arthur",
-            "Léodagan",
-            "Lancelot du Lac"
+            "Léodagan"
         ],
         "characters_speaking": [
             "Bohort"
         ],
         "filename": "mecreant.gif",
-        "slug": "mecreant",
-        "episode": null
+        "slug": "mecreaaaaaaaaaants",
+        "episode": "S02E35"
     },
     {
         "quote": "Mais mêlez-vous d'vos fesses !",
         "characters": [
-            "Arthur"
+            "Arthur",
+            "Séfriane"
         ],
         "characters_speaking": [
             "Arthur"
         ],
         "filename": "melez-vous-de-vos-fesses.gif",
         "slug": "mais-melez-vous-d-vos-fesses",
-        "episode": null
+        "episode": "S03E16"
     },
     {
         "quote": "C'est tout con, même un débile il comprendrait.",
@@ -919,10 +925,10 @@
         ],
         "filename": "merde.gif",
         "slug": "merde",
-        "episode": null
+        "episode": "S02E16"
     },
     {
-        "quote": "Météo !",
+        "quote": "Météoooooo",
         "characters": [
             "Le Roi Burgonde"
         ],
@@ -930,8 +936,8 @@
             "Le Roi Burgonde"
         ],
         "filename": "meteo.gif",
-        "slug": "meteo",
-        "episode": null
+        "slug": "meteoooooo",
+        "episode": "S02E40"
     },
     {
         "quote": "Ha mais moi j'ai toujours dit !",
@@ -947,19 +953,20 @@
         "episode": null
     },
     {
-        "quote": "Nan.",
+        "quote": "Nan",
         "characters": [
-            "Arthur"
+            "Arthur",
+            "Bohort"
         ],
         "characters_speaking": [
             "Arthur"
         ],
         "filename": "nan.gif",
         "slug": "nan",
-        "episode": null
+        "episode": "S01E61"
     },
     {
-        "quote": "Négocier",
+        "quote": "Né-go-cier",
         "characters": [
             "Le Roi Burgonde"
         ],
@@ -967,8 +974,8 @@
             "Le Roi Burgonde"
         ],
         "filename": "ne-go-cier.gif",
-        "slug": "negocier",
-        "episode": null
+        "slug": "ne-go-cier",
+        "episode": "S04E62"
     },
     {
         "quote": "Là, on est quand même sur un niveau de connerie remarquable.",
@@ -993,10 +1000,10 @@
         ],
         "filename": "non-mais-pourquoi-pas.gif",
         "slug": "non-mais-pourquoi-pas",
-        "episode": null
+        "episode": "S02E89"
     },
     {
-        "quote": "Oh putain oui !",
+        "quote": "Oh putain oui",
         "characters": [
             "Arthur"
         ],
@@ -1005,10 +1012,10 @@
         ],
         "filename": "oh-putain-oui.gif",
         "slug": "oh-putain-oui",
-        "episode": null
+        "episode": "S01E11"
     },
     {
-        "quote": "On discute pas météo !",
+        "quote": "On discute pas météo",
         "characters": [
             "Arthur",
             "Séli"
@@ -1018,7 +1025,7 @@
         ],
         "filename": "on-discute-pas-meteo.gif",
         "slug": "on-discute-pas-meteo",
-        "episode": null
+        "episode": "S02E40"
     },
     {
         "quote": "On s'en fout, on les défonce !",
@@ -1031,19 +1038,20 @@
         ],
         "filename": "on-les-defonce.gif",
         "slug": "on-s-en-fout-on-les-defonce",
-        "episode": null
+        "episode": "S02E59"
     },
     {
-        "quote": "C'est au sujet que je vais vous mettre un pain dans la gueule.",
+        "quote": "Je vais vous mettre un pain dans la gueule mais quelque chose de violent",
         "characters": [
-            "Guethenoc"
+            "Guethenoc",
+            "Roparzh"
         ],
         "characters_speaking": [
             "Guethenoc"
         ],
         "filename": "pain-dans-la-gueule.gif",
-        "slug": "c-est-au-sujet-que-je-vais-vous-mettre-un-pain-dans-la-gueule",
-        "episode": null
+        "slug": "je-vais-vous-mettre-un-pain-dans-la-gueule-mais-quelque-chose-de-violent",
+        "episode": "S03E53"
     },
     {
         "quote": "Je ne mange pas de graines !",
@@ -1055,7 +1063,7 @@
         ],
         "filename": "pas-de-graines.gif",
         "slug": "je-ne-mange-pas-de-graines",
-        "episode": null
+        "episode": "S02E23"
     },
     {
         "quote": "Mais essayez quand même de pas devenir une tarlouze...",
@@ -1181,10 +1189,10 @@
         ],
         "filename": "que-voulez-vous-dire.gif",
         "slug": "qu-est-ce-que-voulez-vous-dire",
-        "episode": null
+        "episode": "S01E62"
     },
     {
-        "quote": "Qu'est-ce à dire que ceci ?",
+        "quote": "Qu'est-ce à dire que ceci",
         "characters": [
             "Le Roi Burgonde",
             "Sven le Viking"
@@ -1194,7 +1202,7 @@
         ],
         "filename": "quest-ce-a-dire-que-ceci.gif",
         "slug": "qu-est-ce-a-dire-que-ceci",
-        "episode": null
+        "episode": "S03E20"
     },
     {
         "quote": "Question de point de vue",
@@ -1206,7 +1214,7 @@
         ],
         "filename": "question-de-point-de-vue.gif",
         "slug": "question-de-point-de-vue",
-        "episode": null
+        "episode": "S03E25"
     },
     {
         "quote": "Là faut me régler le truc en une demi-heure hein",
@@ -1233,7 +1241,7 @@
         "episode": null
     },
     {
-        "quote": "Salsifis !",
+        "quote": "SALSIFIS",
         "characters": [
             "Le Roi Burgonde"
         ],
@@ -1242,7 +1250,7 @@
         ],
         "filename": "salsifis.gif",
         "slug": "salsifis",
-        "episode": null
+        "episode": "S04E62"
     },
     {
         "quote": "Je trouve pas de terme élégant là...",
@@ -1269,7 +1277,7 @@
         "episode": null
     },
     {
-        "quote": "Bah ce qu'on veut. M'enfin, c'est plutôt pour tout ce qui est génital.",
+        "quote": "M'enfin, c'est plutôt pour tout ce qui est génital",
         "characters": [
             "Venec",
             "Bohort"
@@ -1278,8 +1286,8 @@
             "Venec"
         ],
         "filename": "tout-ce-qui-est-genital.gif",
-        "slug": "bah-ce-qu-on-veut-m-enfin-c-est-plutot-pour-tout-ce-qui-est-genital",
-        "episode": null
+        "slug": "m-enfin-c-est-plutot-pour-tout-ce-qui-est-genital",
+        "episode": "S01E13"
     },
     {
         "quote": "Ouais non, ça c'est un lapin adulte ça",
@@ -1292,7 +1300,7 @@
         ],
         "filename": "un-lapin-adulte.gif",
         "slug": "ouais-non-ca-c-est-un-lapin-adulte-ca",
-        "episode": null
+        "episode": "S01E61"
     },
     {
         "quote": "Va falloir faire un petit effort hein, c'est pas possible...",
@@ -1367,7 +1375,7 @@
         ],
         "filename": "voila.gif",
         "slug": "voila",
-        "episode": null
+        "episode": "S02E48"
     },
     {
         "quote": "Ah non mais moi je crois que vous avez un problème là quand même",
@@ -1397,14 +1405,15 @@
         "quote": "Mais vous êtes pas mort espèce de connard ?!",
         "characters": [
             "Arthur",
-            "Gauvain"
+            "Gauvain",
+            "Yvain"
         ],
         "characters_speaking": [
             "Arthur"
         ],
         "filename": "vous-etes-pas-mort-connard.gif",
         "slug": "mais-vous-etes-pas-mort-espece-de-connard",
-        "episode": null
+        "episode": "S02E78"
     },
     {
         "quote": "Oui, alors juste une chose : allez vous faire voir chez le pape",
@@ -1431,7 +1440,7 @@
         ],
         "filename": "vous-maimez-pas.gif",
         "slug": "c-est-pour-ca-que-vous-m-aimez-pas",
-        "episode": null
+        "episode": "S02E30"
     },
     {
         "quote": "Vous me faites confiance ?",
@@ -1459,16 +1468,17 @@
         "episode": null
     },
     {
-        "quote": "Je vous explique mais vous ne comprenez rien.",
+        "quote": "Il vous explique mais vous ne comprenez rien",
         "characters": [
-            "Arthur"
+            "Arthur",
+            "Perceval"
         ],
         "characters_speaking": [
             "Arthur"
         ],
         "filename": "vous-ne-comprenez-rien.gif",
-        "slug": "je-vous-explique-mais-vous-ne-comprenez-rien",
-        "episode": null
+        "slug": "il-vous-explique-mais-vous-ne-comprenez-rien",
+        "episode": "S03E24"
     },
     {
         "quote": "Je me trompe ou vous n'êtes pas super fut fut ?",
@@ -1558,7 +1568,7 @@
         "episode": null
     },
     {
-        "quote": "Je sens que ça va encore être épique !",
+        "quote": "Je sens que ça va encore être épique",
         "characters": [
             "Père Blaise"
         ],
@@ -1567,7 +1577,7 @@
         ],
         "filename": "ca-va-etre-epique.gif",
         "slug": "je-sens-que-ca-va-encore-etre-epique",
-        "episode": null
+        "episode": "S01E96"
     },
     {
         "quote": "C'est pas faux ? Aaah",
@@ -1596,7 +1606,7 @@
         "episode": null
     },
     {
-        "quote": "Je vais pas vous citer Aristote... Qui ça ?",
+        "quote": "Je vais pas vous citer Aristote",
         "characters": [
             "Arthur",
             "Perceval"
@@ -1605,8 +1615,8 @@
             "Arthur"
         ],
         "filename": "je-vais-pas-citer-aristote.gif",
-        "slug": "je-vais-pas-vous-citer-aristote-qui-ca",
-        "episode": null
+        "slug": "je-vais-pas-vous-citer-aristote",
+        "episode": "S03E23"
     },
     {
         "quote": "Vous savez bien qu'on est des cons nous",
@@ -1631,7 +1641,7 @@
         ],
         "filename": "quest-ce-quon-fait.gif",
         "slug": "qu-est-ce-qu-on-fait",
-        "episode": null
+        "episode": "S02E36"
     },
     {
         "quote": "Vous dormez ?",
@@ -1784,7 +1794,7 @@
         ],
         "filename": "pas-mal.gif",
         "slug": "pas-mal",
-        "episode": null
+        "episode": "S03E23"
     },
     {
         "quote": "Oui je sais ça veut rien dire mais je m'en fiche !",
@@ -1809,7 +1819,7 @@
         ],
         "filename": "doute-je-les-ai-bouffes.gif",
         "slug": "dans-le-doute-je-les-ai-bouffes",
-        "episode": null
+        "episode": "S02E22"
     },
     {
         "quote": "A vue de pied y'en avait une soixantaine",
@@ -1822,7 +1832,7 @@
         ],
         "filename": "une-soixantaine.gif",
         "slug": "a-vue-de-pied-y-en-avait-une-soixantaine",
-        "episode": null
+        "episode": "S02E22"
     },
     {
         "quote": "Ah ! On retrouve une idée commune. Je pense qu'on va vous mettre ensemble en mission",
@@ -1837,7 +1847,7 @@
         "episode": null
     },
     {
-        "quote": "C'est comme ça qu'on accueille sa tatie ?",
+        "quote": "C'est comme ça qu'on accueille sa tatie",
         "characters": [
             "Ygerne de Tintagel"
         ],
@@ -1846,7 +1856,7 @@
         ],
         "filename": "accueille-sa-tatie.gif",
         "slug": "c-est-comme-ca-qu-on-accueille-sa-tatie",
-        "episode": null
+        "episode": "S03E25"
     },
     {
         "quote": "Pour faire parler les débiles",
@@ -1859,7 +1869,7 @@
         ],
         "filename": "pour-faire-parler-les-debiles.gif",
         "slug": "pour-faire-parler-les-debiles",
-        "episode": null
+        "episode": "S03E25"
     },
     {
         "quote": "C'est pas si simple...",
@@ -1885,7 +1895,7 @@
         ],
         "filename": "il-est-daccord.gif",
         "slug": "il-est-d-accord",
-        "episode": null
+        "episode": "S03E20"
     },
     {
         "quote": "Classe !",
@@ -12336,30 +12346,31 @@
         "episode": null
     },
     {
-        "quote": "Aaaaah m'adresse pas la parole hérétique, démon !",
+        "quote": "Aaaaah m'adresse pas la parole hérétique, démon",
         "characters": [
             "Le Répurgateur",
-            "Arthur"
+            "Arthur",
+            "Demetra"
         ],
         "characters_speaking": [
             "Le Répurgateur"
         ],
         "filename": "ah-m-adresse-pas-la-parole-heretique-demon.gif",
-        "slug": "ah-m-adresse-pas-la-parole-heretique-demon",
-        "episode": null
+        "slug": "aaaaah-m-adresse-pas-la-parole-heretique-demon",
+        "episode": "S01E14"
     },
     {
-        "quote": "C'est pas une insulte ça Sire, c'est vrai !",
+        "quote": "C'est pas une insulte ça Sire, c'est vrai",
         "characters": [
-            "Arthur",
-            "Le Maître d'Armes"
+            "Le Maître d'Armes",
+            "Arthur"
         ],
         "characters_speaking": [
             "Le Maître d'Armes"
         ],
         "filename": "c-est-pas-une-insulte-ca-sire-c-est-vrai.gif",
         "slug": "c-est-pas-une-insulte-ca-sire-c-est-vrai",
-        "episode": null
+        "episode": "S01E09"
     },
     {
         "quote": "Catapultes ! Catapultes !",
@@ -12371,7 +12382,7 @@
         ],
         "filename": "catapultes-catapultes.gif",
         "slug": "catapultes-catapultes",
-        "episode": null
+        "episode": "S02E17"
     },
     {
         "quote": "Du passé faisons table en marbre !",
@@ -12390,15 +12401,14 @@
     {
         "quote": "Y'a outrage !",
         "characters": [
-            "Karadoc",
-            "Père Blaise"
+            "Karadoc"
         ],
         "characters_speaking": [
             "Karadoc"
         ],
         "filename": "y-a-outrage.gif",
         "slug": "y-a-outrage",
-        "episode": null
+        "episode": "S02E66"
     },
     {
         "quote": "Bon allez, moi je vais me coucher, je tiens plus en l'air",
