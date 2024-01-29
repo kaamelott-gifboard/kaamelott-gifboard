@@ -18,7 +18,7 @@ class QuoteTest extends KernelTestCase
 
         $response = $this->getContainer()->get(KernelInterface::class)->handle($request);
 
-        $expected = '{"count":2,"results":[{"gif":"http:\/\/localhost\/gifs\/poulette-bien-cachee.gif","url":"http:\/\/localhost\/gif\/ca-suffit-elle-est-ou-la-poulette-elle-est-bien-cachee"},{"gif":"http:\/\/localhost\/gifs\/elle-est-ou-la-poulette.gif","url":"http:\/\/localhost\/gif\/elle-est-ou-la-poulette"}]}';
+        $expected = '{"count":2,"results":[{"gif":"http:\/\/localhost\/gifs\/poulette-bien-cachee.gif","url":"http:\/\/localhost\/gif\/ca-suffit-elle-est-ou-la-poulette-elle-est-bien-cachee"},{"gif":"http:\/\/localhost\/gifs\/elle-est-ou-la-poulette.gif","url":"http:\/\/localhost\/gif\/ou-elle-est-la-poulette"}]}';
 
         static::assertSame(200, $response->getStatusCode());
         static::assertSame('application/json', $response->headers->get('content-type'));

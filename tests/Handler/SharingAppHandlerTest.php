@@ -67,6 +67,6 @@ class SharingAppHandlerTest extends KernelTestCase
 
         static::assertInstanceOf(BinaryFileResponse::class, $response);
         static::assertSame('image/gif', $response->headers->get('Content-Type'));
-        static::assertSame('24650', $response->headers->get('Content-Length'));
+        static::assertSame('310721', $response->headers->get('Content-Length'));
     }
 }
