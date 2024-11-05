@@ -13432,5 +13432,32 @@
         "filename": "aime-pas-bien-ca.gif",
         "slug": "j-ai-pas-tout-compris-mais-j-aime-pas-bien-ca",
         "episode": "S06E02"
+    },
+    // ajout
+    {
+        "quote": "Le nord, suivant comment on est tourné ca change tout !",
+        "characters": [
+            "Perceval",
+            "Lancelot du Lac"
+        ],
+        "characters_speaking": [
+            "Perceval"
+        ],
+        "filename": "le-nord.gif",
+        "slug": "le-nord-suivant-comment-on-est-tourné-ca-change-tout",
+        "episode": "S01E35"
+    },
+    {
+        "quote": "J'vais vous découper l'gras du cul ça vous fera ça de moins à trimbaler",
+        "characters": [
+            "Le Maître d'Armes",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Le Maître d'Armes"
+        ],
+        "filename": "gras-du-cul.gif",
+        "slug": "J-vais-vous-découper-l-gras-du-cul-ça-vous-fera-ça-de-moins-à-trimbaler",
+        "episode": "S02E52"
     }
 ]
