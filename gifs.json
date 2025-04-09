@@ -601,6 +601,18 @@
         "episode": "S03E25"
     },
     {
+        "quote": "Y'aurait moyen de réduire la voilure sur la connerie",
+        "characters": [
+            "Quarto"
+        ],
+        "characters_speaking": [
+            "Quarto"
+        ],
+        "filename": "y-aurait-moyen-de-reduire-la-voilure-sur-la-connerie.gif",
+        "slug": "y-aurait-moyen-de-reduire-la-voilure-sur-la-connerie",
+        "episode": "null"
+    },
+    {
         "quote": "Si je me mets derrière, je disparais...",
         "characters": [
             "Merlin"
