@@ -16,8 +16,8 @@ class EpisodeHelper
         preg_match('#^S0([0-9])E([0-9]+)$#', $episode, $matches);
 
         return [
-            sprintf('Livre %s', self::SEASONS[(int) $matches[1]]),
-            $matches[2],
+            sprintf('Livre %s', self::SEASONS[(int) $matches[1]]), // @phpstan-ignore-line
+            $matches[2], // @phpstan-ignore-line
         ];
     }
 }

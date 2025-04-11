@@ -1,7 +1,7 @@
 ########################################
 #           VENDORS
 ########################################
-FROM composer:2.1.14 as vendors
+FROM composer:2.1.14 AS vendors
 
 COPY composer.json composer.lock /app/
 
@@ -27,7 +27,7 @@ RUN composer dump-autoload \
 ########################################
 #           PRODUCTION
 ########################################
-FROM php:8.0-fpm-alpine3.13 as prod
+FROM php:8.2-fpm-alpine3.21 AS prod
 
 WORKDIR /var/www
 
@@ -63,10 +63,10 @@ CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/supervisord.conf"]
 ########################################
 #           DEV
 ########################################
-FROM prod as dev
+FROM prod AS dev
 
-RUN apk add --no-cache ${PHPIZE_DEPS} \
-    && pecl install xdebug-3.0.3 \
+RUN apk add --no-cache ${PHPIZE_DEPS} linux-headers \
+    && pecl install xdebug-3.2.2 \
     && docker-php-ext-enable xdebug
 
 COPY --from=vendors /usr/bin/composer /usr/bin/composer

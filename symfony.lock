@@ -1,7 +1,4 @@
 {
-    "abraham/twitteroauth": {
-        "version": "3.2.0"
-    },
     "amphp/amp": {
         "version": "v2.6.1"
     },
@@ -24,9 +21,6 @@
             "config/routes/api_platform.yaml",
             "src/Entity/.gitignore"
         ]
-    },
-    "composer/ca-bundle": {
-        "version": "1.3.1"
     },
     "composer/package-versions-deprecated": {
         "version": "1.11.99.1"
@@ -102,9 +96,6 @@
     },
     "nikic/php-parser": {
         "version": "v4.13.2"
-    },
-    "openlss/lib-array2xml": {
-        "version": "1.0.0"
     },
     "php": {
         "version": "7.4"
@@ -294,9 +285,6 @@
     "symfony/polyfill-mbstring": {
         "version": "v1.20.0"
     },
-    "symfony/polyfill-php73": {
-        "version": "v1.20.0"
-    },
     "symfony/polyfill-php80": {
         "version": "v1.20.0"
     },
@@ -345,9 +333,6 @@
         "version": "v5.1.8"
     },
     "symfony/security-csrf": {
-        "version": "v5.1.8"
-    },
-    "symfony/security-guard": {
         "version": "v5.1.8"
     },
     "symfony/security-http": {
@@ -441,9 +426,6 @@
     },
     "webmozart/assert": {
         "version": "1.9.1"
-    },
-    "webmozart/path-util": {
-        "version": "2.3.0"
     },
     "willdurand/negotiation": {
         "version": "v2.3.1"

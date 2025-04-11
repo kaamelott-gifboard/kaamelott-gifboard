@@ -21,7 +21,7 @@ class GifLister
         private string $gifsJsonFile,
         private RouterInterface $router,
         private SluggerInterface $slugger,
-        private ImageHelper $imageHelper
+        private ImageHelper $imageHelper,
     ) {
         $this->init();
     }

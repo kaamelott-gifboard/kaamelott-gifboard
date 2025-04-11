@@ -10,7 +10,7 @@ use Twig\TwigFilter;
 
 class GifExtension extends AbstractExtension
 {
-    public function getFilters()
+    public function getFilters(): array
     {
         return [
             new TwigFilter('format_episode_long_name', [$this, 'formatEpisodeLongName']),

@@ -10,7 +10,7 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 abstract class AbstractAction extends AbstractController
 {
     public function __construct(
-        protected GifFinder $finder
+        protected GifFinder $finder,
     ) {
     }
 }

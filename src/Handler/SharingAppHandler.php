@@ -20,7 +20,7 @@ class SharingAppHandler
 
     private const SHARING_APP_USER_AGENTS = [
         'api.slack.com',
-//        'Discordbot',
+        //        'Discordbot',
     ];
 
     public function getResponse(Gif $gif): ?BinaryFileResponse

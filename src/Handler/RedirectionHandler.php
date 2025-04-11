@@ -12,7 +12,7 @@ class RedirectionHandler
 {
     public function __construct(
         private string $redirectionJsonFile,
-        private RouterInterface $router
+        private RouterInterface $router,
     ) {
     }
 

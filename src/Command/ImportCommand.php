@@ -5,16 +5,16 @@ declare(strict_types=1);
 namespace KaamelottGifboard\Command;
 
 use KaamelottGifboard\Helper\ImageHelper;
+use Symfony\Component\Console\Attribute\AsCommand;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Serializer\Encoder\DecoderInterface;
 use Symfony\Component\String\Slugger\SluggerInterface;
 
+#[AsCommand(name: 'app:import:gifs')]
 class ImportCommand extends Command
 {
-    protected static $defaultName = 'import:gifs';
-
     public function __construct(
         private DecoderInterface $decoder,
         private string $gifsJsonFile,

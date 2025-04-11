@@ -12,7 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 class Index extends AbstractController
 {
     public function __construct(
-        private EpisodeFinder $episodeFinder
+        private EpisodeFinder $episodeFinder,
     ) {
     }
 
