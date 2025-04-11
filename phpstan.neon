@@ -1,6 +1,7 @@
 parameters:
-	level: max
-	paths:
-		- src
-	checkMissingIterableValueType: false
-	checkGenericClassInNonGenericObjectType: false
+    level: max
+    paths:
+        - src
+    ignoreErrors:
+        - identifier: missingType.generics
+        - identifier: missingType.iterableValue

@@ -5,10 +5,6 @@ parameters:
     episodes_json_path: '%kernel.project_dir%/episodes.json'
     redirection_json_path: '%kernel.project_dir%/redirection.json'
     public_path: '%kernel.project_dir%/public'
-    twitter_api_key: '%env(TWITTER_API_KEY)%'
-    twitter_api_key_secret: '%env(TWITTER_API_KEY_SECRET)%'
-    twitter_access_token: '%env(TWITTER_ACCESS_TOKEN)%'
-    twitter_access_token_secret: '%env(TWITTER_ACCESS_TOKEN_SECRET)%'
 
 services:
     _defaults:
@@ -20,10 +16,6 @@ services:
             string $episodesJsonFile: '%episodes_json_path%'
             string $redirectionJsonFile: '%redirection_json_path%'
             string $publicPath: '%public_path%'
-            string $twitterApiKey: '%twitter_api_key%'
-            string $twitterApiKeySecret: '%twitter_api_key_secret%'
-            string $twitterAccessToken: '%twitter_access_token%'
-            string $twitterAccessTokenSecret: '%twitter_access_token_secret%'
 
     KaamelottGifboard\:
         resource: '../src/'

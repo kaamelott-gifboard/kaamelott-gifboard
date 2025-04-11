@@ -22,7 +22,7 @@ class GifFinder
         return $this->lister->gifs->count();
     }
 
-    public function findGifs(int $offset = null, int $limit = self::GIFS_PER_PAGE): \Iterator
+    public function findGifs(?int $offset = null, int $limit = self::GIFS_PER_PAGE): \Iterator
     {
         if (null !== $offset) {
             return new \LimitIterator($this->lister->gifs, $offset, $limit);

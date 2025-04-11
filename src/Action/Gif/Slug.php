@@ -18,7 +18,7 @@ class Slug extends AbstractAction
     public function __construct(
         protected GifFinder $finder,
         private RedirectionHandler $redirectionHandler,
-        private SharingAppHandler $sharingAppHandler
+        private SharingAppHandler $sharingAppHandler,
     ) {
         parent::__construct($this->finder);
     }
