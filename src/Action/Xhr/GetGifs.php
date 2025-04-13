@@ -8,9 +8,11 @@ use KaamelottGifboard\Action\AbstractAction;
 use KaamelottGifboard\Helper\GifPageHelper;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Attribute\Route;
 
 class GetGifs extends AbstractAction
 {
+    #[Route('/xhr/get_gifs', name: 'get_gifs')]
     public function __invoke(Request $request): Response
     {
         if (!$request->isXmlHttpRequest()) {

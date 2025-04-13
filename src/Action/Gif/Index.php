@@ -9,9 +9,11 @@ use KaamelottGifboard\Exception\PouletteNotFoundException;
 use KaamelottGifboard\Helper\GifPageHelper;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Attribute\Route;
 
 class Index extends AbstractAction
 {
+    #[Route('/', name: 'index')]
     public function __invoke(Request $request): Response
     {
         $page = (int) $request->query->get('page', '1');

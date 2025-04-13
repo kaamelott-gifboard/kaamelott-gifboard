@@ -12,6 +12,7 @@ use KaamelottGifboard\Handler\RedirectionHandler;
 use KaamelottGifboard\Handler\SharingAppHandler;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Attribute\Route;
 
 class Slug extends AbstractAction
 {
@@ -23,6 +24,7 @@ class Slug extends AbstractAction
         parent::__construct($this->finder);
     }
 
+    #[Route('/gif/{slug}', name: 'get_by_slug', defaults: ['slug' => ''])]
     public function __invoke(Request $request, string $slug): Response
     {
         if ($redirection = $this->redirectionHandler->getRedirection($slug)) {
