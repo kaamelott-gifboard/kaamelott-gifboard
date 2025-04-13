@@ -41,6 +41,7 @@
         "symfony/twig-bundle": "*",
         "symfony/validator": "*",
         "symfony/yaml": "*",
+        "symfonycasts/tailwind-bundle": "^0.10.0",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/twig": "^3.1"
     },
@@ -86,7 +87,8 @@
     "scripts": {
         "auto-scripts": {
             "cache:clear": "symfony-cmd",
-            "assets:install %PUBLIC_DIR%": "symfony-cmd"
+            "assets:install %PUBLIC_DIR%": "symfony-cmd",
+            "importmap:install": "symfony-cmd"
         },
         "post-install-cmd": [
             "@auto-scripts"

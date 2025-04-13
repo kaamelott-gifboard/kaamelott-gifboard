@@ -1,7 +1,28 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}404 - La poulette est introuvable{% endblock %}
+
+{% block characters %}{% endblock %}
+
 {% block body %}
-    Oups ! On a pas trouvé la poulette.<br /><br />
-    <img src="{{ url('quote_image', { filename: 'elle-est-ou-la-poulette.gif' }) }}" /><br /><br />
-    <a href="/">Retour</a>
+    <div class="min-h-[50vh] flex flex-col items-center justify-center px-4 py-8">
+        <div class="text-center">
+            <h1 class="font-medieval text-4xl text-gray-800 mb-4">404</h1>
+            <p class="text-xl text-gray-600 mb-6">Elle est où la poulette ?</p>
+
+            <div class="rounded-lg overflow-hidden shadow-lg mb-8 max-w-md mx-auto">
+                <img src="{{ url('quote_image', { filename: 'elle-est-ou-la-poulette.gif' }) }}"
+                     alt="Elle est où la poulette ?"
+                     class="w-full h-auto"/>
+            </div>
+
+            <a href="{{ path('index') }}"
+               class="inline-flex items-center px-4 py-2 bg-amber-700 text-white rounded-lg hover:bg-amber-800 transition-colors duration-200">
+                <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+                </svg>
+                Retour à l'accueil
+            </a>
+        </div>
+    </div>
 {% endblock %}

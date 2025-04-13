@@ -23,7 +23,7 @@ class Index extends AbstractAction
             throw new PouletteNotFoundException('page', (string) $page);
         }
 
-        return $this->render('body.html.twig', [
+        return $this->render('index.html.twig', [
             'gifs' => $this->finder->findGifs($offset),
             'pagination' => true,
         ]);

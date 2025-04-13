@@ -1,4 +1,4 @@
-{% extends 'body.html.twig' %}
+{% extends 'index.html.twig' %}
 
 {% import 'macros/input-copy.html.twig' as copy %}
 
@@ -37,68 +37,74 @@
     <meta name="twitter:domain" content="kaamelott-gifboard.fr">
 {% endblock %}
 
+{% block characters %}{% endblock %}
+
 {% block gif %}
-    <br />
+    <div class="max-w-4xl mx-auto px-4 mt-5">
+        <div class="mb-8 text-center relative">
+            <h2 class="text-sm sm:text-2xl font-medieval text-gray-900 relative flex items-center justify-center">
+                <span class="text-4xl text-yellow-700/60 font-serif mr-2">"</span>
+                <span>{{ current.quote }}</span>
+                <span class="text-4xl text-yellow-700/60 font-serif ml-2">"</span>
+            </h2>
+            <div class="mt-2 text-sm text-gray-500 italic">
+                — {{ current.characters|map(character => character.name)|join(', ') }}
+            </div>
+        </div>
 
-    <div class="quote-block">
-        <h2 class="quote">{{ current.quote }}</h2>
-    </div>
+        <div class="relative flex items-center justify-center gap-4 mb-6">
+            <a href="{{ previous.url }}" class="absolute left-0 p-2 text-gray-400 hover:text-yellow-700 transition-colors duration-200">
+                <i class="fa fa-chevron-left text-3xl"></i>
+            </a>
 
-    <br />
+            <img src="{{ current.image }}"
+                 alt="{{ current.quote }}"
+                 class="max-h-[180px] w-auto rounded-lg shadow-lg object-contain"/>
 
-    <div class="slideshow">
-        <div class="slideshow_button left_none">
-            <a href="{{ previous.url }}">
-                <i class="fa fa-chevron-circle-left" style="font-size: 40px;"></i>
+            <a href="{{ next.url }}" class="absolute right-0 p-2 text-gray-400 hover:text-yellow-700 transition-colors duration-200">
+                <i class="fa fa-chevron-right text-3xl"></i>
             </a>
         </div>
-        <div class="slideshow_gif">
-            <img src="{{ current.image }}" alt="{{ current.quote }}" class="single-gif"/>
-        </div>
-        <div class="slideshow_button right_none">
-            <a href="{{ next.url }}">
-                <i class="fa fa-chevron-circle-right" style="font-size: 40px;"></i>
-            </a>
-        </div>
-    </div>
 
-    {% if current.episode %}
-        <div>
-            <a href="{{ path('get_by_episode', {'code': current.episode}) }}" class="small-link">{{ current.episode|format_episode_long_name }}</a><br /><br />
-        </div>
-    {% endif %}
-
-    <div class="quote-characters">
-        {% for character in current.characters %}
-            <div class="quote-character-block">
-                <a href="{{ character.url }}">
-                    <img src="{{ character.image }}" class="character-icon-quote icon-dark-shadow"
-                         alt="{{ character.name }}" title="{{ character.name }}"/>
+        {% if current.episode %}
+            <div class="text-center mb-6">
+                <a href="{{ path('get_by_episode', {'code': current.episode}) }}"
+                   class="text-gray-600 hover:text-yellow-700 transition-colors duration-200 text-sm">
+                    {{ current.episode|format_episode_long_name }}
                 </a>
             </div>
-        {% endfor %}
-    </div>
+        {% endif %}
 
-    <div class="copy-block">
-        Partager sur :<br /><br />
-
-        <div class="copy-block-social">
-            {{ copy.block_icon('Slack', 'social', current.url, 'fa fa-slack') }}
-            {{ copy.block_icon('Discord', 'social', current.image, 'fa fa-discord') }}
-            {{ copy.block_icon('Twitter', 'social', current.image, 'fa fa-twitter') }}
-            {{ copy.block_icon('Facebook', 'social', current.url, 'fa fa-facebook') }}
-            {{ copy.block_icon('Reddit', 'social', current.url, 'fa fa-reddit') }}
-        </div>
-
-        <div class="copy-block-divider">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</div>
-
-        <div class="copy-block-other">
-            {{ copy.block_icon('Lien du GIF', 'media', current.image, 'fa fa-image', true) }}
-            {{ copy.block_icon('Lien avec la citation', 'media', current.url, 'fa fa-quote-right', true) }}
-            {{ copy.block_icon('Lien court', 'media', current.shortUrl, 'fa fa-link', true) }}
+        <div class="flex justify-center gap-4 mb-8">
+            {% for character in current.characters %}
+                <a href="{{ character.url }}"
+                   class="transition-transform duration-200 hover:scale-110">
+                    <img src="{{ character.image }}"
+                         class="w-12 h-12 rounded-full shadow-md"
+                         alt="{{ character.name }}"
+                         title="{{ character.name }}"/>
+                </a>
+            {% endfor %}
         </div>
     </div>
 
-    <br />
-    <br />
+    <div class="space-y-4">
+        <p class="text-center text-gray-700 text-sm">Partager sur :</p>
+
+        <div class="flex flex-col">
+            <div class="flex justify-center items-center gap-3">
+                {{ copy.block_icon('Slack', 'social', current.url, 'fa-brands fa-slack text-lg') }}
+                {{ copy.block_icon('Discord', 'social', current.image, 'fa-brands fa-discord text-lg') }}
+                {{ copy.block_icon('X', 'social', current.image, 'fa-brands fa-x-twitter text-lg') }}
+                {{ copy.block_icon('Facebook', 'social', current.url, 'fa-brands fa-facebook text-lg') }}
+                {{ copy.block_icon('Reddit', 'social', current.url, 'fa-brands fa-reddit text-lg') }}
+            </div>
+
+            <div class="flex justify-center items-center gap-3">
+                {{ copy.block_icon('Lien du GIF', 'media', current.image, 'fa fa-image text-lg', true) }}
+                {{ copy.block_icon('Lien avec la citation', 'media', current.url, 'fa fa-quote-right text-lg', true) }}
+                {{ copy.block_icon('Lien court', 'media', current.shortUrl, 'fa fa-link text-lg', true) }}
+            </div>
+        </div>
+    </div>
 {% endblock %}

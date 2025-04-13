@@ -43,6 +43,7 @@ COPY docker/supervisord/ /etc/supervisor/
 COPY docker/nginx/nginx.conf /etc/nginx/nginx.conf
 COPY --from=vendors /app/vendor /var/www/vendor
 COPY . /var/www
+
 RUN rm -rf \
     html \
     composer.* \
