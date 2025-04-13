@@ -1,12 +1,16 @@
 {% macro block_icon(title, type, value, icon, light = false) %}
-    <div>
+    <div class="relative group">
+        <div class="absolute bottom-full left-1/2 -translate-x-1/2 mb-1 px-2 py-1 text-xs text-white bg-stone-800 rounded
+                    tooltip-hidden whitespace-nowrap pointer-events-none">
+            {{ title }}
+        </div>
         <button type="button"
-                class="sharing-btn {% if light %}btn-light{% endif %}"
+                class="sharing-btn p-2 rounded-lg transition-colors duration-200 text-gray-600 hover:bg-gray-100 hover:text-gray-800
+                       {{ light ? 'text-gray-400' : '' }}"
                 value="{{ value }}"
                 data-type="{{ type }}"
                 data-title="{{ title }}">
-            <i class="{{ icon }} fa-2x"></i>
-            <span class="tooltip-text">{{ title }}</span>
+            <i class="{{ icon }} text-xl"></i>
         </button>
     </div>
 {% endmacro %}

@@ -1,0 +1,31 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% if episode is defined and gifs is defined and gifs is not empty %}
+        <h2 class="font-medieval text-center mt-8 mb-2">{{ episode|format_episode_long_name }}</h2>
+    {% endif %}
+
+    {% if character is defined %}
+        <h2 class="font-medieval text-center mt-8 mb-2">{{ character.name }}</h2>
+    {% endif %}
+
+    {% if gifs is defined %}
+        <div id="gif-list" class="mx-auto px-4 py-6">
+            {% if gifs is not empty %}
+                <ul id="gif-ul"
+                    data-url="{{ path('get_gifs') }}"
+                    class="flex flex-wrap justify-center gap-4">
+                    {% include 'includes/list-items.html.twig' with gifs %}
+                </ul>
+                <div id="gif-ul-loader" class="text-center py-4"></div>
+            {% else %}
+                <div class="text-center py-8 text-gray-600">
+                    Aucun GIF trouvé !
+                </div>
+            {% endif %}
+        </div>
+    {% endif %}
+
+    {% block gif %}{% endblock %}
+    {% block episodes %}{% endblock %}
+{% endblock %}

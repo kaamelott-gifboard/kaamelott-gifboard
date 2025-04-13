@@ -1,41 +1,54 @@
 {% import 'macros/input-copy.html.twig' as copy %}
 
 {% for gif in gifs %}
-    <li class="li-gif">
-        <div class="square_btn" data-id="{{ gif.slug }}" title="{{ gif.quote }}">
-            {{ gif.quote }}
+    <li class="relative group w-[300px]">
+        <div class="square_btn bg-stone-50 rounded-lg shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer px-4 py-2 flex items-center justify-center text-center border border-stone-200 border-b-[3px] border-b-yellow-700"
+             data-id="{{ gif.slug }}"
+             title="{{ gif.quote }}">
+            <p class="text-stone-700 text-sm truncate w-full">{{ gif.quote }}</p>
         </div>
-        <div id="{{ gif.slug }}-modal" class="modal-background">
-            <div class="modal-content">
-                <span class="modal-close">&times;</span>
-                <div id="modal-quote">
-                    <a href="{{ gif.url }}">{{ gif.quote }}</a>
+
+        <div id="{{ gif.slug }}-modal" class="modal-background hidden fixed inset-0 bg-black/50 backdrop-blur-sm z-50">
+            <div class="modal-content bg-stone-100 rounded-lg w-11/12 max-w-md mx-auto mt-20 p-6 relative">
+                <button class="modal-close absolute top-4 right-4 text-gray-500 hover:text-gray-700">&times;</button>
+
+                <div id="modal-quote" class="mb-6 text-center">
+                    <a href="{{ gif.url }}"
+                       class="inline-block text-lg text-gray-900 hover:text-yellow-700 transition-colors duration-200 decoration-yellow-700 decoration-2">
+                        {{ gif.quote }}
+                    </a>
                     {% if gif.episode %}
-                        <br />
-                        <a href="{{ path('get_by_episode', {'code': gif.episode}) }}" class="small-link footer-tm-small">{{ gif.episode|format_episode_long_name }}</a>
+                        <a href="{{ path('get_by_episode', {'code': gif.episode}) }}"
+                           class="block mt-2 text-sm text-gray-600 hover:text-yellow-700 transition-colors duration-200">
+                            {{ gif.episode|format_episode_long_name }}
+                        </a>
                     {% endif %}
                 </div>
-                <span id="{{ gif.slug }}-img" data-img="{{ gif.image }}"></span>
-                <div class="modal-gif">
-                    <img id="{{ gif.slug }}-modal-img" /><br /><br />
 
-                    <div class="copy-block">
-                        Partager sur :<br /><br />
+                <span id="{{ gif.slug }}-img" data-img="{{ gif.image }}" class="hidden"></span>
 
-                        <div class="copy-block-social">
-                            {{ copy.block_icon('Slack', 'social', gif.url, 'fa fa-slack') }}
-                            {{ copy.block_icon('Discord', 'social', gif.image, 'fa fa-discord') }}
-                            {{ copy.block_icon('Twitter', 'social', gif.image, 'fa fa-twitter') }}
-                            {{ copy.block_icon('Facebook', 'social', gif.url, 'fa fa-facebook') }}
-                            {{ copy.block_icon('Reddit', 'social', gif.url, 'fa fa-reddit') }}
-                        </div>
+                <div class="modal-gif space-y-6">
+                    <div class="flex justify-center">
+                        <img id="{{ gif.slug }}-modal-img" class="w-[calc(100%-1rem)] sm:w-full max-w-sm max-h-[21vh] h-auto object-contain rounded-lg"/>
+                    </div>
 
-                        <div class="copy-block-divider">&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;</div>
+                    <div class="space-y-4">
+                        <p class="text-center text-gray-700 text-sm">Partager sur :</p>
 
-                        <div class="copy-block-other">
-                            {{ copy.block_icon('Lien du GIF', 'media', gif.image, 'fa fa-image', true) }}
-                            {{ copy.block_icon('Lien avec la citation', 'media', gif.url, 'fa fa-quote-right', true) }}
-                            {{ copy.block_icon('Lien court', 'media', gif.shortUrl, 'fa fa-link', true) }}
+                        <div class="flex flex-col">
+                            <div class="flex justify-center items-center gap-3">
+                                {{ copy.block_icon('Slack', 'social', gif.url, 'fa-brands fa-slack text-lg') }}
+                                {{ copy.block_icon('Discord', 'social', gif.image, 'fa-brands fa-discord text-lg') }}
+                                {{ copy.block_icon('X', 'social', gif.image, 'fa-brands fa-x-twitter text-lg') }}
+                                {{ copy.block_icon('Facebook', 'social', gif.url, 'fa-brands fa-facebook text-lg') }}
+                                {{ copy.block_icon('Reddit', 'social', gif.url, 'fa-brands fa-reddit text-lg') }}
+                            </div>
+
+                            <div class="flex justify-center items-center gap-3">
+                                {{ copy.block_icon('Lien du GIF', 'media', gif.image, 'fa fa-image text-lg', true) }}
+                                {{ copy.block_icon('Lien avec la citation', 'media', gif.url, 'fa fa-quote-right text-lg', true) }}
+                                {{ copy.block_icon('Lien court', 'media', gif.shortUrl, 'fa fa-link text-lg', true) }}
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -40,7 +40,7 @@ class Quote extends AbstractAction
             ]);
         }
 
-        return $this->render('body.html.twig', [
+        return $this->render('index.html.twig', [
             'gifs' => $gifs,
         ]);
     }

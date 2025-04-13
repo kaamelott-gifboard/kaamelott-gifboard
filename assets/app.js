@@ -1,4 +1,17 @@
-let loader = '<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>';
+/*
+ * Welcome to your app's main JavaScript file!
+ *
+ * This file will be included onto the page via the importmap() Twig function,
+ * which should already be in your base.html.twig.
+ */
+import './styles/app.css';
+
+let loader = `
+    <div class="flex space-x-2 justify-center py-4">
+        <div class="h-3 w-3 bg-yellow-700 rounded-full animate-[bounce_1s_infinite_100ms]"></div>
+        <div class="h-3 w-3 bg-yellow-700 rounded-full animate-[bounce_1s_infinite_300ms]"></div>
+        <div class="h-3 w-3 bg-yellow-700 rounded-full animate-[bounce_1s_infinite_500ms]"></div>
+    </div>`;
 
 let characterDiv = document.getElementById("characters");
 let currentCharacter = characterDiv ? characterDiv.getAttribute('data-current') : '';
@@ -7,29 +20,38 @@ window.onload = function () {
     let characterXhr = new XMLHttpRequest();
 
     if (characterDiv) {
-        characterDiv.innerHTML = ''; // Remove loader
+        characterDiv.innerHTML = '';
 
         characterXhr.onload = function () {
             let data = JSON.parse(characterXhr.responseText);
 
             data['characters'].forEach(function (character) {
-                let link = document.createElement("a");
-                let image = document.createElement("img");
-
-                image.src = character.image;
-                image.title = character.name;
-
-                if (character.name === currentCharacter) {
-                    image.classList.add('character-icon', 'icon-light-shadow', 'character-selected')
-                } else if (currentCharacter === '') { // no selected characters
-                    image.classList.add('character-icon', 'icon-dark-shadow')
-                } else { // display unselected characters with filter
-                    image.classList.add('character-icon', 'icon-dark-shadow', 'character-gray-filter')
-                }
-
+                const link = document.createElement("a");
                 link.href = character.url;
-                link.appendChild(image);
+                link.className = 'w-11';
 
+                const image = document.createElement("img");
+                image.src = character.image;
+                image.alt = character.name;
+                image.title = character.name;
+                image.className = [
+                    'w-11',
+                    'h-11',
+                    'rounded-full',
+                    'object-cover',
+                    'transition-all',
+                    'duration-150',
+                    'border',
+                    'shadow-md',
+                    'hover:scale-110',
+                    character.name === currentCharacter
+                        ? ''
+                        : currentCharacter
+                            ? 'grayscale opacity-80 hover:opacity-100 hover:grayscale-0'
+                            : '',
+                ].join(' ');
+
+                link.appendChild(image);
                 characterDiv.appendChild(link);
             });
         };
@@ -39,8 +61,6 @@ window.onload = function () {
         characterXhr.send();
     }
 
-    // ==================================================
-
     let countXhr = new XMLHttpRequest();
     let input = document.getElementById("quotes");
 
@@ -48,7 +68,7 @@ window.onload = function () {
         countXhr.onload = function () {
             let data = JSON.parse(countXhr.responseText);
 
-            input.placeholder = 'Rechercher parmi près de ' + data + ' répliques...';
+            input.placeholder = 'Rechercher parmi ' + data + ' répliques...';
         };
 
         countXhr.open('GET', input.getAttribute('data-url'));
@@ -129,13 +149,13 @@ if (characterDiv && !currentCharacter) {
 
         clearInterval(timer);
 
-        document.getElementById('gif-list').innerHTML = loader;
+        document.getElementById('gif-ul').innerHTML = loader;
 
         timer = setTimeout(function () {
             let searchXhr = new XMLHttpRequest();
 
             searchXhr.onload = function () {
-                document.getElementById('gif-list').innerHTML = searchXhr.responseText;
+                document.getElementById('gif-ul').innerHTML = searchXhr.responseText;
 
                 addOpenModalEvent(document.querySelectorAll('.square_btn'));
                 addCloseModalEvent(document.querySelectorAll('.modal-close'));

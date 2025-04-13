@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.font-medieval {
+    font-family: 'Cinzel Decorative', cursive;
+    letter-spacing: 0.05em;
+}
+
+.tooltip-hidden {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, visibility 0.2s;
+}
+
+.group:hover > .tooltip-hidden {
+    visibility: visible;
+    opacity: 1;
+}

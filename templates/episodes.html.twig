@@ -1,4 +1,4 @@
-{% extends 'body.html.twig' %}
+{% extends 'index.html.twig' %}
 
 {% set title = 'Kaamelott - Les meilleures répliques en GIFs par épisode' %}
 
@@ -17,21 +17,32 @@
 {%- endblock -%}
 
 {% block episodes %}
-    <div>
+    <div class="max-w-4xl mx-auto px-4 py-8">
         {% for season, episodes in episodeBySeasons %}
-            <div><b>{{ season }}</b></div><br />
-            {% for episode in episodes %}
-                <div>
-                    {% set episodeName = 'Episode ' ~ episode.episode ~ ' : ' ~ episode.title %}
+            <div class="mb-8">
+                <h2 class="font-medieval text-xl md:text-xl text-center mb-4">{{ season }}</h2>
+                <div class="grid gap-2">
+                    {% for episode in episodes %}
+                        {% set episodeName = 'Episode ' ~ episode.episode ~ ' : ' ~ episode.title %}
 
-                    {% if episode.nbGif %}
-                        <a href="{{ episode.url }}">{{ episodeName }}</a> ({{ episode.nbGif }})
-                    {% else %}
-                        {{ episodeName }}
-                    {% endif %}
+                        {% if episode.nbGif %}
+                            <a href="{{ episode.url }}"
+                               class="group block p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200 border border-stone-100">
+                                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+                                    <span class="text-gray-900 text-sm sm:text-base">{{ episodeName }}</span>
+                                    <span class="inline-flex items-center px-2 py-0.5 rounded text-xs font-medium bg-amber-700 text-white w-fit">
+                                        {{ episode.nbGif }} GIF{% if episode.nbGif > 1 %}s{% endif %}
+                                    </span>
+                                </div>
+                            </a>
+                        {% else %}
+                            <div class="p-3 bg-gray-50 rounded-lg text-gray-500 border border-gray-100">
+                                <span class="text-sm sm:text-base">{{ episodeName }}</span>
+                            </div>
+                        {% endif %}
+                    {% endfor %}
                 </div>
-            {% endfor %}
-            <br />
+            </div>
         {% endfor %}
     </div>
 {% endblock %}
