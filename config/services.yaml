@@ -21,7 +21,3 @@ services:
         resource: '../src/'
         exclude:
             - '../src/Kernel.php'
-
-    KaamelottGifboard\Action\:
-        resource: '../src/Action'
-        tags: [ 'controller.service_arguments' ]

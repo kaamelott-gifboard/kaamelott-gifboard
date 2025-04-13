@@ -1,5 +1,0 @@
-get_by_code_short:
-    path: /g/{code}
-    controller: KaamelottGifboard\Action\Gif\Code
-    requirements:
-        shortUrl: '[a-z0-9]+'

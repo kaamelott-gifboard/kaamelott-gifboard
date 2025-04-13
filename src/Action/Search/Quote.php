@@ -9,6 +9,7 @@ use KaamelottGifboard\Finder\GifFinder;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Serializer\Normalizer\NormalizerInterface;
 
 class Quote extends AbstractAction
@@ -20,6 +21,7 @@ class Quote extends AbstractAction
         parent::__construct($this->finder);
     }
 
+    #[Route('/search/quote', name: 'search_quote', defaults: ['quote' => ''])]
     public function __invoke(Request $request): Response|JsonResponse
     {
         $search = (string) $request->query->get('search', '');

@@ -7,9 +7,11 @@ namespace KaamelottGifboard\Action\Gif;
 use KaamelottGifboard\Action\AbstractAction;
 use KaamelottGifboard\Exception\PouletteNotFoundException;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Attribute\Route;
 
 class Character extends AbstractAction
 {
+    #[Route('/search/character/{name}', name: 'get_by_character')]
     public function __invoke(string $name): Response
     {
         $character = $this->finder->findCharacter($name);
