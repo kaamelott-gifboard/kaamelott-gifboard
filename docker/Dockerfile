@@ -32,7 +32,7 @@ FROM php:8.2-fpm-alpine3.21 AS prod
 WORKDIR /var/www
 
 RUN apk add --no-cache nginx supervisor \
-    && docker-php-ext-install -j$(grep -c ^processor /proc/cpuinfo 2>/dev/null || 1) opcache \
+    && docker-php-ext-enable opcache \
     && mkdir var /run/supervisord \
     && chown -R www-data:www-data var \
     && cp /usr/local/etc/php/php.ini-production /usr/local/etc/php/php.ini
