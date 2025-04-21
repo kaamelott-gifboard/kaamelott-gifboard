@@ -13432,5 +13432,18 @@
         "filename": "aime-pas-bien-ca.gif",
         "slug": "j-ai-pas-tout-compris-mais-j-aime-pas-bien-ca",
         "episode": "S06E02"
+    },
+    {
+        "quote": "J'vais vous découper l'gras du cul ça vous fera ça de moins à trimbaler",
+        "characters": [
+            "Le Maître d'Armes",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Le Maître d'Armes"
+        ],
+        "filename": "gras-du-cul.gif",
+        "slug": "j-vais-vous-decouper-l-gras-du-cul-ca-vous-fera-ca-de-moins-a-trimbaler",
+        "episode": "S02E52"
     }
 ]
