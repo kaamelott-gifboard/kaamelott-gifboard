@@ -13445,5 +13445,17 @@
         "filename": "gras-du-cul.gif",
         "slug": "j-vais-vous-decouper-l-gras-du-cul-ca-vous-fera-ca-de-moins-a-trimbaler",
         "episode": "S02E52"
+    },
+    {
+        "quote": "Y'aurait moyen de réduire la voilure sur la connerie",
+        "characters": [
+            "Quarto"
+        ],
+        "characters_speaking": [
+            "Quarto"
+        ],
+        "filename": "y-aurait-moyen-de-reduire-la-voilure-sur-la-connerie.gif",
+        "slug": "y-aurait-moyen-de-reduire-la-voilure-sur-la-connerie",
+        "episode": null
     }
 ]
