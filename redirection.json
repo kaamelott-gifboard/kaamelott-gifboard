@@ -98,5 +98,25 @@
     {
         "old": "c-est-au-sujet-que-je-vais-vous-mettre-un-pain-dans-la-gueule",
         "new": "je-vais-vous-mettre-un-pain-dans-la-gueule-mais-quelque-chose-de-violent"
+    },
+    {
+        "old": "ha-mais-moi-j-ai-toujours-dit",
+        "new": "ah-mais-moi-j-ai-toujours-dit"
+    },
+    {
+        "old": "vous-me-repondez-meme-plus-maintenant",
+        "new": "ah-mais-vous-me-repondez-meme-plus-maintenant-hein"
+    },
+    {
+        "old": "je-vais-pleurer-un-petit-peu-excusez-moi",
+        "new": "je-vais-pleurer-un-petit-peu"
+    },
+    {
+        "old": "la-joie-de-vivre-et-le-jambon",
+        "new": "la-joie-de-vivre-est-le-jambon"
+    },
+    {
+        "old": "demetra-elle-s-est-fait-pietiner-par-un-cheval-une-fois-mais-c-etait-pas-moi-fin-c-etait-un-cheval-quoi",
+        "new": "elle-s-est-fait-pietiner-par-un-cheval-une-fois-mais-c-etait-pas-moi-fin-c-etait-un-cheval-quoi"
     }
 ]
