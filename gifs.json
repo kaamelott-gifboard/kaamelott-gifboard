@@ -13460,5 +13460,223 @@
         "filename": "y-aurait-moyen-de-reduire-la-voilure-sur-la-connerie.gif",
         "slug": "y-aurait-moyen-de-reduire-la-voilure-sur-la-connerie",
         "episode": null
+    },
+    {
+        "quote": "Arthur souffle 2",
+        "characters": [
+            "Arthur",
+            "Guenièvre"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "arthur-souffle-2.gif",
+        "slug": "arthur-souffle-2",
+        "episode": "S01E07"
+    },
+    {
+        "quote": "Bousculade",
+        "characters": [
+            "Le Maître d'Armes",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Le Maître d'Armes"
+        ],
+        "filename": "bousculade.gif",
+        "slug": "bousculade",
+        "episode": "S01E09"
+    },
+    {
+        "quote": "Euuuh... Là honnêtement je saurais pas dire",
+        "characters": [
+            "Arthur",
+            "Bohort",
+            "Perceval"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "saurais-pas-dire.gif",
+        "slug": "euuuh-la-honnetement-je-saurais-pas-dire",
+        "episode": "S04E62"
+    },
+    {
+        "quote": "JOUER",
+        "characters": [
+            "Le Roi Burgonde"
+        ],
+        "characters_speaking": [
+            "Le Roi Burgonde"
+        ],
+        "filename": "jouer.gif",
+        "slug": "jouer",
+        "episode": "S04E62"
+    },
+    {
+        "quote": "Ça change pas tellement de d'habitude quoi",
+        "characters": [
+            "Arthur",
+            "Bohort",
+            "Perceval"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "change-pas-tellement-habitude.gif",
+        "slug": "ca-change-pas-tellement-de-d-habitude-quoi",
+        "episode": "S04E62"
+    },
+    {
+        "quote": "Le roi Burgonde pointe du doigt",
+        "characters": [
+            "Le Roi Burgonde",
+            "Perceval"
+        ],
+        "characters_speaking": [
+            "Le Roi Burgonde"
+        ],
+        "filename": "burgonde-pointe-doigt.gif",
+        "slug": "le-roi-burgonde-pointe-du-doigt",
+        "episode": "S04E62"
+    },
+    {
+        "quote": "Qu'est-ce que c'est que ce style de bouffer des petits machins tous secs et 3 gallons de flotte par jour",
+        "characters": [
+            "Karadoc",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Karadoc"
+        ],
+        "filename": "style-bouffer-machins-tous-secs.gif",
+        "slug": "qu-est-ce-que-c-est-que-ce-style-de-bouffer-des-petits-machins-tous-secs-et-3-gallons-de-flotte-par-jour",
+        "episode": "S02E23"
+    },
+    {
+        "quote": "Si la jeunesse se met à croire à ces conneries, on se dirige tout droit vers une génération de dépressifs",
+        "characters": [
+            "Karadoc",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Karadoc"
+        ],
+        "filename": "jeunesse-croire-conneries.gif",
+        "slug": "si-la-jeunesse-se-met-a-croire-a-ces-conneries-on-se-dirige-tout-droit-vers-une-generation-de-depressifs",
+        "episode": "S02E23"
+    },
+    {
+        "quote": "Moi je suis pour",
+        "characters": [
+            "Karadoc",
+            "Perceval"
+        ],
+        "characters_speaking": [
+            "Karadoc"
+        ],
+        "filename": "moi-je-suis-pour.gif",
+        "slug": "moi-je-suis-pour",
+        "episode": "S02E36"
+    },
+    {
+        "quote": "C'est pas du tout mon anniversaire",
+        "characters": [
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Arthur"
+        ],
+        "filename": "pas-mon-anniversaire.gif",
+        "slug": "c-est-pas-du-tout-mon-anniversaire",
+        "episode": "S02E56"
+    },
+    {
+        "quote": "Il est âcre et âpre, il faut être honnête",
+        "characters": [
+            "Belt le vigneron"
+        ],
+        "characters_speaking": [
+            "Belt le vigneron"
+        ],
+        "filename": "acre-et-apre.gif",
+        "slug": "il-est-acre-et-apre-il-faut-etre-honnete",
+        "episode": "S02E68"
+    },
+    {
+        "quote": "Non âcre",
+        "characters": [
+            "Roparzh"
+        ],
+        "characters_speaking": [
+            "Roparzh"
+        ],
+        "filename": "non-acre.gif",
+        "slug": "non-acre",
+        "episode": "S02E68"
+    },
+    {
+        "quote": "Ca c'est mon spécial pleine lune : 4 rondelles de sauc' à chaque coin sur une tartine à la graisse de rôti",
+        "characters": [
+            "Karadoc",
+            "Léodagan"
+        ],
+        "characters_speaking": [
+            "Karadoc"
+        ],
+        "filename": "special-pleine-lune.gif",
+        "slug": "ca-c-est-mon-special-pleine-lune-4-rondelles-de-sauc-a-chaque-coin-sur-une-tartine-a-la-graisse-de-roti",
+        "episode": "S02E84"
+    },
+    {
+        "quote": "Bah c'est nostalgique",
+        "characters": [
+            "Karadoc",
+            "Léodagan"
+        ],
+        "characters_speaking": [
+            "Karadoc"
+        ],
+        "filename": "cest-nostalgique.gif",
+        "slug": "bah-c-est-nostalgique",
+        "episode": "S02E84"
+    },
+    {
+        "quote": "C'est plus facile que de dire merci",
+        "characters": [
+            "Merlin"
+        ],
+        "characters_speaking": [
+            "Merlin"
+        ],
+        "filename": "facile-dire-merci.gif",
+        "slug": "c-est-plus-facile-que-de-dire-merci",
+        "episode": "S03E08"
+    },
+    {
+        "quote": "Vous allez finir par faire votre bonhomme oui ou non",
+        "characters": [
+            "Séfriane",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Séfriane"
+        ],
+        "filename": "faire-votre-bonhomme.gif",
+        "slug": "vous-allez-finir-par-faire-votre-bonhomme-oui-ou-non",
+        "episode": "S03E16"
+    },
+    {
+        "quote": "Attention, j'ai rien contre les bouseux, d'habitude je ne mange pas avec c'est tout",
+        "characters": [
+            "Cryda de Tintagel",
+            "Ygerne de Tintagel"
+        ],
+        "characters_speaking": [
+            "Cryda de Tintagel"
+        ],
+        "filename": "rien-contre-les-bouseux.gif",
+        "slug": "attention-j-ai-rien-contre-les-bouseux-d-habitude-je-ne-mange-pas-avec-c-est-tout",
+        "episode": "S03E25"
     }
 ]
