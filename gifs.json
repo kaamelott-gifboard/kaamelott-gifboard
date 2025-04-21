@@ -22,7 +22,7 @@
         ],
         "filename": "ambiance-de-merde.gif",
         "slug": "c-est-moi-ou-y-a-une-ambiance-de-merde",
-        "episode": null
+        "episode": "S03E89"
     },
     {
         "quote": "Arthour ! Pas changer assiette pour fromage !",
@@ -195,7 +195,7 @@
         ],
         "filename": "cest-mortel.gif",
         "slug": "c-est-mortel",
-        "episode": null
+        "episode": "S03E88"
     },
     {
         "quote": "C'est nul ! Zéro !",
@@ -412,7 +412,7 @@
         "episode": "S02E81"
     },
     {
-        "quote": "Bon écoutez : vous m'emmerdez, mais quelque chose de concret.",
+        "quote": "Bon écoutez : vous m'emmerdez, mais quelque chose de concret",
         "characters": [
             "Arthur"
         ],
@@ -421,7 +421,7 @@
         ],
         "filename": "emmerdez-concret.gif",
         "slug": "bon-ecoutez-vous-m-emmerdez-mais-quelque-chose-de-concret",
-        "episode": null
+        "episode": "S04E10"
     },
     {
         "quote": "Y'a pas de quoi en chier une galette",
@@ -484,7 +484,7 @@
         ],
         "filename": "bohort-frustre.gif",
         "slug": "bohort-est-frustre",
-        "episode": null
+        "episode": "S03E66"
     },
     {
         "quote": "Gauvain est triste",
@@ -615,17 +615,19 @@
     {
         "quote": "Moi je vous laisse ma place hein, j'ai pas du tout envie d'y aller",
         "characters": [
-            "Yvain"
+            "Yvain",
+            "Léodagan",
+            "Séli"
         ],
         "characters_speaking": [
             "Yvain"
         ],
         "filename": "je-laisse-ma-place.gif",
         "slug": "moi-je-vous-laisse-ma-place-hein-j-ai-pas-du-tout-envie-d-y-aller",
-        "episode": null
+        "episode": "S03E87"
     },
     {
-        "quote": "Ça vous ennuie si j'me taille les veines ?",
+        "quote": "Ca vous ennuie si j'me taille les veines ?",
         "characters": [
             "Guenièvre"
         ],
@@ -634,7 +636,7 @@
         ],
         "filename": "je-me-taille-les-veines.gif",
         "slug": "ca-vous-ennuie-si-j-me-taille-les-veines",
-        "episode": null
+        "episode": "S03E87"
     },
     {
         "quote": "Je vais peut-être aller me recoucher moi...",
@@ -687,7 +689,7 @@
         "episode": "S01E98"
     },
     {
-        "quote": "La joie de vivre et le jambon !",
+        "quote": "La joie de vivre est le jambon !",
         "characters": [
             "Karadoc",
             "Mevanwi"
@@ -696,8 +698,8 @@
             "Karadoc"
         ],
         "filename": "joie-de-vivre-et-jambon.gif",
-        "slug": "la-joie-de-vivre-et-le-jambon",
-        "episode": null
+        "slug": "la-joie-de-vivre-est-le-jambon",
+        "episode": "S03E95"
     },
     {
         "quote": "Ça va être la fête à votre cul !",
@@ -809,7 +811,7 @@
         ],
         "filename": "mais-pourquoi-moi.gif",
         "slug": "mais-pourquoi-moi",
-        "episode": null
+        "episode": "S03E74"
     },
     {
         "quote": "Que c'est nul... mais que c'est nul",
@@ -940,17 +942,17 @@
         "episode": "S02E40"
     },
     {
-        "quote": "Ha mais moi j'ai toujours dit !",
+        "quote": "Ah mais moi j'ai toujours dit",
         "characters": [
-            "Karadoc",
-            "Le Tavernier"
+            "Le Tavernier",
+            "Karadoc"
         ],
         "characters_speaking": [
             "Le Tavernier"
         ],
         "filename": "moi-jai-toujours-dit.gif",
-        "slug": "ha-mais-moi-j-ai-toujours-dit",
-        "episode": null
+        "slug": "ah-mais-moi-j-ai-toujours-dit",
+        "episode": "S03E68"
     },
     {
         "quote": "Nan",
@@ -1102,19 +1104,20 @@
         ],
         "filename": "pignouf.gif",
         "slug": "pignouf",
-        "episode": null
+        "episode": "S03E67"
     },
     {
-        "quote": "Je vais pleurer un petit peu. Excusez-moi.",
+        "quote": "Je vais pleurer un petit peu",
         "characters": [
-            "Guenièvre"
+            "Guenièvre",
+            "Ygerne de Tintagel"
         ],
         "characters_speaking": [
             "Guenièvre"
         ],
         "filename": "pleurer-un-petit-peu.gif",
-        "slug": "je-vais-pleurer-un-petit-peu-excusez-moi",
-        "episode": null
+        "slug": "je-vais-pleurer-un-petit-peu",
+        "episode": "S03E87"
     },
     {
         "quote": "Ça suffit ! Elle est où la poulette ? Elle est bien cachée ?!",
@@ -1312,7 +1315,7 @@
         ],
         "filename": "un-petit-effort.gif",
         "slug": "va-falloir-faire-un-petit-effort-hein-c-est-pas-possible",
-        "episode": null
+        "episode": "S03E89"
     },
     {
         "quote": "Un peu de respect !",
@@ -1363,7 +1366,7 @@
         ],
         "filename": "voila-la-vous-me-faites-plaisir.gif",
         "slug": "voila-la-vous-me-faites-plaisir",
-        "episode": null
+        "episode": "S03E68"
     },
     {
         "quote": "Voilà !",
@@ -1515,7 +1518,7 @@
         ],
         "filename": "wooh.gif",
         "slug": "woohoo-mon-petit-oiseau",
-        "episode": null
+        "episode": "S04E01"
     },
     {
         "quote": "Wouhou ! Y a quelqu'un ?!",
@@ -1603,7 +1606,7 @@
         ],
         "filename": "cest-un-peigne-zizi.gif",
         "slug": "c-est-un-peigne-zizi-voila",
-        "episode": null
+        "episode": "S04E14"
     },
     {
         "quote": "Je vais pas vous citer Aristote",
@@ -1653,7 +1656,7 @@
         ],
         "filename": "vous-dormez.gif",
         "slug": "vous-dormez",
-        "episode": null
+        "episode": "S03E85"
     },
     {
         "quote": "Vous vous foutez de moi !",
@@ -1666,7 +1669,7 @@
         ],
         "filename": "vous-vous-foutez-de-moi.gif",
         "slug": "vous-vous-foutez-de-moi",
-        "episode": null
+        "episode": "S03E66"
     },
     {
         "quote": "Mevanwi dupe Karadoc avec du saucisson",
@@ -1679,10 +1682,10 @@
         ],
         "filename": "saucisson.gif",
         "slug": "mevanwi-dupe-karadoc-avec-du-saucisson",
-        "episode": null
+        "episode": "S04E08"
     },
     {
-        "quote": "Démétra elle s'est fait piétiner par un cheval une fois, mais c'était pas moi... 'fin c'était un cheval quoi",
+        "quote": "Elle s'est fait piétiner par un cheval une fois, mais c'était pas moi... 'fin c'était un cheval quoi",
         "characters": [
             "Arthur",
             "Mevanwi"
@@ -1691,8 +1694,8 @@
             "Arthur"
         ],
         "filename": "demetra-pietiner-par-cheval.gif",
-        "slug": "demetra-elle-s-est-fait-pietiner-par-un-cheval-une-fois-mais-c-etait-pas-moi-fin-c-etait-un-cheval-quoi",
-        "episode": null
+        "slug": "elle-s-est-fait-pietiner-par-un-cheval-une-fois-mais-c-etait-pas-moi-fin-c-etait-un-cheval-quoi",
+        "episode": "S04E08"
     },
     {
         "quote": "En tapinant",
@@ -1704,7 +1707,7 @@
         ],
         "filename": "en-tapinant.gif",
         "slug": "en-tapinant",
-        "episode": null
+        "episode": "S03E79"
     },
     {
         "quote": "Attention, parce que moi faut pas m'en promettre",
@@ -1717,7 +1720,7 @@
         ],
         "filename": "faut-pas-men-promettre.gif",
         "slug": "attention-parce-que-moi-faut-pas-m-en-promettre",
-        "episode": null
+        "episode": "S04E08"
     },
     {
         "quote": "Ah bah elle est pas mal, celle-là, hein !",
@@ -1768,7 +1771,7 @@
         ],
         "filename": "pas-bite-un-seul-mot.gif",
         "slug": "j-ai-pas-bite-un-seul-mot",
-        "episode": null
+        "episode": "S03E60"
     },
     {
         "quote": "Ça vous inspire là ou y'a rien qui vient ?",
@@ -1806,7 +1809,7 @@
         ],
         "filename": "rien-dire-je-men-fiche.gif",
         "slug": "oui-je-sais-ca-veut-rien-dire-mais-je-m-en-fiche",
-        "episode": null
+        "episode": "S04E03"
     },
     {
         "quote": "Dans le doute, je les ai bouffés",
@@ -9537,7 +9540,7 @@
         ],
         "filename": "oui-bah-non.gif",
         "slug": "oui-bah-non",
-        "episode": null
+        "episode": "S04E14"
     },
     {
         "quote": "Je sais que vous aimez pas ça mais c'est qu'un mauvais moment à passer",
@@ -12342,8 +12345,8 @@
             "Guenièvre"
         ],
         "filename": "vous-me-repondez-meme-plus-maintenant.gif",
-        "slug": "vous-me-repondez-meme-plus-maintenant",
-        "episode": null
+        "slug": "ah-mais-vous-me-repondez-meme-plus-maintenant-hein",
+        "episode": "S03E73"
     },
     {
         "quote": "Aaaaah m'adresse pas la parole hérétique, démon",
