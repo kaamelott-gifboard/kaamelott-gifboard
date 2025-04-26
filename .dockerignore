@@ -3,6 +3,7 @@
 
 # Whitelist stuff
 !assets/
+!tailwind.config.js
 !docker/
 !bin/console
 !public/
