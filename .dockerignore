@@ -2,6 +2,7 @@
 *
 
 # Whitelist stuff
+!assets/
 !docker/
 !bin/console
 !public/
