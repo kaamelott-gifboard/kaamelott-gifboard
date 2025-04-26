@@ -4,6 +4,7 @@
 # Whitelist stuff
 !assets/
 !tailwind.config.js
+!importmap.php
 !docker/
 !bin/console
 !public/
