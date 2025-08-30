@@ -33,6 +33,7 @@ class GifFinder
 
     public function findGifsByQuote(string $search): array
     {
+        $search = trim($search);
         $results = [];
 
         /** @var Gif $gif */
