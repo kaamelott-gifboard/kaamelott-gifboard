@@ -32,10 +32,10 @@ class GifFinder
     }
 
     public function findGifsByQuote(string $search): array
-    {        
+    {
         $results = [];
         $search = trim($search);
-
+        
         /** @var Gif $gif */
         foreach ($this->lister->gifs as $gif) {
             if ($this->match($search, $gif->quote, true)) {
