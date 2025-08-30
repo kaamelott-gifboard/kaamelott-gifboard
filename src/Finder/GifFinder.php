@@ -33,7 +33,6 @@ class GifFinder
 
     public function findGifsByQuote(string $search): array
     {
-        $search = trim($search);
         $results = [];
 
         /** @var Gif $gif */
@@ -160,7 +159,7 @@ class GifFinder
             $subject = (new UnicodeString($subject))->ascii()->toString();
         }
 
-        return (bool) preg_match(sprintf('#%s#ui', $search), $subject);
+        return (bool) preg_match(sprintf('#%s#ui', trim($search)), $subject);
     }
 
     /**
