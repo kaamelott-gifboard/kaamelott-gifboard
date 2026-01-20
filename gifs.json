@@ -13678,5 +13678,19 @@
         "filename": "rien-contre-les-bouseux.gif",
         "slug": "attention-j-ai-rien-contre-les-bouseux-d-habitude-je-ne-mange-pas-avec-c-est-tout",
         "episode": "S03E25"
+    },
+    {
+        "quote": "Face à la mauvaise foi, y'a que le mépris... ou une claque dans le nez",
+        "characters": [
+            "Léodagan",
+            "Bohort",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Léodagan"
+        ],
+        "filename": "leodagan-mepris.gif",
+        "slug": "face-a-la-mauvaise-foi-ya-que-le-mepris-ou-une-claque-dans-le-nez",
+        "episode": "S04E58"
     }
 ]
