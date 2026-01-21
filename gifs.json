@@ -13462,6 +13462,18 @@
         "episode": null
     },
     {
+        "quote": "Il vous faut du bâton dans la gueule pour amorcer le mouvement ?",
+        "characters": [
+            "Quarto"
+        ],
+        "characters_speaking": [
+            "Quarto"
+        ],
+        "filename": "quarto-baton-dans-la-gueule.gif",
+        "slug": "il-vous-faut-du-baton-dans-la-gueule-pour-amorcer-le-mouvement",
+        "episode": null
+    },
+    {
         "quote": "Arthur souffle 2",
         "characters": [
             "Arthur",
