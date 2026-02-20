@@ -13678,5 +13678,120 @@
         "filename": "rien-contre-les-bouseux.gif",
         "slug": "attention-j-ai-rien-contre-les-bouseux-d-habitude-je-ne-mange-pas-avec-c-est-tout",
         "episode": "S03E25"
-    }
+    },
+    {
+        "quote": "C'est compliqué, mais c'est compliqué",
+        "characters": [
+            "Karadoc",
+            "Perceval"
+        ],
+        "characters_speaking": [
+            "Karadoc"
+        ],
+        "filename": "cest-complique-mais-cest-complique.gif",
+        "slug": "c-est-complique-mais-c-est-complique",
+        "episode": "S05E01"
+    },
+    {
+        "quote": "Non bah c'est moi alors. J'pue les pieds. Ça englobe un peu",
+        "characters": [
+            "Karadoc",
+            "Arthur"
+        ],
+        "characters_speaking": [
+            "Karadoc"
+        ],
+        "filename": "cest-moi-je-pue-les-pieds-ca-englobe-un-peu.gif",
+        "slug": "non-bah-c-est-moi-alors-j-pue-les-pieds-ca-englobe-un-peu",
+        "episode": "S02E64"
+    },
+    {
+        "quote": "Cuillère",
+        "characters": [
+            "Le Roi Burgonde"
+        ],
+        "characters_speaking": [
+            "Le Roi Burgonde"
+        ],
+        "filename": "couillere.gif",
+        "slug": "cuillère",
+        "episode": "S02E03"
+    },
+    {
+        "quote": "Je crame tout moi !",
+        "characters": [
+            "Guethenoc",
+            "Roparzh"
+        ],
+        "characters_speaking": [
+            "Guethenoc"
+        ],
+        "filename": "je-crame-tout-moi.gif",
+        "slug": "je-crame-tout-moi",
+        "episode": "S02E69"
+    },
+    {
+        "quote": "Je veux brûler cette personne !",
+        "characters": [
+            "Le répurgateur"
+        ],
+        "characters_speaking": [
+            "Le répurgateur"
+        ],
+        "filename": "je-veux-bruler-cette-personne.gif",
+        "slug": "je-veux-bruler-cette-personne",
+        "episode": "S01E79"
+    },
+    {
+        "quote": "Regardez ce que j'arrive à faire, mon oncle ... (Plisse les yeux et allonge son visage.)",
+        "characters": [
+            "Gauvain",
+            "Arthur",
+            "Mevanwi"
+        ],
+        "characters_speaking": [
+            "Gauvain"
+        ],
+        "filename": "mon-oncle-clin-oeil.gif",
+        "slug": "regardez-ce-que-j-arrive-a-faire-mon-oncle-plisse-les-yeux-et-allonge-son-visage",
+        "episode": "S03E77"
+    },
+    {
+        "quote": "Oh! Vous voulez un taquet ou pas?",
+        "characters": [
+            "Perceval"
+        ],
+        "characters_speaking": [
+            "Perceval"
+        ],
+        "filename": "oh-vous-voulez-un-taquet-ou-pas.gif",
+        "slug": "oh-vous-voulez-un-taquet-ou-pas",
+        "episode": "S05E08"
+    },
+    {
+        "quote": "Pouvons nous nous retirer afin d'aller prendre notre goûter ?",
+        "characters": [
+            "Yvain",
+            "Gauvain"
+        ],
+        "characters_speaking": [
+            "Gauvain"
+        ],
+        "filename": "pouvons-nous-nous-retirer-afin-daller-prendre-notre-gouter.gif",
+        "slug": "pouvons-nous-nous-retirer-afin-d-aller-prendre-notre-gouter",
+        "episode": "S02E16"
+    },
+    {
+        "quote": "Tout cramer et reprendre à zéro...",
+        "characters": [
+            "Léodagan",
+            "Séli"
+        ],
+        "characters_speaking": [
+            "Léodagan"
+        ],
+        "filename": "public/gifs/tout-cramer-et-reprendre-zero.gif",
+        "slug": "tout-cramer-et-reprendre-a-zero",
+        "episode": "S05E05"
+    },
 ]
