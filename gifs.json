@@ -13678,5 +13678,17 @@
         "filename": "rien-contre-les-bouseux.gif",
         "slug": "attention-j-ai-rien-contre-les-bouseux-d-habitude-je-ne-mange-pas-avec-c-est-tout",
         "episode": "S03E25"
+    },
+    {
+        "quote": "Diabolus !",
+        "characters": [
+            "Père Blaise"
+        ],
+        "characters_speaking": [
+            "Père Blaise"
+        ],
+        "filename": "diabolus.gif",
+        "slug": "diabolus",
+        "episode": "S02E48"
     }
 ]
